@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="KickFactory01" Bypassed="0" Gain="1" Balance="0"
+           VoiceLimit="64" KillFadeTime="20" IconColour="0" packageName=""
+           BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptButton" id="Randomise" value="0"/>
+            <Control type="ScriptButton" id="PresetsBackwardsButton" value="0"/>
+            <Control type="ScriptButton" id="PresetsForwardsButton" value="0"/>
+            <Control type="ScriptButton" id="Randomise1" value="0"/>
+            <Control type="ScriptButton" id="VoicesButton" value="1"/>
+            <Control type="ScriptButton" id="SeqButton" value="0"/>
+            <Control type="ScriptButton" id="SoloButton1" value="0"/>
+            <Control type="ScriptButton" id="MuteButton1" value="0"/>
+            <Control type="ScriptButton" id="OpenCloseButton1" value="1"/>
+            <Control type="ScriptSlider" id="VolumeVoice1" value="0.67"/>
+            <Control type="ScriptButton" id="VolVelSelectorButton1" value="0"/>
+            <Control type="ScriptButton" id="VolEnvSelectorButton1" value="0"/>
+            <Control type="ScriptButton" id="VolLFOSelectorButton1" value="0"/>
+            <Control type="ScriptSlider" id="PanVoice1" value="0.5"/>
+            <Control type="ScriptSlider" id="PitchVoice1" value="0.49"/>
+            <Control type="ScriptButton" id="PitchTrack1" value="0"/>
+            <Control type="ScriptButton" id="PithcEnvSelectorButton1" value="0"/>
+            <Control type="ScriptButton" id="VoiceBackwardsButton1" value="0"/>
+            <Control type="ScriptButton" id="VoiceForwardsButton1" value="0"/>
+          </Content>
+          <UIData Source="KickFactory01UIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors/>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="OveralBAckground" x="0" y="0" width="640"
+             height="600" fileName="{PROJECT_FOLDER}factoryback.png"/>
+  <Component type="ScriptPanel" id="HeaderPanel" x="0" y="0" height="40" width="640"
+             itemColour="0" itemColour2="0" textColour="16777215">
+    <Component type="ScriptButton" id="Randomise" x="558" y="6" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}RandomiseButton.png" width="31"
+               height="31" scaleFactor="0.8"/>
+    <Component type="ScriptButton" id="PresetsBackwardsButton" x="227" y="15"
+               parentComponent="HeaderPanel" width="18" height="17" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="PresetsForwardsButton" x="382" y="14"
+               parentComponent="HeaderPanel" width="18" height="17" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="Randomise1" x="598" y="7" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}cog.png" width="31" height="31"
+               scaleFactor="1.2"/>
+    <Component type="ScriptButton" id="VoicesButton" x="420" y="14" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}VoicesButton.png" width="50"
+               height="16" radioGroup="1"/>
+    <Component type="ScriptButton" id="SeqButton" x="474" y="14" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}SeqButton.png" width="50" height="16"
+               radioGroup="1"/>
+  </Component>
+  <Component type="ScriptPanel" id="VoicePanel1" x="0" y="39" borderSize="0"
+             borderRadius="0" width="640" height="301">
+    <Component type="ScriptImage" id="PanelBackground1" x="0" y="0" parentComponent="VoicePanel1"
+               width="640" height="301" fileName="{PROJECT_FOLDER}DrumPanelBack.png"/>
+    <Component type="ScriptButton" id="SoloButton1" x="3" y="4" parentComponent="VoicePanel1"
+               width="16" height="17" filmstripImage="{PROJECT_FOLDER}s_btn.png"
+               numStrips="6"/>
+    <Component type="ScriptButton" id="MuteButton1" x="19" y="4" parentComponent="VoicePanel1"
+               width="16" height="17" filmstripImage="{PROJECT_FOLDER}m_btn.png"
+               numStrips="6"/>
+    <Component type="ScriptButton" id="OpenCloseButton1" x="615" y="4" parentComponent="VoicePanel1"
+               width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"/>
+    <Component type="ScriptSlider" id="VolumeVoice1" x="3" y="38" parentComponent="VoicePanel1"
+               numStrips="101" filmstripImage="{PROJECT_FOLDER}dustknob.png"
+               width="69" height="67"/>
+    <Component type="ScriptPanel" id="VolVelHolder1" x="98" y="56" parentComponent="VoicePanel1"
+               borderSize="0" width="25" height="25" itemColour="0" itemColour2="0">
+      <Component type="ScriptButton" id="VolVelSelectorButton1" x="0" y="0" width="25"
+                 height="25" parentComponent="VolVelHolder1" filmstripImage="{PROJECT_FOLDER}dustButton.png"/>
+      <Component type="ScriptPanel" id="VolVelocitySelector1" x="0" y="0" parentComponent="VolVelHolder1"
+                 width="25" height="25" borderSize="0" itemColour="0" itemColour2="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="VolEnvHolder1" x="151" y="58" parentComponent="VoicePanel1"
+               borderSize="0" width="25" height="25" itemColour="0" itemColour2="0">
+      <Component type="ScriptButton" id="VolEnvSelectorButton1" x="0" y="0" width="25"
+                 height="25" parentComponent="VolEnvHolder1" filmstripImage="{PROJECT_FOLDER}dustButton.png"/>
+      <Component type="ScriptPanel" id="VolEnvSelector1" x="0" y="0" parentComponent="VolEnvHolder1"
+                 width="25" height="25" borderSize="0" itemColour="0" itemColour2="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="VolLFOHolder1" x="199" y="58" parentComponent="VoicePanel1"
+               borderSize="0" width="25" height="25" itemColour="0" itemColour2="0">
+      <Component type="ScriptButton" id="VolLFOSelectorButton1" x="0" y="0" width="25"
+                 height="25" parentComponent="VolLFOHolder1" filmstripImage="{PROJECT_FOLDER}dustButton.png"/>
+      <Component type="ScriptPanel" id="VolLFOSelector1" x="0" y="0" parentComponent="VolLFOHolder1"
+                 width="25" height="25" borderSize="0" itemColour="0" itemColour2="0"/>
+    </Component>
+    <Component type="ScriptSlider" id="PanVoice1" x="2" y="105" parentComponent="VoicePanel1"
+               numStrips="101" filmstripImage="{PROJECT_FOLDER}dustknob.png"
+               width="69" height="67"/>
+    <Component type="ScriptSlider" id="PitchVoice1" x="3" y="181" parentComponent="VoicePanel1"
+               numStrips="101" filmstripImage="{PROJECT_FOLDER}dustknob.png"
+               width="69" height="67"/>
+    <Component type="ScriptButton" id="PitchTrack1" x="7" y="261" parentComponent="VoicePanel1"
+               filmstripImage="{PROJECT_FOLDER}dustButton.png" height="25" width="25"/>
+    <Component type="ScriptPanel" id="PEHolder1" x="44" y="260" parentComponent="VoicePanel1"
+               borderSize="0" width="25" height="25" itemColour="0" itemColour2="0">
+      <Component type="ScriptButton" id="PithcEnvSelectorButton1" x="0" y="0"
+                 width="25" height="25" parentComponent="PEHolder1" filmstripImage="{PROJECT_FOLDER}dustButton.png"/>
+      <Component type="ScriptPanel" id="PitchEnvelopeSelector1" x="0" y="0" parentComponent="PEHolder1"
+                 width="25" height="25" borderSize="0" itemColour="0" itemColour2="0"/>
+    </Component>
+    <Component type="ScriptButton" id="VoiceBackwardsButton1" x="90" y="264"
+               parentComponent="VoicePanel1" width="18" height="17" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="VoiceForwardsButton1" x="274" y="265"
+               parentComponent="VoicePanel1" width="18" height="17" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               isMomentary="1"/>
+  </Component>
+</ContentProperties>

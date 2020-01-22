@@ -1,0 +1,12 @@
+/Binaries
+/build
+/Delivery
+/installerbuild
+/Presets
+/Samples
+/support
+/tempPresets
+/OldImages
+/UnusedIRs
+*.wav
+*.sfz
