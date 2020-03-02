@@ -57,7 +57,7 @@ for (idx = 0; idx < NUM_VOICES; idx++)
     MuteButtons[idx].setControlCallback(onMuteButton);
     PanelExpanders[idx] = Content.getComponent("OpenCloseButton" + (idx+1));
     PanelExpanders[idx].setControlCallback(onPanelExpander);
-
+    EffectsPanels[idx] = Content.getComponent("EffectsPanel" + (idx+1));
 };
 
 
@@ -68,6 +68,10 @@ inline function onPanelExpander(component, value)
 {
 	//Add your custom logic here...
 	setVoicePositions();
+	for (idx = 0; idx < NUM_VOICES; idx++)
+    {
+        EffectsPanels[idx].showControl(PanelExpanders[idx].getValue());
+    }
 };
 
 

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="OveralBAckground" x="0" y="0" width="700"
+             height="597" fileName="{PROJECT_FOLDER}KickFactory2Background.png"/>
+  <Component type="ScriptPanel" id="HeaderPanel" x="0" y="0" height="39" width="707"
+             itemColour="0" itemColour2="0" textColour="16777215">
+    <Component type="ScriptButton" id="Randomise" x="627" y="9" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}RandomiseButton.png" width="31"
+               height="31" scaleFactor="0.8"/>
+    <Component type="ScriptButton" id="PresetsBackwardsButton" x="308" y="16"
+               parentComponent="HeaderPanel" width="18" height="17" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="PresetsForwardsButton" x="476" y="14"
+               parentComponent="HeaderPanel" width="18" height="17" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="Randomise1" x="660" y="8" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}cog.png" width="31" height="31"
+               scaleFactor="1.2"/>
+    <Component type="ScriptButton" id="VoicesButton" x="531" y="4" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}VoicesButton.png" width="50"
+               height="16" radioGroup="1"/>
+    <Component type="ScriptButton" id="SeqButton" x="531" y="24" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}SeqButton.png" width="50" height="16"
+               radioGroup="1"/>
+  </Component>
+  <Component type="ScriptPanel" id="VoicePanel1" x="0" y="47" borderSize="0"
+             borderRadius="0" width="700" height="22">
+    <Component type="ScriptImage" id="PanelBackground1" x="0" y="0" parentComponent="VoicePanel1"
+               width="700" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
+    <Component type="ScriptButton" id="MuteButton1" x="4" y="3" parentComponent="VoicePanel1"
+               width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
+    <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="KICK DRUM NAME"
+               saveInPreset="1" width="132" height="22" parentComponent="VoicePanel1"
+               fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"/>
+    <Component type="ScriptButton" id="OpenCloseButton1" x="681" y="3" parentComponent="VoicePanel1"
+               width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
+               radioGroup="1"/>
+    <Component type="ScriptButton" id="PrevSound1" x="22" y="38" width="18"
+               height="18" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1" parentComponent="VoicePanel1"/>
+    <Component type="ScriptLabel" id="SampleMapNameVoice1" x="37" y="33" text="KICK DRUM NAME"
+               saveInPreset="1" width="147" height="23" parentComponent="VoicePanel1"
+               fontSize="11"/>
+    <Component type="ScriptButton" id="SampleMapSelectorVoice1" x="38" y="36"
+               width="146" height="19" text="" itemColour="16713479" bgColour="0"
+               itemColour2="327812" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+               parentComponent="VoicePanel1"/>
+    <Component type="ScriptButton" id="NextSound1" x="183" y="37" width="20"
+               height="18" isMomentary="1" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               parentComponent="VoicePanel1"/>
+    <Component type="ScriptSlider" id="VolumeKnob1" x="27" y="217" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+    <Component type="ScriptSlider" id="PanKnob1" x="127" y="216" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Pan.png"
+               showValuePopup="Above" min="-100" max="100" stepSize="1" middlePosition="0"/>
+    <Component type="ScriptSlider" id="PitchKnob1" x="218" y="217" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Pan.png"
+               showValuePopup="Above" min="-12" max="12" middlePosition="0"
+               stepSize="0.1"/>
+    <Component type="ScriptSlider" id="FreqKnob1" x="314" y="217" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Frequency" min="20" max="20000"
+               stepSize="1" suffix=" Hz" middlePosition="400" defaultValue="400"/>
+    <Component type="ScriptSlider" id="ResKnob1" x="377" y="218" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" min="0.3" max="8" stepSize="0.1" middlePosition="1"
+               defaultValue="1"/>
+    <Component type="ScriptSlider" id="LFOSpeedKnob1" x="458" y="217" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+               middlePosition="9" defaultValue="9"/>
+    <Component type="ScriptSlider" id="LFODepthKnob1" x="521" y="217" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
+    <Component type="ScriptPanel" id="FilterSelectorPanel1" x="307" y="34" parentComponent="VoicePanel1"
+               width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
+               borderSize="0">
+      <Component type="ScriptComboBox" id="FilterSelector1" x="-1" y="-3" max="10"
+                 parentComponent="FilterSelectorPanel1" width="190" height="26"
+                 items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS&#10;"
+                 fontSize="11"/>
+    </Component>
+    <Component type="ScriptPanel" id="VolumeModPanel1" x="27" y="200" parentComponent="VoicePanel1"
+               width="39" height="15" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="PanModPanel1" x="135" y="200" parentComponent="VoicePanel1"
+               width="24" height="15" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="PitchModPanel1" x="224" y="202" parentComponent="VoicePanel1"
+               width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="FreqModPanel1" x="319" y="201" parentComponent="VoicePanel1"
+               width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptFloatingTile" id="FilterDisplay1" x="312" y="66"
+               parentComponent="VoicePanel1" width="228" height="126" ContentType="FilterDisplay"
+               bgColour="11842740" itemColour="4294967295" itemColour2="2147483647"
+               Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Filter1&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+    <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="24" y="67"
+               parentComponent="VoicePanel1" width="226" height="122" bgColour="4279836699"
+               itemColour="0" itemColour2="13421772"/>
+    <Component type="ScriptSlider" id="VolumeBarVoice1" x="169" y="3" parentComponent="VoicePanel1"
+               width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
+               numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+    <Component type="ScriptPanel" id="TriggerSelectorPanel1" x="613" y="56"
+               parentComponent="VoicePanel1" width="59" height="17" itemColour="0"
+               itemColour2="0" bgColour="16777215" borderSize="0">
+      <Component type="ScriptComboBox" id="TriggerSelector1" x="-1" y="-3" max="2"
+                 parentComponent="TriggerSelectorPanel1" width="82" height="24"
+                 items="ONE SHOT&#10;ENV." fontSize="11"/>
+    </Component>
+    <Component type="ScriptSlider" id="EnvelopeAttack1" x="623" y="127" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Time" max="20000" stepSize="1" suffix=" ms"
+               middlePosition="1000"/>
+    <Component type="ScriptSlider" id="EnvelopeRelease1" x="623" y="199" parentComponent="VoicePanel1"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Time" max="20000" stepSize="1" suffix=" ms"
+               middlePosition="1000"/>
+    <Component type="ScriptPanel" id="EffectsPanel1" x="0" y="265" width="700"
+               borderSize="0" itemColour2="0" itemColour="0" bgColour="16777215"
+               height="155" parentComponent="VoicePanel1">
+      <Component type="ScriptButton" id="ShapeOnOff1" x="4" y="4" parentComponent="EffectsPanel1"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="ShapeLock1" x="149" y="3" parentComponent="EffectsPanel1"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="CurveSelectorPanel1" x="31" y="52" parentComponent="EffectsPanel1"
+                 width="112" height="17" itemColour="0" bgColour="16777215" itemColour2="0"
+                 borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="CurveSelector1" x="-1" y="-4" max="5"
+                   parentComponent="CurveSelectorPanel1" width="133" height="26"
+                   items="LINEAR&#10;ATN&#10;SIN&#10;ASINH&#10;TANCOS&#10;&#10;&#10;"/>
+      </Component>
+      <Component type="ScriptSlider" id="DriveKnob1" x="28" y="102" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" max="60" stepSize="0.1"
+                 suffix=" dB" middlePosition="25" defaultValue="25"/>
+      <Component type="ScriptSlider" id="BiasKnob1" x="107" y="102" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptButton" id="ReverbOnOff1" x="181" y="3" parentComponent="EffectsPanel1"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="ReverbLock1" x="326" y="4" parentComponent="EffectsPanel1"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="ImpulseSelectorPanel1" x="204" y="55"
+                 parentComponent="EffectsPanel1" width="112" height="17" itemColour="0"
+                 bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="ImpulseSelector1" x="-1" y="-4" max="0"
+                   parentComponent="ImpulseSelectorPanel1" width="133" height="26"/>
+      </Component>
+      <Component type="ScriptSlider" id="ReverbWetKnob1" x="208" y="102" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+      <Component type="ScriptSlider" id="ReverbDryKnob1" x="279" y="102" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+      <Component type="ScriptButton" id="DelayOnOff1" x="355" y="2" parentComponent="EffectsPanel1"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="DelayLock1" x="496" y="3" parentComponent="EffectsPanel1"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="DelayTimeKnob1" x="371" y="36" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+                 middlePosition="9"/>
+      <Component type="ScriptSlider" id="DelayFeedbackKnob1" x="453" y="36" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptSlider" id="DelayMixKnob1" x="416" y="102" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptButton" id="CompOnOff1" x="528" y="3" parentComponent="EffectsPanel1"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="CompLock1" x="676" y="2" parentComponent="EffectsPanel1"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="CompThresholdKnob1" x="550" y="36" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18"/>
+      <Component type="ScriptSlider" id="CompRatioKnob1" x="632" y="36" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" min="1" max="32" stepSize="0.1" middlePosition="4"
+                 defaultValue="2"/>
+      <Component type="ScriptSlider" id="CompAttackKnob1" x="549" y="102" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" max="100" stepSize="1" suffix=" ms"
+                 middlePosition="50" defaultValue="50"/>
+      <Component type="ScriptSlider" id="CompReleaseKnob1" x="630" y="101" parentComponent="EffectsPanel1"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" max="300" stepSize="1" suffix=" ms"
+                 middlePosition="150" defaultValue="150"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="VoicePanel2" x="0" y="69" borderSize="0"
+             borderRadius="0" width="700" height="22">
+    <Component type="ScriptImage" id="PanelBackground2" x="0" y="0" parentComponent="VoicePanel2"
+               width="700" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
+    <Component type="ScriptButton" id="MuteButton2" x="4" y="3" parentComponent="VoicePanel2"
+               width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
+    <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text=""
+               saveInPreset="1" width="132" height="22" parentComponent="VoicePanel2"
+               fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"/>
+    <Component type="ScriptButton" id="OpenCloseButton2" x="681" y="3" parentComponent="VoicePanel2"
+               width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
+               radioGroup="1"/>
+    <Component type="ScriptButton" id="PrevSound2" x="22" y="38" width="18"
+               height="18" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1" parentComponent="VoicePanel2"/>
+    <Component type="ScriptLabel" id="SampleMapNameVoice2" x="37" y="33" text=""
+               saveInPreset="1" width="147" height="23" parentComponent="VoicePanel2"
+               fontSize="11"/>
+    <Component type="ScriptButton" id="SampleMapSelectorVoice2" x="38" y="36"
+               width="146" height="19" text="" itemColour="16713479" bgColour="0"
+               itemColour2="327812" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+               parentComponent="VoicePanel2"/>
+    <Component type="ScriptButton" id="NextSound2" x="183" y="37" width="20"
+               height="18" isMomentary="1" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               parentComponent="VoicePanel2"/>
+    <Component type="ScriptSlider" id="VolumeKnob2" x="27" y="217" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+    <Component type="ScriptSlider" id="PanKnob2" x="127" y="216" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Pan.png"
+               showValuePopup="Above" min="-100" max="100" stepSize="1" middlePosition="0"/>
+    <Component type="ScriptSlider" id="PitchKnob2" x="218" y="217" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Pan.png"
+               showValuePopup="Above" min="-12" max="12" middlePosition="0"
+               stepSize="0.1"/>
+    <Component type="ScriptSlider" id="FreqKnob2" x="314" y="217" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Frequency" min="20" max="20000"
+               stepSize="1" suffix=" Hz" middlePosition="400" defaultValue="400"/>
+    <Component type="ScriptSlider" id="ResKnob2" x="377" y="218" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" min="0.3" max="8" stepSize="0.1" middlePosition="1"
+               defaultValue="1"/>
+    <Component type="ScriptSlider" id="LFOSpeedKnob2" x="458" y="217" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+               middlePosition="9" defaultValue="9"/>
+    <Component type="ScriptSlider" id="LFODepthKnob2" x="521" y="217" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
+    <Component type="ScriptPanel" id="FilterSelectorPanel2" x="307" y="34" parentComponent="VoicePanel2"
+               width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
+               borderSize="0">
+      <Component type="ScriptComboBox" id="FilterSelector2" x="-1" y="-3" max="10"
+                 parentComponent="FilterSelectorPanel2" width="190" height="26"
+                 items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS"
+                 fontSize="11"/>
+    </Component>
+    <Component type="ScriptPanel" id="VolumeModPanel2" x="27" y="200" parentComponent="VoicePanel2"
+               width="39" height="15" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="PanModPanel2" x="135" y="200" parentComponent="VoicePanel2"
+               width="24" height="15" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="PitchModPanel2" x="224" y="202" parentComponent="VoicePanel2"
+               width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="FreqModPanel2" x="319" y="201" parentComponent="VoicePanel2"
+               width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptFloatingTile" id="FilterDisplay2" x="312" y="66"
+               parentComponent="VoicePanel2" width="228" height="126" ContentType="FilterDisplay"
+               bgColour="11842740" itemColour="4294967295" itemColour2="2147483647"
+               Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Filter2&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+    <Component type="ScriptAudioWaveform" id="AudioWaveform2" x="24" y="67"
+               parentComponent="VoicePanel2" width="226" height="122" bgColour="4279836699"
+               itemColour="0" itemColour2="13421772"/>
+    <Component type="ScriptSlider" id="VolumeBarVoice2" x="169" y="3" parentComponent="VoicePanel2"
+               width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
+               numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+    <Component type="ScriptPanel" id="TriggerSelectorPanel2" x="613" y="56"
+               parentComponent="VoicePanel2" width="59" height="17" itemColour="0"
+               itemColour2="0" bgColour="16777215" borderSize="0">
+      <Component type="ScriptComboBox" id="TriggerSelector2" x="-1" y="-3" max="2"
+                 parentComponent="TriggerSelectorPanel2" width="82" height="24"
+                 items="ONE SHOT&#10;ENV." fontSize="11"/>
+    </Component>
+    <Component type="ScriptSlider" id="EnvelopeAttack2" x="623" y="127" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Time" max="20000" stepSize="1" suffix=" ms"
+               middlePosition="1000"/>
+    <Component type="ScriptSlider" id="EnvelopeRelease2" x="623" y="199" parentComponent="VoicePanel2"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Time" max="20000" stepSize="1" suffix=" ms"
+               middlePosition="1000"/>
+    <Component type="ScriptPanel" id="EffectsPanel2" x="0" y="265" width="700"
+               borderSize="0" itemColour2="0" itemColour="0" bgColour="16777215"
+               height="155" parentComponent="VoicePanel2">
+      <Component type="ScriptButton" id="ShapeOnOff2" x="4" y="4" parentComponent="EffectsPanel2"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="ShapeLock2" x="149" y="3" parentComponent="EffectsPanel2"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="CurveSelectorPanel2" x="31" y="52" parentComponent="EffectsPanel2"
+                 width="112" height="17" itemColour="0" bgColour="16777215" itemColour2="0"
+                 borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="CurveSelector2" x="-1" y="-4" max="5"
+                   parentComponent="CurveSelectorPanel2" width="133" height="26"
+                   items="LINEAR&#10;ATN&#10;SIN&#10;ASINH&#10;TANCOS&#10;&#10;&#10;"/>
+      </Component>
+      <Component type="ScriptSlider" id="DriveKnob2" x="28" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" max="60" stepSize="0.1"
+                 suffix=" dB" middlePosition="25" defaultValue="25"/>
+      <Component type="ScriptSlider" id="BiasKnob2" x="105" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptButton" id="ReverbOnOff2" x="181" y="3" parentComponent="EffectsPanel2"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="ReverbLock2" x="326" y="4" parentComponent="EffectsPanel2"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="ImpulseSelectorPanel2" x="204" y="55"
+                 parentComponent="EffectsPanel2" width="112" height="17" itemColour="0"
+                 bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="ImpulseSelector2" x="-1" y="-4" max="0"
+                   parentComponent="ImpulseSelectorPanel2" width="133" height="26"/>
+      </Component>
+      <Component type="ScriptSlider" id="ReverbWetKnob2" x="210" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+      <Component type="ScriptSlider" id="ReverbDryKnob2" x="277" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+      <Component type="ScriptButton" id="DelayOnOff2" x="355" y="2" parentComponent="EffectsPanel2"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="DelayLock2" x="496" y="3" parentComponent="EffectsPanel2"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="DelayTimeKnob2" x="373" y="36" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+                 middlePosition="9"/>
+      <Component type="ScriptSlider" id="DelayFeedbackKnob2" x="453" y="36" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptSlider" id="DelayMixKnob2" x="415" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptButton" id="CompOnOff2" x="528" y="3" parentComponent="EffectsPanel2"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="CompLock2" x="676" y="2" parentComponent="EffectsPanel2"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="CompThresholdKnob2" x="550" y="36" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18"/>
+      <Component type="ScriptSlider" id="CompRatioKnob2" x="632" y="36" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" min="1" max="32" stepSize="0.1" middlePosition="4"
+                 defaultValue="2"/>
+      <Component type="ScriptSlider" id="CompAttackKnob2" x="549" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" max="100" stepSize="1" suffix=" ms"
+                 middlePosition="50" defaultValue="50"/>
+      <Component type="ScriptSlider" id="CompReleaseKnob2" x="630" y="102" parentComponent="EffectsPanel2"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" max="300" stepSize="1" suffix=" ms"
+                 middlePosition="150" defaultValue="150"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="VoicePanel3" x="0" y="91" borderSize="0"
+             borderRadius="0" width="700" height="421">
+    <Component type="ScriptImage" id="PanelBackground3" x="0" y="0" parentComponent="VoicePanel3"
+               width="700" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
+    <Component type="ScriptButton" id="MuteButton3" x="4" y="3" parentComponent="VoicePanel3"
+               width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
+    <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text=""
+               saveInPreset="1" width="132" height="22" parentComponent="VoicePanel3"
+               fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"/>
+    <Component type="ScriptButton" id="OpenCloseButton3" x="681" y="3" parentComponent="VoicePanel3"
+               width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
+               radioGroup="1"/>
+    <Component type="ScriptButton" id="PrevSound3" x="22" y="38" width="18"
+               height="18" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1" parentComponent="VoicePanel3"/>
+    <Component type="ScriptLabel" id="SampleMapNameVoice3" x="37" y="33" text=""
+               saveInPreset="1" width="147" height="23" parentComponent="VoicePanel3"
+               fontSize="11"/>
+    <Component type="ScriptButton" id="SampleMapSelectorVoice3" x="38" y="36"
+               width="146" height="19" text="" itemColour="16713479" bgColour="0"
+               itemColour2="327812" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+               parentComponent="VoicePanel3"/>
+    <Component type="ScriptButton" id="NextSound3" x="183" y="37" width="20"
+               height="18" isMomentary="1" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               parentComponent="VoicePanel3"/>
+    <Component type="ScriptSlider" id="VolumeKnob3" x="27" y="217" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+    <Component type="ScriptSlider" id="PanKnob3" x="127" y="216" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Pan.png"
+               showValuePopup="Above" min="-100" max="100" stepSize="1" middlePosition="0"/>
+    <Component type="ScriptSlider" id="PitchKnob3" x="218" y="217" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Pan.png"
+               showValuePopup="Above" min="-12" max="12" middlePosition="0"
+               stepSize="0.1"/>
+    <Component type="ScriptSlider" id="FreqKnob3" x="314" y="217" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Frequency" min="20" max="20000"
+               stepSize="1" suffix=" Hz" middlePosition="400" defaultValue="400"/>
+    <Component type="ScriptSlider" id="ResKnob3" x="377" y="218" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" min="0.3" max="8" stepSize="0.1" middlePosition="1"
+               defaultValue="1"/>
+    <Component type="ScriptSlider" id="LFOSpeedKnob3" x="458" y="217" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+               middlePosition="9" defaultValue="9"/>
+    <Component type="ScriptSlider" id="LFODepthKnob3" x="521" y="217" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
+    <Component type="ScriptPanel" id="FilterSelectorPanel3" x="307" y="34" parentComponent="VoicePanel3"
+               width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
+               borderSize="0">
+      <Component type="ScriptComboBox" id="FilterSelector3" x="-1" y="-3" max="10"
+                 parentComponent="FilterSelectorPanel3" width="190" height="26"
+                 items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS"
+                 fontSize="11"/>
+    </Component>
+    <Component type="ScriptPanel" id="VolumeModPanel3" x="27" y="200" parentComponent="VoicePanel3"
+               width="39" height="15" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="PanModPanel3" x="135" y="200" parentComponent="VoicePanel3"
+               width="24" height="15" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="PitchModPanel3" x="224" y="202" parentComponent="VoicePanel3"
+               width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptPanel" id="FreqModPanel3" x="319" y="201" parentComponent="VoicePanel3"
+               width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+    <Component type="ScriptFloatingTile" id="FilterDisplay3" x="312" y="66"
+               parentComponent="VoicePanel3" width="228" height="126" ContentType="FilterDisplay"
+               bgColour="11842740" itemColour="4294967295" itemColour2="2147483647"
+               Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Filter3&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+    <Component type="ScriptAudioWaveform" id="AudioWaveform3" x="24" y="67"
+               parentComponent="VoicePanel3" width="226" height="122" bgColour="4279836699"
+               itemColour="0" itemColour2="13421772"/>
+    <Component type="ScriptSlider" id="VolumeBarVoice3" x="169" y="3" parentComponent="VoicePanel3"
+               width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
+               numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+    <Component type="ScriptPanel" id="TriggerSelectorPanel3" x="613" y="56"
+               parentComponent="VoicePanel3" width="59" height="17" itemColour="0"
+               itemColour2="0" bgColour="16777215" borderSize="0">
+      <Component type="ScriptComboBox" id="TriggerSelector3" x="-1" y="-3" max="2"
+                 parentComponent="TriggerSelectorPanel3" width="82" height="24"
+                 items="ONE SHOT&#10;ENV." fontSize="11"/>
+    </Component>
+    <Component type="ScriptSlider" id="EnvelopeAttack3" x="623" y="127" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Time" max="20000" stepSize="1" suffix=" ms"
+               middlePosition="1000"/>
+    <Component type="ScriptSlider" id="EnvelopeRelease3" x="623" y="199" parentComponent="VoicePanel3"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Time" max="20000" stepSize="1" suffix=" ms"
+               middlePosition="1000"/>
+    <Component type="ScriptPanel" id="EffectsPanel3" x="0" y="265" width="700"
+               borderSize="0" itemColour2="0" itemColour="0" bgColour="16777215"
+               height="155" parentComponent="VoicePanel3">
+      <Component type="ScriptButton" id="ShapeOnOff3" x="4" y="4" parentComponent="EffectsPanel3"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="ShapeLock3" x="149" y="3" parentComponent="EffectsPanel3"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="CurveSelectorPanel3" x="31" y="52" parentComponent="EffectsPanel3"
+                 width="112" height="17" itemColour="0" bgColour="16777215" itemColour2="0"
+                 borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="CurveSelector3" x="-1" y="-4" max="5"
+                   parentComponent="CurveSelectorPanel3" width="133" height="26"
+                   items="LINEAR&#10;ATN&#10;SIN&#10;ASINH&#10;TANCOS&#10;&#10;&#10;"/>
+      </Component>
+      <Component type="ScriptSlider" id="DriveKnob3" x="28" y="102" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" max="60" stepSize="0.1"
+                 suffix=" dB" middlePosition="25" defaultValue="25"/>
+      <Component type="ScriptSlider" id="BiasKnob3" x="107" y="102" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptButton" id="ReverbOnOff3" x="181" y="3" parentComponent="EffectsPanel3"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="ReverbLock3" x="326" y="4" parentComponent="EffectsPanel3"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="ImpulseSelectorPanel3" x="204" y="55"
+                 parentComponent="EffectsPanel3" width="112" height="17" itemColour="0"
+                 bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="ImpulseSelector3" x="-1" y="-4" max="0"
+                   parentComponent="ImpulseSelectorPanel3" width="133" height="26"/>
+      </Component>
+      <Component type="ScriptSlider" id="ReverbWetKnob3" x="208" y="102" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+      <Component type="ScriptSlider" id="ReverbDryKnob3" x="279" y="102" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+      <Component type="ScriptButton" id="DelayOnOff3" x="355" y="2" parentComponent="EffectsPanel3"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="DelayLock3" x="496" y="3" parentComponent="EffectsPanel3"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="DelayTimeKnob3" x="371" y="36" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+                 middlePosition="9"/>
+      <Component type="ScriptSlider" id="DelayFeedbackKnob3" x="453" y="36" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptSlider" id="DelayMixKnob3" x="416" y="102" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5"/>
+      <Component type="ScriptButton" id="CompOnOff3" x="528" y="3" parentComponent="EffectsPanel3"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptButton" id="CompLock3" x="676" y="2" parentComponent="EffectsPanel3"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="CompThresholdKnob3" x="550" y="36" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                 suffix=" dB" middlePosition="-18"/>
+      <Component type="ScriptSlider" id="CompRatioKnob3" x="632" y="36" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" min="1" max="32" stepSize="0.1" middlePosition="4"
+                 defaultValue="2"/>
+      <Component type="ScriptSlider" id="CompAttackKnob3" x="549" y="102" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" max="100" stepSize="1" suffix=" ms"
+                 middlePosition="50" defaultValue="50"/>
+      <Component type="ScriptSlider" id="CompReleaseKnob3" x="630" y="101" parentComponent="EffectsPanel3"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" max="300" stepSize="1" suffix=" ms"
+                 middlePosition="150" defaultValue="150"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="MasterPanel" x="1" y="512" borderSize="0"
+             itemColour="0" itemColour2="0" bgColour="16777215" width="697"
+             height="83">
+    <Component type="ScriptSlider" id="MasterVolumeKnob" x="174" y="22" parentComponent="MasterPanel"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6"/>
+    <Component type="ScriptSlider" id="MasterIRREKnob" x="358" y="22" parentComponent="MasterPanel"
+               width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+               showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
+    <Component type="ScriptPanel" id="MIDISelectorPanel" x="594" y="34" parentComponent="MasterPanel"
+               width="60" height="15" itemColour="0" bgColour="16777215" itemColour2="0"
+               borderSize="0" textColour="16777215">
+      <Component type="ScriptComboBox" id="MIDISelector" x="-3" y="-6" max="2"
+                 parentComponent="MIDISelectorPanel" width="81" height="26" items="36&#10;48"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="VoiceSelectorPanel" x="202" y="81" width="400"
+             height="420" borderRadius="0" bgColour="4279191583" itemColour="4280100123"
+             itemColour2="4280100123" visible="0">
+    <Component type="ScriptLabel" id="DialogName" x="9" y="4" width="193" height="21"
+               parentComponent="VoiceSelectorPanel" text="LAYER 3 SOUND SOURCES"
+               alignment="left" fontName="Default" fontStyle="Regular" fontSize="14"/>
+    <Component type="ScriptButton" id="DialogDismiss" x="372" y="4" width="20"
+               height="20" parentComponent="VoiceSelectorPanel" filmstripImage="{PROJECT_FOLDER}dialogDismiss.png"/>
+    <Component type="ScriptedViewport" id="VoiceCategories" x="16" y="36" width="170"
+               height="342" parentComponent="VoiceSelectorPanel" items="Acoustic&#10;Classic Machines&#10;Rare Machines&#10;"
+               alignment="left" useList="1" bgColour="2635733530" itemColour="3458683414"
+               itemColour2="4227858431" textColour="4289111718" fontName="Default"
+               fontStyle="Bold" scrollBarThickness="14"/>
+    <Component type="ScriptedViewport" id="VoiceSampleMaps" x="210" y="35" width="172"
+               height="346" parentComponent="VoiceSelectorPanel" alignment="left"
+               useList="1" bgColour="2635733530" itemColour="3458683414" itemColour2="4218587762"
+               textColour="4289111718" scrollBarThickness="12" items="ArcticNoises&#10;ArcticRain&#10;AutumnBeach&#10;BellTraffic&#10;BeneathTheWaves&#10;BetweenTheLevels&#10;Braston&#10;BrokenMessages&#10;CaveSingers&#10;ChurchLawn&#10;CineVoice&#10;CosmicJourneys&#10;DifuseResistor&#10;DigitalTraffic&#10;DistantHearts&#10;DistantLight&#10;DunkirkBeach&#10;EdgeOfTheSea&#10;FreeFlying&#10;FrenchBeach&#10;Goliath&#10;GritBrass&#10;Headlights&#10;HeroWorship"/>
+    <Component type="ScriptButton" id="VoiceFavouritesButton" x="135" y="392"
+               parentComponent="VoiceSelectorPanel" filmstripImage="{PROJECT_FOLDER}favouritesButton.png"
+               width="144" height="22"/>
+  </Component>
+</ContentProperties>
