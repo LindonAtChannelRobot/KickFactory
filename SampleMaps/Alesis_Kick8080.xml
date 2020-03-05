@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<samplemap ID="Alesis_Kick8080" RRGroupAmount="1" MicPositions=";" SaveMode="2">
+  <sample Root="36" LoKey="36" HiKey="36" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Alesis_Kick8080.wav" Duplicate="0"
+          MonolithOffset="0" MonolithLength="24576" SampleRate="48000"/>
+</samplemap>

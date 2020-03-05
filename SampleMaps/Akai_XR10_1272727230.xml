@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<samplemap ID="Akai_XR10_1272727230" RRGroupAmount="1" MicPositions=";"
+           SaveMode="2">
+  <sample Root="36" LoKey="36" HiKey="36" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Akai_XR10_1272727230.wav" Duplicate="0"
+          MonolithOffset="0" MonolithLength="12288" SampleRate="44100"/>
+</samplemap>

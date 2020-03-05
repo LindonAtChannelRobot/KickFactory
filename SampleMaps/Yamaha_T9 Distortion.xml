@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<samplemap ID="Yamaha_T9 Distortion" RRGroupAmount="1" MicPositions=";"
+           SaveMode="2">
+  <sample Root="36" LoKey="36" HiKey="36" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Yamaha_T9 Distortion.wav" Duplicate="0"
+          MonolithOffset="0" MonolithLength="40960" SampleRate="44100"/>
+</samplemap>

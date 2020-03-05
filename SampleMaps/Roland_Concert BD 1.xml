@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<samplemap ID="Roland_Concert BD 1" RRGroupAmount="1" MicPositions=";" SaveMode="2">
+  <sample Root="36" LoKey="36" HiKey="36" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Roland_Concert BD 1.wav" Duplicate="0"
+          MonolithOffset="0" MonolithLength="167936" SampleRate="44100"/>
+</samplemap>
