@@ -144,6 +144,7 @@ function onVolumeModPanel(event)
         targetVelocity = TheGainVelocities[this.data.VoiceNum];
         targetEnvelope = TheGainEnvelopes[this.data.VoiceNum];
         targetLFO = TheGainLFOs[this.data.VoiceNum];
+        targetType = 1; //1 = gain, 2 = Pitch, 3 = Freq
         targetVoice = this.data.VoiceNum;
         //set up the knobs to show the correct values...
         VELVelocityOnOff.setValue(1 - targetVelocity.isBypassed());
@@ -159,6 +160,11 @@ function onVolumeModPanel(event)
         VELLFODepthKnob.setValue(targetLFO.getIntensity());
         VELLFOSmoothKnob.setValue(targetLFO.getAttribute(targetLFO.SmoothingTime));
         //
+        for (i = 0; i < NUM_VOICES; i++)
+        {
+            SampleMapSelectors[i].setValue(0);
+        };
+        VoiceSelectorPanel.showControl(false);
         VELPanel.showControl(true);
     };
 };
@@ -177,6 +183,7 @@ function onFreqModPanel(event)
         targetEnvelope = TheFreqEnvelopes[this.data.VoiceNum];
         targetLFO = TheFreqLFOs[this.data.VoiceNum];
         targetVoice = this.data.VoiceNum;
+        targetType = 3; //1 = gain, 2 = Pitch, 3 = Freq
         //set up the knobs to show the correct values...
         VELVelocityOnOff.setValue(1 - targetVelocity.isBypassed());
         VELVelocityDepthKnob.setValue(targetVelocity.getIntensity());
@@ -208,6 +215,7 @@ function onPitchModPanel(event)
         targetEnvelope = ThePitchEnvelopes[this.data.VoiceNum];
         targetLFO = ThePitchLFOs[this.data.VoiceNum];
         targetVoice = this.data.VoiceNum;
+        targetType = 2; //1 = gain, 2 = Pitch, 3 = Freq
         //set up the knobs to show the correct values...
         VELVelocityOnOff.setValue(1 - targetVelocity.isBypassed());
         VELVelocityDepthKnob.setValue(targetVelocity.getIntensity());
@@ -290,7 +298,7 @@ function loadVoice(voiceNum,selectedCategory,selectedVoice)
     //Console.print("in load voice:" + trimmedName);
     
 
-    SampleMapNameLabels[voiceNum].set("text",trimmedName);
+    SampleMapNames[voiceNum].set("text",trimmedName);
     loadVoiceByName(voiceNum, trimmedName);
     // TheSamplers[voiceNum].asSampler().loadSampleMap(trimmedName);
     
@@ -416,6 +424,8 @@ var targetVelocity;
 var targetEnvelope;
 var targetLFO;
 var targetVoice;
+var targetType;
+var currentSelectingVoice;
 
 // UI widgets 
 
@@ -520,6 +530,7 @@ const var VELLFOTable = Content.getComponent("VELLFOTable");
 const var VELVelocityOnOff = Content.getComponent("VELVelocityOnOff");
 const var VELVelocityDepthKnob = Content.getComponent("VELVelocityDepthKnob");
 const var VELEnvelopeOnOff = Content.getComponent("VELEnvelopeOnOff");
+const var VELEnvelopeLock = Content.getComponent("VELEnvelopeLock");
 const var VELEnvelopeAmountKnob = Content.getComponent("VELEnvelopeAmountKnob");
 const var VELEnvelopeAttackKnob = Content.getComponent("VELEnvelopeAttackKnob");
 const var VELEnvelopeDecayKnob = Content.getComponent("VELEnvelopeDecayKnob");
@@ -540,7 +551,7 @@ const var DialogName = Content.getComponent("DialogName");
 
 // MAP Management
 
-const var CAT_COUNT = 17;
+const var CAT_COUNT = 16;
 var Maps = [];
 var Array808 = ["808_Kick01","808_Kick02","808_Kick03","808_Kick04","808_Kick05","808_Kick06","808_Kick07","808_Kick08","808_Kick09","808_Kick10","808_Kick11","808_Kick12","808_Kick13","808_Kick14","808_Kick15","808_Kick16"];
 var Array909 = ["909_Bd01","909_Bd02","909_Bd03","909_Bd04","909_Bd05","909_Bd06","909_Bd07","909_Bd08","909_Bd09","909_Bd10","909_Bd11","909_Bd12","909_Bd13","909_Bd14","909_Bd15","909_Bd16","909_Bd17","909_Bd18","909_Bd19","909_Bd20","909_Bd21","909_Bd22","909_Bd23","909_Bd24","909_Bd25","909_Bd26","909_Bd27","909_Bd28","909_Bd29","909_Bd30","909_BDRUM1","909_BDRUM10","909_BDRUM11","909_BDRUM12","909_BDRUM13","909_BDRUM14","909_BDRUM15","909_BDRUM16","909_BDRUM17","909_BDRUM2","909_BDRUM3","909_BDRUM4","909_BDRUM5","909_BDRUM6","909_BDRUM7","909_BDRUM8","909_BDRUM9","909_BT0A0A7","909_BT0A0D0","909_BT0A0D3","909_BT0A0DA","909_BT0AAD0","909_BT0AADA","909_BT3A0D0","909_BT3A0D3","909_BT3A0D7","909_BT3A0DA","909_BT3AAD0","909_BT3AADA","909_BT7A0D0","909_BT7A0D3","909_BT7A0D7","909_BT7A0DA","909_BT7AAD0","909_BT7AADA","909_BTAA0D0","909_BTAA0D3","909_BTAA0D7","909_BTAA0DA","909_BTAAAD0","909_BTAAADA"];
@@ -711,6 +722,8 @@ for (idx = 0; idx < NUM_VOICES; idx++)
 
 inline function onPanelExpander(component, value)
 {
+    VoiceSelectorPanel.showControl(false);
+    VELPanel.showControl(false);
 	setVoicePositions();
 };
 
@@ -748,16 +761,170 @@ inline function onSampleMapSelector(component, value)
     {
         if (component == SampleMapSelectors[i])
         {
-            //currentSelectingVoice = i;
+            currentSelectingVoice = i;
             DialogName.set("text","VOICE " + (i + 1) + " DRUM SOUNDS");
             VoiceSelectorPanel.showControl(value);
-            //VoiceSampleMaps.setValue(VoiceSampleMaps.getValue());
+            VoiceSampleMaps.setValue(VoiceSampleMaps.getValue());
         }else{
         // not the selected voice make sure this selector is OFF
             SampleMapSelectors[i].setValue(0);
         };
     };
+    VELPanel.showControl(false);
 };
+
+
+inline function onPrevSound(component, value)
+{
+    var CatNum = -1;
+    var SoundNum = -1;
+    if (value)
+    {
+        for (i=0;i < NUM_VOICES;i++)
+        {
+            if (component == PrevSounds[i])
+            {
+
+                // Ok look thru the maps to find the current voice name...
+                for (cati=0;cati < CAT_COUNT ;cati++)
+                {
+                    if (Maps[cati].indexOf(SampleMapNames[i].getValue()) > -1)
+                    {
+                        CatNum = cati;
+                        SoundNum = Maps[cati].indexOf(SampleMapNames[i].getValue());
+                        //Console.print("found the category:" + cati);
+                        //Console.print("found the voice:" + Maps[cati].indexOf(SampleMapNameLabels[i].getValue()));
+                    };
+                };
+                if (CatNum == -1)
+                {
+                    // didnt find the name so add a '*' to it and try again
+                    for (cati=0;cati < CAT_COUNT ;cati++)
+                    {
+                        if (Maps[cati].indexOf('(*)' +SampleMapNames[i].getValue()) > -1)
+                        {
+                            CatNum = cati;
+                            SoundNum = Maps[cati].indexOf('(*)' + SampleMapNames[i].getValue());
+                            //Console.print("found the category:" + cati);
+                            //Console.print("found the starred voice:" + Maps[cati].indexOf('(*)' + SampleMapNameLabels[i].getValue()));
+                        };
+                    };
+                };
+                Console.print("category is:" + CatNum);
+                Console.print("voice position is:" + SoundNum);
+                // OK we should have hte category number and the sound number so calc the previous one...
+                if (SoundNum - 1 < 0)
+                {
+                    //we are at the start of the category - go get the previous category
+                    if (CatNum -1 < 0)
+                    {
+                      // we are at the first category load the last category..
+                      CatNum = CAT_COUNT - 1;
+                    }else{
+                        // we are fine we can go back one category
+                        CatNum = CatNum -1;
+                    };
+                    // and load the last sound in it...
+                    SoundNum = Maps[CatNum].length -1;
+                }else{
+                    // we are fine in the category where we are get the previous sound
+                    SoundNum = SoundNum - 1;
+                };
+                // ok go load the sound
+                Console.print("loading a sound - using category:"+ CatNum);
+                Console.print("loading a sound - and sound number:"+ SoundNum);
+                
+                
+                loadVoice(i,CatNum, SoundNum);
+            };
+
+        };
+    };
+}
+
+
+
+inline function onNextSound(component, value)
+{
+    var CatNum = -1;
+    var SoundNum = -1;
+    Console.print("WWWWWWWWWWWWWWWW");
+    if (value)
+    {
+
+        for (i=0;i < NUM_VOICES;i++)
+        {
+            if (component == NextSounds[i])                
+            {                
+                if(SampleMapNames[i].getValue() == "Empty")
+                {
+                   loadVoice(i,0, 0);
+                }else
+                {
+                    //Console.print(SampleMapNameLabels[i].getValue());
+                    // Ok look thru the maps to find the current voice name...
+                    for (cati=0;cati < CAT_COUNT ;cati++)
+                    {
+                        if (Maps[cati].indexOf(SampleMapNames[i].getValue()) > -1)
+                        {
+                            CatNum = cati;
+                            SoundNum = Maps[cati].indexOf(SampleMapNames[i].getValue());
+                        };
+                    };
+                    if (CatNum == -1)
+                    {
+                        // didnt find the name so add a '*' to it and try again
+                        for (cati=0;cati < CAT_COUNT ;cati++)
+                        {
+                            if (Maps[cati].indexOf('(*)' +SampleMapNames[i].getValue()) > -1)
+                            {
+                                CatNum = cati;
+                                SoundNum = Maps[cati].indexOf('(*)' + SampleMapNames[i].getValue());
+                            };
+                        };
+                    };
+
+                    // OK we should have hte category number and the sound number so calc the next  one...
+                    if (SoundNum + 1 >= Maps[CatNum].length)
+                    {
+                        //we are at the end of this category - go get the next category
+                        if (CatNum + 1 >= Maps.length)
+                        {
+                          // we are at the end of all the categories load the first category..
+                          CatNum = 0;
+                        }else{
+                            // we are fine we can go fwd one category
+                            CatNum = CatNum + 1;
+                        };
+                        // and load the first sound in it...
+                        SoundNum = 0;
+                    }else{
+                        // we are fine in the category where we are get the previous sound
+                        SoundNum = SoundNum + 1;
+                    };
+                    // ok go load the soun
+                
+                    loadVoice(i,CatNum, SoundNum);
+                };
+            };
+        };
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 inline function onVolumeKnob(component, value)
 {
@@ -1553,45 +1720,257 @@ Content.getComponent("VELVelocityDepthKnob").setControlCallback(onVELVelocityDep
 
 inline function onVELEnvelopeOnOffControl(component, value)
 {
-    targetEnvelope.setBypassed(1 - value);
-	VolumeModPanels[targetVoice].repaint();
-	PitchModPanels[targetVoice].repaint();
-	FreqModPanels[targetVoice].repaint();
+    local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setBypassed(1 - value);
+                    VolumeModPanels[dx].repaint();
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setBypassed(1 - value);
+                    PitchModPanels[dx].repaint();
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setBypassed(1 - value);
+                    FreqModPanels[dx].repaint();
+                    break;
+            };
+        };
+    }else{
+        targetEnvelope.setBypassed(1 - value);
+        VolumeModPanels[targetVoice].repaint();
+        PitchModPanels[targetVoice].repaint();
+        FreqModPanels[targetVoice].repaint();
+    };
 };
 Content.getComponent("VELEnvelopeOnOff").setControlCallback(onVELEnvelopeOnOffControl);
 
 
+
+inline function onVELEnvelopeLockControl(component, value)
+{
+	//
+	reg i;
+
+    
+    for (idx=0;idx < NUM_VOICES;idx++)
+    {
+        CompLocks[idx].setValue(value); //set the shape lock either all on or all off
+    };
+    
+    if (value == 1) // we are setting them all ON...look for this one
+    {
+        for (i=0;i < NUM_VOICES;i++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[i].setBypassed(1 - VELEnvelopeOnOff.getValue());
+                    TheGainEnvelopes[i].setIntensity(VELEnvelopeAmountKnob.getValue());
+                    TheGainEnvelopes[i].setAttribute(VELEnvelopeAttackKnob.Attack, value);
+                    TheGainEnvelopes[i].setAttribute(VELEnvelopeHoldKnob.Hold, value);
+                    TheGainEnvelopes[i].setAttribute(VELEnvelopeDecayKnob.Decay, value);
+                    TheGainEnvelopes[i].setAttribute(VELEnvelopeSustainKnob.Sustain, value);
+                    TheGainEnvelopes[i].setAttribute(VELEnvelopeReleaseKnob.Release, value);
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[i].setBypassed(1 - VELEnvelopeOnOff.getValue());
+                    ThePitchEnvelopes[i].setIntensity(VELEnvelopeAmountKnob.getValue());
+                    ThePitchEnvelopes[i].setAttribute(VELEnvelopeAttackKnob.Attack, value);
+                    ThePitchEnvelopes[i].setAttribute(VELEnvelopeHoldKnob.Hold, value);
+                    ThePitchEnvelopes[i].setAttribute(VELEnvelopeDecayKnob.Decay, value);
+                    ThePitchEnvelopes[i].setAttribute(VELEnvelopeSustainKnob.Sustain, value);
+                    ThePitchEnvelopes[i].setAttribute(VELEnvelopeReleaseKnob.Release, value);
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[i].setBypassed(1 - VELEnvelopeOnOff.getValue());
+                    TheFreqEnvelopes[i].setIntensity(VELEnvelopeAmountKnob.getValue());
+                    TheFreqEnvelopes[i].setAttribute(VELEnvelopeAttackKnob.Attack, value);
+                    TheFreqEnvelopes[i].setAttribute(VELEnvelopeHoldKnob.Hold, value);
+                    TheFreqEnvelopes[i].setAttribute(VELEnvelopeDecayKnob.Decay, value);
+                    TheFreqEnvelopes[i].setAttribute(VELEnvelopeSustainKnob.Sustain, value);
+                    TheFreqEnvelopes[i].setAttribute(VELEnvelopeReleaseKnob.Release, value);
+            };
+        };
+    };
+    
+};
+
+Content.getComponent("VELEnvelopeLock").setControlCallback(onVELEnvelopeLockControl);
+
+
+
 inline function onVELEnvelopeAmountKnobControl(component, value)
 {
-	targetEnvelope.setIntensity(value);
+    local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setIntensity(value);
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setIntensity(value);
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setIntensity(value);
+                    break;
+            };
+        };
+    }else{
+        if (targetType == 2) // pitch so we need the amount to be a multiple of 12
+        {
+            targetEnvelope.setIntensity(value *12);
+        }else{
+            targetEnvelope.setIntensity(value);
+        };
+    };
 };
 Content.getComponent("VELEnvelopeAmountKnob").setControlCallback(onVELEnvelopeAmountKnobControl);
 
 
 inline function onVELEnvelopeAttackKnobControl(component, value)
 {
-	targetEnvelope.setAttribute(targetEnvelope.Attack, value);
+    local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setAttribute(targetEnvelope.Attack, value);
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setAttribute(targetEnvelope.Attack, value);
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setAttribute(targetEnvelope.Attack, value);
+                    break;
+            };
+        };
+    }else{
+	    targetEnvelope.setAttribute(targetEnvelope.Attack, value);
+    };
 };
 Content.getComponent("VELEnvelopeAttackKnob").setControlCallback(onVELEnvelopeAttackKnobControl);
 
 
+
+
+
+inline function onVELEnvelopeHoldKnobControl(component, value)
+{
+    local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setAttribute(targetEnvelope.Hold, value);
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setAttribute(targetEnvelope.Hold, value);
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setAttribute(targetEnvelope.Hold, value);
+                    break;
+            };
+        };
+    }else{
+	    targetEnvelope.setAttribute(targetEnvelope.Hold, value);
+    };
+};
+
+Content.getComponent("VELEnvelopeHoldKnob").setControlCallback(onVELEnvelopeHoldKnobControl);
+
+
+
 inline function onVELEnvelopeDecayKnobControl(component, value)
 {
-	targetEnvelope.setAttribute(targetEnvelope.Decay, value);
+    
+    local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setAttribute(targetEnvelope.Decay, value);
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setAttribute(targetEnvelope.Decay, value);
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setAttribute(targetEnvelope.Decay, value);
+                    break;
+            };
+        };
+    }else{
+	    targetEnvelope.setAttribute(targetEnvelope.Decay, value);
+    };
 };
 Content.getComponent("VELEnvelopeDecayKnob").setControlCallback(onVELEnvelopeDecayKnobControl);
 
 
 inline function onVELEnvelopeSustainKnobControl(component, value)
 {
-	targetEnvelope.setAttribute(targetEnvelope.Sustain, value);
+    local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setAttribute(targetEnvelope.Sustain, value);
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setAttribute(targetEnvelope.Sustain, value);
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setAttribute(targetEnvelope.Sustain, value);
+                    break;
+            };
+        };
+    }else{ 
+	    targetEnvelope.setAttribute(targetEnvelope.Sustain, value);
+    };
 };
 Content.getComponent("VELEnvelopeSustainKnob").setControlCallback(onVELEnvelopeSustainKnobControl);
 
 
 inline function onVELEnvelopeReleaseKnobControl(component, value)
 {
-	targetEnvelope.setAttribute(targetEnvelope.Release, value);
+	local lock = VELEnvelopeLock.getValue();
+    local dx;
+    if (lock == 1)
+    {
+        for(dx = 0;dx < NUM_VOICES; dx++)
+        {
+            switch (targetType){
+                case 1:  //Gain modulating
+                    TheGainEnvelopes[dx].setAttribute(targetEnvelope.Release, value);
+                    break;
+                case 2:  //Pitch modulating
+                    ThePitchEnvelopes[dx].setAttribute(targetEnvelope.Release, value);
+                    break;
+                case 3:  //Freq modulating
+                    TheFreqEnvelopes[dx].setAttribute(targetEnvelope.Release, value);
+                    break;
+            };
+        };
+    }else{ 
+	    targetEnvelope.setAttribute(targetEnvelope.Release, value);
+    };
 };
 Content.getComponent("VELEnvelopeReleaseKnob").setControlCallback(onVELEnvelopeReleaseKnobControl);
 
@@ -1656,6 +2035,46 @@ inline function onVoiceCategoriesControl(component, value)
 
 Content.getComponent("VoiceCategories").setControlCallback(onVoiceCategoriesControl);
 
+
+const var VoiceCategories = Content.getComponent("VoiceCategories");
+const var VoiceFavouritesButton = Content.getComponent("VoiceFavouritesButton");
+
+
+inline function onVoiceSampleMapsControl(component, value)
+{
+    //set voice
+    local selectedName;
+    local trimmedName;
+    local stateOfPlay;
+    local buttonState = 0;
+    for (i=0;i < NUM_VOICES;i++)
+    {
+        buttonState = buttonState + SampleMapSelectors[i].getValue();
+    };
+
+    if (buttonState > 0)   // in end user inspired activity
+    {
+        selectedName = Maps[VoiceCategories.getValue()][value];
+        if (selectedName.substring(0,3) == "(*)"){
+            Console.print("found a favourite");
+            VoiceFavouritesButton.setValue(1);
+            trimmedName = selectedName.substring(3,selectedName.length);
+        }else{
+            VoiceFavouritesButton.setValue(0);
+            trimmedName = selectedName;
+        };
+        //Console.print("XXXXXXXXXXX selected:" + trimmedName);
+    
+
+        SampleMapNames[currentSelectingVoice].set("text",trimmedName);
+        VoiceBarNames[currentSelectingVoice].set("text",trimmedName);
+        SampleMapNames[currentSelectingVoice].changed();
+        TheSamplers[currentSelectingVoice].asSampler().loadSampleMap(trimmedName);
+    };
+    
+};
+
+Content.getComponent("VoiceSampleMaps").setControlCallback(onVoiceSampleMapsControl);
 
 function onNoteOn()
 {
