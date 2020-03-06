@@ -848,7 +848,6 @@ inline function onNextSound(component, value)
 {
     var CatNum = -1;
     var SoundNum = -1;
-    Console.print("WWWWWWWWWWWWWWWW");
     if (value)
     {
 
@@ -1670,7 +1669,7 @@ inline function onCompRelease(component, value)
 
 
 
-// The UI call backs           ---   MASTER CALL BACKS   ---
+//                ---   MASTER CALL BACKS   ---
 
 inline function onMasterVolumeKnobControl(component, value)
 {
@@ -1693,8 +1692,24 @@ inline function onMasterIRREKnobControl(component, value)
 
 Content.getComponent("MasterIRREKnob").setControlCallback(onMasterIRREKnobControl);
 
+const var NoteRemapper = Synth.getMidiProcessor("NoteRemapper");
+inline function onMIDISelectorControl(component, value)
+{
+	if (value == 1)
+    {
+	    NoteRemapper.setAttribute(0,36);
+    }else{
+        NoteRemapper.setAttribute(0,48);
+    };
+};
 
-// the VEL dialog panel call backs
+Content.getComponent("MIDISelector").setControlCallback(onMIDISelectorControl);
+
+
+
+
+
+// =========================== the VEL dialog panel call backs  ==============
 inline function onVELPanelCloser(component, value)
 {
   VELPanel.showControl(false);
