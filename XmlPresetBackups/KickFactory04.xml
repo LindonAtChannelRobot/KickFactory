@@ -133,8 +133,8 @@
             <Control type="ScriptSlider" id="CompAttackKnob3" value="14"/>
             <Control type="ScriptSlider" id="CompReleaseKnob3" value="222"/>
             <Control type="ScriptButton" id="ShapeOnOff4" value="0"/>
-            <Control type="ScriptButton" id="DialogDismiss" value="1"/>
-            <Control type="ScriptedViewport" id="VoiceCategories" value="5"/>
+            <Control type="ScriptButton" id="DialogDismiss" value="0"/>
+            <Control type="ScriptedViewport" id="VoiceCategories" value="3"/>
             <Control type="ScriptedViewport" id="VoiceSampleMaps" value="4"/>
             <Control type="ScriptButton" id="VoiceFavouritesButton" value="0"/>
             <Control type="ScriptButton" id="VELPanelCloser" value="0"/>
@@ -161,7 +161,7 @@
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
-              <Component type="ScriptSlider" id="TargetMIDIValue" x="0" y="0" stepSize="1.0"
+              <Component type="ScriptSlider" id="TargetMIDIValue" x="0" y="0" stepSize="1"
                          max="127" middlePosition="64"/>
             </ContentProperties>
           </UIData>
@@ -895,7 +895,7 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
                 <Processor Type="PolyphonicFilter" ID="Filter3" Bypassed="0" Gain="0.6"
-                           Frequency="1272" Q="0.8" Mode="6" Quality="0" BipolarIntensity="0.03">
+                           Frequency="1272" Q="0.8" Mode="6" Quality="367" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                Intensity="1">

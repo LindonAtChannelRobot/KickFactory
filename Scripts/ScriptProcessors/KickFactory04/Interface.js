@@ -413,7 +413,7 @@ inline function setIRs(voice,irnum)
 // CONSTANTS
 
 const var NUM_VOICES = 3;
-const var PANELSTARTY = 47;
+const var PANELSTARTY = 0;
 const var CLOSEDPANELSIZE = 22;
 const var OPENPANELSIZE = 421;
 const var MOD_OFF_COLOUR = 0xFF666666;
@@ -517,7 +517,11 @@ var TheGains = [];
 const var MasterGain = Synth.getEffect("MasterGain");
 
 
-// the dialog panels and their widgets
+// the panels and their widgets
+const var AllVoicesPanel = Content.getComponent("AllVoicesPanel");
+const var SequencerPanel = Content.getComponent("SequencerPanel");
+
+
 const var VELPanel = Content.getComponent("VELPanel");
 const var VELPanelCloser = Content.getComponent("VELPanelCloser");
 VELPanelCloser.setControlCallback(onVELPanelCloser);
