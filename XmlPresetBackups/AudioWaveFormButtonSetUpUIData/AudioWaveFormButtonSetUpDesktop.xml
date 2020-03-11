@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="104" y="55"
+             processorId="Sampler1" sampleIndex="0" showFileName="0"/>
+  <Component type="ScriptComboBox" id="ComboBox1" x="101" y="188" width="198"
+             items="{PROJECT_FOLDER}808_Kick02.wav"/>
+  <Component type="ScriptButton" id="Refresh" x="100" y="229" width="200"/>
+  <Component type="ScriptButton" id="Button1" x="102" y="274"/>
+</ContentProperties>

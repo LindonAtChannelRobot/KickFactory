@@ -14,38 +14,38 @@
             <Control type="ScriptButton" id="PresetsForwardsButton" value="0"/>
             <Control type="ScriptButton" id="Settings" value="0"/>
             <Control type="ScriptButton" id="MuteButton1" value="0"/>
-            <Control type="ScriptLabel" id="DisplayNameVoice1" value="Tama_Long 1"/>
+            <Control type="ScriptLabel" id="DisplayNameVoice1" value="Elektron_Kicks 0007"/>
             <Control type="ScriptButton" id="OpenCloseButton1" value="1"/>
             <Control type="ScriptButton" id="PrevSound1" value="0"/>
-            <Control type="ScriptLabel" id="SampleMapNameVoice1" value="Roland_Room3"/>
+            <Control type="ScriptLabel" id="SampleMapNameVoice1" value="Elektron_Kicks 0007"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice1" value="0"/>
             <Control type="ScriptButton" id="NextSound1" value="0"/>
-            <Control type="ScriptSlider" id="VolumeKnob1" value="-5.7"/>
-            <Control type="ScriptSlider" id="PanKnob1" value="-2"/>
-            <Control type="ScriptSlider" id="PitchKnob1" value="-1.2"/>
+            <Control type="ScriptSlider" id="VolumeKnob1" value="-5.8"/>
+            <Control type="ScriptSlider" id="PanKnob1" value="8"/>
+            <Control type="ScriptSlider" id="PitchKnob1" value="0.4"/>
             <Control type="ScriptButton" id="FilterOnOff1" value="1"/>
-            <Control type="ScriptSlider" id="FreqKnob1" value="1831"/>
-            <Control type="ScriptSlider" id="ResKnob1" value="1"/>
+            <Control type="ScriptSlider" id="FreqKnob1" value="617"/>
+            <Control type="ScriptSlider" id="ResKnob1" value="1.2"/>
             <Control type="ScriptButton" id="FilterLock1" value="0"/>
             <Control type="ScriptComboBox" id="FilterSelector1" value="5"/>
             <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0"/>
-            <Control type="ScriptSlider" id="VolumeBarVoice1" value="-5.7"/>
+            <Control type="ScriptSlider" id="VolumeBarVoice1" value="-5.8"/>
             <Control type="ScriptComboBox" id="TriggerSelector1" value="1"/>
-            <Control type="ScriptButton" id="ShapeOnOff1" value="0"/>
+            <Control type="ScriptButton" id="ShapeOnOff1" value="1"/>
             <Control type="ScriptButton" id="ShapeLock1" value="0"/>
-            <Control type="ScriptComboBox" id="CurveSelector1" value="3"/>
-            <Control type="ScriptSlider" id="DriveKnob1" value="18.6"/>
+            <Control type="ScriptComboBox" id="CurveSelector1" value="2"/>
+            <Control type="ScriptSlider" id="DriveKnob1" value="19.3"/>
             <Control type="ScriptSlider" id="BiasKnob1" value="0.14"/>
             <Control type="ScriptButton" id="ReverbOnOff1" value="0"/>
-            <Control type="ScriptButton" id="ReverbLock1" value="1"/>
-            <Control type="ScriptComboBox" id="ImpulseSelector1" value="1"/>
-            <Control type="ScriptSlider" id="ReverbWetKnob1" value="-24.7"/>
-            <Control type="ScriptSlider" id="ReverbDryKnob1" value="-15.1"/>
+            <Control type="ScriptButton" id="ReverbLock1" value="0"/>
+            <Control type="ScriptComboBox" id="ImpulseSelector1" value="7"/>
+            <Control type="ScriptSlider" id="ReverbWetKnob1" value="-28.4"/>
+            <Control type="ScriptSlider" id="ReverbDryKnob1" value="-10.4"/>
             <Control type="ScriptButton" id="DelayOnOff1" value="0"/>
             <Control type="ScriptButton" id="DelayLock1" value="1"/>
-            <Control type="ScriptSlider" id="DelayTimeKnob1" value="6"/>
-            <Control type="ScriptSlider" id="DelayFeedbackKnob1" value="0.66"/>
-            <Control type="ScriptSlider" id="DelayMixKnob1" value="0.47"/>
+            <Control type="ScriptSlider" id="DelayTimeKnob1" value="14"/>
+            <Control type="ScriptSlider" id="DelayFeedbackKnob1" value="0.33"/>
+            <Control type="ScriptSlider" id="DelayMixKnob1" value="0.21"/>
             <Control type="ScriptButton" id="CompOnOff1" value="0"/>
             <Control type="ScriptButton" id="CompLock1" value="1"/>
             <Control type="ScriptSlider" id="CompThresholdKnob1" value="-2.1"/>
@@ -53,13 +53,13 @@
             <Control type="ScriptSlider" id="CompAttackKnob1" value="14"/>
             <Control type="ScriptSlider" id="CompReleaseKnob1" value="222"/>
             <Control type="ScriptButton" id="MuteButton2" value="0"/>
-            <Control type="ScriptLabel" id="DisplayNameVoice2" value="Alesis_Kick1313"/>
+            <Control type="ScriptLabel" id="DisplayNameVoice2" value="Alesis_Kick2828"/>
             <Control type="ScriptButton" id="OpenCloseButton2" value="0"/>
             <Control type="ScriptButton" id="PrevSound2" value="0"/>
-            <Control type="ScriptLabel" id="SampleMapNameVoice2" value="Alesis_Kick2222"/>
+            <Control type="ScriptLabel" id="SampleMapNameVoice2" value="Alesis_Kick2828"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice2" value="0"/>
             <Control type="ScriptButton" id="NextSound2" value="0"/>
-            <Control type="ScriptSlider" id="VolumeKnob2" value="1.2"/>
+            <Control type="ScriptSlider" id="VolumeKnob2" value="-7.4"/>
             <Control type="ScriptSlider" id="PanKnob2" value="0"/>
             <Control type="ScriptSlider" id="PitchKnob2" value="-0.2"/>
             <Control type="ScriptSlider" id="FreqKnob2" value="7053"/>
@@ -68,23 +68,23 @@
             <Control type="ScriptButton" id="FilterOnOff2" value="1"/>
             <Control type="ScriptComboBox" id="FilterSelector2" value="10"/>
             <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0"/>
-            <Control type="ScriptSlider" id="VolumeBarVoice2" value="1.2"/>
+            <Control type="ScriptSlider" id="VolumeBarVoice2" value="-7.4"/>
             <Control type="ScriptComboBox" id="TriggerSelector2" value="2"/>
-            <Control type="ScriptButton" id="ShapeOnOff2" value="0"/>
+            <Control type="ScriptButton" id="ShapeOnOff2" value="1"/>
             <Control type="ScriptButton" id="ShapeLock2" value="0"/>
             <Control type="ScriptComboBox" id="CurveSelector2" value="3"/>
             <Control type="ScriptSlider" id="DriveKnob2" value="14.6"/>
             <Control type="ScriptSlider" id="BiasKnob2" value="0.23"/>
             <Control type="ScriptButton" id="ReverbOnOff2" value="0"/>
-            <Control type="ScriptButton" id="ReverbLock2" value="1"/>
-            <Control type="ScriptComboBox" id="ImpulseSelector2" value="1"/>
-            <Control type="ScriptSlider" id="ReverbWetKnob2" value="-24.7"/>
-            <Control type="ScriptSlider" id="ReverbDryKnob2" value="-15.1"/>
+            <Control type="ScriptButton" id="ReverbLock2" value="0"/>
+            <Control type="ScriptComboBox" id="ImpulseSelector2" value="7"/>
+            <Control type="ScriptSlider" id="ReverbWetKnob2" value="-28.4"/>
+            <Control type="ScriptSlider" id="ReverbDryKnob2" value="-10.4"/>
             <Control type="ScriptButton" id="DelayOnOff2" value="0"/>
             <Control type="ScriptButton" id="DelayLock2" value="1"/>
-            <Control type="ScriptSlider" id="DelayTimeKnob2" value="6"/>
-            <Control type="ScriptSlider" id="DelayFeedbackKnob2" value="0.66"/>
-            <Control type="ScriptSlider" id="DelayMixKnob2" value="0.47"/>
+            <Control type="ScriptSlider" id="DelayTimeKnob2" value="14"/>
+            <Control type="ScriptSlider" id="DelayFeedbackKnob2" value="0.33"/>
+            <Control type="ScriptSlider" id="DelayMixKnob2" value="0.21"/>
             <Control type="ScriptButton" id="CompOnOff2" value="0"/>
             <Control type="ScriptButton" id="CompLock2" value="1"/>
             <Control type="ScriptSlider" id="CompThresholdKnob2" value="-2.1"/>
@@ -92,38 +92,38 @@
             <Control type="ScriptSlider" id="CompAttackKnob2" value="14"/>
             <Control type="ScriptSlider" id="CompReleaseKnob2" value="222"/>
             <Control type="ScriptButton" id="MuteButton3" value="0"/>
-            <Control type="ScriptLabel" id="DisplayNameVoice3" value="Tama_Long 2"/>
+            <Control type="ScriptLabel" id="DisplayNameVoice3" value="Elektron_Kicks 0008"/>
             <Control type="ScriptButton" id="OpenCloseButton3" value="0"/>
             <Control type="ScriptButton" id="PrevSound3" value="0"/>
-            <Control type="ScriptLabel" id="SampleMapNameVoice3" value="Var_Coron_01"/>
+            <Control type="ScriptLabel" id="SampleMapNameVoice3" value="Elektron_Kicks 0008"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice3" value="0"/>
             <Control type="ScriptButton" id="NextSound3" value="0"/>
-            <Control type="ScriptSlider" id="VolumeKnob3" value="-5.4"/>
+            <Control type="ScriptSlider" id="VolumeKnob3" value="-2.4"/>
             <Control type="ScriptSlider" id="PanKnob3" value="0"/>
-            <Control type="ScriptSlider" id="PitchKnob3" value="1.78814e-07"/>
-            <Control type="ScriptSlider" id="FreqKnob3" value="1272"/>
+            <Control type="ScriptSlider" id="PitchKnob3" value="-1.1"/>
+            <Control type="ScriptSlider" id="FreqKnob3" value="3483"/>
             <Control type="ScriptSlider" id="ResKnob3" value="0.8"/>
             <Control type="ScriptButton" id="FilterLock3" value="0"/>
             <Control type="ScriptButton" id="FilterOnOff3" value="1"/>
             <Control type="ScriptComboBox" id="FilterSelector3" value="1"/>
             <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0"/>
-            <Control type="ScriptSlider" id="VolumeBarVoice3" value="-5.4"/>
+            <Control type="ScriptSlider" id="VolumeBarVoice3" value="-2.4"/>
             <Control type="ScriptComboBox" id="TriggerSelector3" value="2"/>
             <Control type="ScriptButton" id="ShapeOnOff3" value="0"/>
             <Control type="ScriptButton" id="ShapeLock3" value="0"/>
             <Control type="ScriptComboBox" id="CurveSelector3" value="3"/>
-            <Control type="ScriptSlider" id="DriveKnob3" value="16.7"/>
+            <Control type="ScriptSlider" id="DriveKnob3" value="21.7"/>
             <Control type="ScriptSlider" id="BiasKnob3" value="0.23"/>
             <Control type="ScriptButton" id="ReverbOnOff3" value="0"/>
-            <Control type="ScriptButton" id="ReverbLock3" value="1"/>
-            <Control type="ScriptComboBox" id="ImpulseSelector3" value="1"/>
-            <Control type="ScriptSlider" id="ReverbWetKnob3" value="-24.7"/>
-            <Control type="ScriptSlider" id="ReverbDryKnob3" value="-15.1"/>
+            <Control type="ScriptButton" id="ReverbLock3" value="0"/>
+            <Control type="ScriptComboBox" id="ImpulseSelector3" value="7"/>
+            <Control type="ScriptSlider" id="ReverbWetKnob3" value="-19.2"/>
+            <Control type="ScriptSlider" id="ReverbDryKnob3" value="-10.4"/>
             <Control type="ScriptButton" id="DelayOnOff3" value="0"/>
             <Control type="ScriptButton" id="DelayLock3" value="1"/>
-            <Control type="ScriptSlider" id="DelayTimeKnob3" value="6"/>
-            <Control type="ScriptSlider" id="DelayFeedbackKnob3" value="0.66"/>
-            <Control type="ScriptSlider" id="DelayMixKnob3" value="0.47"/>
+            <Control type="ScriptSlider" id="DelayTimeKnob3" value="14"/>
+            <Control type="ScriptSlider" id="DelayFeedbackKnob3" value="0.33"/>
+            <Control type="ScriptSlider" id="DelayMixKnob3" value="0.21"/>
             <Control type="ScriptButton" id="CompOnOff3" value="0"/>
             <Control type="ScriptButton" id="CompLock3" value="1"/>
             <Control type="ScriptSlider" id="CompThresholdKnob3" value="-2.1"/>
@@ -131,75 +131,82 @@
             <Control type="ScriptSlider" id="CompAttackKnob3" value="14"/>
             <Control type="ScriptSlider" id="CompReleaseKnob3" value="222"/>
             <Control type="ScriptButton" id="ShapeOnOff4" value="0"/>
-            <Control type="ScriptButton" id="DialogDismiss" value="0"/>
-            <Control type="ScriptedViewport" id="VoiceCategories" value="3"/>
-            <Control type="ScriptedViewport" id="VoiceSampleMaps" value="4"/>
+            <Control type="ScriptButton" id="DialogDismiss" value="1"/>
+            <Control type="ScriptedViewport" id="VoiceCategories" value="7"/>
+            <Control type="ScriptedViewport" id="VoiceSampleMaps" value="8"/>
             <Control type="ScriptButton" id="VoiceFavouritesButton" value="0"/>
-            <Control type="ScriptButton" id="VELPanelCloser" value="1"/>
-            <Control type="ScriptTable" id="VELVelocityTable" value="0" data="36...............vOYsUQ+nmmm6C...vO...f+....9C..fnO"/>
+            <Control type="ScriptButton" id="VELPanelCloser" value="0"/>
+            <Control type="ScriptTable" id="VELVelocityTable" value="0" data="36...............vOFCGM+fggg6C...vO...f+....9C...iO"/>
             <Control type="ScriptButton" id="VELEnvelopeLock" value="1"/>
-            <Control type="ScriptTable" id="VELLFOTable" value="0" data="60...............vOjgJa9ftnK7C...ZODSc49DcQ28C..fzOVS7L+....7C...iO...f+.........3O"/>
+            <Control type="ScriptTable" id="VELLFOTable" value="0" data="36...............vO5US79....9C...vO...f+.........vO"/>
+            <Control type="ScriptPanel" id="SequencerPanel" value="JSON[{&quot;stepCount&quot;: 16.0, &quot;swingAmount&quot;: 0.6439361304510385, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 98.0, &quot;velocityValues&quot;: [22.0, 113.0, 94.0, 69.0, 68.0, 37.0, 120.0, 12.0, 97.0, 1.0, 23.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 46.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 154.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 60.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 120.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [83.0, 69.0, 55.0, 10.0, 83.0, 31.0, 30.0, 93.0, 10.0, 14.0, 13.0, 26.0, 31.0, 49.0, 39.0, 52.0]}, {&quot;likelihood&quot;: 11.0, &quot;fxTarget&quot;: [&quot;Polyshape1: &quot;, 0, 0.6], &quot;fxSelection&quot;: 3.0, &quot;fxValues&quot;: [35.0, 9.0, 70.0, 48.0, 40.0, 100.0, 38.0, 52.0, 50.0, 74.0, 20.0, 72.0, 78.0, 29.0, 4.0, 32.0]}, {&quot;likelihood&quot;: 193.0, &quot;fxTarget&quot;: [&quot;Polyshape1:&quot;, 1, -1], &quot;fxSelection&quot;: 3.0, &quot;fxValues&quot;: [36.0, 50.0, 54.0, 0.0, 53.0, 87.0, 86.0, 78.0, 25.0, 39.0, 20.0, 21.0, 82.0, 5.0, 85.0, 82.0]}, {&quot;likelihood&quot;: 170.0, &quot;fxTarget&quot;: [&quot;Polyshape1: &quot;, 0, 0.6], &quot;fxSelection&quot;: 3.0, &quot;fxValues&quot;: [37.0, 94.0, 40.0, 99.0, 33.0, 35.0, 73.0, 31.0, 45.0, 84.0, 49.0, 1.0, 76.0, 92.0, 36.0, 34.0]}]}, {&quot;stepCount&quot;: 16.0, &quot;swingAmount&quot;: 0.2771644711028785, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 6.0, &quot;velocityValues&quot;: [106.0, 121.0, 102.0, 43.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 193.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 35.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 141.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 36.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 1, -1], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [91.0, 84.0, 11.0, 78.0, 36.0, 11.0, 42.0, 5.0, 39.0, 3.0, 23.0, 78.0, 52.0, 11.0, 27.0, 52.0]}, {&quot;likelihood&quot;: 157.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [68.0, 60.0, 41.0, 13.0, 11.0, 43.0, 92.0, 26.0, 64.0, 21.0, 34.0, 86.0, 69.0, 49.0, 89.0, 56.0]}, {&quot;likelihood&quot;: 170.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 6, 0.01], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [90.0, 58.0, 0.0, 16.0, 39.0, 69.0, 84.0, 30.0, 100.0, 3.0, 40.0, 79.0, 10.0, 52.0, 46.0, 56.0]}, {&quot;likelihood&quot;: 114.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 1, -1], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [15.0, 92.0, 71.0, 37.0, 53.0, 3.0, 43.0, 68.0, 47.0, 42.0, 55.0, 26.0, 89.0, 95.0, 83.0, 4.0]}]}, {&quot;stepCount&quot;: 8.0, &quot;swingAmount&quot;: 0.8057574986014515, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 23.0, &quot;velocityValues&quot;: [18.0, 86.0, 73.0, 94.0, 76.0, 126.0, 126.0, 1.0, 46.0, 46.0, 60.0, 46.0, 54.0, 24.0, 67.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 154.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 21.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 119.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 183.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 6, 0.01], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [98.0, 62.0, 28.0, 31.0, 72.0, 16.0, 27.0, 53.0, 56.0, 62.0, 20.0, 24.0, 5.0, 22.0, 46.0, 63.0]}, {&quot;likelihood&quot;: 174.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [91.0, 33.0, 27.0, 33.0, 75.0, 16.0, 22.0, 99.0, 9.0, 80.0, 27.0, 0.0, 64.0, 83.0, 80.0, 14.0]}, {&quot;likelihood&quot;: 155.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 6, 0.01], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [73.0, 21.0, 50.0, 40.0, 39.0, 47.0, 80.0, 29.0, 67.0, 84.0, 37.0, 98.0, 32.0, 3.0, 17.0, 49.0]}, {&quot;likelihood&quot;: 60.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, -1], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [68.0, 27.0, 39.0, 81.0, 85.0, 41.0, 83.0, 3.0, 44.0, 80.0, 27.0, 44.0, 81.0, 79.0, 91.0, 19.0]}]}, {&quot;stepCount&quot;: 5.0, &quot;swingAmount&quot;: 0.9246095325797796, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 147.0, &quot;velocityValues&quot;: [5.0, 94.0, 34.0, 20.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 145.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 73.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 162.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 77.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [58.0, 5.0, 88.0, 67.0, 81.0, 35.0, 54.0, 83.0, 100.0, 84.0, 89.0, 18.0, 13.0, 45.0, 19.0, 35.0]}, {&quot;likelihood&quot;: 99.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [23.0, 45.0, 33.0, 16.0, 47.0, 83.0, 17.0, 71.0, 77.0, 91.0, 86.0, 15.0, 44.0, 78.0, 1.0, 66.0]}, {&quot;likelihood&quot;: 138.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [31.0, 14.0, 20.0, 22.0, 55.0, 19.0, 5.0, 100.0, 16.0, 92.0, 34.0, 58.0, 60.0, 9.0, 48.0, 64.0]}, {&quot;likelihood&quot;: 42.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [95.0, 70.0, 28.0, 78.0, 2.0, 39.0, 37.0, 43.0, 22.0, 65.0, 40.0, 67.0, 80.0, 7.0, 16.0, 19.0]}]}, {&quot;stepCount&quot;: 10.0, &quot;swingAmount&quot;: 0.1500594129320234, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 158.0, &quot;velocityValues&quot;: [41.0, 20.0, 84.0, 31.0, 95.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 71.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 112.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 89.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 11.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [4.0, 94.0, 75.0, 5.0, 2.0, 56.0, 61.0, 93.0, 51.0, 17.0, 52.0, 19.0, 32.0, 33.0, 40.0, 49.0]}, {&quot;likelihood&quot;: 162.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [49.0, 28.0, 59.0, 53.0, 14.0, 82.0, 92.0, 78.0, 19.0, 44.0, 44.0, 18.0, 39.0, 81.0, 6.0, 17.0]}, {&quot;likelihood&quot;: 169.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [92.0, 45.0, 26.0, 38.0, 82.0, 82.0, 27.0, 5.0, 43.0, 59.0, 14.0, 45.0, 94.0, 61.0, 57.0, 4.0]}, {&quot;likelihood&quot;: 31.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [62.0, 83.0, 29.0, 12.0, 84.0, 86.0, 87.0, 26.0, 5.0, 39.0, 17.0, 77.0, 77.0, 95.0, 18.0, 9.0]}]}, {&quot;stepCount&quot;: 8.0, &quot;swingAmount&quot;: 0.09749619965441525, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 73.0, &quot;velocityValues&quot;: [31.0, 112.0, 76.0, 28.0, 33.0, 23.0, 107.0, 97.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 144.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 198.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 79.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 79.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [50.0, 25.0, 10.0, 60.0, 79.0, 39.0, 92.0, 94.0, 61.0, 47.0, 97.0, 46.0, 82.0, 73.0, 73.0, 11.0]}, {&quot;likelihood&quot;: 28.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 6, 0.01], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [79.0, 6.0, 27.0, 18.0, 70.0, 81.0, 32.0, 28.0, 76.0, 5.0, 58.0, 91.0, 85.0, 81.0, 40.0, 57.0]}, {&quot;likelihood&quot;: 81.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 1, -1], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [68.0, 79.0, 74.0, 60.0, 82.0, 47.0, 67.0, 84.0, 80.0, 63.0, 68.0, 78.0, 7.0, 80.0, 85.0, 66.0]}, {&quot;likelihood&quot;: 35.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [1.0, 98.0, 13.0, 51.0, 74.0, 83.0, 60.0, 65.0, 44.0, 15.0, 10.0, 31.0, 100.0, 65.0, 51.0, 48.0]}]}, {&quot;stepCount&quot;: 6.0, &quot;swingAmount&quot;: 0.1047476057428867, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 13.0, &quot;velocityValues&quot;: [32.0, 108.0, 89.0, 42.0, 103.0, 18.0, 26.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 195.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 103.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 187.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 193.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [24.0, 17.0, 88.0, 81.0, 3.0, 52.0, 7.0, 39.0, 10.0, 92.0, 12.0, 7.0, 27.0, 49.0, 53.0, 11.0]}, {&quot;likelihood&quot;: 61.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [60.0, 92.0, 48.0, 1.0, 12.0, 90.0, 27.0, 60.0, 2.0, 40.0, 98.0, 15.0, 75.0, 95.0, 93.0, 30.0]}, {&quot;likelihood&quot;: 6.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [14.0, 61.0, 47.0, 42.0, 92.0, 76.0, 78.0, 69.0, 18.0, 56.0, 22.0, 73.0, 85.0, 89.0, 38.0, 31.0]}, {&quot;likelihood&quot;: 174.0, &quot;fxTarget&quot;: [-99, -99, -99], &quot;fxSelection&quot;: 1.0, &quot;fxValues&quot;: [96.0, 7.0, 43.0, 0.0, 38.0, 61.0, 13.0, 31.0, 0.0, 83.0, 34.0, 61.0, 81.0, 57.0, 30.0, 87.0]}]}, {&quot;stepCount&quot;: 16.0, &quot;swingAmount&quot;: 0.2243285039439797, &quot;velocityRow&quot;: {&quot;likelihood&quot;: 194.0, &quot;velocityValues&quot;: [62.0, 82.0, 56.0, 97.0, 4.0, 16.0, 111.0, 17.0, 109.0, 4.0, 7.0, 77.0, 62.0, 31.0, 108.0, 38.0]}, &quot;EnvelopeRowSet&quot;: [{&quot;likelihood&quot;: 74.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 162.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}, {&quot;likelihood&quot;: 115.0, &quot;defaultEnvelope&quot;: {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, &quot;envelopeValues&quot;: [{&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}, {&quot;power&quot;: 0, &quot;amount&quot;: 1, &quot;attack&quot;: 500, &quot;hold&quot;: 500, &quot;decay&quot;: 800, &quot;sustain&quot;: -15, &quot;release&quot;: 6000}]}], &quot;FXRowSet&quot;: [{&quot;likelihood&quot;: 188.0, &quot;fxTarget&quot;: [&quot;Filter1: &quot;, 1, 199.8], &quot;fxSelection&quot;: 2.0, &quot;fxValues&quot;: [68.0, 69.0, 90.0, 76.0, 65.0, 11.0, 15.0, 85.0, 21.0, 30.0, 63.0, 43.0, 61.0, 62.0, 65.0, 25.0]}, {&quot;likelihood&quot;: 123.0, &quot;fxTarget&quot;: [], &quot;fxSelection&quot;: 0.0, &quot;fxValues&quot;: [10.0, 8.0, 11.0, 77.0, 31.0, 2.0, 50.0, 66.0, 74.0, 40.0, 60.0, 100.0, 79.0, 48.0, 22.0, 19.0]}, {&quot;likelihood&quot;: 124.0, &quot;fxTarget&quot;: [&quot;Delay1: &quot;, 6, 0.01], &quot;fxSelection&quot;: 6.0, &quot;fxValues&quot;: [11.0, 77.0, 83.0, 96.0, 54.0, 33.0, 9.0, 11.0, 89.0, 81.0, 65.0, 73.0, 47.0, 12.0, 83.0, 79.0]}, {&quot;likelihood&quot;: 6.0, &quot;fxTarget&quot;: [&quot;Polyshape1: &quot;, 0, 0.6], &quot;fxSelection&quot;: 3.0, &quot;fxValues&quot;: [82.0, 0.0, 78.0, 36.0, 29.0, 35.0, 64.0, 53.0, 50.0, 67.0, 40.0, 76.0, 25.0, 95.0, 27.0, 70.0]}]}]"/>
+            <Control type="ScriptButton" id="SeqStartStop" value="0"/>
+            <Control type="ScriptButton" id="patternsSave" value="0"/>
             <Control type="ScriptComboBox" id="ImpulseSelector4" value="1"/>
-            <Control type="ScriptButton" id="PatternSelector1" value="0"/>
+            <Control type="ScriptButton" id="PatternSelector1" value="1"/>
             <Control type="ScriptButton" id="PatternSelector2" value="0"/>
             <Control type="ScriptButton" id="PatternSelector3" value="0"/>
             <Control type="ScriptButton" id="PatternSelector4" value="0"/>
             <Control type="ScriptButton" id="PatternSelector5" value="0"/>
             <Control type="ScriptButton" id="PatternSelector6" value="0"/>
-            <Control type="ScriptButton" id="PatternSelector7" value="1"/>
+            <Control type="ScriptButton" id="PatternSelector7" value="0"/>
             <Control type="ScriptButton" id="PatternSelector8" value="0"/>
-            <Control type="ScriptSlider" id="SeqTempoKnob" value="0"/>
+            <Control type="ScriptSlider" id="SeqTempoKnob" value="8"/>
             <Control type="ScriptSlider" id="SeqStepsKnob" value="16"/>
-            <Control type="ScriptSlider" id="SeqStepsKnob1" value="0.22"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep1" value="89.76"/>
+            <Control type="ScriptSlider" id="SeqSwing" value="0.643936"/>
+            <Control type="ScriptSlider" id="VelocityLikelihood" value="98"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep1" value="127"/>
             <Control type="ScriptSlider" id="SeqVelocityStep2" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep3" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep4" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep5" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep5" value="96.77"/>
             <Control type="ScriptSlider" id="SeqVelocityStep6" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep7" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep8" value="58.43"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep9" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep10" value="106.89"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep11" value="58.43"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep8" value="32.5"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep9" value="127"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep10" value="1"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep11" value="70.58"/>
             <Control type="ScriptSlider" id="SeqVelocityStep12" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep13" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep13" value="103.37"/>
             <Control type="ScriptSlider" id="SeqVelocityStep14" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep15" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep16" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope1Step1" value="1"/>
+            <Control type="ScriptSlider" id="Envelope1Likelihood" value="46"/>
+            <Control type="ScriptButton" id="SeqEnvelope1Step1" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step2" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step3" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step4" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step5" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step6" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step7" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope1Step8" value="1"/>
+            <Control type="ScriptButton" id="SeqEnvelope1Step8" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step9" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step10" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope1Step11" value="1"/>
+            <Control type="ScriptButton" id="SeqEnvelope1Step11" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step12" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step13" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step14" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step15" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step16" value="0"/>
+            <Control type="ScriptSlider" id="Envelope2Likelihood" value="154"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step1" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step2" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step3" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step4" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step5" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope2Step6" value="1"/>
+            <Control type="ScriptButton" id="SeqEnvelope2Step6" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step7" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step8" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope2Step9" value="1"/>
+            <Control type="ScriptButton" id="SeqEnvelope2Step9" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step10" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step11" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step12" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope2Step13" value="1"/>
+            <Control type="ScriptButton" id="SeqEnvelope2Step13" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step14" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step15" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step16" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope3Step1" value="1"/>
+            <Control type="ScriptSlider" id="Envelope3Likelihood" value="60"/>
+            <Control type="ScriptButton" id="SeqEnvelope3Step1" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step2" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step3" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step4" value="0"/>
@@ -207,7 +214,7 @@
             <Control type="ScriptButton" id="SeqEnvelope3Step6" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step7" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step8" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvelope3Step9" value="1"/>
+            <Control type="ScriptButton" id="SeqEnvelope3Step9" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step10" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step11" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step12" value="0"/>
@@ -215,71 +222,79 @@
             <Control type="ScriptButton" id="SeqEnvelope3Step14" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step15" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step16" value="0"/>
+            <Control type="ScriptSlider" id="FX1Likelihood" value="120"/>
+            <Control type="ScriptComboBox" id="FX1Selector" value="3"/>
             <Control type="ScriptSlider" id="SeqFX1Step1" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX1Step2" value="43.24"/>
-            <Control type="ScriptSlider" id="SeqFX1Step3" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX1Step4" value="59.64"/>
-            <Control type="ScriptSlider" id="SeqFX1Step5" value="64.84"/>
-            <Control type="ScriptSlider" id="SeqFX1Step6" value="38.04"/>
-            <Control type="ScriptSlider" id="SeqFX1Step7" value="23.24"/>
-            <Control type="ScriptSlider" id="SeqFX1Step8" value="59.64"/>
-            <Control type="ScriptSlider" id="SeqFX1Step9" value="59.64"/>
-            <Control type="ScriptSlider" id="SeqFX1Step10" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX1Step11" value="59.64"/>
-            <Control type="ScriptSlider" id="SeqFX1Step12" value="47.64"/>
-            <Control type="ScriptSlider" id="SeqFX1Step13" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX1Step14" value="60.04"/>
-            <Control type="ScriptSlider" id="SeqFX1Step15" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX1Step16" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX2Step1" value="53.2"/>
-            <Control type="ScriptSlider" id="SeqFX2Step2" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX2Step3" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX2Step4" value="33.6"/>
-            <Control type="ScriptSlider" id="SeqFX2Step5" value="25.2"/>
-            <Control type="ScriptSlider" id="SeqFX2Step6" value="20.8"/>
-            <Control type="ScriptSlider" id="SeqFX2Step7" value="54"/>
-            <Control type="ScriptSlider" id="SeqFX2Step8" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX2Step9" value="20.8"/>
-            <Control type="ScriptSlider" id="SeqFX2Step10" value="37.6"/>
-            <Control type="ScriptSlider" id="SeqFX2Step11" value="20.8"/>
-            <Control type="ScriptSlider" id="SeqFX2Step12" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX2Step13" value="57.2"/>
-            <Control type="ScriptSlider" id="SeqFX2Step14" value="20.8"/>
-            <Control type="ScriptSlider" id="SeqFX2Step15" value="20.8"/>
-            <Control type="ScriptSlider" id="SeqFX2Step16" value="2.4"/>
-            <Control type="ScriptSlider" id="SeqFX3Step1" value="17.6"/>
-            <Control type="ScriptSlider" id="SeqFX3Step2" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step3" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step4" value="39.2"/>
-            <Control type="ScriptSlider" id="SeqFX3Step5" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step6" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step7" value="32.8"/>
-            <Control type="ScriptSlider" id="SeqFX3Step8" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step9" value="18"/>
-            <Control type="ScriptSlider" id="SeqFX3Step10" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step11" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step12" value="20.8"/>
-            <Control type="ScriptSlider" id="SeqFX3Step13" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step14" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step15" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step16" value="20"/>
-            <Control type="ScriptSlider" id="SeqFX4Step1" value="14"/>
-            <Control type="ScriptSlider" id="SeqFX4Step2" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step3" value="73.2"/>
-            <Control type="ScriptSlider" id="SeqFX4Step4" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step5" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step6" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step7" value="13.2"/>
-            <Control type="ScriptSlider" id="SeqFX4Step8" value="10"/>
-            <Control type="ScriptSlider" id="SeqFX4Step9" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step10" value="28"/>
-            <Control type="ScriptSlider" id="SeqFX4Step11" value="22.4"/>
-            <Control type="ScriptSlider" id="SeqFX4Step12" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step13" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX4Step14" value="53.2"/>
-            <Control type="ScriptSlider" id="SeqFX4Step15" value="31.2"/>
-            <Control type="ScriptSlider" id="SeqFX4Step16" value="0"/>
-            <Control type="ScriptButton" id="SeqEnvEditCloser" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX1Step2" value="69"/>
+            <Control type="ScriptSlider" id="SeqFX1Step3" value="55"/>
+            <Control type="ScriptSlider" id="SeqFX1Step4" value="10"/>
+            <Control type="ScriptSlider" id="SeqFX1Step5" value="83"/>
+            <Control type="ScriptSlider" id="SeqFX1Step6" value="31"/>
+            <Control type="ScriptSlider" id="SeqFX1Step7" value="30"/>
+            <Control type="ScriptSlider" id="SeqFX1Step8" value="93"/>
+            <Control type="ScriptSlider" id="SeqFX1Step9" value="10"/>
+            <Control type="ScriptSlider" id="SeqFX1Step10" value="14"/>
+            <Control type="ScriptSlider" id="SeqFX1Step11" value="13"/>
+            <Control type="ScriptSlider" id="SeqFX1Step12" value="26"/>
+            <Control type="ScriptSlider" id="SeqFX1Step13" value="31"/>
+            <Control type="ScriptSlider" id="SeqFX1Step14" value="49"/>
+            <Control type="ScriptSlider" id="SeqFX1Step15" value="39"/>
+            <Control type="ScriptSlider" id="SeqFX1Step16" value="52"/>
+            <Control type="ScriptSlider" id="FX2Likelihood" value="11"/>
+            <Control type="ScriptComboBox" id="FX2Selector" value="4"/>
+            <Control type="ScriptSlider" id="SeqFX2Step1" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX2Step2" value="94"/>
+            <Control type="ScriptSlider" id="SeqFX2Step3" value="40"/>
+            <Control type="ScriptSlider" id="SeqFX2Step4" value="99"/>
+            <Control type="ScriptSlider" id="SeqFX2Step5" value="33"/>
+            <Control type="ScriptSlider" id="SeqFX2Step6" value="35"/>
+            <Control type="ScriptSlider" id="SeqFX2Step7" value="73"/>
+            <Control type="ScriptSlider" id="SeqFX2Step8" value="31"/>
+            <Control type="ScriptSlider" id="SeqFX2Step9" value="45"/>
+            <Control type="ScriptSlider" id="SeqFX2Step10" value="84"/>
+            <Control type="ScriptSlider" id="SeqFX2Step11" value="49"/>
+            <Control type="ScriptSlider" id="SeqFX2Step12" value="1"/>
+            <Control type="ScriptSlider" id="SeqFX2Step13" value="76"/>
+            <Control type="ScriptSlider" id="SeqFX2Step14" value="92"/>
+            <Control type="ScriptSlider" id="SeqFX2Step15" value="36"/>
+            <Control type="ScriptSlider" id="SeqFX2Step16" value="34"/>
+            <Control type="ScriptSlider" id="FX3Likelihood" value="193"/>
+            <Control type="ScriptComboBox" id="FX3Selector" value="4"/>
+            <Control type="ScriptSlider" id="SeqFX3Step1" value="1.2"/>
+            <Control type="ScriptSlider" id="SeqFX3Step2" value="50"/>
+            <Control type="ScriptSlider" id="SeqFX3Step3" value="54"/>
+            <Control type="ScriptSlider" id="SeqFX3Step4" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX3Step5" value="53"/>
+            <Control type="ScriptSlider" id="SeqFX3Step6" value="87"/>
+            <Control type="ScriptSlider" id="SeqFX3Step7" value="86"/>
+            <Control type="ScriptSlider" id="SeqFX3Step8" value="78"/>
+            <Control type="ScriptSlider" id="SeqFX3Step9" value="25"/>
+            <Control type="ScriptSlider" id="SeqFX3Step10" value="39"/>
+            <Control type="ScriptSlider" id="SeqFX3Step11" value="20"/>
+            <Control type="ScriptSlider" id="SeqFX3Step12" value="21"/>
+            <Control type="ScriptSlider" id="SeqFX3Step13" value="82"/>
+            <Control type="ScriptSlider" id="SeqFX3Step14" value="5"/>
+            <Control type="ScriptSlider" id="SeqFX3Step15" value="85"/>
+            <Control type="ScriptSlider" id="SeqFX3Step16" value="82"/>
+            <Control type="ScriptSlider" id="FX4Likelihood" value="170"/>
+            <Control type="ScriptComboBox" id="FX4Selector" value="4"/>
+            <Control type="ScriptSlider" id="SeqFX4Step1" value="9.6"/>
+            <Control type="ScriptSlider" id="SeqFX4Step2" value="94"/>
+            <Control type="ScriptSlider" id="SeqFX4Step3" value="40"/>
+            <Control type="ScriptSlider" id="SeqFX4Step4" value="99"/>
+            <Control type="ScriptSlider" id="SeqFX4Step5" value="33"/>
+            <Control type="ScriptSlider" id="SeqFX4Step6" value="35"/>
+            <Control type="ScriptSlider" id="SeqFX4Step7" value="73"/>
+            <Control type="ScriptSlider" id="SeqFX4Step8" value="31"/>
+            <Control type="ScriptSlider" id="SeqFX4Step9" value="45"/>
+            <Control type="ScriptSlider" id="SeqFX4Step10" value="84"/>
+            <Control type="ScriptSlider" id="SeqFX4Step11" value="49"/>
+            <Control type="ScriptSlider" id="SeqFX4Step12" value="1"/>
+            <Control type="ScriptSlider" id="SeqFX4Step13" value="76"/>
+            <Control type="ScriptSlider" id="SeqFX4Step14" value="92"/>
+            <Control type="ScriptSlider" id="SeqFX4Step15" value="36"/>
+            <Control type="ScriptSlider" id="SeqFX4Step16" value="34"/>
+            <Control type="ScriptButton" id="SeqEnvEditCloser" value="1"/>
             <Control type="ScriptSlider" id="MasterVolumeKnob" value="0.500001"/>
             <Control type="ScriptSlider" id="MasterIRREKnob" value="0.19"/>
             <Control type="ScriptComboBox" id="MIDISelector" value="1"/>
@@ -356,7 +371,7 @@
                    PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
                    Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                    Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                   Group6Table="" Group7Table="" SampleMapID="Roland_Room3">
+                   Group6Table="" Group7Table="" SampleMapID="Elektron_Kicks 0007">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -386,9 +401,9 @@
                            UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="24...............vO...f+....9C...fO">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="AHDSR" ID="GainEnvelope1" Bypassed="1" Monophonic="0" Retrigger="1"
-                           Intensity="0.47" AttackCurve="0.5" DecayCurve="0" Attack="4"
-                           AttackLevel="0" Hold="0" Decay="2241" Sustain="-24.9" Release="20000"
+                <Processor Type="AHDSR" ID="GainEnvelope1" Bypassed="0" Monophonic="0" Retrigger="1"
+                           Intensity="0.47" AttackCurve="0.5" DecayCurve="0" Attack="110"
+                           AttackLevel="0" Hold="0" Decay="301" Sustain="-13.35" Release="20000"
                            EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
@@ -430,11 +445,33 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
+                <Processor Type="AHDSR" ID="SeqDisplayEnvelope1" Bypassed="1" Monophonic="0"
+                           Retrigger="1" Intensity="1" AttackCurve="0.5" DecayCurve="0"
+                           Attack="500" AttackLevel="0" Hold="500" Decay="800" Sustain="-15"
+                           Release="6000" EcoMode="1">
+                  <ChildProcessors>
+                    <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Attack Level" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Decay Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Sustain Level" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Release Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                  </ChildProcessors>
+                </Processor>
               </ChildProcessors>
             </Processor>
             <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
               <ChildProcessors>
-                <Processor Type="Constant" ID="PitchConstant1" Bypassed="0" Intensity="-0.1"
+                <Processor Type="Constant" ID="PitchConstant1" Bypassed="0" Intensity="0.0333333"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -477,7 +514,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="0.0250908"
+                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="-0.0258687"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -486,13 +523,13 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
                 <Processor Type="PolyphonicFilter" ID="Filter1" Bypassed="0" Gain="0.2"
-                           Frequency="1831" Q="1" Mode="9" Quality="2" BipolarIntensity="0.03">
+                           Frequency="617" Q="1.2" Mode="9" Quality="2" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                Intensity="1">
                       <ChildProcessors>
-                        <Processor Type="Velocity" ID="FreqVelocity1" Bypassed="1" Intensity="0"
-                                   UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="">
+                        <Processor Type="Velocity" ID="FreqVelocity1" Bypassed="1" Intensity="1"
+                                   UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36...............vOFCGM+fggg6C...vO...f+....9C...iO">
                           <ChildProcessors/>
                         </Processor>
                         <Processor Type="AHDSR" ID="FreqEnvelope1" Bypassed="1" Monophonic="0" Retrigger="1"
@@ -543,25 +580,25 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="PolyshapeFX" ID="Polyshape1" Bypassed="1" Curve="" AsymetricalCurve=""
-                           Drive="18.6" Mode="4" Oversampling="1">
+                <Processor Type="PolyshapeFX" ID="Polyshape1" Bypassed="0" Curve="" AsymetricalCurve=""
+                           Drive="19.3" Mode="2" Oversampling="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Drive Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Convolution" ID="ConvolutionReverb1" Bypassed="1" DryGain="-15.1"
-                           WetGain="-24.7" Latency="0" ImpulseLength="1" ProcessInput="1"
+                <Processor Type="Convolution" ID="ConvolutionReverb1" Bypassed="1" DryGain="-10.4"
+                           WetGain="-28.4" Latency="0" ImpulseLength="1" ProcessInput="1"
                            UseBackgroundThread="0" Predelay="0" HiCut="20000" Damping="-5.1"
-                           FFTType="0" FileName="{PROJECT_FOLDER}BathRoom 1_5 Seconds.wav"
-                           min="0" max="66304" loopStart="0" loopEnd="66304">
+                           FFTType="0" FileName="{PROJECT_FOLDER}Room 0_4 Seconds.wav" min="0"
+                           max="36212" loopStart="0" loopEnd="36212">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="Delay" ID="Delay1" Bypassed="1" DelayTimeLeft="6" DelayTimeRight="6"
-                           FeedbackLeft="0.66" FeedbackRight="0.66" LowPassFreq="20000"
-                           HiPassFreq="40" Mix="0.47" TempoSync="1">
+                <Processor Type="Delay" ID="Delay1" Bypassed="1" DelayTimeLeft="14" DelayTimeRight="14"
+                           FeedbackLeft="0.33" FeedbackRight="0.33" LowPassFreq="20000"
+                           HiPassFreq="40" Mix="0.21" TempoSync="1">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
@@ -573,13 +610,13 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-0.464527"
+                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-0.51388"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="SimpleGain" ID="Gain1" Bypassed="0" Gain="-5.7" Delay="0"
-                           Width="100" Balance="-2" InvertPolarity="0">
+                <Processor Type="SimpleGain" ID="Gain1" Bypassed="0" Gain="-5.8" Delay="0"
+                           Width="100" Balance="8" InvertPolarity="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -630,7 +667,7 @@
                    PitchTracking="1" OneShot="1" CrossfadeGroups="0" Purged="0"
                    Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                    Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                   Group6Table="" Group7Table="" SampleMapID="Alesis_Kick2222">
+                   Group6Table="" Group7Table="" SampleMapID="Alesis_Kick2828">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -657,7 +694,7 @@
             <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
               <ChildProcessors>
                 <Processor Type="Velocity" ID="GainVelocity2" Bypassed="0" Intensity="1"
-                           UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36...............vONOtT+vsss6C...pO...f+....9C..fqO">
+                           UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36......fRRR1C...vONvmw9HFFF5C..P0O...f+....9C..fqO">
                   <ChildProcessors/>
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope2" Bypassed="1" Monophonic="0" Retrigger="1"
@@ -700,6 +737,28 @@
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
                                Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                  </ChildProcessors>
+                </Processor>
+                <Processor Type="AHDSR" ID="SeqDisplayEnvelope2" Bypassed="1" Monophonic="0"
+                           Retrigger="1" Intensity="1" AttackCurve="0.5" DecayCurve="0"
+                           Attack="0" AttackLevel="0" Hold="0" Decay="800" Sustain="-15"
+                           Release="6000" EcoMode="1">
+                  <ChildProcessors>
+                    <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Attack Level" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Decay Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Sustain Level" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Release Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
@@ -751,7 +810,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.0198226"
+                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.00729625"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -817,7 +876,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="PolyshapeFX" ID="Polyshape2" Bypassed="1" Curve="" AsymetricalCurve=""
+                <Processor Type="PolyshapeFX" ID="Polyshape2" Bypassed="0" Curve="" AsymetricalCurve=""
                            Drive="14.6" Mode="4" Oversampling="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Drive Modulation" Bypassed="0" Intensity="1">
@@ -825,17 +884,17 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Convolution" ID="ConvolutionReverb2" Bypassed="1" DryGain="-15.1"
-                           WetGain="-24.7" Latency="0" ImpulseLength="1" ProcessInput="1"
+                <Processor Type="Convolution" ID="ConvolutionReverb2" Bypassed="1" DryGain="-10.4"
+                           WetGain="-28.4" Latency="0" ImpulseLength="1" ProcessInput="1"
                            UseBackgroundThread="0" Predelay="0" HiCut="20000" Damping="0"
-                           FFTType="0" FileName="{PROJECT_FOLDER}BathRoom 1_5 Seconds.wav"
-                           min="0" max="66304" loopStart="0" loopEnd="66304">
+                           FFTType="0" FileName="{PROJECT_FOLDER}Room 0_4 Seconds.wav" min="0"
+                           max="36212" loopStart="0" loopEnd="36212">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="Delay" ID="Delay2" Bypassed="1" DelayTimeLeft="6" DelayTimeRight="6"
-                           FeedbackLeft="0.66" FeedbackRight="0.66" LowPassFreq="20000"
-                           HiPassFreq="40" Mix="0.47" TempoSync="1">
+                <Processor Type="Delay" ID="Delay2" Bypassed="1" DelayTimeLeft="14" DelayTimeRight="14"
+                           FeedbackLeft="0.33" FeedbackRight="0.33" LowPassFreq="20000"
+                           HiPassFreq="40" Mix="0.21" TempoSync="1">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
@@ -847,12 +906,12 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="-1.02358"
+                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="-1.41971"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="SimpleGain" ID="Gain2" Bypassed="0" Gain="1.2" Delay="0"
+                <Processor Type="SimpleGain" ID="Gain2" Bypassed="0" Gain="-7.4" Delay="0"
                            Width="100" Balance="0" InvertPolarity="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
@@ -904,7 +963,7 @@
                    PitchTracking="1" OneShot="1" CrossfadeGroups="0" Purged="0"
                    Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                    Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                   Group6Table="" Group7Table="" SampleMapID="Var_Coron_01">
+                   Group6Table="" Group7Table="" SampleMapID="Elektron_Kicks 0008">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -930,7 +989,7 @@
             </Processor>
             <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
               <ChildProcessors>
-                <Processor Type="Velocity" ID="GainVelocity3" Bypassed="1" Intensity="1"
+                <Processor Type="Velocity" ID="GainVelocity3" Bypassed="0" Intensity="1"
                            UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36...............vOaqhW+LLLL7C..fnO...f+....9C...sO">
                   <ChildProcessors/>
                 </Processor>
@@ -978,11 +1037,33 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
+                <Processor Type="AHDSR" ID="SeqDisplayEnvelope3" Bypassed="1" Monophonic="0"
+                           Retrigger="1" Intensity="1" AttackCurve="0.5" DecayCurve="0"
+                           Attack="20" AttackLevel="0" Hold="10" Decay="300" Sustain="0"
+                           Release="20" EcoMode="1">
+                  <ChildProcessors>
+                    <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Attack Level" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Decay Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Sustain Level" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Release Time" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                  </ChildProcessors>
+                </Processor>
               </ChildProcessors>
             </Processor>
             <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
               <ChildProcessors>
-                <Processor Type="Constant" ID="PitchConstant3" Bypassed="0" Intensity="1.49012e-08"
+                <Processor Type="Constant" ID="PitchConstant3" Bypassed="0" Intensity="-0.0916667"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -1025,7 +1106,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.0172883"
+                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="-0.0302774"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -1034,13 +1115,13 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
                 <Processor Type="PolyphonicFilter" ID="Filter3" Bypassed="0" Gain="0.6"
-                           Frequency="1272" Q="0.8" Mode="6" Quality="-6.44844e+08" BipolarIntensity="0.03">
+                           Frequency="3483" Q="0.8" Mode="6" Quality="9.72492e+08" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                Intensity="1">
                       <ChildProcessors>
-                        <Processor Type="Velocity" ID="FreqVelocity3" Bypassed="1" Intensity="0"
-                                   UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="">
+                        <Processor Type="Velocity" ID="FreqVelocity3" Bypassed="0" Intensity="1"
+                                   UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36...............vOGhMP+Xaaa6C...vO...f+....9C...pO">
                           <ChildProcessors/>
                         </Processor>
                         <Processor Type="AHDSR" ID="FreqEnvelope3" Bypassed="1" Monophonic="0" Retrigger="1"
@@ -1092,24 +1173,24 @@
                   </ChildProcessors>
                 </Processor>
                 <Processor Type="PolyshapeFX" ID="Polyshape3" Bypassed="1" Curve="" AsymetricalCurve=""
-                           Drive="16.7" Mode="4" Oversampling="1">
+                           Drive="21.7" Mode="4" Oversampling="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Drive Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Convolution" ID="ConvolutionReverb3" Bypassed="1" DryGain="-15.1"
-                           WetGain="-24.7" Latency="0" ImpulseLength="1" ProcessInput="1"
+                <Processor Type="Convolution" ID="ConvolutionReverb3" Bypassed="1" DryGain="-10.4"
+                           WetGain="-19.2" Latency="0" ImpulseLength="1" ProcessInput="1"
                            UseBackgroundThread="0" Predelay="0" HiCut="20000" Damping="0"
-                           FFTType="0" FileName="{PROJECT_FOLDER}BathRoom 1_5 Seconds.wav"
-                           min="0" max="66304" loopStart="0" loopEnd="66304">
+                           FFTType="0" FileName="{PROJECT_FOLDER}Room 0_4 Seconds.wav" min="0"
+                           max="36212" loopStart="0" loopEnd="36212">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="Delay" ID="Delay3" Bypassed="1" DelayTimeLeft="6" DelayTimeRight="6"
-                           FeedbackLeft="0.66" FeedbackRight="0.66" LowPassFreq="20000"
-                           HiPassFreq="40" Mix="0.47" TempoSync="1">
+                <Processor Type="Delay" ID="Delay3" Bypassed="1" DelayTimeLeft="14" DelayTimeRight="14"
+                           FeedbackLeft="0.33" FeedbackRight="0.33" LowPassFreq="20000"
+                           HiPassFreq="40" Mix="0.21" TempoSync="1">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
@@ -1121,12 +1202,12 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="0.0236906"
+                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="-0.561453"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="SimpleGain" ID="Gain3" Bypassed="0" Gain="-5.4" Delay="0"
+                <Processor Type="SimpleGain" ID="Gain3" Bypassed="0" Gain="-2.4" Delay="0"
                            Width="100" Balance="0" InvertPolarity="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
