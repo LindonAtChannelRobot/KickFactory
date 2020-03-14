@@ -12,7 +12,7 @@
             <Control type="ScriptButton" id="Randomise" value="0"/>
             <Control type="ScriptButton" id="PresetsBackwardsButton" value="0"/>
             <Control type="ScriptButton" id="PresetsForwardsButton" value="0"/>
-            <Control type="ScriptButton" id="Settings" value="0"/>
+            <Control type="ScriptButton" id="Settings" value="1"/>
             <Control type="ScriptButton" id="MuteButton1" value="0"/>
             <Control type="ScriptLabel" id="DisplayNameVoice1" value="Elektron_Kicks 0007"/>
             <Control type="ScriptButton" id="OpenCloseButton1" value="1"/>
@@ -295,8 +295,8 @@
             <Control type="ScriptSlider" id="SeqFX4Step15" value="36"/>
             <Control type="ScriptSlider" id="SeqFX4Step16" value="34"/>
             <Control type="ScriptButton" id="SeqEnvEditCloser" value="1"/>
-            <Control type="ScriptSlider" id="MasterVolumeKnob" value="0.500001"/>
-            <Control type="ScriptSlider" id="MasterIRREKnob" value="0.19"/>
+            <Control type="ScriptSlider" id="MasterVolumeKnob" value="-8.7"/>
+            <Control type="ScriptSlider" id="MasterIRREKnob" value="0.72"/>
             <Control type="ScriptComboBox" id="MIDISelector" value="1"/>
           </Content>
           <UIData Source="KickFactory05UIData"/>
@@ -330,8 +330,8 @@
     </Processor>
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
-        <Processor Type="SimpleGain" ID="MasterGain" Bypassed="0" Gain="0.500001"
-                   Delay="0" Width="100" Balance="0" InvertPolarity="0">
+        <Processor Type="SimpleGain" ID="MasterGain" Bypassed="0" Gain="-8.7" Delay="0"
+                   Width="100" Balance="0" InvertPolarity="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -385,7 +385,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript1" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent1" value="0.19"/>
+                    <Control type="ScriptSlider" id="IRREPercent1" value="0.72"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -514,7 +514,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="-0.0258687"
+                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="0.101438"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -610,7 +610,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-0.51388"
+                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-4.61526"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -681,7 +681,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript2" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent2" value="0.19"/>
+                    <Control type="ScriptSlider" id="IRREPercent2" value="0.72"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -810,7 +810,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.00729625"
+                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.0804814"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -819,7 +819,7 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
                 <Processor Type="PolyphonicFilter" ID="Filter2" Bypassed="0" Gain="0" Frequency="7053"
-                           Q="1" Mode="15" Quality="0" BipolarIntensity="0.03">
+                           Q="1" Mode="15" Quality="8" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                Intensity="1">
@@ -906,7 +906,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="-1.41971"
+                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="0.528976"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -977,7 +977,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript3" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent3" value="0.19"/>
+                    <Control type="ScriptSlider" id="IRREPercent3" value="0.72"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -1106,7 +1106,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="-0.0302774"
+                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.00894187"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -1115,7 +1115,7 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
                 <Processor Type="PolyphonicFilter" ID="Filter3" Bypassed="0" Gain="0.6"
-                           Frequency="3483" Q="0.8" Mode="6" Quality="9.72492e+08" BipolarIntensity="0.03">
+                           Frequency="3483" Q="0.8" Mode="6" Quality="0" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                Intensity="1">
@@ -1202,7 +1202,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="-0.561453"
+                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="5.7552"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>

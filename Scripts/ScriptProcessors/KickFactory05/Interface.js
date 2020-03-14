@@ -529,7 +529,23 @@ inline function getFXTargetArray(selection)
     return FXTargetArray;
 };
 
-
+function paintKeys()
+{
+    var kdx;
+    for (kdx = 0;kdx <128; kdx++)
+    {
+        if (kdx == MIDINoteTarget)
+        {
+            Engine.setKeyColour(kdx, KEY_TARGET);
+        }else{
+            Engine.setKeyColour(kdx, KEY_DARK);
+        };
+        
+        if (kdx >= (MIDINoteTarget + 4) && kdx <= (MIDINoteTarget + 11))
+            Engine.setKeyColour(kdx, KEY_PATTERN);
+    }; 
+};
+    
 
 // CONSTANTS
 
@@ -541,7 +557,9 @@ const var CLOSEDPANELSIZE = 22;
 const var OPENPANELSIZE = 421;
 const var MOD_OFF_COLOUR = 0xFF666666;
 const var MOD_ON_COLOUR = 0xFF4AA025;
-
+const var KEY_DARK = 0x88112211;
+const var KEY_TARGET = 0xAA44BB44;
+const var KEY_PATTERN = 0x88BBBB44;
 // GENERAL VARIABLES
 var targetVelocity;
 var targetEnvelope;
@@ -554,6 +572,7 @@ var currentSelectingPattern;
 var currentSelectingEnvelopeVoice;
 var currentSelectingEnvelopeSlot;
 var list = [];
+var MIDINoteTarget;
 
 // OBJECTS
 // Velocity Row
@@ -632,7 +651,7 @@ Console.print(myVeloRow.velocityValues[0]);
 
 // UI widgets 
 
-// The Header wisgets
+// The Header widgets
 const var VoicesButton = Content.getComponent("VoicesButton");
 const var SeqButton = Content.getComponent("SeqButton");
 const var Randomise = Content.getComponent("Randomise");
@@ -708,8 +727,10 @@ var FX2Setters = [];;
 var FX3Setters = [];;
 var FX4Setters = [];
 
+const var MIDISelector = Content.getComponent("MIDISelector");
 
 const var SeqStepsKnob = Content.getComponent("SeqStepsKnob");
+
 
 
 
@@ -2011,12 +2032,15 @@ inline function onMIDISelectorControl(component, value)
 	if (value == 1)
     {
 	    NoteRemapper.setAttribute(0,36);
+	    MIDINoteTarget = 36;
     }else{
         NoteRemapper.setAttribute(0,48);
+	    MIDINoteTarget = 48;
     };
+    paintKeys();
 };
 
-Content.getComponent("MIDISelector").setControlCallback(onMIDISelectorControl);
+MIDISelector.setControlCallback(onMIDISelectorControl);
 
 
 
@@ -2883,7 +2907,13 @@ myPattern = {
         fxSelection: selection,
         fxValues: valueArray
   };
-        */function onNoteOn()
+  
+  
+        */
+        
+
+  paintKeys();
+  function onNoteOn()
 {
 	
 }

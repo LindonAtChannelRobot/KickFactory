@@ -3,9 +3,9 @@
 <ContentProperties DeviceType="Desktop">
   <Component type="ScriptImage" id="OveralBAckground" x="0" y="0" width="700"
              height="597" fileName="{PROJECT_FOLDER}KickFactory2Background.png"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile1Keyboardski" x="3"
-             y="596" ContentType="Keyboard" bgColour="4284769380" itemColour="436207615"
-             itemColour2="4294967295" textColour="4294951115" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 14.0,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: false,&#13;&#10;  &quot;LowKey&quot;: 9,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
+  <Component type="ScriptFloatingTile" id="Keyboardski" x="3" y="596" ContentType="Keyboard"
+             bgColour="6579300" itemColour="16777215" itemColour2="16777215"
+             textColour="16761035" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 14.0,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: false,&#13;&#10;  &quot;LowKey&quot;: 9,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
              width="697" height="71"/>
   <Component type="ScriptPanel" id="HeaderPanel" x="0" y="0" height="44" width="701"
              itemColour="0" itemColour2="0" textColour="16777215">
@@ -30,7 +30,7 @@
   </Component>
   <Component type="ScriptPanel" id="AllVoicesPanel" x="0" y="47" borderSize="0"
              borderRadius="0" itemColour2="0" itemColour="0" textColour="16777215"
-             bgColour="16777215" width="700" height="466">
+             bgColour="16777215" width="700" height="466" visible="0">
     <Component type="ScriptPanel" id="VoicePanel1" x="0" y="0" borderSize="0"
                borderRadius="0" width="700" height="421" parentComponent="AllVoicesPanel">
       <Component type="ScriptImage" id="PanelBackground1" x="0" y="0" parentComponent="VoicePanel1"
@@ -633,7 +633,7 @@
   </Component>
   <Component type="ScriptPanel" id="SequencerPanel" x="0" y="47" width="700"
              height="466" borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
-             bgColour="16777215" saveInPreset="1" visible="0">
+             bgColour="16777215" saveInPreset="1">
     <Component type="ScriptImage" id="SeqPanelBackground" x="0" y="0" parentComponent="SequencerPanel"
                width="700" height="466" fileName="{PROJECT_FOLDER}KickFactory2SequenceBackground.png"/>
     <Component type="ScriptButton" id="SeqStartStop" x="8" y="21" parentComponent="SequencerPanel"
