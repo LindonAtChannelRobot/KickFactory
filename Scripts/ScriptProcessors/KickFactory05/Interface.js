@@ -1,4 +1,6 @@
-Content.makeFrontInterface(700, 670);
+const var ContentHeight = 670;
+const var ContentWidth = 700;
+Content.makeFrontInterface(ContentWidth, ContentHeight);
 
 Engine.loadAudioFilesIntoPool();
 
@@ -2452,10 +2454,13 @@ inline function onPatternSelector(component, value)
         for(i = 0 ;i < NUM_PATTERNS; i++)
         {
             if (component ==  PatternSelectors[i]){
-                Console.print("pattern:::::" + patterns[i]);
+                //Console.print("pattern:::::" + patterns[i]);
                 playingPattern = patterns[i];
                 currentSelectingPattern = i;
                 displayPattern(i);
+                PatternSelectors[i].setValue(1);
+            }else{
+                PatternSelectors[i].setValue(0);
             };
         };
     };
@@ -2915,7 +2920,14 @@ myPattern = {
   paintKeys();
   function onNoteOn()
 {
-	
+	if (Message.getNoteNumber() - (MIDINoteTarget + 4) >= 0 && Message.getNoteNumber() - (MIDINoteTarget + 4) <=7)
+    {
+        PatternSelectors[Message.getNoteNumber() - (MIDINoteTarget + 4)].setValue(1);
+        PatternSelectors[Message.getNoteNumber() - (MIDINoteTarget + 4)].changed();
+        //displayPattern(Message.getNoteNumber() - (MIDINoteTarget + 4));
+        //Console.print(Message.getNoteNumber() - (MIDINoteTarget + 4));
+    };
+	   
 }
  function onNoteOff()
 {
