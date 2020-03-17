@@ -154,6 +154,8 @@
             <Control type="ScriptSlider" id="SeqTempoKnob" value="8"/>
             <Control type="ScriptSlider" id="SeqStepsKnob" value="16"/>
             <Control type="ScriptSlider" id="SeqSwing" value="0.643936"/>
+            <Control type="ScriptButton" id="VelocityRandomiser" value="0"/>
+            <Control type="ScriptButton" id="VelocityLikelihoodIndicator" value="0"/>
             <Control type="ScriptSlider" id="VelocityLikelihood" value="98"/>
             <Control type="ScriptSlider" id="SeqVelocityStep1" value="88.98"/>
             <Control type="ScriptSlider" id="SeqVelocityStep2" value="0"/>
@@ -171,7 +173,7 @@
             <Control type="ScriptSlider" id="SeqVelocityStep14" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep15" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep16" value="0"/>
-            <Control type="ScriptSlider" id="Envelope1Likelihood" value="46"/>
+            <Control type="ScriptSlider" id="Envelope1Likelihood" value="69"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step1" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step2" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step3" value="0"/>
@@ -188,7 +190,7 @@
             <Control type="ScriptButton" id="SeqEnvelope1Step14" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step15" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step16" value="0"/>
-            <Control type="ScriptSlider" id="Envelope2Likelihood" value="154"/>
+            <Control type="ScriptSlider" id="Envelope2Likelihood" value="152"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step1" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step2" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope2Step3" value="0"/>
