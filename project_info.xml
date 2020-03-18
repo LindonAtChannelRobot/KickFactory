@@ -22,4 +22,5 @@
   <SupportMonoFX value="No"/>
   <VST3Support value="No"/>
   <UseRawFrontend value="No"/>
+  <EnableMidiInputFX value="No"/>
 </ProjectSettings>

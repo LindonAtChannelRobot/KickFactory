@@ -494,6 +494,7 @@ inline function displayPattern(pidx)
 inline function getFXTargetArray(selection)
 {
     local FXTargetArray = []; // first element is the target, second is the param, third is ratio
+    Console.print("selecting "+ selection);
     switch(selection)
     {
         case 1:  //OFF
@@ -512,6 +513,7 @@ inline function getFXTargetArray(selection)
             FXTargetArray[2] = 60/100;
             break;
         case 4:  //Layer 1 Rvb wet
+            Console.print("reverb is:" + TheReverbs[0]);
             FXTargetArray[0] = TheReverbs[0];
             FXTargetArray[1] = TheReverbs[0].WetGain;
             FXTargetArray[2] = -1;
@@ -538,22 +540,90 @@ var seqCurrentNoteID = -1;
 var mySeqTempo;
 const var VelocityCursor = Content.getComponent("VelocityCursor");
 
+inline function startSequencer()
+{
+
+    local psdx;
+    switch (SeqModeSelector.getValue())
+    {
+        case 1:  //tempo
+            seqCurrentStep = 0;   
+            SequencerPanel.startTimer(mySeqTempo);
+            break;
+        case 2:  //note
+            SequencerPanel.stopTimer();
+            seqCurrentStep = 0;   
+            break;
+        case 3:  //random  
+            SequencerPanel.stopTimer();
+            seqCurrentStep = Math.floor(Math.random()* SeqStepsKnob.getValue()); 
+            break;
+    };
+    for (psdx = 0; psdx < 8; psdx++)
+    {
+        TheCursors[psdx].showControl(true);
+    }
+    processSeqStep();
+
+};
+
+inline function stopSequencer()
+{
+    local psdx;
+    SequencerPanel.stopTimer();
+    seqCurrentStep = 0;    
+    for (psdx = 0; psdx < 8; psdx++)
+    {
+        TheCursors[psdx].showControl(false);
+    };
+
+};
 
 inline function processSeqStep()
 {
-    //move the cursors along
-    // are we at the end of the steps?
-    if (seqCurrentStep >= SeqStepsKnob.getValue())
-    {
-        // we are at the end od this sequence..
-        seqCurrentStep = 0;
-    };
     
-    //Console.print("in seq process:" + VelocitySetters[seqCurrentStep].get("x"));
-    VelocityCursor.set("x",VelocitySetters[seqCurrentStep].get("x") );
-    seqCurrentStep++;
+    local psdx;
+    
+     //draw the cursors...
+    for (psdx = 0; psdx < 8; psdx++)
+    {
+        TheCursors[psdx].set("x",VelocitySetters[seqCurrentStep].get("x") );
+    }
+    // set up the params for this step...
+    processStepParams(seqCurrentStep);
+    
+    // what kind of sequence are we
+    switch(SeqModeSelector.getValue())
+    {
+        case 1: // a tempo based sequence
+            seqCurrentStep++;
+            if (seqCurrentStep >= SeqStepsKnob.getValue())  //step end
+            {
+                seqCurrentStep = 0;
+            };
+            break;
+        case 2: // a note based sequence
+            seqCurrentStep++;
+            if (seqCurrentStep >= SeqStepsKnob.getValue())  //step end
+            {
+                seqCurrentStep = 0;
+            };
+            break;
+        case 3: // a rnadom based sequence
+            seqCurrentStep = Math.floor(Math.random() * SeqStepsKnob.getValue());
+    };       
+    
 };
 
+inline function processStepParams(stepNum)
+{
+    Console.print("--------- " + stepNum + " ---------"); 
+    Console.print("Env 1.");
+    Console.print("Status:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].power);
+    Console.print("Attack:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].attack);
+
+};
+    
 //--------------------------------------------------------
 function paintKeys()
 {
@@ -567,7 +637,7 @@ function paintKeys()
             Engine.setKeyColour(kdx, KEY_DARK);
         };
         
-        if (kdx >= (MIDINoteTarget + 4) && kdx <= (MIDINoteTarget + 11))
+        if (patternSwitches.indexOf(kdx) != -1)
             Engine.setKeyColour(kdx, KEY_PATTERN);
     }; 
 };
@@ -586,6 +656,7 @@ const var MOD_ON_COLOUR = 0xFF4AA025;
 const var KEY_DARK = 0x88112211;
 const var KEY_TARGET = 0xAA44BB44;
 const var KEY_PATTERN = 0x88BBBB44;
+const var patternSwitches = [72,73,74,75,76,77,78,79];
 // GENERAL VARIABLES
 var targetVelocity;
 var targetEnvelope;
@@ -599,6 +670,7 @@ var currentSelectingEnvelopeVoice;
 var currentSelectingEnvelopeSlot;
 var list = [];
 var MIDINoteTarget;
+
 
 // OBJECTS
 // Velocity Row
@@ -753,8 +825,34 @@ var FX2Setters = [];;
 var FX3Setters = [];;
 var FX4Setters = [];
 
-const var MIDISelector = Content.getComponent("MIDISelector");
+var TheCursors = [];
+TheCursors[0] = Content.getComponent("VelocityCursor");
+TheCursors[1] = Content.getComponent("Env1Cursor");
+TheCursors[2] = Content.getComponent("Env2Cursor");
+TheCursors[3] = Content.getComponent("Env3Cursor");
+TheCursors[4] = Content.getComponent("FX1Cursor");
+TheCursors[5] = Content.getComponent("FX2Cursor");
+TheCursors[6] = Content.getComponent("FX3Cursor");
+TheCursors[7] = Content.getComponent("FX4Cursor");
 
+var TheEnvLikelihoods = [];
+for(i = 0; i < 3; i++)
+{
+    TheEnvLikelihoods[i] = Content.getComponent("Envelope" + (i +1) + "Likelihood");
+    TheEnvLikelihoods[i].setControlCallback(onEnvLikelihood);        
+};
+
+var TheFXLikelihoods = [];
+var TheFXSelectors = [];
+for(i = 0; i < 4; i++)
+{
+    TheFXLikelihoods[i] = Content.getComponent("FX" + (i +1) + "Likelihood");
+    TheFXLikelihoods[i].setControlCallback(onEnvLikelihood);    
+    TheFXSelectors[i] = Content.getComponent("FX" + (i +1) + "Selector");
+    TheFXSelectors[i].setControlCallback(onFXSelector);        
+};
+
+const var MIDISelector = Content.getComponent("MIDISelector");
 const var SeqStepsKnob = Content.getComponent("SeqStepsKnob");
 
 
@@ -2644,6 +2742,7 @@ inline function onVelocitySetter(component, value)
         if(component == VelocitySetters[kdx])
         {
             patterns[currentSelectingPattern].velocityRow.velocityValues[kdx] = value;
+            playingPattern = patterns[currentSelectingPattern];
         };
     };
 };
@@ -2658,6 +2757,7 @@ inline function onEnv1Setter(component, value)
         if(component == Env1Setters[kdx])
         {
             patterns[currentSelectingPattern].EnvelopeRowSet[0].envelopeValues[kdx].power = value;
+            playingPattern = patterns[currentSelectingPattern];
             if (value) // turned on this envelope
             {   
                 currentSelectingEnvelopeSlot = kdx;
@@ -2704,6 +2804,7 @@ inline function onEnv2Setter(component, value)
         if(component == Env2Setters[kdx])
         {
             patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].power = value;
+            playingPattern = patterns[currentSelectingPattern];
             if (value) // turned on this envelope
             {   
                 
@@ -2750,6 +2851,7 @@ inline function onEnv3Setter(component, value)
         if(component == Env3Setters[kdx])
         {
             patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].power = value;
+            playingPattern = patterns[currentSelectingPattern];
             if (value) // turned on this envelope
             {   
                 
@@ -2798,6 +2900,7 @@ inline function onFX1Setter(component, value)
         if(component == FX1Setters[kdx])
         {
             patterns[currentSelectingPattern].FXRowSet[fxRowis].fxValues[kdx] = value;
+            playingPattern = patterns[currentSelectingPattern];
         };
     };
 };
@@ -2811,6 +2914,7 @@ inline function onFX2Setter(component, value)
         if(component == FX2Setters[kdx])
         {
             patterns[currentSelectingPattern].FXRowSet[fxRowis].fxValues[kdx] = value;
+            playingPattern = patterns[currentSelectingPattern];
         };
     };
 };
@@ -2824,6 +2928,7 @@ inline function onFX3Setter(component, value)
         if(component == FX3Setters[kdx])
         {
             patterns[currentSelectingPattern].FXRowSet[fxRowis].fxValues[kdx] = value;
+            playingPattern = patterns[currentSelectingPattern];
         };
     };
 };
@@ -2837,6 +2942,7 @@ inline function onFX4Setter(component, value)
         if(component == FX4Setters[kdx])
         {
             patterns[currentSelectingPattern].FXRowSet[fxRowis].fxValues[kdx] = value;
+            playingPattern = patterns[currentSelectingPattern];
         };
     };
 };
@@ -2856,6 +2962,7 @@ Content.getComponent("SeqEnvEditCloser").setControlCallback(onSeqEnvEditCloserCo
 inline function onSeqEnvelopeAmount(component, value)
 {
 	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].amount = value;
+    playingPattern = patterns[currentSelectingPattern];
 };
 
 
@@ -2870,6 +2977,7 @@ inline function onSeqEnvelopeAttack(component, value)
     */
     //save the value in the seq
 	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].attack = value;
+    playingPattern = patterns[currentSelectingPattern];
 	//modify the display envelope
 	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Attack, value);
 };
@@ -2879,6 +2987,7 @@ inline function onSeqEnvelopeHold(component, value)
 {
 	//save the value in the seq
 	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].hold = value;
+    playingPattern = patterns[currentSelectingPattern];
 	//modify the display envelope
 	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Hold, value);
 };
@@ -2888,6 +2997,7 @@ inline function onSeqEnvelopeDecay(component, value)
 	
 	//save the value in the seq
 	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].decay = value;
+    playingPattern = patterns[currentSelectingPattern];
 	//modify the display envelope
 	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Decay, value);
 };
@@ -2898,6 +3008,7 @@ inline function onSeqEnvelopeSustain(component, value)
 	//save the value in the seq
 	//Console.print("setting sustain for slot:" + currentSelectingEnvelopeSlot);
 	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain = value;
+    playingPattern = patterns[currentSelectingPattern];
 	//modify the display envelope
 	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Sustain, value);
 };
@@ -2907,6 +3018,7 @@ inline function onSeqEnvelopeRelease(component, value)
 	
 	//save the value in the seq
 	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].release = value;
+    playingPattern = patterns[currentSelectingPattern];
 	//modify the display envelope
 	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Release, value);
 };
@@ -2916,6 +3028,12 @@ paintKeys();
 
 
 //=== teh sequencer start stop etc.
+const var SeqSwingDesignerPanel = Content.getComponent("SeqSwingDesignerPanel");
+const var SeqStartStop = Content.getComponent("SeqStartStop");
+const var SeqModeSelector = Content.getComponent("SeqModeSelector");
+
+
+
 
 SequencerPanel.setTimerCallback(function()
 {
@@ -2927,29 +3045,118 @@ inline function onSeqStartStopControl(component, value)
 	//
 	if (value) // start
     {
-	    SequencerPanel.startTimer(mySeqTempo);
-	    processSeqStep();
+        startSequencer();
     }else{
-        SequencerPanel.stopTimer();
-        seqCurrentStep = 0;
+        stopSequencer();
     };
 };
 
 Content.getComponent("SeqStartStop").setControlCallback(onSeqStartStopControl);
 
 
+inline function onSeqModeSelectorControl(component, value)
+{
+	//
+	if (SeqStartStop.getValue() == 1) // running
+	    startSequencer(); // this will reset everythign and use te correct mode...
+};
 
+Content.getComponent("SeqModeSelector").setControlCallback(onSeqModeSelectorControl);
+
+
+
+
+
+
+inline function onSwingDesignerButtonControl(component, value)
+{
+	SeqSwingDesignerPanel.showControl(true);
+};
+
+Content.getComponent("SwingDesignerButton").setControlCallback(onSwingDesignerButtonControl);
+
+
+inline function onSeqSwingDesignerCloserControl(component, value)
+{
+	SeqSwingDesignerPanel.showControl(false);
+};
+
+Content.getComponent("SeqSwingDesignerCloser").setControlCallback(onSeqSwingDesignerCloserControl);
+
+
+
+inline function onVelocityLikelihoodControl(component, value)
+{
+	patterns[currentSelectingPattern].velocityRow.likelihood = value;
+    playingPattern = patterns[currentSelectingPattern];
+};
+
+Content.getComponent("VelocityLikelihood").setControlCallback(onVelocityLikelihoodControl);
+
+inline function onEnvLikelihood(component, value)
+{
+    
+    for(i= 0; i < 3; i++)
+    {
+        if(TheEnvLikelihoods[i] == component)
+        {
+	        patterns[currentSelectingPattern].EnvelopeRowSet[i].likelihood = value;
+            playingPattern = patterns[currentSelectingPattern];
+        };
+    };
+};
+
+inline function onFXLikelihood(component, value)
+{
+    
+    for(i= 0; i < 3; i++)
+    {
+        if(TheFXLikelihoods[i] == component)
+        {
+	        patterns[currentSelectingPattern].FXRowSet[i].likelihood = value;
+            playingPattern = patterns[currentSelectingPattern];
+        };
+    };
+};
+
+inline function onFXSelector(component, value)
+{
+    local myFX;
+    for(i= 0; i < 3; i++)
+    {
+        if(TheFXSelectors[i] == component)
+        {
+            myFX = getFXTargetArray(value);
+	        patterns[currentSelectingPattern].FXRowSet[i].fxTarget = myFX;
+            playingPattern = patterns[currentSelectingPattern];
+        };
+    };
+};
 
 function onNoteOn()
 {
-	if (Message.getNoteNumber() - (MIDINoteTarget + 4) >= 0 && Message.getNoteNumber() - (MIDINoteTarget + 4) <=7)
+	if ( patternSwitches.indexOf(Message.getNoteNumber()) != -1)
     {
-        PatternSelectors[Message.getNoteNumber() - (MIDINoteTarget + 4)].setValue(1);
-        PatternSelectors[Message.getNoteNumber() - (MIDINoteTarget + 4)].changed();
-        //displayPattern(Message.getNoteNumber() - (MIDINoteTarget + 4));
-        //Console.print(Message.getNoteNumber() - (MIDINoteTarget + 4));
+        // its a keyswitch to change the pattern...
+        PatternSelectors[Message.getNoteNumber() - patternSwitches[0]].setValue(1);
+        PatternSelectors[Message.getNoteNumber() - patternSwitches[0]].changed();
     };
-	   
+	if(SeqStartStop.getValue() == 1)
+    {
+        // we are running somehow
+        switch(SeqModeSelector.getValue())
+        {
+            // case 1:  // its a tempo timer based seq...just play this note...
+            case 2:     // its a note based sequence - so cancel this and call the seqStep
+                //Message.ignoreEvent(true);
+                processSeqStep();
+                break;
+            case 3:      // its a random based seq so same thing really..
+                //Message.ignoreEvent(true);
+                processSeqStep();
+                break;
+        }
+    }
 }
  function onNoteOff()
 {

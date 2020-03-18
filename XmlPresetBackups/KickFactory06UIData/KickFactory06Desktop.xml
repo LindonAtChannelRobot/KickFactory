@@ -640,12 +640,11 @@
                width="93" height="18" filmstripImage="{PROJECT_FOLDER}seqStartStop.png"/>
     <Component type="ScriptButton" id="patternsSave" x="430" y="19" parentComponent="SequencerPanel"
                height="18" width="93" filmstripImage="{PROJECT_FOLDER}savePatterns.png"/>
-    <Component type="ScriptPanel" id="ImpulseSelectorPanel4" x="101" y="21"
-               parentComponent="SequencerPanel" width="78" height="16" itemColour="0"
-               bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
-      <Component type="ScriptComboBox" id="ImpulseSelector4" x="-1" y="-5" max="3"
-                 parentComponent="ImpulseSelectorPanel4" width="103" height="24"
-                 items="TEMPO&#10;NOTE&#10;RAND."/>
+    <Component type="ScriptPanel" id="SeqModePanel" x="101" y="21" parentComponent="SequencerPanel"
+               width="78" height="16" itemColour="0" bgColour="16777215" itemColour2="0"
+               borderSize="0" textColour="16777215">
+      <Component type="ScriptComboBox" id="SeqModeSelector" x="-1" y="-5" max="3"
+                 parentComponent="SeqModePanel" width="103" height="24" items="TEMPO&#10;NOTE&#10;RAND."/>
     </Component>
     <Component type="ScriptButton" id="PatternGenerator" x="300" y="2" width="62"
                height="16" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
@@ -693,56 +692,59 @@
     <Component type="ScriptPanel" id="SeqVelocityPanel" x="137" y="56" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="VelocityCursor" x="173" y="1" parentComponent="SeqVelocityPanel"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="VelocityCursor" x="105" y="1" parentComponent="SeqVelocityPanel"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep1" x="3" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep2" x="37" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep3" x="71" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep4" x="105" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43" text="SeqVelocityStep5a"/>
+                 numStrips="128" width="34" height="43" text="SeqVelocityStep5a"
+                 stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep5" x="139" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep6" x="173" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep7" x="207" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep8" x="241" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep9" x="275" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep10" x="309" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep11" x="343" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep12" x="377" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep13" x="411" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43" text="SeqVelocityStep13a"/>
+                 numStrips="128" width="34" height="43" text="SeqVelocityStep13a"
+                 stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep14" x="445" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep15" x="479" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep16" x="513" y="5" parentComponent="SeqVelocityPanel"
                  max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
-                 numStrips="128" width="34" height="43"/>
+                 numStrips="128" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptPanel" id="VelocityHidePanel" x="548" y="3" parentComponent="SeqVelocityPanel"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
@@ -760,8 +762,9 @@
     <Component type="ScriptPanel" id="SeqEnvelopePanel1" x="137" y="107" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="Env1Cursor" x="2" y="1" parentComponent="SeqEnvelopePanel1"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="Env1Cursor" x="105" y="1" parentComponent="SeqEnvelopePanel1"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptButton" id="SeqEnvelope1Step1" x="3" y="5" parentComponent="SeqEnvelopePanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
       <Component type="ScriptButton" id="SeqEnvelope1Step2" x="37" y="5" parentComponent="SeqEnvelopePanel1"
@@ -811,8 +814,9 @@
     <Component type="ScriptPanel" id="SeqEnvelopePanel2" x="136" y="158" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="Env2Cursor" x="3" y="1" parentComponent="SeqEnvelopePanel2"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="Env2Cursor" x="105" y="1" parentComponent="SeqEnvelopePanel2"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptButton" id="SeqEnvelope2Step1" x="4" y="5" parentComponent="SeqEnvelopePanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
       <Component type="ScriptButton" id="SeqEnvelope2Step2" x="38" y="5" parentComponent="SeqEnvelopePanel2"
@@ -862,8 +866,9 @@
     <Component type="ScriptPanel" id="SeqEnvelopePanel3" x="137" y="210" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="Env3Cursor" x="2" y="0" parentComponent="SeqEnvelopePanel3"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="Env3Cursor" x="105" y="0" parentComponent="SeqEnvelopePanel3"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptButton" id="SeqEnvelope3Step1" x="3" y="4" parentComponent="SeqEnvelopePanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
       <Component type="ScriptButton" id="SeqEnvelope3Step2" x="37" y="4" parentComponent="SeqEnvelopePanel3"
@@ -921,56 +926,57 @@
     <Component type="ScriptPanel" id="SeqFXPanel1" x="137" y="262" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX1Cursor" x="2" y="-1" parentComponent="SeqFXPanel1"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="FX1Cursor" x="105" y="-1" parentComponent="SeqFXPanel1"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptSlider" id="SeqFX1Step1" x="3" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step2" x="37" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step3" x="71" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step4" x="105" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step5" x="139" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step6" x="173" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step7" x="207" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step8" x="241" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step9" x="275" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step10" x="309" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step11" x="343" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step12" x="377" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step13" x="411" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step14" x="445" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step15" x="479" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX1Step16" x="513" y="3" parentComponent="SeqFXPanel1"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptPanel" id="FX1HidePanel" x="550" y="2" parentComponent="SeqFXPanel1"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
@@ -996,56 +1002,57 @@
     <Component type="ScriptPanel" id="SeqFXPanel2" x="137" y="314" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX2Cursor" x="2" y="-2" parentComponent="SeqFXPanel2"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="FX2Cursor" x="105" y="-2" parentComponent="SeqFXPanel2"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptSlider" id="SeqFX2Step1" x="3" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step2" x="37" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step3" x="71" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step4" x="105" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step5" x="139" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step6" x="173" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step7" x="207" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step8" x="241" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step9" x="275" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step10" x="309" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step11" x="343" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step12" x="377" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step13" x="411" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step14" x="445" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step15" x="479" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX2Step16" x="513" y="3" parentComponent="SeqFXPanel2"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptPanel" id="FX2HidePanel" x="549" y="1" parentComponent="SeqFXPanel2"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
@@ -1071,56 +1078,57 @@
     <Component type="ScriptPanel" id="SeqFXPanel3" x="137" y="364" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX3Cursor" x="2" y="-1" parentComponent="SeqFXPanel3"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="FX3Cursor" x="105" y="-1" parentComponent="SeqFXPanel3"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptSlider" id="SeqFX3Step1" x="3" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step2" x="37" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step3" x="71" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step4" x="105" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step5" x="139" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step6" x="173" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step7" x="207" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step8" x="241" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step9" x="275" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step10" x="309" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step11" x="343" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step12" x="377" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step13" x="411" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step14" x="445" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step15" x="479" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX3Step16" x="513" y="3" parentComponent="SeqFXPanel3"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptPanel" id="FX3HidePanel" x="549" y="2" parentComponent="SeqFXPanel3"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
@@ -1146,56 +1154,57 @@
     <Component type="ScriptPanel" id="SeqFXPanel4" x="137" y="415" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX4Cursor" x="2" y="0" parentComponent="SeqFXPanel4"
-                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"/>
+      <Component type="ScriptImage" id="FX4Cursor" x="105" y="0" parentComponent="SeqFXPanel4"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
       <Component type="ScriptSlider" id="SeqFX4Step1" x="3" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step2" x="37" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step3" x="71" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step4" x="105" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step5" x="139" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step6" x="173" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step7" x="207" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step8" x="241" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step9" x="275" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step10" x="309" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step11" x="343" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step12" x="377" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step13" x="411" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step14" x="445" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step15" x="479" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptSlider" id="SeqFX4Step16" x="513" y="3" parentComponent="SeqFXPanel4"
                  max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqStepPercentage.png"
-                 numStrips="101" width="34" height="43"/>
+                 numStrips="101" width="34" height="43" stepSize="1.0"/>
       <Component type="ScriptPanel" id="FX4HidePanel" x="553" y="29" parentComponent="SeqFXPanel4"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
@@ -1206,7 +1215,7 @@
       <Component type="ScriptImage" id="SEqEnvEditBackground" x="0" y="0" width="505"
                  height="156" parentComponent="SeqEnvelopeEditPanel" fileName="{PROJECT_FOLDER}KickFactory2SeqEnvEditBackground.png"/>
       <Component type="ScriptLabel" id="SeqEnvTitle" x="8" y="10" parentComponent="SeqEnvelopeEditPanel"
-                 editable="0" width="128" height="15" text="ENVELOPE 1 STEP 4"
+                 editable="0" width="128" height="15" text="ENVELOPE 1 STEP 3"
                  fontSize="11" alignment="left"/>
       <Component type="ScriptButton" id="SeqEnvEditCloser" x="0" y="0" width="505"
                  height="156" parentComponent="SeqEnvelopeEditPanel" filmstripImage="{PROJECT_FOLDER}blank10Square.png"/>
@@ -1246,36 +1255,36 @@
     </Component>
     <Component type="ScriptPanel" id="SeqSwingDesignerPanel" x="396" y="60"
                parentComponent="SequencerPanel" width="300" height="133" borderRadius="0"
-               borderSize="0">
+               borderSize="0" visible="0">
       <Component type="ScriptImage" id="SeqSwingDesignerBackground" x="0" y="0"
                  width="300" height="133" parentComponent="SeqSwingDesignerPanel"
                  fileName="{PROJECT_FOLDER}SwingDesignerPanel.png"/>
       <Component type="ScriptButton" id="SeqSwingDesignerCloser" x="0" y="-2"
-                 parentComponent="SeqSwingDesignerPanel" width="300" height="133"
+                 parentComponent="SeqSwingDesignerPanel" width="287" height="120"
                  filmstripImage="{PROJECT_FOLDER}blank10Square.png"/>
       <Component type="ScriptSlider" id="SwingDesignerStep1" x="17" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep2" x="49" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep3" x="81" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep4" x="113" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep5" x="145" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep6" x="177" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep7" x="209" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
       <Component type="ScriptSlider" id="SwingDesignerStep8" x="241" y="31" parentComponent="SeqSwingDesignerPanel"
-                 width="30" height="60" max="50" min="-50" stepSize="1.0" middlePosition="0"
+                 width="30" height="60" max="50" min="-50" stepSize="1" middlePosition="0"
                  filmstripImage="{PROJECT_FOLDER}SwingAmount.png" numStrips="101"/>
     </Component>
   </Component>
