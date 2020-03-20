@@ -319,7 +319,7 @@ function loadVoice(voiceNum,selectedCategory,selectedVoice)
     SampleMapNames[voiceNum].set("text",trimmedName);
     VoiceBarNames[voiceNum].set("text",trimmedName);
     
-    Console.print("ccccccccccccc");
+
     
     loadVoiceByName(voiceNum, trimmedName);
     // TheSamplers[voiceNum].asSampler().loadSampleMap(trimmedName);
@@ -537,6 +537,8 @@ inline function getFXTargetArray(selection)
 
 var seqCurrentStep = 0;
 var seqCurrentNoteID = -1;
+var thisGrooveStep = 0;
+var previousGrooveStep = -1;
 var mySeqTempo;
 const var VelocityCursor = Content.getComponent("VelocityCursor");
 
@@ -548,6 +550,8 @@ inline function startSequencer()
     {
         case 1:  //tempo
             seqCurrentStep = 0;   
+            thisGrooveStep = 0;
+            previousGrooveStep = -1;
             SequencerPanel.startTimer(mySeqTempo);
             break;
         case 2:  //note
@@ -590,6 +594,9 @@ inline function processSeqStep()
         TheCursors[psdx].set("x",VelocitySetters[seqCurrentStep].get("x") );
     }
     // set up the params for this step...
+    Console.print("--------- " + stepNum + " ---------"); 
+    Console.print("Groove Step:" + thisGrooveStep); 
+    Console.print("Previous Step:" + previousGrooveStep); 
     processStepParams(seqCurrentStep);
     
     // what kind of sequence are we
@@ -601,6 +608,11 @@ inline function processSeqStep()
             {
                 seqCurrentStep = 0;
             };
+            previousGrooveStep = thisGrooveStep;
+            thisGrooveStep++;
+            if (thisGrooveStep >= 8)
+                thisGrooveStep = 0;
+                
             break;
         case 2: // a note based sequence
             seqCurrentStep++;
@@ -610,14 +622,14 @@ inline function processSeqStep()
             };
             break;
         case 3: // a rnadom based sequence
-            seqCurrentStep = Math.floor(Math.random() * SeqStepsKnob.getValue());
+            seqCurrentStep = Math.floor(Math.random()* SeqStepsKnob.getValue());
     };       
     
 };
 
 inline function processStepParams(stepNum)
 {
-    Console.print("--------- " + stepNum + " ---------"); 
+
     Console.print("Env 1.");
     Console.print("Status:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].power);
     Console.print("Attack:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].attack);
@@ -2590,6 +2602,8 @@ inline function onPatternSelector(component, value)
                 playingPattern = patterns[i];
                 currentSelectingPattern = i;
                 seqCurrentStep = 0;
+                thisGrooveStep = 0;
+                //previousGrooveStep = -1;  dont set this as we will need to compensate for the last played step..
                 displayPattern(i);
                 PatternSelectors[i].setValue(1);
             }else{
@@ -3164,7 +3178,7 @@ function onNoteOn()
 }
  function onController()
 {
-	
+
 }
  function onTimer()
 {

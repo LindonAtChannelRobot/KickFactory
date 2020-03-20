@@ -223,8 +223,8 @@
             <Control type="ScriptButton" id="SeqEnvelope3Step14" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step15" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope3Step16" value="0"/>
-            <Control type="ScriptSlider" id="FX1Likelihood" value="71"/>
-            <Control type="ScriptComboBox" id="FX1Selector" value="5"/>
+            <Control type="ScriptSlider" id="FX1Likelihood" value="120"/>
+            <Control type="ScriptComboBox" id="FX1Selector" value="3"/>
             <Control type="ScriptSlider" id="SeqFX1Step1" value="83"/>
             <Control type="ScriptSlider" id="SeqFX1Step2" value="69"/>
             <Control type="ScriptSlider" id="SeqFX1Step3" value="55"/>
@@ -241,8 +241,8 @@
             <Control type="ScriptSlider" id="SeqFX1Step14" value="49"/>
             <Control type="ScriptSlider" id="SeqFX1Step15" value="39"/>
             <Control type="ScriptSlider" id="SeqFX1Step16" value="52"/>
-            <Control type="ScriptSlider" id="FX2Likelihood" value="67"/>
-            <Control type="ScriptComboBox" id="FX2Selector" value="3"/>
+            <Control type="ScriptSlider" id="FX2Likelihood" value="11"/>
+            <Control type="ScriptComboBox" id="FX2Selector" value="4"/>
             <Control type="ScriptSlider" id="SeqFX2Step1" value="35"/>
             <Control type="ScriptSlider" id="SeqFX2Step2" value="9"/>
             <Control type="ScriptSlider" id="SeqFX2Step3" value="70"/>
@@ -259,7 +259,7 @@
             <Control type="ScriptSlider" id="SeqFX2Step14" value="29"/>
             <Control type="ScriptSlider" id="SeqFX2Step15" value="4"/>
             <Control type="ScriptSlider" id="SeqFX2Step16" value="32"/>
-            <Control type="ScriptSlider" id="FX3Likelihood" value="44"/>
+            <Control type="ScriptSlider" id="FX3Likelihood" value="193"/>
             <Control type="ScriptComboBox" id="FX3Selector" value="4"/>
             <Control type="ScriptSlider" id="SeqFX3Step1" value="36"/>
             <Control type="ScriptSlider" id="SeqFX3Step2" value="50"/>
@@ -277,7 +277,7 @@
             <Control type="ScriptSlider" id="SeqFX3Step14" value="5"/>
             <Control type="ScriptSlider" id="SeqFX3Step15" value="85"/>
             <Control type="ScriptSlider" id="SeqFX3Step16" value="82"/>
-            <Control type="ScriptSlider" id="FX4Likelihood" value="40"/>
+            <Control type="ScriptSlider" id="FX4Likelihood" value="170"/>
             <Control type="ScriptComboBox" id="FX4Selector" value="4"/>
             <Control type="ScriptSlider" id="SeqFX4Step1" value="37"/>
             <Control type="ScriptSlider" id="SeqFX4Step2" value="94"/>
@@ -296,7 +296,7 @@
             <Control type="ScriptSlider" id="SeqFX4Step15" value="36"/>
             <Control type="ScriptSlider" id="SeqFX4Step16" value="34"/>
             <Control type="ScriptButton" id="SeqEnvEditCloser" value="0"/>
-            <Control type="ScriptButton" id="SeqSwingDesignerCloser" value="0"/>
+            <Control type="ScriptButton" id="SeqSwingDesignerCloser" value="1"/>
             <Control type="ScriptSlider" id="SwingDesignerStep1" value="15"/>
             <Control type="ScriptSlider" id="SwingDesignerStep2" value="-6"/>
             <Control type="ScriptSlider" id="SwingDesignerStep3" value="-1"/>
@@ -524,7 +524,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="0.0220993"
+                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="-0.0409801"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -620,7 +620,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="0.780371"
+                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-4.61748"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -820,7 +820,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.111803"
+                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.00975552"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -916,7 +916,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="4.38982"
+                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="1.37162"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -1116,7 +1116,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.0423279"
+                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.0835508"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -1212,7 +1212,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="0.347388"
+                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="-2.90411"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
