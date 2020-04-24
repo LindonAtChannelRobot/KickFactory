@@ -445,6 +445,11 @@ const var FX1Selector = Content.getComponent("FX1Selector");
 const var FX2Selector = Content.getComponent("FX2Selector");
 const var FX3Selector = Content.getComponent("FX3Selector");
 const var FX4Selector = Content.getComponent("FX4Selector");
+var GrooveDesignerSteps = [];
+for (idx = 0; idx < 8; idx++)
+{
+    GrooveDesignerSteps[idx] = Content.getComponent("GrooveDesignerStep" + (1 + idx));
+}
 
 
 inline function displayPattern(pidx)
@@ -575,6 +580,14 @@ inline function stopSequencer()
 {
     local psdx;
     SequencerPanel.stopTimer();
+    // is there a note playing that we need to stop?
+    if (seqCurrentNoteID != -1)
+    {
+        Synth.noteOffByEventId(seqCurrentNoteID);
+        seqCurrentNoteID = -1;
+    }
+    
+    // set the seq step to zero and hide the cursors
     seqCurrentStep = 0;    
     for (psdx = 0; psdx < 8; psdx++)
     {
@@ -587,22 +600,60 @@ inline function processSeqStep()
 {
     
     local psdx;
-    
+    local quantiseOffset = 0;  // the amount to get us back on quant
+    local grooveOffset = 0;    // the amount to make us groove..
+    local nextGrooveStep = thisGrooveStep + 1;
+    if (nextGrooveStep > 7)
+        nextGrooveStep = 0;
+        
      //draw the cursors...
     for (psdx = 0; psdx < 8; psdx++)
     {
         TheCursors[psdx].set("x",VelocitySetters[seqCurrentStep].get("x") );
     }
+    // is there an existing Note ID that we need to end?
+    if (seqCurrentNoteID != -1)
+    {
+        Synth.noteOffByEventId(seqCurrentNoteID);
+        seqCurrentNoteID = -1;
+    }
     // set up the params for this step...
-    Console.print("--------- " + stepNum + " ---------"); 
+    Console.print("--------- " + seqCurrentStep + " ---------"); 
     Console.print("Groove Step:" + thisGrooveStep); 
     Console.print("Previous Step:" + previousGrooveStep); 
-    processStepParams(seqCurrentStep);
+    if (VelocitySetters[seqCurrentStep].getValue() > 0)
+    {   
+        processStepParams(seqCurrentStep);
+    };
     
     // what kind of sequence are we
     switch(SeqModeSelector.getValue())
     {
         case 1: // a tempo based sequence
+            // process this step -- the params have been dealt with so just the note stuff
+            // first get us back on quantised time...
+            if (previousGrooveStep == -1)
+            {
+                // we are in the very first step of a playback session
+                quantiseOffset = 0;   //so we are ON quantise
+            }else{
+                quantiseOffset = (GrooveDesignerSteps[thisGrooveStep].getValue() * SeqSwing.getValue());
+            
+                //Console.print("Quantise Value is:" + quantiseOffset);
+            };
+            // set up for the groove on the next step
+            grooveOffset = (GrooveDesignerSteps[nextGrooveStep].getValue() * SeqSwing.getValue()) * -1;
+            //Console.print("Groove Value is:" + grooveOffset);
+            
+            // time to play a note maybe?
+            if (VelocitySetters[seqCurrentStep].getValue() > 0)
+            {   
+                // we have a requested note
+                seqCurrentNoteID = Synth.playNote(36, VelocitySetters[seqCurrentStep].getValue());
+            };
+            //set the timer to go off correctly
+            //SequencerPanel.startTimer(mySeqTempo + quantiseOffset + grooveOffset);
+            Console.print("*********setting timer to:" + (mySeqTempo + quantiseOffset + grooveOffset));
             seqCurrentStep++;
             if (seqCurrentStep >= SeqStepsKnob.getValue())  //step end
             {
@@ -610,7 +661,7 @@ inline function processSeqStep()
             };
             previousGrooveStep = thisGrooveStep;
             thisGrooveStep++;
-            if (thisGrooveStep >= 8)
+            if (thisGrooveStep >= 8)  //groove end
                 thisGrooveStep = 0;
                 
             break;
@@ -630,10 +681,25 @@ inline function processSeqStep()
 inline function processStepParams(stepNum)
 {
 
+    local localObj;
+    local localParam;
+    local localValue;
+    local localRatio;
+    
     Console.print("Env 1.");
     Console.print("Status:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].power);
     Console.print("Attack:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].attack);
 
+    Console.print("FX 1.");
+    Console.print("Target:" + playingPattern.FXRowSet[0].fxTarget[0]);
+    Console.print("Value:" + playingPattern.FXRowSet[0].fxValues[stepNum]);
+    
+    localObj = playingPattern.FXRowSet[0].fxTarget[0];
+    localParam = playingPattern.FXRowSet[0].fxTarget[1];
+    localRatio = playingPattern.FXRowSet[0].fxTarget[2];
+    localValue = playingPattern.FXRowSet[0].fxValues[stepNum];
+    localObj.setAttribute(localObj.localParam, (localValue * localRatio));
+    
 };
     
 //--------------------------------------------------------
@@ -642,12 +708,12 @@ function paintKeys()
     var kdx;
     for (kdx = 0;kdx <128; kdx++)
     {
+        Engine.setKeyColour(kdx, KEY_DARK);
         if (kdx == MIDINoteTarget)
-        {
             Engine.setKeyColour(kdx, KEY_TARGET);
-        }else{
-            Engine.setKeyColour(kdx, KEY_DARK);
-        };
+        if (kdx == PLAY_STOP_SWITCH)
+            Engine.setKeyColour(kdx, Colours.coral );
+        
         
         if (patternSwitches.indexOf(kdx) != -1)
             Engine.setKeyColour(kdx, KEY_PATTERN);
@@ -669,6 +735,7 @@ const var KEY_DARK = 0x88112211;
 const var KEY_TARGET = 0xAA44BB44;
 const var KEY_PATTERN = 0x88BBBB44;
 const var patternSwitches = [72,73,74,75,76,77,78,79];
+const var PLAY_STOP_SWITCH = 69;
 // GENERAL VARIABLES
 var targetVelocity;
 var targetEnvelope;
@@ -3042,7 +3109,7 @@ paintKeys();
 
 
 //=== teh sequencer start stop etc.
-const var SeqSwingDesignerPanel = Content.getComponent("SeqSwingDesignerPanel");
+const var SeqGrooveDesignerPanel = Content.getComponent("SeqGrooveDesignerPanel");
 const var SeqStartStop = Content.getComponent("SeqStartStop");
 const var SeqModeSelector = Content.getComponent("SeqModeSelector");
 
@@ -3082,20 +3149,20 @@ Content.getComponent("SeqModeSelector").setControlCallback(onSeqModeSelectorCont
 
 
 
-inline function onSwingDesignerButtonControl(component, value)
+inline function onGrooveDesignerButtonControl(component, value)
 {
-	SeqSwingDesignerPanel.showControl(true);
+	SeqGrooveDesignerPanel.showControl(true);
 };
 
-Content.getComponent("SwingDesignerButton").setControlCallback(onSwingDesignerButtonControl);
+Content.getComponent("GrooveDesignerButton").setControlCallback(onGrooveDesignerButtonControl);
 
 
-inline function onSeqSwingDesignerCloserControl(component, value)
+inline function onSeqGrooveDesignerCloserControl(component, value)
 {
-	SeqSwingDesignerPanel.showControl(false);
+	SeqGrooveDesignerPanel.showControl(false);
 };
 
-Content.getComponent("SeqSwingDesignerCloser").setControlCallback(onSeqSwingDesignerCloserControl);
+Content.getComponent("SeqGrooveDesignerCloser").setControlCallback(onSeqGrooveDesignerCloserControl);
 
 
 
@@ -3141,6 +3208,8 @@ inline function onFXSelector(component, value)
         if(TheFXSelectors[i] == component)
         {
             myFX = getFXTargetArray(value);
+            Console.print("setting FX in pattern:" + currentSelectingPattern);
+	        patterns[currentSelectingPattern].FXRowSet[i].fxSelection = value -1;
 	        patterns[currentSelectingPattern].FXRowSet[i].fxTarget = myFX;
             playingPattern = patterns[currentSelectingPattern];
         };
@@ -3155,6 +3224,12 @@ function onNoteOn()
         PatternSelectors[Message.getNoteNumber() - patternSwitches[0]].setValue(1);
         PatternSelectors[Message.getNoteNumber() - patternSwitches[0]].changed();
     };
+    if(Message.getNoteNumber() == PLAY_STOP_SWITCH)
+    {
+        SeqStartStop.setValue(1 - SeqStartStop.getValue());
+        SeqStartStop.changed();
+    };
+    
 	if(SeqStartStop.getValue() == 1)
     {
         // we are running somehow
@@ -3178,7 +3253,7 @@ function onNoteOn()
 }
  function onController()
 {
-
+	
 }
  function onTimer()
 {

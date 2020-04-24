@@ -23,7 +23,7 @@
             <Control type="ScriptSlider" id="VolumeKnob1" value="-5.8"/>
             <Control type="ScriptSlider" id="PanKnob1" value="8"/>
             <Control type="ScriptSlider" id="PitchKnob1" value="0.4"/>
-            <Control type="ScriptButton" id="FilterOnOff1" value="1"/>
+            <Control type="ScriptButton" id="FilterOnOff1" value="0"/>
             <Control type="ScriptSlider" id="FreqKnob1" value="617"/>
             <Control type="ScriptSlider" id="ResKnob1" value="1.2"/>
             <Control type="ScriptButton" id="FilterLock1" value="0"/>
@@ -33,7 +33,7 @@
             <Control type="ScriptComboBox" id="TriggerSelector1" value="1"/>
             <Control type="ScriptButton" id="ShapeOnOff1" value="1"/>
             <Control type="ScriptButton" id="ShapeLock1" value="0"/>
-            <Control type="ScriptComboBox" id="CurveSelector1" value="2"/>
+            <Control type="ScriptComboBox" id="CurveSelector1" value="5"/>
             <Control type="ScriptSlider" id="DriveKnob1" value="19.3"/>
             <Control type="ScriptSlider" id="BiasKnob1" value="0.14"/>
             <Control type="ScriptButton" id="ReverbOnOff1" value="0"/>
@@ -151,31 +151,31 @@
             <Control type="ScriptButton" id="PatternSelector6" value="0"/>
             <Control type="ScriptButton" id="PatternSelector7" value="0"/>
             <Control type="ScriptButton" id="PatternSelector8" value="0"/>
-            <Control type="ScriptSlider" id="SeqTempoKnob" value="6"/>
-            <Control type="ScriptSlider" id="SeqStepsKnob" value="16"/>
-            <Control type="ScriptButton" id="SwingDesignerButton" value="0"/>
-            <Control type="ScriptSlider" id="SeqSwing" value="0.643936"/>
-            <Control type="ScriptSlider" id="VelocityLikelihood" value="57"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep1" value="98.05"/>
+            <Control type="ScriptSlider" id="SeqTempoKnob" value="8"/>
+            <Control type="ScriptSlider" id="SeqStepsKnob" value="8"/>
+            <Control type="ScriptButton" id="GrooveDesignerButton" value="1"/>
+            <Control type="ScriptSlider" id="SeqSwing" value="0"/>
+            <Control type="ScriptSlider" id="VelocityLikelihood" value="98"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep1" value="103"/>
             <Control type="ScriptSlider" id="SeqVelocityStep2" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep3" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep3" value="90"/>
             <Control type="ScriptSlider" id="SeqVelocityStep4" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep5" value="116.9"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep6" value="37"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep7" value="120"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep8" value="12"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep5" value="83"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep6" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep7" value="100"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep8" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep9" value="97"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep10" value="1"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep11" value="8.07"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep10" value="94"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep11" value="83"/>
             <Control type="ScriptSlider" id="SeqVelocityStep12" value="0"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep13" value="101.86"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep13" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep14" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep15" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep16" value="0"/>
-            <Control type="ScriptSlider" id="Envelope1Likelihood" value="147"/>
-            <Control type="ScriptButton" id="SeqEnvelope1Step1" value="1"/>
-            <Control type="ScriptButton" id="SeqEnvelope1Step2" value="1"/>
-            <Control type="ScriptButton" id="SeqEnvelope1Step3" value="1"/>
+            <Control type="ScriptSlider" id="Envelope1Likelihood" value="46"/>
+            <Control type="ScriptButton" id="SeqEnvelope1Step1" value="0"/>
+            <Control type="ScriptButton" id="SeqEnvelope1Step2" value="0"/>
+            <Control type="ScriptButton" id="SeqEnvelope1Step3" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step4" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step5" value="0"/>
             <Control type="ScriptButton" id="SeqEnvelope1Step6" value="0"/>
@@ -225,14 +225,14 @@
             <Control type="ScriptButton" id="SeqEnvelope3Step16" value="0"/>
             <Control type="ScriptSlider" id="FX1Likelihood" value="120"/>
             <Control type="ScriptComboBox" id="FX1Selector" value="3"/>
-            <Control type="ScriptSlider" id="SeqFX1Step1" value="83"/>
-            <Control type="ScriptSlider" id="SeqFX1Step2" value="69"/>
-            <Control type="ScriptSlider" id="SeqFX1Step3" value="55"/>
-            <Control type="ScriptSlider" id="SeqFX1Step4" value="10"/>
-            <Control type="ScriptSlider" id="SeqFX1Step5" value="83"/>
-            <Control type="ScriptSlider" id="SeqFX1Step6" value="31"/>
-            <Control type="ScriptSlider" id="SeqFX1Step7" value="30"/>
-            <Control type="ScriptSlider" id="SeqFX1Step8" value="93"/>
+            <Control type="ScriptSlider" id="SeqFX1Step1" value="54"/>
+            <Control type="ScriptSlider" id="SeqFX1Step2" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX1Step3" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX1Step4" value="51"/>
+            <Control type="ScriptSlider" id="SeqFX1Step5" value="26"/>
+            <Control type="ScriptSlider" id="SeqFX1Step6" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX1Step7" value="0"/>
+            <Control type="ScriptSlider" id="SeqFX1Step8" value="0"/>
             <Control type="ScriptSlider" id="SeqFX1Step9" value="10"/>
             <Control type="ScriptSlider" id="SeqFX1Step10" value="14"/>
             <Control type="ScriptSlider" id="SeqFX1Step11" value="13"/>
@@ -296,17 +296,17 @@
             <Control type="ScriptSlider" id="SeqFX4Step15" value="36"/>
             <Control type="ScriptSlider" id="SeqFX4Step16" value="34"/>
             <Control type="ScriptButton" id="SeqEnvEditCloser" value="0"/>
-            <Control type="ScriptButton" id="SeqSwingDesignerCloser" value="1"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep1" value="15"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep2" value="-6"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep3" value="-1"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep4" value="-2"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep5" value="-15"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep6" value="-12"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep7" value="5"/>
-            <Control type="ScriptSlider" id="SwingDesignerStep8" value="-4"/>
-            <Control type="ScriptSlider" id="MasterVolumeKnob" value="-8.7"/>
-            <Control type="ScriptSlider" id="MasterIRREKnob" value="0.72"/>
+            <Control type="ScriptButton" id="SeqGrooveDesignerCloser" value="1"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep1" value="-2"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep2" value="0"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep3" value="-1"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep4" value="-1"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep5" value="3"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep6" value="-2"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep7" value="0"/>
+            <Control type="ScriptSlider" id="GrooveDesignerStep8" value="-1"/>
+            <Control type="ScriptSlider" id="MasterVolumeKnob" value="-17.3"/>
+            <Control type="ScriptSlider" id="MasterIRREKnob" value="0"/>
             <Control type="ScriptComboBox" id="MIDISelector" value="1"/>
           </Content>
           <UIData Source="KickFactory06UIData"/>
@@ -318,7 +318,7 @@
             <Control type="ScriptButton" id="fixStuckNotes" value="0"/>
           </Content>
         </Processor>
-        <Processor Type="ScriptProcessor" ID="NoteRemapper" Bypassed="0">
+        <Processor Type="ScriptProcessor" ID="NoteRemapper" Bypassed="1">
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="TargetMIDIValue" value="36"/>
@@ -340,7 +340,7 @@
     </Processor>
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
-        <Processor Type="SimpleGain" ID="MasterGain" Bypassed="0" Gain="-8.7" Delay="0"
+        <Processor Type="SimpleGain" ID="MasterGain" Bypassed="0" Gain="-17.3" Delay="0"
                    Width="100" Balance="0" InvertPolarity="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
@@ -364,7 +364,15 @@
                VoiceLimit="256" KillFadeTime="20" IconColour="0">
       <ChildProcessors>
         <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
-          <ChildProcessors/>
+          <ChildProcessors>
+            <Processor Type="ScriptProcessor" ID="Script Processor1" Bypassed="0">
+              <ChildProcessors/>
+              <Content/>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+          </ChildProcessors>
         </Processor>
         <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
           <ChildProcessors/>
@@ -395,7 +403,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript1" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent1" value="0.72"/>
+                    <Control type="ScriptSlider" id="IRREPercent1" value="0"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -524,15 +532,14 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="-0.0409801"
-                           Bipolar="1">
+                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="0" Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
               </ChildProcessors>
             </Processor>
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
-                <Processor Type="PolyphonicFilter" ID="Filter1" Bypassed="0" Gain="0.2"
+                <Processor Type="PolyphonicFilter" ID="Filter1" Bypassed="1" Gain="0.2"
                            Frequency="617" Q="1.2" Mode="9" Quality="2" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
@@ -591,7 +598,7 @@
                   </ChildProcessors>
                 </Processor>
                 <Processor Type="PolyshapeFX" ID="Polyshape1" Bypassed="0" Curve="" AsymetricalCurve=""
-                           Drive="19.3" Mode="2" Oversampling="1">
+                           Drive="15.6" Mode="9" Oversampling="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Drive Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -620,7 +627,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-4.61748"
+                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="0"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -691,7 +698,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript2" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent2" value="0.72"/>
+                    <Control type="ScriptSlider" id="IRREPercent2" value="0"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -820,8 +827,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.00975552"
-                           Bipolar="1">
+                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0" Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
               </ChildProcessors>
@@ -916,7 +922,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="1.37162"
+                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="0"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -987,7 +993,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript3" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent3" value="0.72"/>
+                    <Control type="ScriptSlider" id="IRREPercent3" value="0"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -1116,8 +1122,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.0835508"
-                           Bipolar="1">
+                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0" Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
               </ChildProcessors>
@@ -1212,7 +1217,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="-2.90411"
+                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="0"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>

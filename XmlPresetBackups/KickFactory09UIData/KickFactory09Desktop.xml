@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="OveralBAckground" x="0" y="0" width="700"
+             height="597" fileName="{PROJECT_FOLDER}KickFactory2Background.png"/>
+  <Component type="ScriptFloatingTile" id="Keyboardski" x="3" y="596" ContentType="Keyboard"
+             bgColour="6579300" itemColour="16777215" itemColour2="16777215"
+             textColour="16761035" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 14.0,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: false,&#13;&#10;  &quot;LowKey&quot;: 9,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
+             width="697" height="71"/>
+  <Component type="ScriptPanel" id="HeaderPanel" x="0" y="0" height="44" width="701"
+             itemColour="0" itemColour2="0" textColour="16777215">
+    <Component type="ScriptButton" id="Randomise" x="627" y="9" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}RandomiseButton.png" width="31"
+               height="31" scaleFactor="0.8"/>
+    <Component type="ScriptButton" id="PresetsBackwardsButton" x="288" y="20"
+               parentComponent="HeaderPanel" width="18" height="17" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="PresetsForwardsButton" x="450" y="20"
+               parentComponent="HeaderPanel" width="18" height="17" filmstripImage="{PROJECT_FOLDER}PresetsForward.png"
+               isMomentary="1"/>
+    <Component type="ScriptButton" id="Settings" x="660" y="8" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}cog.png" width="31" height="31"
+               scaleFactor="1.2"/>
+    <Component type="ScriptButton" id="VoicesButton" x="495" y="8" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}VoicesButton.png" width="75"
+               height="19" radioGroup="2" saveInPreset="0"/>
+    <Component type="ScriptButton" id="SeqButton" x="495" y="27" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}SeqButton.png" width="75" height="19"
+               radioGroup="2" saveInPreset="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="AllVoicesPanel" x="0" y="47" borderSize="0"
+             borderRadius="0" itemColour2="0" itemColour="0" textColour="16777215"
+             bgColour="16777215" width="700" height="466">
+    <Component type="ScriptPanel" id="VoicePanel1" x="0" y="0" borderSize="0"
+               borderRadius="0" width="700" height="421" parentComponent="AllVoicesPanel">
+      <Component type="ScriptImage" id="PanelBackground1" x="0" y="0" parentComponent="VoicePanel1"
+                 width="699" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
+      <Component type="ScriptButton" id="MuteButton1" x="4" y="3" parentComponent="VoicePanel1"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
+      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Elektron_Kicks 0007"
+                 saveInPreset="1" width="132" height="22" parentComponent="VoicePanel1"
+                 fontSize="11" alignment="left" bgColour="1308622848" editable="0"
+                 fontStyle="Regular" textColour="4289111718"/>
+      <Component type="ScriptButton" id="OpenCloseButton1" x="681" y="3" parentComponent="VoicePanel1"
+                 width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
+                 radioGroup="1"/>
+      <Component type="ScriptButton" id="PrevSound1" x="22" y="31" width="18"
+                 height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
+                 parentComponent="VoicePanel1"/>
+      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="38" y="28" text="Elektron_Kicks 0007"
+                 saveInPreset="1" width="147" height="23" parentComponent="VoicePanel1"
+                 fontSize="11"/>
+      <Component type="ScriptButton" id="SampleMapSelectorVoice1" x="34" y="29"
+                 width="142" height="20" text="" itemColour="16713479" bgColour="0"
+                 itemColour2="327812" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+                 parentComponent="VoicePanel1"/>
+      <Component type="ScriptButton" id="NextSound1" x="168" y="30" width="20"
+                 height="18" isMomentary="1" filmstripImage="{PROJECT_FOLDER}VoiceForward.png"
+                 parentComponent="VoicePanel1"/>
+      <Component type="ScriptSlider" id="VolumeKnob1" x="33" y="218" parentComponent="VoicePanel1"
+                 width="32" height="32" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+                 suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+      <Component type="ScriptSlider" id="PanKnob1" x="130" y="216" parentComponent="VoicePanel1"
+                 width="32" height="32" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="-100" max="100" stepSize="1" middlePosition="0"/>
+      <Component type="ScriptSlider" id="PitchKnob1" x="221" y="217" parentComponent="VoicePanel1"
+                 width="32" height="32" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="-12" max="12" middlePosition="0"
+                 stepSize="0.1"/>
+      <Component type="ScriptButton" id="FilterOnOff1" x="311" y="200" parentComponent="VoicePanel1"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptSlider" id="FreqKnob1" x="363" y="217" parentComponent="VoicePanel1"
+                 width="32" height="32" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" mode="Frequency" min="20" max="20000"
+                 stepSize="1" suffix=" Hz" middlePosition="400" defaultValue="400"/>
+      <Component type="ScriptSlider" id="ResKnob1" x="464" y="218" parentComponent="VoicePanel1"
+                 width="32" height="32" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="0.3" max="8" stepSize="0.1" middlePosition="1"
+                 defaultValue="1"/>
+      <Component type="ScriptButton" id="FilterLock1" x="560" y="26" parentComponent="VoicePanel1"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptPanel" id="FilterSelectorPanel1" x="307" y="34" parentComponent="VoicePanel1"
+                 width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
+                 borderSize="0">
+        <Component type="ScriptComboBox" id="FilterSelector1" x="-6" y="-8" max="10"
+                   parentComponent="FilterSelectorPanel1" width="199" height="29"
+                   items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS&#10;"
+                   fontSize="11" bgColour="16777215" itemColour2="1118481" itemColour="3355443"/>
+      </Component>
+      <Component type="ScriptPanel" id="VolumeModPanel1" x="27" y="200" parentComponent="VoicePanel1"
+                 width="39" height="15" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptPanel" id="PitchModPanel1" x="224" y="202" parentComponent="VoicePanel1"
+                 width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptPanel" id="FreqModPanel1" x="365" y="201" parentComponent="VoicePanel1"
+                 width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptFloatingTile" id="FilterDisplay1" x="312" y="66"
+                 parentComponent="VoicePanel1" width="221" height="125" ContentType="FilterDisplay"
+                 bgColour="11842740" itemColour="4294967295" itemColour2="16777215"
+                 Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Filter1&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+      <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="24" y="67"
+                 parentComponent="VoicePanel1" width="226" height="122" bgColour="1646619"
+                 itemColour="0" itemColour2="4294967295" sampleIndex="0" processorId="Sampler1"
+                 textColour="16777215"/>
+      <Component type="ScriptSlider" id="VolumeBarVoice1" x="169" y="3" parentComponent="VoicePanel1"
+                 width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
+                 numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
+                 suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+      <Component type="ScriptPanel" id="TriggerSelectorPanel1" x="599" y="126"
+                 parentComponent="VoicePanel1" width="81" height="18" itemColour="0"
+                 itemColour2="0" bgColour="16777215" borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="TriggerSelector1" x="10" y="-7" max="4"
+                   parentComponent="TriggerSelectorPanel1" width="90" height="23"
+                   items="ENVELOPE&#10;ONE SHOT&#10;REVERSE&#10;ONE SHOT REV." fontSize="11"
+                   bgColour="16777215" itemColour="3355443" textColour="4278190080"/>
+      </Component>
+      <Component type="ScriptPanel" id="EffectsPanel1" x="0" y="265" width="700"
+                 borderSize="0" itemColour2="0" itemColour="0" bgColour="16777215"
+                 height="155" parentComponent="VoicePanel1">
+        <Component type="ScriptButton" id="ShapeOnOff1" x="4" y="4" parentComponent="EffectsPanel1"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="ShapeLock1" x="149" y="3" parentComponent="EffectsPanel1"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptPanel" id="CurveSelectorPanel1" x="31" y="52" parentComponent="EffectsPanel1"
+                   width="112" height="17" itemColour="0" bgColour="16777215" itemColour2="0"
+                   borderSize="0" textColour="16777215">
+          <Component type="ScriptComboBox" id="CurveSelector1" x="-1" y="-4" max="5"
+                     parentComponent="CurveSelectorPanel1" width="133" height="26"
+                     items="LINEAR&#10;ATN&#10;SIN&#10;ASINH&#10;TANCOS&#10;&#10;&#10;"/>
+        </Component>
+        <Component type="ScriptSlider" id="DriveKnob1" x="31" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" max="60" stepSize="0.1"
+                   suffix=" dB" middlePosition="25" defaultValue="25"/>
+        <Component type="ScriptSlider" id="BiasKnob1" x="110" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptButton" id="ReverbOnOff1" x="181" y="3" parentComponent="EffectsPanel1"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="ReverbLock1" x="326" y="4" parentComponent="EffectsPanel1"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptPanel" id="ImpulseSelectorPanel1" x="204" y="55"
+                   parentComponent="EffectsPanel1" width="112" height="17" itemColour="0"
+                   bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
+          <Component type="ScriptComboBox" id="ImpulseSelector1" x="-1" y="-4" max="13"
+                     parentComponent="ImpulseSelectorPanel1" width="133" height="26"
+                     items="Bathroom 1.5 sec&#10;Bathroom 2.5 sec&#10;Bathroom 3.5 sec&#10;Factory 1.5 sec&#10;Factory 2.5 sec&#10;Factory 3.5 sec&#10;Room 0.4 sec&#10;Room 1.5 sec&#10;Room 2.5 sec&#10;Room 3.5 sec&#10;Room 4.5 sec&#10;Room 5.5 sec&#10;Room 6.5 sec"/>
+        </Component>
+        <Component type="ScriptSlider" id="ReverbWetKnob1" x="211" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+        <Component type="ScriptSlider" id="ReverbDryKnob1" x="282" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+        <Component type="ScriptButton" id="DelayOnOff1" x="355" y="2" parentComponent="EffectsPanel1"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="DelayLock1" x="496" y="3" parentComponent="EffectsPanel1"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptSlider" id="DelayTimeKnob1" x="377" y="36" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+                   middlePosition="9"/>
+        <Component type="ScriptSlider" id="DelayFeedbackKnob1" x="456" y="36" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptSlider" id="DelayMixKnob1" x="417" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptButton" id="CompOnOff1" x="528" y="3" parentComponent="EffectsPanel1"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="CompLock1" x="676" y="2" parentComponent="EffectsPanel1"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptSlider" id="CompThresholdKnob1" x="553" y="36" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18"/>
+        <Component type="ScriptSlider" id="CompRatioKnob1" x="635" y="36" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" min="1" max="32" stepSize="0.1" middlePosition="4"
+                   defaultValue="2"/>
+        <Component type="ScriptSlider" id="CompAttackKnob1" x="552" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Time" max="100" stepSize="1" suffix=" ms"
+                   middlePosition="50" defaultValue="50"/>
+        <Component type="ScriptSlider" id="CompReleaseKnob1" x="633" y="102" parentComponent="EffectsPanel1"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Time" max="300" stepSize="1" suffix=" ms"
+                   middlePosition="150" defaultValue="150"/>
+      </Component>
+    </Component>
+    <Component type="ScriptPanel" id="VoicePanel2" x="0" y="421" borderSize="0"
+               borderRadius="0" width="700" height="22" parentComponent="AllVoicesPanel">
+      <Component type="ScriptImage" id="PanelBackground2" x="0" y="0" parentComponent="VoicePanel2"
+                 width="699" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
+      <Component type="ScriptButton" id="MuteButton2" x="4" y="3" parentComponent="VoicePanel2"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
+      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="Alesis_Kick2828"
+                 saveInPreset="1" width="132" height="22" parentComponent="VoicePanel2"
+                 fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
+                 editable="0"/>
+      <Component type="ScriptButton" id="OpenCloseButton2" x="681" y="3" parentComponent="VoicePanel2"
+                 width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
+                 radioGroup="1"/>
+      <Component type="ScriptButton" id="PrevSound2" x="23" y="30" width="18"
+                 height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
+                 parentComponent="VoicePanel2"/>
+      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="37" y="28" text="Alesis_Kick2828"
+                 saveInPreset="1" width="147" height="23" parentComponent="VoicePanel2"
+                 fontSize="11"/>
+      <Component type="ScriptButton" id="SampleMapSelectorVoice2" x="38" y="31"
+                 width="146" height="19" text="" itemColour="16713479" bgColour="0"
+                 itemColour2="327812" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+                 parentComponent="VoicePanel2"/>
+      <Component type="ScriptButton" id="NextSound2" x="169" y="31" width="20"
+                 height="18" isMomentary="1" filmstripImage="{PROJECT_FOLDER}VoiceForward.png"
+                 parentComponent="VoicePanel2"/>
+      <Component type="ScriptSlider" id="VolumeKnob2" x="31" y="217" parentComponent="VoicePanel2"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+                 suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+      <Component type="ScriptSlider" id="PanKnob2" x="131" y="217" parentComponent="VoicePanel2"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="-100" max="100" stepSize="1" middlePosition="0"/>
+      <Component type="ScriptSlider" id="PitchKnob2" x="222" y="217" parentComponent="VoicePanel2"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="-12" max="12" middlePosition="0"
+                 stepSize="0.1"/>
+      <Component type="ScriptSlider" id="FreqKnob2" x="363" y="217" parentComponent="VoicePanel2"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" mode="Frequency" min="20" max="20000"
+                 stepSize="1" suffix=" Hz" middlePosition="400" defaultValue="400"/>
+      <Component type="ScriptSlider" id="ResKnob2" x="465" y="217" parentComponent="VoicePanel2"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="0.3" max="8" stepSize="0.1" middlePosition="1"
+                 defaultValue="1"/>
+      <Component type="ScriptButton" id="FilterLock2" x="560" y="26" parentComponent="VoicePanel2"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptButton" id="FilterOnOff2" x="311" y="200" parentComponent="VoicePanel2"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptPanel" id="FilterSelectorPanel2" x="307" y="34" parentComponent="VoicePanel2"
+                 width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
+                 borderSize="0">
+        <Component type="ScriptComboBox" id="FilterSelector2" x="-6" y="-7" max="10"
+                   parentComponent="FilterSelectorPanel2" width="200" height="26"
+                   items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS&#10;"
+                   fontSize="11" bgColour="16777215" itemColour2="1118481" itemColour="3355443"/>
+      </Component>
+      <Component type="ScriptPanel" id="VolumeModPanel2" x="27" y="200" parentComponent="VoicePanel2"
+                 width="39" height="15" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptPanel" id="PanModPanel2" x="135" y="200" parentComponent="VoicePanel2"
+                 width="24" height="15" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptPanel" id="PitchModPanel2" x="224" y="202" parentComponent="VoicePanel2"
+                 width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptPanel" id="FreqModPanel2" x="365" y="200" parentComponent="VoicePanel2"
+                 width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptFloatingTile" id="FilterDisplay2" x="312" y="66"
+                 parentComponent="VoicePanel2" width="223" height="123" ContentType="FilterDisplay"
+                 bgColour="11842740" itemColour="4294967295" itemColour2="16777215"
+                 Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Filter2&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+      <Component type="ScriptAudioWaveform" id="AudioWaveform2" x="24" y="67"
+                 parentComponent="VoicePanel2" width="226" height="122" bgColour="4279836699"
+                 itemColour="0" itemColour2="4294967295" sampleIndex="0" processorId="Sampler2"/>
+      <Component type="ScriptSlider" id="VolumeBarVoice2" x="169" y="3" parentComponent="VoicePanel2"
+                 width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
+                 numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
+                 suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+      <Component type="ScriptPanel" id="TriggerSelectorPanel2" x="599" y="126"
+                 parentComponent="VoicePanel2" width="81" height="18" itemColour="0"
+                 itemColour2="0" bgColour="16777215" borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="TriggerSelector2" x="11" y="-5" max="3"
+                   parentComponent="TriggerSelectorPanel2" width="87" height="21"
+                   items="ONE SHOT&#10;ENVELOPE&#10;REVERSE" fontSize="11" itemColour="3355443"
+                   bgColour="16777215" textColour="4278190080"/>
+      </Component>
+      <Component type="ScriptPanel" id="EffectsPanel2" x="0" y="265" width="700"
+                 borderSize="0" itemColour2="0" itemColour="0" bgColour="16777215"
+                 height="155" parentComponent="VoicePanel2">
+        <Component type="ScriptButton" id="ShapeOnOff2" x="4" y="4" parentComponent="EffectsPanel2"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="ShapeLock2" x="149" y="3" parentComponent="EffectsPanel2"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptPanel" id="CurveSelectorPanel2" x="31" y="52" parentComponent="EffectsPanel2"
+                   width="112" height="17" itemColour="0" bgColour="16777215" itemColour2="0"
+                   borderSize="0" textColour="16777215">
+          <Component type="ScriptComboBox" id="CurveSelector2" x="-1" y="-4" max="5"
+                     parentComponent="CurveSelectorPanel2" width="133" height="26"
+                     items="LINEAR&#10;ATN&#10;SIN&#10;ASINH&#10;TANCOS&#10;&#10;&#10;"/>
+        </Component>
+        <Component type="ScriptSlider" id="DriveKnob2" x="32" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" max="60" stepSize="0.1"
+                   suffix=" dB" middlePosition="25" defaultValue="25"/>
+        <Component type="ScriptSlider" id="BiasKnob2" x="111" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptButton" id="ReverbOnOff2" x="181" y="3" parentComponent="EffectsPanel2"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="ReverbLock2" x="326" y="4" parentComponent="EffectsPanel2"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptPanel" id="ImpulseSelectorPanel2" x="204" y="55"
+                   parentComponent="EffectsPanel2" width="112" height="17" itemColour="0"
+                   bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
+          <Component type="ScriptComboBox" id="ImpulseSelector2" x="-1" y="-4" max="13"
+                     parentComponent="ImpulseSelectorPanel2" width="133" height="26"
+                     items="Bathroom 1.5 sec&#10;Bathroom 2.5 sec&#10;Bathroom 3.5 sec&#10;Factory 1.5 sec&#10;Factory 2.5 sec&#10;Factory 3.5 sec&#10;Room 0.4 sec&#10;Room 1.5 sec&#10;Room 2.5 sec&#10;Room 3.5 sec&#10;Room 4.5 sec&#10;Room 5.5 sec&#10;Room 6.5 sec"/>
+        </Component>
+        <Component type="ScriptSlider" id="ReverbWetKnob2" x="212" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+        <Component type="ScriptSlider" id="ReverbDryKnob2" x="283" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+        <Component type="ScriptButton" id="DelayOnOff2" x="355" y="2" parentComponent="EffectsPanel2"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="DelayLock2" x="496" y="3" parentComponent="EffectsPanel2"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptSlider" id="DelayTimeKnob2" x="378" y="36" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+                   middlePosition="9"/>
+        <Component type="ScriptSlider" id="DelayFeedbackKnob2" x="457" y="36" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptSlider" id="DelayMixKnob2" x="418" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptButton" id="CompOnOff2" x="528" y="3" parentComponent="EffectsPanel2"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="CompLock2" x="676" y="2" parentComponent="EffectsPanel2"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptSlider" id="CompThresholdKnob2" x="554" y="36" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18"/>
+        <Component type="ScriptSlider" id="CompRatioKnob2" x="636" y="36" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" min="1" max="32" stepSize="0.1" middlePosition="4"
+                   defaultValue="2"/>
+        <Component type="ScriptSlider" id="CompAttackKnob2" x="553" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Time" max="100" stepSize="1" suffix=" ms"
+                   middlePosition="50" defaultValue="50"/>
+        <Component type="ScriptSlider" id="CompReleaseKnob2" x="634" y="102" parentComponent="EffectsPanel2"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Time" max="300" stepSize="1" suffix=" ms"
+                   middlePosition="150" defaultValue="150"/>
+      </Component>
+    </Component>
+    <Component type="ScriptPanel" id="VoicePanel3" x="0" y="443" borderSize="0"
+               borderRadius="0" width="700" height="22" parentComponent="AllVoicesPanel">
+      <Component type="ScriptImage" id="PanelBackground3" x="0" y="0" parentComponent="VoicePanel3"
+                 width="699" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
+      <Component type="ScriptButton" id="MuteButton3" x="4" y="3" parentComponent="VoicePanel3"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
+      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="Elektron_Kicks 0008"
+                 saveInPreset="1" width="132" height="22" parentComponent="VoicePanel3"
+                 fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
+                 editable="0"/>
+      <Component type="ScriptButton" id="OpenCloseButton3" x="681" y="3" parentComponent="VoicePanel3"
+                 width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
+                 radioGroup="1"/>
+      <Component type="ScriptButton" id="PrevSound3" x="22" y="30" width="18"
+                 height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
+                 parentComponent="VoicePanel3"/>
+      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="31" y="28" text="Elektron_Kicks 0008"
+                 saveInPreset="1" width="147" height="23" parentComponent="VoicePanel3"
+                 fontSize="11"/>
+      <Component type="ScriptButton" id="SampleMapSelectorVoice3" x="36" y="30"
+                 width="146" height="19" text="" itemColour="16713479" bgColour="0"
+                 itemColour2="327812" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+                 parentComponent="VoicePanel3"/>
+      <Component type="ScriptButton" id="NextSound3" x="169" y="30" width="20"
+                 height="18" isMomentary="1" filmstripImage="{PROJECT_FOLDER}VoiceForward.png"
+                 parentComponent="VoicePanel3"/>
+      <Component type="ScriptSlider" id="VolumeKnob3" x="30" y="217" parentComponent="VoicePanel3"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+                 suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+      <Component type="ScriptPanel" id="VolumeModPanel3" x="27" y="200" parentComponent="VoicePanel3"
+                 width="39" height="15" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptSlider" id="PanKnob3" x="130" y="216" parentComponent="VoicePanel3"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="-100" max="100" stepSize="1" middlePosition="0"/>
+      <Component type="ScriptSlider" id="PitchKnob3" x="221" y="217" parentComponent="VoicePanel3"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="-12" max="12" middlePosition="0"
+                 stepSize="0.1"/>
+      <Component type="ScriptSlider" id="FreqKnob3" x="363" y="217" parentComponent="VoicePanel3"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" mode="Frequency" min="20" max="20000"
+                 stepSize="1" suffix=" Hz" middlePosition="400" defaultValue="400"/>
+      <Component type="ScriptPanel" id="FreqModPanel3" x="363" y="200" parentComponent="VoicePanel3"
+                 width="34" height="15" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptSlider" id="ResKnob3" x="464" y="218" parentComponent="VoicePanel3"
+                 width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+                 showValuePopup="Above" min="0.3" max="8" stepSize="0.1" middlePosition="1"
+                 defaultValue="1"/>
+      <Component type="ScriptButton" id="FilterLock3" x="560" y="26" parentComponent="VoicePanel3"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptButton" id="FilterOnOff3" x="311" y="200" parentComponent="VoicePanel3"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      <Component type="ScriptPanel" id="FilterSelectorPanel3" x="307" y="34" parentComponent="VoicePanel3"
+                 width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
+                 borderSize="0">
+        <Component type="ScriptComboBox" id="FilterSelector3" x="-4" y="-7" max="10"
+                   parentComponent="FilterSelectorPanel3" width="190" height="26"
+                   items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS&#10;"
+                   fontSize="11" itemColour2="1118481" bgColour="16777215" itemColour="3355443"/>
+      </Component>
+      <Component type="ScriptPanel" id="PanModPanel3" x="135" y="200" parentComponent="VoicePanel3"
+                 width="24" height="15" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptPanel" id="PitchModPanel3" x="224" y="202" parentComponent="VoicePanel3"
+                 width="28" height="13" borderSize="0" itemColour="0" itemColour2="0"
+                 bgColour="16777215" textColour="16777215" allowCallbacks="Clicks Only"/>
+      <Component type="ScriptFloatingTile" id="FilterDisplay3" x="309" y="66"
+                 parentComponent="VoicePanel3" width="226" height="125" ContentType="FilterDisplay"
+                 bgColour="11842740" itemColour="4294935552" itemColour2="16777215"
+                 Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Filter3&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+      <Component type="ScriptAudioWaveform" id="AudioWaveform3" x="24" y="67"
+                 parentComponent="VoicePanel3" width="226" height="122" bgColour="4279836699"
+                 itemColour="0" itemColour2="4294935552" processorId="Sampler3"
+                 sampleIndex="0"/>
+      <Component type="ScriptSlider" id="VolumeBarVoice3" x="169" y="3" parentComponent="VoicePanel3"
+                 width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
+                 numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
+                 suffix=" dB" middlePosition="-6" defaultValue="-6"/>
+      <Component type="ScriptPanel" id="TriggerSelectorPanel3" x="599" y="126"
+                 parentComponent="VoicePanel3" width="81" height="18" itemColour="0"
+                 itemColour2="0" bgColour="16777215" borderSize="0" textColour="16777215">
+        <Component type="ScriptComboBox" id="TriggerSelector3" x="9" y="-6" max="3"
+                   parentComponent="TriggerSelectorPanel3" width="92" height="23"
+                   items="ONE SHOT&#10;ENVELOPE&#10;REVERSE" fontSize="11" itemColour="3355443"
+                   bgColour="16777215" textColour="4278190080"/>
+      </Component>
+      <Component type="ScriptPanel" id="EffectsPanel3" x="0" y="265" width="700"
+                 borderSize="0" itemColour2="0" itemColour="0" bgColour="16777215"
+                 height="155" parentComponent="VoicePanel3">
+        <Component type="ScriptButton" id="ShapeOnOff3" x="4" y="4" parentComponent="EffectsPanel3"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="ShapeLock3" x="149" y="3" parentComponent="EffectsPanel3"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptPanel" id="CurveSelectorPanel3" x="31" y="52" parentComponent="EffectsPanel3"
+                   width="112" height="17" itemColour="0" bgColour="16777215" itemColour2="0"
+                   borderSize="0" textColour="16777215">
+          <Component type="ScriptComboBox" id="CurveSelector3" x="-1" y="-4" max="5"
+                     parentComponent="CurveSelectorPanel3" width="133" height="26"
+                     items="LINEAR&#10;ATN&#10;SIN&#10;ASINH&#10;TANCOS&#10;&#10;&#10;"/>
+        </Component>
+        <Component type="ScriptSlider" id="DriveKnob3" x="31" y="102" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" max="60" stepSize="0.1"
+                   suffix=" dB" middlePosition="25" defaultValue="25"/>
+        <Component type="ScriptSlider" id="BiasKnob3" x="108" y="102" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptButton" id="ReverbOnOff3" x="181" y="3" parentComponent="EffectsPanel3"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="ReverbLock3" x="326" y="4" parentComponent="EffectsPanel3"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptPanel" id="ImpulseSelectorPanel3" x="204" y="55"
+                   parentComponent="EffectsPanel3" width="112" height="17" itemColour="0"
+                   bgColour="16777215" itemColour2="0" borderSize="0" textColour="16777215">
+          <Component type="ScriptComboBox" id="ImpulseSelector3" x="-1" y="-4" max="13"
+                     parentComponent="ImpulseSelectorPanel3" width="133" height="26"
+                     items="Bathroom 1.5 sec&#10;Bathroom 2.5 sec&#10;Bathroom 3.5 sec&#10;Factory 1.5 sec&#10;Factory 2.5 sec&#10;Factory 3.5 sec&#10;Room 0.4 sec&#10;Room 1.5 sec&#10;Room 2.5 sec&#10;Room 3.5 sec&#10;Room 4.5 sec&#10;Room 5.5 sec&#10;Room 6.5 sec"/>
+        </Component>
+        <Component type="ScriptSlider" id="ReverbWetKnob3" x="213" y="101" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+        <Component type="ScriptSlider" id="ReverbDryKnob3" x="281" y="102" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18" defaultValue="-18"/>
+        <Component type="ScriptButton" id="DelayOnOff3" x="355" y="2" parentComponent="EffectsPanel3"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="DelayLock3" x="496" y="3" parentComponent="EffectsPanel3"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptSlider" id="DelayTimeKnob3" x="381" y="39" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="TempoSync" max="18" stepSize="1"
+                   middlePosition="9"/>
+        <Component type="ScriptSlider" id="DelayFeedbackKnob3" x="458" y="39" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptSlider" id="DelayMixKnob3" x="420" y="102" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                   middlePosition="0.5"/>
+        <Component type="ScriptButton" id="CompOnOff3" x="528" y="3" parentComponent="EffectsPanel3"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+        <Component type="ScriptButton" id="CompLock3" x="676" y="2" parentComponent="EffectsPanel3"
+                   width="20" height="15" filmstripImage="{PROJECT_FOLDER}fxlockbutton.png"/>
+        <Component type="ScriptSlider" id="CompThresholdKnob3" x="553" y="39" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Decibel" min="-100" max="0" stepSize="0.1"
+                   suffix=" dB" middlePosition="-18"/>
+        <Component type="ScriptSlider" id="CompRatioKnob3" x="635" y="39" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" min="1" max="32" stepSize="0.1" middlePosition="4"
+                   defaultValue="2"/>
+        <Component type="ScriptSlider" id="CompAttackKnob3" x="552" y="102" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Time" max="100" stepSize="1" suffix=" ms"
+                   middlePosition="50" defaultValue="50"/>
+        <Component type="ScriptSlider" id="CompReleaseKnob3" x="633" y="102" parentComponent="EffectsPanel3"
+                   width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+                   showValuePopup="Above" mode="Time" max="300" stepSize="1" suffix=" ms"
+                   middlePosition="150" defaultValue="150"/>
+        <Component type="ScriptButton" id="ShapeOnOff4" x="12" y="-413" parentComponent="EffectsPanel3"
+                   width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"/>
+      </Component>
+    </Component>
+    <Component type="ScriptPanel" id="VoiceSelectorPanel" x="202" y="81" width="400"
+               height="420" borderRadius="0" bgColour="4279191583" itemColour="4280100123"
+               itemColour2="4280100123" parentComponent="AllVoicesPanel" visible="0">
+      <Component type="ScriptLabel" id="DialogName" x="9" y="4" width="193" height="21"
+                 parentComponent="VoiceSelectorPanel" text="VOICE 3 DRUM SOUNDS"
+                 alignment="left" fontName="Default" fontStyle="Regular" fontSize="14"
+                 editable="0"/>
+      <Component type="ScriptButton" id="DialogDismiss" x="372" y="4" width="20"
+                 height="20" parentComponent="VoiceSelectorPanel" filmstripImage="{PROJECT_FOLDER}dialogDismiss.png"/>
+      <Component type="ScriptedViewport" id="VoiceCategories" x="16" y="36" width="170"
+                 height="342" parentComponent="VoiceSelectorPanel" items="808s&#10;909s&#10;Access&#10;Acoustic&#10;Akai&#10;Alesis&#10;Clavia&#10;Elektron&#10;Ensoniq&#10;Jomox&#10;Korg&#10;Roland&#10;Simmons&#10;Tama&#10;Various&#10;Yamaha"
+                 alignment="left" useList="1" bgColour="2635733530" itemColour="3458683414"
+                 itemColour2="4227858431" textColour="4289111718" fontName="Default"
+                 fontStyle="Bold" scrollBarThickness="14"/>
+      <Component type="ScriptedViewport" id="VoiceSampleMaps" x="210" y="35" width="172"
+                 height="346" parentComponent="VoiceSelectorPanel" alignment="left"
+                 useList="1" bgColour="2635733530" itemColour="3458683414" itemColour2="4218587762"
+                 textColour="4289111718" scrollBarThickness="12" items="Elektron_Kicks 0000&#10;Elektron_Kicks 0001&#10;Elektron_Kicks 0002&#10;Elektron_Kicks 0003&#10;Elektron_Kicks 0004&#10;Elektron_Kicks 0005&#10;Elektron_Kicks 0006&#10;Elektron_Kicks 0007&#10;Elektron_Kicks 0008&#10;Elektron_Kicks 0009&#10;Elektron_Kicks 0010&#10;Elektron_Kicks 0011&#10;Elektron_Kicks 0012&#10;Elektron_Kicks 0013&#10;Elektron_Kicks 0014&#10;Elektron_Kicks 0015&#10;Elektron_Kicks 0016&#10;Elektron_Kicks 0017&#10;Elektron_Kicks 0018&#10;Elektron_Kicks 0019&#10;Elektron_Kicks 0020&#10;Elektron_Kicks 0021&#10;Elektron_Kicks 0022&#10;Elektron_Kicks 0023&#10;Elektron_00214&#10;Elektron_00225&#10;Elektron_00236&#10;Elektron_00247&#10;Elektron_00258&#10;Elektron_00269&#10;Elektron_003103&#10;Elektron_003114&#10;Elektron_003125&#10;Elektron_003136&#10;Elektron_003147&#10;Elektron_003158&#10;Elektron_003169&#10;Elektron_00370&#10;Elektron_00381&#10;Elektron_00392&#10;Elektron_004170&#10;Elektron_004181&#10;Elektron_004192&#10;Elektron_004203&#10;Elektron_004214&#10;Elektron_004225&#10;Elektron_004236&#10;Elektron_004247&#10;Elektron_004258&#10;Elektron_004269&#10;Elektron_005270&#10;Elektron_005281&#10;Elektron_005292&#10;Elektron_005303&#10;Elektron_005314&#10;Elektron_005325&#10;Elektron_005336&#10;Elektron_005347&#10;Elektron_005358&#10;Elektron_005369"/>
+      <Component type="ScriptButton" id="VoiceFavouritesButton" x="135" y="392"
+                 parentComponent="VoiceSelectorPanel" filmstripImage="{PROJECT_FOLDER}favouritesButton.png"
+                 width="144" height="22"/>
+    </Component>
+    <Component type="ScriptPanel" id="VELPanel" x="135" y="69" width="505" height="385"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               parentComponent="AllVoicesPanel" visible="0">
+      <Component type="ScriptImage" id="VELPanelBackground" x="0" y="0" width="505"
+                 height="385" parentComponent="VELPanel" fileName="{PROJECT_FOLDER}VEL_ModBackgroundV2.png"/>
+      <Component type="ScriptButton" id="VELPanelCloser" x="1" y="1" parentComponent="VELPanel"
+                 width="462" height="371" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+                 itemColour="3355443" itemColour2="1118481" bgColour="16777215"/>
+      <Component type="ScriptLabel" id="VELTargetNameDisplay" x="139" y="6" parentComponent="VELPanel"
+                 width="188" height="21" editable="0" text="VOLUME MODULATORS VOICE 1"
+                 fontSize="11"/>
+      <Component type="ScriptButton" id="VELVelocityOnOff" x="12" y="12" parentComponent="VELPanel"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"
+                 saveInPreset="0"/>
+      <Component type="ScriptTable" id="VELVelocityTable" x="18" y="32" parentComponent="VELPanel"
+                 width="227" height="84" processorId="GainVelocity1"/>
+      <Component type="ScriptSlider" id="VELVelocityDepthKnob" x="357" y="54"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" saveInPreset="0"/>
+      <Component type="ScriptButton" id="VELEnvelopeOnOff" x="8" y="131" parentComponent="VELPanel"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"
+                 saveInPreset="0"/>
+      <Component type="ScriptButton" id="VELEnvelopeLock" x="470" y="128" parentComponent="VELPanel"
+                 width="20" height="15" filmstripImage="{PROJECT_FOLDER}1_3_lockButtonV2.png"/>
+      <Component type="ScriptSlider" id="VELEnvelopeAmountKnob" x="257" y="179"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELEnvelopeAttackKnob" x="303" y="146"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="Time" suffix=" ms" middlePosition="1000" max="20000" stepSize="1"
+                 saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELEnvelopeHoldKnob" x="362" y="146"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="Time" suffix=" ms" middlePosition="1000" max="20000" stepSize="1"
+                 saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELEnvelopeDecayKnob" x="421" y="146"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="Time" suffix=" ms" middlePosition="1000" max="20000" stepSize="1"
+                 saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELEnvelopeSustainKnob" x="335" y="205"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="Decibel" suffix=" dB" middlePosition="-18" min="-100" max="0"
+                 stepSize="0.1" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELEnvelopeReleaseKnob" x="395" y="205"
+                 parentComponent="VELPanel" width="40" height="40" numStrips="100"
+                 filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png" showValuePopup="Above"
+                 mode="Time" suffix=" ms" middlePosition="1000" max="20000" stepSize="1"
+                 min="1" defaultValue="1" saveInPreset="0"/>
+      <Component type="ScriptFloatingTile" id="VELEnvelopeTile" x="19" y="156"
+                 parentComponent="VELPanel" width="228" height="82" ContentType="AHDSRGraph"
+                 bgColour="15263976" itemColour="2560268440" itemColour2="4294967295"
+                 textColour="4294951115" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;GainEnvelope1&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+      <Component type="ScriptButton" id="VELLFOOnOff" x="12" y="252" parentComponent="VELPanel"
+                 width="15" height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"
+                 saveInPreset="0"/>
+      <Component type="ScriptTable" id="VELLFOTable" x="20" y="273" parentComponent="VELPanel"
+                 width="225" height="88" processorId="GainLFO1"/>
+      <Component type="ScriptSlider" id="VELLFOSpeedKnob" x="280" y="296" parentComponent="VELPanel"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="TempoSync" middlePosition="9" max="18"
+                 stepSize="1" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELLFODepthKnob" x="354" y="296" parentComponent="VELPanel"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="VELLFOSmoothKnob" x="429" y="296" parentComponent="VELPanel"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" suffix=" ms" middlePosition="200"
+                 max="1000" stepSize="1" saveInPreset="0"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="SequencerPanel" x="0" y="47" width="700"
+             height="466" borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+             bgColour="16777215" saveInPreset="1" visible="0">
+    <Component type="ScriptImage" id="SeqPanelBackground" x="0" y="0" parentComponent="SequencerPanel"
+               width="700" height="466" fileName="{PROJECT_FOLDER}KickFactory2SequenceBackground.png"/>
+    <Component type="ScriptButton" id="SeqStartStop" x="8" y="19" parentComponent="SequencerPanel"
+               width="93" height="18" filmstripImage="{PROJECT_FOLDER}seqStartStop.png"/>
+    <Component type="ScriptButton" id="patternsSave" x="430" y="19" parentComponent="SequencerPanel"
+               height="18" width="93" filmstripImage="{PROJECT_FOLDER}savePatterns.png"/>
+    <Component type="ScriptPanel" id="SeqModePanel" x="101" y="21" parentComponent="SequencerPanel"
+               width="78" height="16" itemColour="0" bgColour="16777215" itemColour2="0"
+               borderSize="0" textColour="16777215">
+      <Component type="ScriptComboBox" id="SeqModeSelector" x="-1" y="-5" max="3"
+                 parentComponent="SeqModePanel" width="103" height="24" items="TEMPO&#10;NOTE&#10;RAND."/>
+    </Component>
+    <Component type="ScriptButton" id="PatternGenerator" x="300" y="2" width="62"
+               height="16" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+               parentComponent="SequencerPanel" saveInPreset="0"/>
+    <Component type="ScriptButton" id="PatternSelector1" x="249" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector2" x="271" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector3" x="294" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector4" x="317" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector5" x="339" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector6" x="362" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector7" x="385" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptButton" id="PatternSelector8" x="408" y="22" parentComponent="SequencerPanel"
+               width="13" height="14" filmstripImage="{PROJECT_FOLDER}PatternSelector.png"/>
+    <Component type="ScriptSlider" id="SeqTempoKnob" x="193" y="14" parentComponent="SequencerPanel"
+               width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+               showValuePopup="Above" mode="TempoSync" max="12" stepSize="1"
+               middlePosition="9"/>
+    <Component type="ScriptSlider" id="SeqStepsKnob" x="560" y="16" parentComponent="SequencerPanel"
+               width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+               showValuePopup="Above" middlePosition="7" min="2" max="16" stepSize="1"
+               defaultValue="16"/>
+    <Component type="ScriptButton" id="GrooveDesignerButton" x="663" y="23"
+               width="32" height="20" parentComponent="SequencerPanel" filmstripImage="{PROJECT_FOLDER}GrooveDesignerButton.png"/>
+    <Component type="ScriptSlider" id="SeqSwing" x="616" y="16" parentComponent="SequencerPanel"
+               width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}fxKnob.png"
+               showValuePopup="Above" middlePosition="0.5" defaultValue="0.2"
+               mode="NormalizedPercentage" suffix="%"/>
+    <Component type="ScriptButton" id="VelocityRandomiser" x="6" y="90" parentComponent="SequencerPanel"
+               width="14" height="14" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               scaleFactor="0.4" isMomentary="1" saveInPreset="0"/>
+    <Component type="ScriptButton" id="VelocityLikelihoodIndicator" x="121"
+               y="92" parentComponent="SequencerPanel" width="10" height="10"
+               filmstripImage="{PROJECT_FOLDER}likeInd.png" saveInPreset="0"/>
+    <Component type="ScriptSlider" id="VelocityLikelihood" x="48" y="89" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="SeqVelocityPanel" x="137" y="56" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="VelocityCursor" x="3" y="1" parentComponent="SeqVelocityPanel"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep1" x="3" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep2" x="37" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep3" x="71" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep4" x="105" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" text="SeqVelocityStep5a"
+                 stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep5" x="139" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep6" x="173" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep7" x="207" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep8" x="241" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep9" x="275" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep10" x="309" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep11" x="343" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep12" x="377" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep13" x="411" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" text="SeqVelocityStep13a"
+                 stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep14" x="445" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep15" x="479" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqVelocityStep16" x="513" y="5" parentComponent="SeqVelocityPanel"
+                 max="127" middlePosition="64" filmstripImage="{PROJECT_FOLDER}SeqVelocitySetter.png"
+                 numStrips="128" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptPanel" id="VelocityHidePanel" x="548" y="3" parentComponent="SeqVelocityPanel"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="Env1Randomiser" x="6" y="140" parentComponent="SequencerPanel"
+               width="14" height="14" scaleFactor="0.4" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               saveInPreset="0" isMomentary="1"/>
+    <Component type="ScriptButton" id="Env1LikelihoodIndicator" x="121" y="143"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="Envelope1Likelihood" x="48" y="140" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="SeqEnvelopePanel1" x="137" y="107" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="Env1Cursor" x="3" y="1" parentComponent="SeqEnvelopePanel1"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step1" x="3" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step2" x="37" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step3" x="71" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step4" x="105" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step5" x="139" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step6" x="173" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step7" x="207" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step8" x="241" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step9" x="275" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step10" x="309" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step11" x="343" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step12" x="377" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step13" x="411" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step14" x="445" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step15" x="479" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope1Step16" x="513" y="5" parentComponent="SeqEnvelopePanel1"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptPanel" id="Envelope1HidePanel" x="548" y="3" parentComponent="SeqEnvelopePanel1"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="Env2Randomiser" x="6" y="190" parentComponent="SequencerPanel"
+               width="14" height="14" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               isMomentary="1" saveInPreset="0" scaleFactor="0.4"/>
+    <Component type="ScriptButton" id="Env2LikelihoodIndicator" x="121" y="194"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="Envelope2Likelihood" x="48" y="191" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="SeqEnvelopePanel2" x="136" y="158" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="Env2Cursor" x="3" y="1" parentComponent="SeqEnvelopePanel2"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step1" x="4" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step2" x="38" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step3" x="72" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step4" x="106" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step5" x="140" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step6" x="174" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step7" x="208" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step8" x="242" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step9" x="276" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step10" x="310" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step11" x="344" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step12" x="378" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step13" x="412" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step14" x="446" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step15" x="480" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope2Step16" x="514" y="5" parentComponent="SeqEnvelopePanel2"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptPanel" id="Envelope2HidePanel" x="549" y="4" parentComponent="SeqEnvelopePanel2"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="Env3Randomiser" x="5" y="242" parentComponent="SequencerPanel"
+               width="14" height="14" isMomentary="1" scaleFactor="0.4" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               saveInPreset="0"/>
+    <Component type="ScriptButton" id="Env3LikelihoodIndicator" x="121" y="243"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="Envelope3Likelihood" x="48" y="240" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="SeqEnvelopePanel3" x="137" y="210" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="Env3Cursor" x="3" y="0" parentComponent="SeqEnvelopePanel3"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step1" x="3" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step2" x="37" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step3" x="71" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step4" x="105" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step5" x="139" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step6" x="173" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step7" x="207" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step8" x="241" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step9" x="275" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step10" x="309" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step11" x="343" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step12" x="377" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step13" x="411" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step14" x="445" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step15" x="479" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptButton" id="SeqEnvelope3Step16" x="513" y="4" parentComponent="SeqEnvelopePanel3"
+                 width="33" height="43" filmstripImage="{PROJECT_FOLDER}SeqStepEnvelope.png"/>
+      <Component type="ScriptPanel" id="Envelope3HidePanel" x="548" y="3" parentComponent="SeqEnvelopePanel3"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="FX1Randomiser" x="5" y="294" parentComponent="SequencerPanel"
+               isMomentary="1" scaleFactor="0.4" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               height="14" width="14" saveInPreset="0"/>
+    <Component type="ScriptButton" id="FX1LikelihoodIndicator" x="121" y="297"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="FX1Likelihood" x="48" y="294" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="FX1SelectorPanel" x="49" y="272" parentComponent="SequencerPanel"
+               itemColour="0" itemColour2="0" bgColour="16777215" textColour="16777215"
+               borderSize="0" borderRadius="0" width="79" height="18">
+      <Component type="ScriptComboBox" id="FX1Selector" x="-7" y="-5" width="105"
+                 height="26" parentComponent="FX1SelectorPanel" items="OFF&#10;L1 Freq.&#10;L1 Drive&#10;L1 Rvb. Wet&#10;L1 Rvb Dry&#10;L1 Delay Mix&#10;L1 Cmp. Ratio&#10;L1 Cmp Atk.&#10;L2 Freq.&#10;L2 Drive&#10;L2 Rvb. Wet&#10;L2 Rvb Dry&#10;L2 Delay Mix&#10;L2 Cmp. Ratio&#10;L2 Cmp Atk.&#10;L3 Freq.&#10;L3 Drive&#10;L3 Rvb. Wet&#10;L3 Rvb Dry&#10;L3 Delay Mix&#10;L3 Cmp. Ratio&#10;L3 Cmp Atk."
+                 itemColour="3355443" itemColour2="1118481" bgColour="16777215"
+                 max="22"/>
+    </Component>
+    <Component type="ScriptPanel" id="SeqFXPanel1" x="137" y="262" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="FX1Cursor" x="3" y="-1" parentComponent="SeqFXPanel1"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptSlider" id="SeqFX1Step1" x="3" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step2" x="37" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step3" x="71" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step4" x="105" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step5" x="139" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step6" x="173" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step7" x="207" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step8" x="241" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step9" x="275" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step10" x="309" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step11" x="343" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step12" x="377" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step13" x="411" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step14" x="445" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step15" x="479" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX1Step16" x="513" y="3" parentComponent="SeqFXPanel1"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptPanel" id="FX1HidePanel" x="550" y="2" parentComponent="SeqFXPanel1"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="FX2Randomiser" x="5" y="346" parentComponent="SequencerPanel"
+               isMomentary="1" scaleFactor="0.4" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               height="14" width="14" saveInPreset="0"/>
+    <Component type="ScriptButton" id="FX2LikelihoodIndicator" x="121" y="348"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="FX2Likelihood" x="48" y="345" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="FX2SelectorPanel" x="48" y="323" parentComponent="SequencerPanel"
+               itemColour="0" itemColour2="0" bgColour="16777215" textColour="16777215"
+               borderSize="0" borderRadius="0" width="79" height="18">
+      <Component type="ScriptComboBox" id="FX2Selector" x="-7" y="-5" width="105"
+                 height="26" parentComponent="FX2SelectorPanel" items="OFF&#10;L1 Freq.&#10;L1 Drive&#10;L1 Rvb. Wet&#10;L1 Rvb Dry&#10;L1 Delay Mix&#10;L1 Cmp. Ratio&#10;L1 Cmp Atk.&#10;L2 Freq.&#10;L2 Drive&#10;L2 Rvb. Wet&#10;L2 Rvb Dry&#10;L2 Delay Mix&#10;L2 Cmp. Ratio&#10;L2 Cmp Atk.&#10;L3 Freq.&#10;L3 Drive&#10;L3 Rvb. Wet&#10;L3 Rvb Dry&#10;L3 Delay Mix&#10;L3 Cmp. Ratio&#10;L3 Cmp Atk."
+                 itemColour="3355443" itemColour2="1118481" bgColour="16777215"
+                 max="22"/>
+    </Component>
+    <Component type="ScriptPanel" id="SeqFXPanel2" x="137" y="314" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="FX2Cursor" x="3" y="-2" parentComponent="SeqFXPanel2"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptSlider" id="SeqFX2Step1" x="3" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step2" x="37" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step3" x="71" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step4" x="105" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step5" x="139" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step6" x="173" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step7" x="207" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step8" x="241" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step9" x="275" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step10" x="309" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step11" x="343" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step12" x="377" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step13" x="411" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step14" x="445" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step15" x="479" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX2Step16" x="513" y="3" parentComponent="SeqFXPanel2"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptPanel" id="FX2HidePanel" x="549" y="1" parentComponent="SeqFXPanel2"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="FX3Randomiser" x="5" y="397" parentComponent="SequencerPanel"
+               isMomentary="1" scaleFactor="0.4" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               height="14" width="14" saveInPreset="0"/>
+    <Component type="ScriptButton" id="FX3LikelihoodIndicator" x="121" y="400"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="FX3Likelihood" x="48" y="396" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="FX3SelectorPanel" x="48" y="374" parentComponent="SequencerPanel"
+               itemColour="0" itemColour2="0" bgColour="16777215" textColour="16777215"
+               borderSize="0" borderRadius="0" width="79" height="18">
+      <Component type="ScriptComboBox" id="FX3Selector" x="-7" y="-5" width="105"
+                 height="26" parentComponent="FX3SelectorPanel" items="OFF&#10;L1 Freq.&#10;L1 Drive&#10;L1 Rvb. Wet&#10;L1 Rvb Dry&#10;L1 Delay Mix&#10;L1 Cmp. Ratio&#10;L1 Cmp Atk.&#10;L2 Freq.&#10;L2 Drive&#10;L2 Rvb. Wet&#10;L2 Rvb Dry&#10;L2 Delay Mix&#10;L2 Cmp. Ratio&#10;L2 Cmp Atk.&#10;L3 Freq.&#10;L3 Drive&#10;L3 Rvb. Wet&#10;L3 Rvb Dry&#10;L3 Delay Mix&#10;L3 Cmp. Ratio&#10;L3 Cmp Atk."
+                 itemColour="3355443" itemColour2="1118481" bgColour="16777215"
+                 max="22"/>
+    </Component>
+    <Component type="ScriptPanel" id="SeqFXPanel3" x="137" y="364" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="FX3Cursor" x="3" y="-1" parentComponent="SeqFXPanel3"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptSlider" id="SeqFX3Step1" x="3" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step2" x="37" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step3" x="71" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step4" x="105" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step5" x="139" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step6" x="173" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step7" x="207" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step8" x="241" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step9" x="275" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step10" x="309" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step11" x="343" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step12" x="377" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step13" x="411" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step14" x="445" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step15" x="479" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX3Step16" x="513" y="3" parentComponent="SeqFXPanel3"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptPanel" id="FX3HidePanel" x="549" y="2" parentComponent="SeqFXPanel3"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptButton" id="FX4Randomiser" x="5" y="446" parentComponent="SequencerPanel"
+               isMomentary="1" scaleFactor="0.4" filmstripImage="{PROJECT_FOLDER}RandomiseButton.png"
+               height="14" width="14" saveInPreset="0"/>
+    <Component type="ScriptButton" id="FX4LikellihoodIndicator" x="121" y="450"
+               parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
+               saveInPreset="0"/>
+    <Component type="ScriptSlider" id="FX4Likelihood" x="48" y="447" parentComponent="SequencerPanel"
+               width="70" height="14" middlePosition="100" max="200" stepSize="1"
+               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
+               defaultValue="100"/>
+    <Component type="ScriptPanel" id="FX4SelectorPanel" x="49" y="425" parentComponent="SequencerPanel"
+               itemColour="0" itemColour2="0" bgColour="16777215" textColour="16777215"
+               borderSize="0" borderRadius="0" width="79" height="18">
+      <Component type="ScriptComboBox" id="FX4Selector" x="-7" y="-5" width="105"
+                 height="26" parentComponent="FX4SelectorPanel" items="OFF&#10;L1 Freq.&#10;L1 Drive&#10;L1 Rvb. Wet&#10;L1 Rvb Dry&#10;L1 Delay Mix&#10;L1 Cmp. Ratio&#10;L1 Cmp Atk.&#10;L2 Freq.&#10;L2 Drive&#10;L2 Rvb. Wet&#10;L2 Rvb Dry&#10;L2 Delay Mix&#10;L2 Cmp. Ratio&#10;L2 Cmp Atk.&#10;L3 Freq.&#10;L3 Drive&#10;L3 Rvb. Wet&#10;L3 Rvb Dry&#10;L3 Delay Mix&#10;L3 Cmp. Ratio&#10;L3 Cmp Atk."
+                 itemColour="3355443" itemColour2="1118481" bgColour="16777215"
+                 max="22"/>
+    </Component>
+    <Component type="ScriptPanel" id="SeqFXPanel4" x="137" y="415" parentComponent="SequencerPanel"
+               borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
+               width="563" height="51">
+      <Component type="ScriptImage" id="FX4Cursor" x="3" y="0" parentComponent="SeqFXPanel4"
+                 width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
+                 visible="0"/>
+      <Component type="ScriptSlider" id="SeqFX4Step1" x="3" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step2" x="37" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step3" x="71" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step4" x="105" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step5" x="139" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step6" x="173" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step7" x="207" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step8" x="241" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step9" x="275" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step10" x="309" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step11" x="343" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step12" x="377" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step13" x="411" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step14" x="445" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step15" x="479" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptSlider" id="SeqFX4Step16" x="513" y="3" parentComponent="SeqFXPanel4"
+                 max="100" middlePosition="50" filmstripImage="{PROJECT_FOLDER}SeqFXSetter.png"
+                 numStrips="101" width="34" height="43" stepSize="1"/>
+      <Component type="ScriptPanel" id="FX4HidePanel" x="553" y="29" parentComponent="SeqFXPanel4"
+                 width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
+                 itemColour2="4280100123"/>
+    </Component>
+    <Component type="ScriptPanel" id="SeqEnvelopeEditPanel" x="159" y="265"
+               parentComponent="SequencerPanel" width="505" height="156" borderSize="0"
+               borderRadius="0" itemColour="0" itemColour2="0" visible="0">
+      <Component type="ScriptImage" id="SEqEnvEditBackground" x="0" y="0" width="505"
+                 height="156" parentComponent="SeqEnvelopeEditPanel" fileName="{PROJECT_FOLDER}KickFactory2SeqEnvEditBackground.png"/>
+      <Component type="ScriptLabel" id="SeqEnvTitle" x="8" y="10" parentComponent="SeqEnvelopeEditPanel"
+                 editable="0" width="128" height="15" text="ENVELOPE 1 STEP 1"
+                 fontSize="11" alignment="left"/>
+      <Component type="ScriptButton" id="SeqEnvEditCloser" x="0" y="0" width="505"
+                 height="156" parentComponent="SeqEnvelopeEditPanel" filmstripImage="{PROJECT_FOLDER}blank10Square.png"/>
+      <Component type="ScriptSlider" id="SeqEnvelopeAmountKnob" x="255" y="59"
+                 parentComponent="SeqEnvelopeEditPanel" width="40" height="40"
+                 numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="SeqEnvelopeAttackKnob" x="312" y="26"
+                 parentComponent="SeqEnvelopeEditPanel" width="40" height="40"
+                 numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" suffix=" ms" middlePosition="1000"
+                 max="20000" stepSize="1" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="SeqEnvelopeHoldKnob" x="370" y="26" parentComponent="SeqEnvelopeEditPanel"
+                 width="40" height="40" numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" suffix=" ms" middlePosition="1000"
+                 max="20000" stepSize="1" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="SeqEnvelopeDecayKnob" x="429" y="26"
+                 parentComponent="SeqEnvelopeEditPanel" width="40" height="40"
+                 numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" suffix=" ms" middlePosition="1000"
+                 max="20000" stepSize="1" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="SeqEnvelopeSustainKnob" x="345" y="86"
+                 parentComponent="SeqEnvelopeEditPanel" width="40" height="40"
+                 numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Decibel" suffix=" dB" middlePosition="-18"
+                 min="-100" max="0" stepSize="0.1" saveInPreset="0"/>
+      <Component type="ScriptSlider" id="SeqEnvelopeReleaseKnob" x="405" y="85"
+                 parentComponent="SeqEnvelopeEditPanel" width="40" height="40"
+                 numStrips="100" filmstripImage="{PROJECT_FOLDER}kickfactory2Knob.png"
+                 showValuePopup="Above" mode="Time" suffix=" ms" middlePosition="1000"
+                 max="20000" stepSize="1" min="1" defaultValue="1" saveInPreset="0"/>
+      <Component type="ScriptFloatingTile" id="SeqEnvelopeTile" x="14" y="37"
+                 parentComponent="SeqEnvelopeEditPanel" width="228" height="82"
+                 ContentType="AHDSRGraph" bgColour="15263976" itemColour="2560268440"
+                 itemColour2="4294967295" textColour="4294951115" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;SeqDisplayEnvelope1&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"/>
+    </Component>
+    <Component type="ScriptPanel" id="SeqGrooveDesignerPanel" x="396" y="60"
+               parentComponent="SequencerPanel" width="300" height="133" borderRadius="0"
+               borderSize="0" visible="0">
+      <Component type="ScriptImage" id="SeqGrooveDesignerBackground" x="0" y="0"
+                 width="300" height="133" parentComponent="SeqGrooveDesignerPanel"
+                 fileName="{PROJECT_FOLDER}GrooveDesignerPanel.png"/>
+      <Component type="ScriptButton" id="SeqGrooveDesignerCloser" x="0" y="-2"
+                 parentComponent="SeqGrooveDesignerPanel" width="287" height="120"
+                 filmstripImage="{PROJECT_FOLDER}blank10Square.png"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep1" x="17" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep2" x="49" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep3" x="81" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep4" x="113" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep5" x="145" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep6" x="177" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep7" x="209" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+      <Component type="ScriptSlider" id="GrooveDesignerStep8" x="241" y="31" parentComponent="SeqGrooveDesignerPanel"
+                 width="30" height="60" max="200" min="-200" stepSize="1" middlePosition="0"
+                 filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="MasterPanel" x="1" y="512" borderSize="0"
+             itemColour="0" itemColour2="0" bgColour="16777215" width="697"
+             height="83">
+    <Component type="ScriptSlider" id="MasterVolumeKnob" x="174" y="27" parentComponent="MasterPanel"
+               width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+               showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
+               suffix=" dB" middlePosition="-6"/>
+    <Component type="ScriptSlider" id="MasterIRREKnob" x="358" y="27" parentComponent="MasterPanel"
+               width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
+               showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
+    <Component type="ScriptPanel" id="MIDISelectorPanel" x="586" y="32" parentComponent="MasterPanel"
+               width="84" height="23" itemColour="0" bgColour="16777215" itemColour2="0"
+               borderSize="0" textColour="16777215">
+      <Component type="ScriptComboBox" id="MIDISelector" x="-1" y="-3" max="2"
+                 parentComponent="MIDISelectorPanel" width="104" height="26" items="36&#10;48"
+                 itemColour="3355443" itemColour2="1118481" bgColour="16777215"/>
+    </Component>
+  </Component>
+</ContentProperties>
