@@ -290,9 +290,9 @@ inline function displayPattern(pidx)
     for (iidx= 0; iidx< NUM_STEPS; iidx++)
     {
         VelocitySetters[iidx].setValue(patterns[pidx].velocityRow.velocityValues[iidx]);
-        Env1Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[0].envelopeValues[iidx].power);
-        Env2Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[1].envelopeValues[iidx].power);
-        Env3Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[2].envelopeValues[iidx].power);
+        Mod1Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[0].envelopeValues[iidx].power);
+        Mod2Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[1].envelopeValues[iidx].power);
+        Mod3Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[2].envelopeValues[iidx].power);
         FX1Setters[iidx].setValue(patterns[pidx].FXRowSet[0].fxValues[iidx]);
         FX2Setters[iidx].setValue(patterns[pidx].FXRowSet[1].fxValues[iidx]);
         FX3Setters[iidx].setValue(patterns[pidx].FXRowSet[2].fxValues[iidx]);
@@ -710,9 +710,9 @@ var CompReleases = [];
 // the sequencer widgets
 var PatternSelectors = [];
 var VelocitySetters = [];
-var Env1Setters = [];
-var Env2Setters = [];
-var Env3Setters = [];
+var Mod1Setters = [];
+var Mod2Setters = [];
+var Mod3Setters = [];
 var FX1Setters = [];;
 var FX2Setters = [];;
 var FX3Setters = [];;
@@ -757,6 +757,7 @@ var TheSamplers = [];
 var TheMidiMuters = [];
 var TheGainVelocities = [];
 var TheGainEnvelopes = [];
+var TheGainEnvDefaults = [];
 var TheGainLFOs = [];
 
 var TheSeqDisplayEnvelopes = [];
@@ -970,6 +971,7 @@ for (idx = 0; idx < NUM_VOICES; idx++)
     TheMidiMuters[idx] = Synth.getMidiProcessor("MidiMuter" + (idx+1));
     TheGainVelocities[idx] = Synth.getModulator("GainVelocity" + (idx+1));
     TheGainEnvelopes[idx] = Synth.getModulator("GainEnvelope" + (idx+1));
+    TheGainEnvDefaults[idx] = Synth.getModulator("Simple Envelope" + (idx+1));
     TheGainLFOs[idx] = Synth.getModulator("GainLFO" + (idx+1));
 
     ThePanLFOs[idx] = Synth.getModulator("PanLFO" + (idx+1));
@@ -2062,13 +2064,19 @@ inline function onVelocityDepthKnobVolControl(component, value)
 };
 Content.getComponent("VelocityDepthKnobVol").setControlCallback(onVelocityDepthKnobVolControl);
 
-
+const var GainEnvelope1 = Synth.getModulator("GainEnvelope1");
+const var GainEnvelope2 = Synth.getModulator("GainEnvelope2");
+const var GainEnvelope3 = Synth.getModulator("GainEnvelope3");
 inline function onEnvelopeOnOffVolControl(component, value)
 {
-    for (idx = 0; idx < NUM_VOICES; idx++);
+    /*for (dx = 0; dx < NUM_VOICES; dx++);
     {
-        TheGainEnvelopes[idx].setBypassed(value);
-    };
+        TheGainEnvelopes[dx].setBypassed(1 - value);
+    };*/
+    GainEnvelope1.setBypassed(1 - value);
+    GainEnvelope2.setBypassed(1 - value);
+    GainEnvelope3.setBypassed(1 - value);
+
 };
 Content.getComponent("EnvelopeOnOffVol").setControlCallback(onEnvelopeOnOffVolControl);
 
@@ -2131,8 +2139,10 @@ Content.getComponent("EnvelopeSustainKnobVol").setControlCallback(onEnvelopeSust
 inline function onEnvelopeReleaseKnobVolControl(component, value)
 {
 	local dx;
+
     for(dx = 0;dx < NUM_VOICES; dx++)
     {
+
         TheGainEnvelopes[dx].setAttribute(TheGainEnvelopes[dx].Release, value);
     };
 };
@@ -2175,13 +2185,18 @@ inline function onVelocityDepthKnobPitchControl(component, value)
 };
 Content.getComponent("VelocityDepthKnobPitch").setControlCallback(onVelocityDepthKnobPitchControl);
 
-
+const var PitchEnvelope1 = Synth.getModulator("PitchEnvelope1");
+const var PitchEnvelope2 = Synth.getModulator("PitchEnvelope2");
+const var PitchEnvelope3 = Synth.getModulator("PitchEnvelope3");
 inline function onEnvelopeOnOffPitchControl(component, value)
 {
-    for (idx = 0; idx < NUM_VOICES; idx++);
+    /*for (idx = 0; idx < NUM_VOICES; idx++);
     {
         ThePitchEnvelopes[idx].setBypassed(value);
-    };
+    }; */
+    PitchEnvelope1.setBypassed(1 - value);
+    PitchEnvelope2.setBypassed(1 - value);
+    PitchEnvelope3.setBypassed(1 - value);
 };
 Content.getComponent("EnvelopeOnOffPitch").setControlCallback(onEnvelopeOnOffPitchControl);
 
@@ -2252,9 +2267,14 @@ inline function onEnvelopeReleaseKnobPitchControl(component, value)
 Content.getComponent("EnvelopeReleaseKnobPitch").setControlCallback(onEnvelopeReleaseKnobPitchControl);
 
 
+const var PitchLFO1 = Synth.getModulator("PitchLFO1");
+const var PitchLFO2 = Synth.getModulator("PitchLFO2");
+const var PitchLFO3 = Synth.getModulator("PitchLFO3");
 inline function onLFOOnOffPitchControl(component, value)
 {
-	GlobalLFOPitch.setBypassed(1 - value);
+	PitchLFO1.setBypassed(1 - value);
+	PitchLFO2.setBypassed(1 - value);
+	PitchLFO3.setBypassed(1 - value);
 };
 Content.getComponent("LFOOnOffPitch").setControlCallback(onLFOOnOffPitchControl);
 
@@ -2265,10 +2285,11 @@ inline function onLFOSpeedKnobPitchControl(component, value)
 };
 Content.getComponent("LFOSpeedKnobPitch").setControlCallback(onLFOSpeedKnobPitchControl);
 
-
 inline function onLFODepthKnobPitchControl(component, value)
 {
-	GlobalLFOPitch.setIntensity(value);
+	PitchLFO1.setIntensity(value);
+	PitchLFO2.setIntensity(value);
+	PitchLFO3.setIntensity(value);
 };
 Content.getComponent("LFODepthKnobPitch").setControlCallback(onLFODepthKnobPitchControl);
 
@@ -2288,13 +2309,18 @@ inline function onVelocityDepthKnobFreqControl(component, value)
 };
 Content.getComponent("VelocityDepthKnobFreq").setControlCallback(onVelocityDepthKnobFreqControl);
 
-
+const var FreqEnvelope1 = Synth.getModulator("FreqEnvelope1");
+const var FreqEnvelope2 = Synth.getModulator("FreqEnvelope2");
+const var FreqEnvelope3 = Synth.getModulator("FreqEnvelope3");
 inline function onEnvelopeOnOffFreqControl(component, value)
 {
-    for (idx = 0; idx < NUM_VOICES; idx++);
+    /*for (idx = 0; idx < NUM_VOICES; idx++);
     {
         TheFreqEnvelopes[idx].setBypassed(value);
-    };
+    };*/
+    FreqEnvelope1.setBypassed(1 - value);
+    FreqEnvelope2.setBypassed(1 - value);
+    FreqEnvelope3.setBypassed(1 - value);
 };
 Content.getComponent("EnvelopeOnOffFreq").setControlCallback(onEnvelopeOnOffFreqControl);
 
@@ -2575,9 +2601,9 @@ inline function onSeqStepsKnob(component, value)
         if (kdx > (value -1))
         {
             VelocitySetters[kdx].showControl(false);
-            Env1Setters[kdx].showControl(false);
-            Env2Setters[kdx].showControl(false);
-            Env3Setters[kdx].showControl(false);
+            Mod1Setters[kdx].showControl(false);
+            Mod2Setters[kdx].showControl(false);
+            Mod3Setters[kdx].showControl(false);
             FX1Setters[kdx].showControl(false);
             FX2Setters[kdx].showControl(false);
             FX3Setters[kdx].showControl(false);
@@ -2585,9 +2611,9 @@ inline function onSeqStepsKnob(component, value)
         }else{
             
             VelocitySetters[kdx].showControl(true);
-            Env1Setters[kdx].showControl(true);
-            Env2Setters[kdx].showControl(true);
-            Env3Setters[kdx].showControl(true);
+            Mod1Setters[kdx].showControl(true);
+            Mod2Setters[kdx].showControl(true);
+            Mod3Setters[kdx].showControl(true);
             FX1Setters[kdx].showControl(true);
             FX2Setters[kdx].showControl(true);
             FX3Setters[kdx].showControl(true);
@@ -2606,12 +2632,12 @@ for (idx=0;idx<NUM_STEPS;idx++)
 {
     VelocitySetters[idx] = Content.getComponent("SeqVelocityStep" + (idx+1));
     VelocitySetters[idx].setControlCallback(onVelocitySetter);
-    Env1Setters[idx] = Content.getComponent("SeqEnvelope1Step" + (idx+1));
-    Env1Setters[idx].setControlCallback(onEnv1Setter);
-    Env2Setters[idx] = Content.getComponent("SeqEnvelope2Step" + (idx+1));
-    Env2Setters[idx].setControlCallback(onEnv2Setter);
-    Env3Setters[idx] = Content.getComponent("SeqEnvelope3Step" + (idx+1));
-    Env3Setters[idx].setControlCallback(onEnv3Setter);
+    Mod1Setters[idx] = Content.getComponent("SeqModulator1Step" + (idx+1));
+    Mod1Setters[idx].setControlCallback(onEnv1Setter);
+    Mod2Setters[idx] = Content.getComponent("SeqModulator2Step" + (idx+1));
+    Mod2Setters[idx].setControlCallback(onEnv2Setter);
+    Mod3Setters[idx] = Content.getComponent("SeqModulator3Step" + (idx+1));
+    Mod3Setters[idx].setControlCallback(onEnv3Setter);
     FX1Setters[idx] = Content.getComponent("SeqFX1Step" + (idx+1));
     FX1Setters[idx].setControlCallback(onFX1Setter);
     FX2Setters[idx] = Content.getComponent("SeqFX2Step" + (idx+1));
@@ -2622,22 +2648,6 @@ for (idx=0;idx<NUM_STEPS;idx++)
     FX4Setters[idx].setControlCallback(onFX4Setter);
 };
 
-// the edit envelope panle widgets..
-const var SeqEnvelopeEditPanel = Content.getComponent("SeqEnvelopeEditPanel");
-const var SeqEnvTitle = Content.getComponent("SeqEnvTitle");
-const var SeqEnvelopeTile = Content.getComponent("SeqEnvelopeTile");
-const var SeqEnvelopeAmountKnob = Content.getComponent("SeqEnvelopeAmountKnob");
-SeqEnvelopeAmountKnob.setControlCallback(onSeqEnvelopeAmount);
-const var SeqEnvelopeAttackKnob = Content.getComponent("SeqEnvelopeAttackKnob");
-SeqEnvelopeAttackKnob.setControlCallback(onSeqEnvelopeAttack);
-const var SeqEnvelopeHoldKnob = Content.getComponent("SeqEnvelopeHoldKnob");
-SeqEnvelopeHoldKnob.setControlCallback(onSeqEnvelopeHold);
-const var SeqEnvelopeDecayKnob = Content.getComponent("SeqEnvelopeDecayKnob");
-SeqEnvelopeDecayKnob.setControlCallback(onSeqEnvelopeDecay);
-const var SeqEnvelopeSustainKnob = Content.getComponent("SeqEnvelopeSustainKnob");
-SeqEnvelopeSustainKnob.setControlCallback(onSeqEnvelopeSustain);
-const var SeqEnvelopeReleaseKnob = Content.getComponent("SeqEnvelopeReleaseKnob");
-SeqEnvelopeReleaseKnob.setControlCallback(onSeqEnvelopeRelease);
 
 
 
@@ -2655,147 +2665,9 @@ inline function onVelocitySetter(component, value)
 };
 
 
-inline function onEnv1Setter(component, value)
-{
-	//
-	currentSelectingEnvelopeVoice = 0;
-	for(kdx = 0; kdx < NUM_STEPS; kdx++)
-    {
-        if(component == Env1Setters[kdx])
-        {
-            patterns[currentSelectingPattern].EnvelopeRowSet[0].envelopeValues[kdx].power = value;
-            playingPattern = patterns[currentSelectingPattern];
-            if (value) // turned on this envelope
-            {   
-                currentSelectingEnvelopeSlot = kdx;
-                // we will want to see an envelope drawn so set the dialogs display to the display envelope for this voice
-                SeqEnvelopeTile.set("Data", "{\r\n  \"ProcessorId\": \"SeqDisplayEnvelope1\",\r\n  \"Index\": -1\r\n}");
-                // start by setting the panel values to this envelopes seq setting
-                SeqEnvTitle.set("text","ENVELOPE 1 STEP " + (kdx+1));
-                SeqEnvelopeAmountKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].amount);
-                SeqEnvelopeAmountKnob.changed();
-                /*
-                Console.print("setting sustainvalues......" + patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain);
-                Console.print("for pattern:" + currentSelectingPattern);
-                Console.print("for Row:" + currentSelectingEnvelopeVoice);
-                Console.print("for Slot:" + currentSelectingEnvelopeSlot);
-                */
-                SeqEnvelopeAttackKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].attack);
-                SeqEnvelopeAttackKnob.changed();
-                SeqEnvelopeHoldKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].hold);
-                SeqEnvelopeHoldKnob.changed();
-                SeqEnvelopeDecayKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].decay);
-                SeqEnvelopeDecayKnob.changed();
-                SeqEnvelopeSustainKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain);
-                SeqEnvelopeSustainKnob.changed();
-                SeqEnvelopeReleaseKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].release);
-                SeqEnvelopeReleaseKnob.changed();
-                
-                SeqEnvelopeEditPanel.showControl(true);
-            }else{
-                // ok so close the dialog - and set the envelope to the default 
-                SeqEnvelopeEditPanel.showControl(false);
-                //
-            };
-        };
-    };
-};
 
 
-inline function onEnv2Setter(component, value)
-{
-	//
-	currentSelectingEnvelopeVoice = 1;
-	for(kdx = 0; kdx < NUM_STEPS; kdx++)
-    {
-        if(component == Env2Setters[kdx])
-        {
-            patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].power = value;
-            playingPattern = patterns[currentSelectingPattern];
-            if (value) // turned on this envelope
-            {   
-                
-                
-                currentSelectingEnvelopeSlot = kdx;
-                // we will want to see an envelope drawn so set the dialogs display to the display envelope for this voice
-                SeqEnvelopeTile.set("Data", "{\r\n  \"ProcessorId\": \"SeqDisplayEnvelope2\",\r\n  \"Index\": -1\r\n}");
-                // start by setting the panel values to this envelopes seq setting
-                SeqEnvTitle.set("text","ENVELOPE 2 STEP " + (kdx+1));
-                SeqEnvelopeAmountKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].amount);
-                SeqEnvelopeAmountKnob.changed();
-                /*
-                Console.print("setting sustainvalues......" + patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain);
-                Console.print("for pattern:" + currentSelectingPattern);
-                Console.print("for Row:" + currentSelectingEnvelopeVoice);
-                Console.print("for Slot:" + currentSelectingEnvelopeSlot);
-                */
-                SeqEnvelopeAttackKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].attack);
-                SeqEnvelopeAttackKnob.changed();
-                SeqEnvelopeHoldKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].hold);
-                SeqEnvelopeHoldKnob.changed();
-                SeqEnvelopeDecayKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].decay);
-                SeqEnvelopeDecayKnob.changed();
-                SeqEnvelopeSustainKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain);
-                SeqEnvelopeSustainKnob.changed();
-                SeqEnvelopeReleaseKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].release);
-                SeqEnvelopeReleaseKnob.changed();
-                
-                SeqEnvelopeEditPanel.showControl(true);
-            }else{
-                // ok so close the dialog - and set the envelope to the default 
-                SeqEnvelopeEditPanel.showControl(false);
-                //
-            };
-        };
-    };
-};
-inline function onEnv3Setter(component, value)
-{
-	//
-	currentSelectingEnvelopeVoice = 2;
-	for(kdx = 0; kdx < NUM_STEPS; kdx++)
-    {
-        if(component == Env3Setters[kdx])
-        {
-            patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].power = value;
-            playingPattern = patterns[currentSelectingPattern];
-            if (value) // turned on this envelope
-            {   
-                
-                
-                currentSelectingEnvelopeSlot = kdx;
-                // we will want to see an envelope drawn so set the dialogs display to the display envelope for this voice
-                SeqEnvelopeTile.set("Data", "{\r\n  \"ProcessorId\": \"SeqDisplayEnvelope2\",\r\n  \"Index\": -1\r\n}");
-                // start by setting the panel values to this envelopes seq setting
-                SeqEnvTitle.set("text","ENVELOPE 3 STEP " + (kdx+1));
-                SeqEnvelopeAmountKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[kdx].amount);
-                SeqEnvelopeAmountKnob.changed();
-                /*
-                Console.print("setting sustainvalues......" + patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain);
-                Console.print("for pattern:" + currentSelectingPattern);
-                Console.print("for Row:" + currentSelectingEnvelopeVoice);
-                Console.print("for Slot:" + currentSelectingEnvelopeSlot);
-                */
-                SeqEnvelopeAttackKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].attack);
-                SeqEnvelopeAttackKnob.changed();
-                SeqEnvelopeHoldKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].hold);
-                SeqEnvelopeHoldKnob.changed();
-                SeqEnvelopeDecayKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].decay);
-                SeqEnvelopeDecayKnob.changed();
-                SeqEnvelopeSustainKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain);
-                SeqEnvelopeSustainKnob.changed();
-                SeqEnvelopeReleaseKnob.setValue(patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].release);
-                SeqEnvelopeReleaseKnob.changed();
-                
-                SeqEnvelopeEditPanel.showControl(true);
-            }else{
-                // ok so close the dialog - and set the envelope to the default 
-                SeqEnvelopeEditPanel.showControl(false);
-                //
-            };
-        };
-    };
-};
+
 
 
 inline function onFX1Setter(component, value)
@@ -2856,79 +2728,7 @@ inline function onFX4Setter(component, value)
             
         
 
-inline function onSeqEnvEditCloserControl(component, value)
-{
-	
-    SeqEnvelopeEditPanel.showControl(false);
-};
 
-Content.getComponent("SeqEnvEditCloser").setControlCallback(onSeqEnvEditCloserControl);
-
-
-
-inline function onSeqEnvelopeAmount(component, value)
-{
-	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].amount = value;
-    playingPattern = patterns[currentSelectingPattern];
-};
-
-
-inline function onSeqEnvelopeAttack(component, value)
-{   
-    
-    /*Console.print("in the attack call back....");
-    Console.print("for pattern:" + currentSelectingPattern);
-    Console.print("for Row:" + currentSelectingEnvelopeVoice);
-    Console.print("for Slot:" + currentSelectingEnvelopeSlot);
-    Console.print("Setting value>" + value);
-    */
-    //save the value in the seq
-	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].attack = value;
-    playingPattern = patterns[currentSelectingPattern];
-	//modify the display envelope
-	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Attack, value);
-};
-
-
-inline function onSeqEnvelopeHold(component, value)
-{
-	//save the value in the seq
-	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].hold = value;
-    playingPattern = patterns[currentSelectingPattern];
-	//modify the display envelope
-	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Hold, value);
-};
-
-inline function onSeqEnvelopeDecay(component, value)
-{
-	
-	//save the value in the seq
-	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].decay = value;
-    playingPattern = patterns[currentSelectingPattern];
-	//modify the display envelope
-	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Decay, value);
-};
-
-inline function onSeqEnvelopeSustain(component, value)
-{
-	
-	//save the value in the seq
-	//Console.print("setting sustain for slot:" + currentSelectingEnvelopeSlot);
-	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].sustain = value;
-    playingPattern = patterns[currentSelectingPattern];
-	//modify the display envelope
-	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Sustain, value);
-};
-
-inline function onSeqEnvelopeRelease(component, value)
-{
-	
-	//save the value in the seq
-	patterns[currentSelectingPattern].EnvelopeRowSet[currentSelectingEnvelopeVoice].envelopeValues[currentSelectingEnvelopeSlot].release = value;
-    playingPattern = patterns[currentSelectingPattern];
-	//modify the display envelope
-	TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].setAttribute(TheSeqDisplayEnvelopes[currentSelectingEnvelopeVoice].Release, value);
-};
 
 
 paintKeys();
