@@ -20,7 +20,7 @@
             <Control type="ScriptLabel" id="SampleMapNameVoice1" value="Elektron_Kicks 0007"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice1" value="0"/>
             <Control type="ScriptButton" id="NextSound1" value="0"/>
-            <Control type="ScriptSlider" id="VolumeKnob1" value="-10.8"/>
+            <Control type="ScriptSlider" id="VolumeKnob1" value="-1.8"/>
             <Control type="ScriptSlider" id="PanKnob1" value="8"/>
             <Control type="ScriptSlider" id="PitchKnob1" value="0.4"/>
             <Control type="ScriptButton" id="FilterOnOff1" value="1"/>
@@ -29,7 +29,7 @@
             <Control type="ScriptButton" id="FilterLock1" value="0"/>
             <Control type="ScriptComboBox" id="FilterSelector1" value="4"/>
             <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0"/>
-            <Control type="ScriptSlider" id="VolumeBarVoice1" value="-10.8"/>
+            <Control type="ScriptSlider" id="VolumeBarVoice1" value="-1.8"/>
             <Control type="ScriptComboBox" id="TriggerSelector1" value="1"/>
             <Control type="ScriptButton" id="ShapeOnOff1" value="1"/>
             <Control type="ScriptButton" id="ShapeLock1" value="0"/>
@@ -53,14 +53,14 @@
             <Control type="ScriptSlider" id="CompAttackKnob1" value="14"/>
             <Control type="ScriptSlider" id="CompReleaseKnob1" value="233"/>
             <Control type="ScriptButton" id="MuteButton2" value="0"/>
-            <Control type="ScriptSlider" id="VolumeBarVoice2" value="-7"/>
+            <Control type="ScriptSlider" id="VolumeBarVoice2" value="1.49012e-06"/>
             <Control type="ScriptLabel" id="DisplayNameVoice2" value="Alesis_Kick2828"/>
             <Control type="ScriptButton" id="OpenCloseButton2" value="0"/>
             <Control type="ScriptButton" id="PrevSound2" value="0"/>
             <Control type="ScriptLabel" id="SampleMapNameVoice2" value="Alesis_Kick2828"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice2" value="0"/>
             <Control type="ScriptButton" id="NextSound2" value="0"/>
-            <Control type="ScriptSlider" id="VolumeKnob2" value="-7"/>
+            <Control type="ScriptSlider" id="VolumeKnob2" value="1.49012e-06"/>
             <Control type="ScriptSlider" id="PanKnob2" value="0"/>
             <Control type="ScriptSlider" id="PitchKnob2" value="-0.2"/>
             <Control type="ScriptSlider" id="FreqKnob2" value="7053"/>
@@ -93,13 +93,13 @@
             <Control type="ScriptSlider" id="CompReleaseKnob2" value="233"/>
             <Control type="ScriptButton" id="MuteButton3" value="0"/>
             <Control type="ScriptLabel" id="DisplayNameVoice3" value="Elektron_Kicks 0008"/>
-            <Control type="ScriptSlider" id="VolumeBarVoice3" value="-2.4"/>
-            <Control type="ScriptButton" id="OpenCloseButton3" value="1"/>
+            <Control type="ScriptSlider" id="VolumeBarVoice3" value="-13"/>
+            <Control type="ScriptButton" id="OpenCloseButton3" value="0"/>
             <Control type="ScriptButton" id="PrevSound3" value="0"/>
             <Control type="ScriptLabel" id="SampleMapNameVoice3" value="Elektron_Kicks 0008"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice3" value="0"/>
             <Control type="ScriptButton" id="NextSound3" value="0"/>
-            <Control type="ScriptSlider" id="VolumeKnob3" value="-2.4"/>
+            <Control type="ScriptSlider" id="VolumeKnob3" value="-13"/>
             <Control type="ScriptSlider" id="PanKnob3" value="0"/>
             <Control type="ScriptSlider" id="PitchKnob3" value="-1.1"/>
             <Control type="ScriptSlider" id="FreqKnob3" value="3483"/>
@@ -130,12 +130,12 @@
             <Control type="ScriptSlider" id="CompRatioKnob3" value="1.1"/>
             <Control type="ScriptSlider" id="CompAttackKnob3" value="14"/>
             <Control type="ScriptSlider" id="CompReleaseKnob3" value="233"/>
-            <Control type="ScriptButton" id="OpenCloseButton4" value="0"/>
+            <Control type="ScriptButton" id="OpenCloseButton4" value="1"/>
             <Control type="ScriptTable" id="VelocityTableVol" value="0" data=""/>
             <Control type="ScriptTable" id="LFOTableVol" value="0" data="36...............vO7aMx9XzE87C...lO...f+.........ZO"/>
             <Control type="ScriptTable" id="VelocityTablePitch" value="0" data="36...............vOYmXG8fhhh5C...vO...f+....9C..P0O"/>
             <Control type="ScriptTable" id="LFOTablePitch" value="0" data="36...............vOlRD793d6s8C...vO...f+.........3O"/>
-            <Control type="ScriptTable" id="VelocityTableFreq" value="0" data="36...............vOUUUU+vQtQ7C...vO...f+....9C...lO"/>
+            <Control type="ScriptTable" id="VelocityTableFreq" value="0" data="24...............vO...f+....9C...lO"/>
             <Control type="ScriptTable" id="LFOTableFreq" value="0" data="60...............vOOM4f9....9C...vOrmqB+.........vO1yUQ+fQWT7C...vO...f+.........vO"/>
             <Control type="ScriptButton" id="DialogDismiss" value="0"/>
             <Control type="ScriptedViewport" id="VoiceCategories" value="7"/>
@@ -155,36 +155,36 @@
             <Control type="ScriptButton" id="PatternSelector8" value="0"/>
             <Control type="ScriptSlider" id="SeqTempoKnob" value="8"/>
             <Control type="ScriptSlider" id="SeqStepsKnob" value="16"/>
-            <Control type="ScriptButton" id="GrooveDesignerButton" value="1"/>
-            <Control type="ScriptSlider" id="SeqSwing" value="0.643936"/>
-            <Control type="ScriptSlider" id="VelocityLikelihood" value="98"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep1" value="22"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep2" value="107"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep3" value="94"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep4" value="69"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep5" value="68"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep6" value="37"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep7" value="120"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep8" value="12"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep9" value="97"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep10" value="1"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep11" value="23"/>
-            <Control type="ScriptSlider" id="SeqVelocityStep12" value="27"/>
+            <Control type="ScriptButton" id="GrooveDesignerButton" value="0"/>
+            <Control type="ScriptSlider" id="SeqSwing" value="0.335044"/>
+            <Control type="ScriptSlider" id="VelocityLikelihood" value="16"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep1" value="119"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep2" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep3" value="82"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep4" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep5" value="66"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep6" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep7" value="73"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep8" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep9" value="104"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep10" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep11" value="0"/>
+            <Control type="ScriptSlider" id="SeqVelocityStep12" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep13" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep14" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep15" value="0"/>
             <Control type="ScriptSlider" id="SeqVelocityStep16" value="0"/>
-            <Control type="ScriptComboBox" id="Mod1Selector" value="1"/>
-            <Control type="ScriptSlider" id="Envelope1Likelihood" value="46"/>
-            <Control type="ScriptSlider" id="SeqModulator1Step1" value="0"/>
+            <Control type="ScriptComboBox" id="Mod1Selector" value="3"/>
+            <Control type="ScriptSlider" id="Modulator1Likelihood" value="15"/>
+            <Control type="ScriptSlider" id="SeqModulator1Step1" value="100"/>
             <Control type="ScriptSlider" id="SeqModulator1Step2" value="0"/>
-            <Control type="ScriptSlider" id="SeqModulator1Step3" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator1Step3" value="59"/>
             <Control type="ScriptSlider" id="SeqModulator1Step4" value="0"/>
-            <Control type="ScriptSlider" id="SeqModulator1Step5" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator1Step5" value="70"/>
             <Control type="ScriptSlider" id="SeqModulator1Step6" value="0"/>
-            <Control type="ScriptSlider" id="SeqModulator1Step7" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator1Step7" value="71"/>
             <Control type="ScriptSlider" id="SeqModulator1Step8" value="0"/>
-            <Control type="ScriptSlider" id="SeqModulator1Step9" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator1Step9" value="79"/>
             <Control type="ScriptSlider" id="SeqModulator1Step10" value="0"/>
             <Control type="ScriptSlider" id="SeqModulator1Step11" value="0"/>
             <Control type="ScriptSlider" id="SeqModulator1Step12" value="0"/>
@@ -192,115 +192,115 @@
             <Control type="ScriptSlider" id="SeqModulator1Step14" value="0"/>
             <Control type="ScriptSlider" id="SeqModulator1Step15" value="0"/>
             <Control type="ScriptSlider" id="SeqModulator1Step16" value="0"/>
-            <Control type="ScriptComboBox" id="Mod2Selector" value="1"/>
-            <Control type="ScriptSlider" id="Envelope2Likelihood" value="154"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step1" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step2" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step3" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step4" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step5" value="54"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step6" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step7" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step8" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step9" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step10" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step11" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step12" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step13" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step14" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step15" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator2Step16" value="50"/>
-            <Control type="ScriptComboBox" id="Mod3Selector" value="1"/>
-            <Control type="ScriptSlider" id="Envelope3Likelihood" value="60"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step1" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step2" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step3" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step4" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step5" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step6" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step7" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step8" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step9" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step10" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step11" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step12" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step13" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step14" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step15" value="50"/>
-            <Control type="ScriptSlider" id="SeqModulator3Step16" value="50"/>
-            <Control type="ScriptSlider" id="FX1Likelihood" value="120"/>
-            <Control type="ScriptComboBox" id="FX1Selector" value="3"/>
-            <Control type="ScriptSlider" id="SeqFX1Step1" value="83"/>
-            <Control type="ScriptSlider" id="SeqFX1Step2" value="69"/>
-            <Control type="ScriptSlider" id="SeqFX1Step3" value="55"/>
-            <Control type="ScriptSlider" id="SeqFX1Step4" value="10"/>
-            <Control type="ScriptSlider" id="SeqFX1Step5" value="83"/>
-            <Control type="ScriptSlider" id="SeqFX1Step6" value="31"/>
-            <Control type="ScriptSlider" id="SeqFX1Step7" value="30"/>
-            <Control type="ScriptSlider" id="SeqFX1Step8" value="93"/>
-            <Control type="ScriptSlider" id="SeqFX1Step9" value="10"/>
-            <Control type="ScriptSlider" id="SeqFX1Step10" value="14"/>
-            <Control type="ScriptSlider" id="SeqFX1Step11" value="13"/>
-            <Control type="ScriptSlider" id="SeqFX1Step12" value="26"/>
-            <Control type="ScriptSlider" id="SeqFX1Step13" value="31"/>
-            <Control type="ScriptSlider" id="SeqFX1Step14" value="49"/>
-            <Control type="ScriptSlider" id="SeqFX1Step15" value="39"/>
-            <Control type="ScriptSlider" id="SeqFX1Step16" value="52"/>
-            <Control type="ScriptSlider" id="FX2Likelihood" value="11"/>
+            <Control type="ScriptComboBox" id="Mod2Selector" value="6"/>
+            <Control type="ScriptSlider" id="Modulator2Likelihood" value="91"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step1" value="70"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step2" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step3" value="18"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step4" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step5" value="100"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step6" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step7" value="22"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step8" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step9" value="13"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step10" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step11" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step12" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step13" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step14" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step15" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator2Step16" value="0"/>
+            <Control type="ScriptComboBox" id="Mod3Selector" value="10"/>
+            <Control type="ScriptSlider" id="Modulator3Likelihood" value="188"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step1" value="18"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step2" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step3" value="101"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step4" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step5" value="29"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step6" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step7" value="101"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step8" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step9" value="101"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step10" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step11" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step12" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step13" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step14" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step15" value="0"/>
+            <Control type="ScriptSlider" id="SeqModulator3Step16" value="0"/>
+            <Control type="ScriptSlider" id="FX1Likelihood" value="177"/>
+            <Control type="ScriptComboBox" id="FX1Selector" value="4"/>
+            <Control type="ScriptSlider" id="SeqFX1Step1" value="27"/>
+            <Control type="ScriptSlider" id="SeqFX1Step2" value="46"/>
+            <Control type="ScriptSlider" id="SeqFX1Step3" value="18"/>
+            <Control type="ScriptSlider" id="SeqFX1Step4" value="97"/>
+            <Control type="ScriptSlider" id="SeqFX1Step5" value="20"/>
+            <Control type="ScriptSlider" id="SeqFX1Step6" value="100"/>
+            <Control type="ScriptSlider" id="SeqFX1Step7" value="85"/>
+            <Control type="ScriptSlider" id="SeqFX1Step8" value="2"/>
+            <Control type="ScriptSlider" id="SeqFX1Step9" value="11"/>
+            <Control type="ScriptSlider" id="SeqFX1Step10" value="59"/>
+            <Control type="ScriptSlider" id="SeqFX1Step11" value="30"/>
+            <Control type="ScriptSlider" id="SeqFX1Step12" value="61"/>
+            <Control type="ScriptSlider" id="SeqFX1Step13" value="8"/>
+            <Control type="ScriptSlider" id="SeqFX1Step14" value="55"/>
+            <Control type="ScriptSlider" id="SeqFX1Step15" value="92"/>
+            <Control type="ScriptSlider" id="SeqFX1Step16" value="67"/>
+            <Control type="ScriptSlider" id="FX2Likelihood" value="96"/>
             <Control type="ScriptComboBox" id="FX2Selector" value="4"/>
-            <Control type="ScriptSlider" id="SeqFX2Step1" value="35"/>
-            <Control type="ScriptSlider" id="SeqFX2Step2" value="9"/>
-            <Control type="ScriptSlider" id="SeqFX2Step3" value="70"/>
-            <Control type="ScriptSlider" id="SeqFX2Step4" value="48"/>
-            <Control type="ScriptSlider" id="SeqFX2Step5" value="40"/>
-            <Control type="ScriptSlider" id="SeqFX2Step6" value="100"/>
-            <Control type="ScriptSlider" id="SeqFX2Step7" value="38"/>
-            <Control type="ScriptSlider" id="SeqFX2Step8" value="52"/>
-            <Control type="ScriptSlider" id="SeqFX2Step9" value="50"/>
-            <Control type="ScriptSlider" id="SeqFX2Step10" value="74"/>
-            <Control type="ScriptSlider" id="SeqFX2Step11" value="20"/>
-            <Control type="ScriptSlider" id="SeqFX2Step12" value="72"/>
-            <Control type="ScriptSlider" id="SeqFX2Step13" value="78"/>
-            <Control type="ScriptSlider" id="SeqFX2Step14" value="29"/>
-            <Control type="ScriptSlider" id="SeqFX2Step15" value="4"/>
-            <Control type="ScriptSlider" id="SeqFX2Step16" value="32"/>
-            <Control type="ScriptSlider" id="FX3Likelihood" value="193"/>
-            <Control type="ScriptComboBox" id="FX3Selector" value="4"/>
-            <Control type="ScriptSlider" id="SeqFX3Step1" value="36"/>
-            <Control type="ScriptSlider" id="SeqFX3Step2" value="50"/>
-            <Control type="ScriptSlider" id="SeqFX3Step3" value="54"/>
-            <Control type="ScriptSlider" id="SeqFX3Step4" value="0"/>
-            <Control type="ScriptSlider" id="SeqFX3Step5" value="53"/>
-            <Control type="ScriptSlider" id="SeqFX3Step6" value="87"/>
-            <Control type="ScriptSlider" id="SeqFX3Step7" value="86"/>
-            <Control type="ScriptSlider" id="SeqFX3Step8" value="78"/>
-            <Control type="ScriptSlider" id="SeqFX3Step9" value="25"/>
-            <Control type="ScriptSlider" id="SeqFX3Step10" value="39"/>
-            <Control type="ScriptSlider" id="SeqFX3Step11" value="20"/>
-            <Control type="ScriptSlider" id="SeqFX3Step12" value="21"/>
-            <Control type="ScriptSlider" id="SeqFX3Step13" value="82"/>
-            <Control type="ScriptSlider" id="SeqFX3Step14" value="5"/>
-            <Control type="ScriptSlider" id="SeqFX3Step15" value="85"/>
-            <Control type="ScriptSlider" id="SeqFX3Step16" value="82"/>
-            <Control type="ScriptSlider" id="FX4Likelihood" value="170"/>
-            <Control type="ScriptComboBox" id="FX4Selector" value="4"/>
-            <Control type="ScriptSlider" id="SeqFX4Step1" value="37"/>
-            <Control type="ScriptSlider" id="SeqFX4Step2" value="94"/>
-            <Control type="ScriptSlider" id="SeqFX4Step3" value="40"/>
-            <Control type="ScriptSlider" id="SeqFX4Step4" value="99"/>
-            <Control type="ScriptSlider" id="SeqFX4Step5" value="33"/>
-            <Control type="ScriptSlider" id="SeqFX4Step6" value="35"/>
-            <Control type="ScriptSlider" id="SeqFX4Step7" value="73"/>
-            <Control type="ScriptSlider" id="SeqFX4Step8" value="31"/>
-            <Control type="ScriptSlider" id="SeqFX4Step9" value="45"/>
-            <Control type="ScriptSlider" id="SeqFX4Step10" value="84"/>
-            <Control type="ScriptSlider" id="SeqFX4Step11" value="49"/>
-            <Control type="ScriptSlider" id="SeqFX4Step12" value="1"/>
-            <Control type="ScriptSlider" id="SeqFX4Step13" value="76"/>
-            <Control type="ScriptSlider" id="SeqFX4Step14" value="92"/>
-            <Control type="ScriptSlider" id="SeqFX4Step15" value="36"/>
-            <Control type="ScriptSlider" id="SeqFX4Step16" value="34"/>
-            <Control type="ScriptButton" id="SeqGrooveDesignerCloser" value="1"/>
+            <Control type="ScriptSlider" id="SeqFX2Step1" value="30"/>
+            <Control type="ScriptSlider" id="SeqFX2Step2" value="56"/>
+            <Control type="ScriptSlider" id="SeqFX2Step3" value="6"/>
+            <Control type="ScriptSlider" id="SeqFX2Step4" value="5"/>
+            <Control type="ScriptSlider" id="SeqFX2Step5" value="65"/>
+            <Control type="ScriptSlider" id="SeqFX2Step6" value="71"/>
+            <Control type="ScriptSlider" id="SeqFX2Step7" value="94"/>
+            <Control type="ScriptSlider" id="SeqFX2Step8" value="27"/>
+            <Control type="ScriptSlider" id="SeqFX2Step9" value="75"/>
+            <Control type="ScriptSlider" id="SeqFX2Step10" value="57"/>
+            <Control type="ScriptSlider" id="SeqFX2Step11" value="16"/>
+            <Control type="ScriptSlider" id="SeqFX2Step12" value="63"/>
+            <Control type="ScriptSlider" id="SeqFX2Step13" value="91"/>
+            <Control type="ScriptSlider" id="SeqFX2Step14" value="48"/>
+            <Control type="ScriptSlider" id="SeqFX2Step15" value="15"/>
+            <Control type="ScriptSlider" id="SeqFX2Step16" value="48"/>
+            <Control type="ScriptSlider" id="FX3Likelihood" value="2"/>
+            <Control type="ScriptComboBox" id="FX3Selector" value="6"/>
+            <Control type="ScriptSlider" id="SeqFX3Step1" value="78"/>
+            <Control type="ScriptSlider" id="SeqFX3Step2" value="33"/>
+            <Control type="ScriptSlider" id="SeqFX3Step3" value="41"/>
+            <Control type="ScriptSlider" id="SeqFX3Step4" value="86"/>
+            <Control type="ScriptSlider" id="SeqFX3Step5" value="67"/>
+            <Control type="ScriptSlider" id="SeqFX3Step6" value="92"/>
+            <Control type="ScriptSlider" id="SeqFX3Step7" value="62"/>
+            <Control type="ScriptSlider" id="SeqFX3Step8" value="44"/>
+            <Control type="ScriptSlider" id="SeqFX3Step9" value="12"/>
+            <Control type="ScriptSlider" id="SeqFX3Step10" value="21"/>
+            <Control type="ScriptSlider" id="SeqFX3Step11" value="26"/>
+            <Control type="ScriptSlider" id="SeqFX3Step12" value="73"/>
+            <Control type="ScriptSlider" id="SeqFX3Step13" value="56"/>
+            <Control type="ScriptSlider" id="SeqFX3Step14" value="17"/>
+            <Control type="ScriptSlider" id="SeqFX3Step15" value="32"/>
+            <Control type="ScriptSlider" id="SeqFX3Step16" value="36"/>
+            <Control type="ScriptSlider" id="FX4Likelihood" value="53"/>
+            <Control type="ScriptComboBox" id="FX4Selector" value="5"/>
+            <Control type="ScriptSlider" id="SeqFX4Step1" value="54"/>
+            <Control type="ScriptSlider" id="SeqFX4Step2" value="14"/>
+            <Control type="ScriptSlider" id="SeqFX4Step3" value="30"/>
+            <Control type="ScriptSlider" id="SeqFX4Step4" value="94"/>
+            <Control type="ScriptSlider" id="SeqFX4Step5" value="98"/>
+            <Control type="ScriptSlider" id="SeqFX4Step6" value="95"/>
+            <Control type="ScriptSlider" id="SeqFX4Step7" value="46"/>
+            <Control type="ScriptSlider" id="SeqFX4Step8" value="56"/>
+            <Control type="ScriptSlider" id="SeqFX4Step9" value="26"/>
+            <Control type="ScriptSlider" id="SeqFX4Step10" value="85"/>
+            <Control type="ScriptSlider" id="SeqFX4Step11" value="90"/>
+            <Control type="ScriptSlider" id="SeqFX4Step12" value="99"/>
+            <Control type="ScriptSlider" id="SeqFX4Step13" value="74"/>
+            <Control type="ScriptSlider" id="SeqFX4Step14" value="20"/>
+            <Control type="ScriptSlider" id="SeqFX4Step15" value="2"/>
+            <Control type="ScriptSlider" id="SeqFX4Step16" value="20"/>
+            <Control type="ScriptButton" id="SeqGrooveDesignerCloser" value="0"/>
             <Control type="ScriptSlider" id="GrooveDesignerStep1" value="-2"/>
             <Control type="ScriptSlider" id="GrooveDesignerStep2" value="0"/>
             <Control type="ScriptSlider" id="GrooveDesignerStep3" value="-1"/>
@@ -373,19 +373,19 @@
         </Processor>
         <Processor Type="ModulatorChain" ID="Global Modulators" Bypassed="0" Intensity="1">
           <ChildProcessors>
-            <Processor Type="Velocity" ID="GlobalVelocityGain" Bypassed="0" Intensity="1"
+            <Processor Type="Velocity" ID="GlobalVelocityGain" Bypassed="1" Intensity="0.54"
                        UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="">
               <ChildProcessors/>
             </Processor>
-            <Processor Type="Velocity" ID="GlobalVelocityPitch" Bypassed="0" Intensity="1"
+            <Processor Type="Velocity" ID="GlobalVelocityPitch" Bypassed="1" Intensity="0.56"
                        UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36...............vOYmXG8fhhh5C...vO...f+....9C..P0O">
               <ChildProcessors/>
             </Processor>
-            <Processor Type="Velocity" ID="GlobalVelocityFreq" Bypassed="0" Intensity="1"
-                       UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="36...............vOUUUU+vQtQ7C...vO...f+....9C...lO">
+            <Processor Type="Velocity" ID="GlobalVelocityFreq" Bypassed="1" Intensity="0.48"
+                       UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="24...............vO...f+....9C...lO">
               <ChildProcessors/>
             </Processor>
-            <Processor Type="LFO" ID="GlobalLFOGain" Bypassed="1" Intensity="0.85" Frequency="13"
+            <Processor Type="LFO" ID="GlobalLFOGain" Bypassed="1" Intensity="1" Frequency="12"
                        FadeIn="0" WaveformType="6" Legato="1" TempoSync="1" SmoothingTime="5"
                        LoopEnabled="1" PhaseOffset="0" CustomWaveform="36...............vO7aMx9XzE87C...lO...f+.........ZO"
                        StepData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+.">
@@ -398,7 +398,7 @@
                 </Processor>
               </ChildProcessors>
             </Processor>
-            <Processor Type="LFO" ID="GlobalLFOPitch" Bypassed="0" Intensity="1" Frequency="7"
+            <Processor Type="LFO" ID="GlobalLFOPitch" Bypassed="1" Intensity="1" Frequency="8"
                        FadeIn="0" WaveformType="6" Legato="1" TempoSync="1" SmoothingTime="5"
                        LoopEnabled="1" PhaseOffset="0" CustomWaveform="36...............vOlRD793d6s8C...vO...f+.........3O"
                        StepData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+.">
@@ -411,7 +411,7 @@
                 </Processor>
               </ChildProcessors>
             </Processor>
-            <Processor Type="LFO" ID="GlobalLFOFreq" Bypassed="0" Intensity="0.55" Frequency="8"
+            <Processor Type="LFO" ID="GlobalLFOFreq" Bypassed="1" Intensity="1" Frequency="11"
                        FadeIn="0" WaveformType="6" Legato="1" TempoSync="1" SmoothingTime="5"
                        LoopEnabled="1" PhaseOffset="0" CustomWaveform="60...............vOOM4f9....9C...vOrmqB+.........vO1yUQ+fQWT7C...vO...f+.........vO"
                        StepData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+.">
@@ -495,9 +495,8 @@
                   <ChildProcessors/>
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope1" Bypassed="1" Monophonic="1" Retrigger="1"
-                           Intensity="0.49" AttackCurve="0.5" DecayCurve="0" Attack="0"
-                           AttackLevel="0" Hold="5447" Decay="6" Sustain="-100" Release="1"
-                           EcoMode="1">
+                           Intensity="1" AttackCurve="0.5" DecayCurve="0" Attack="0" AttackLevel="0"
+                           Hold="14" Decay="6" Sustain="-100" Release="1" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -542,10 +541,10 @@
                            Connection="Global Modulator Container1:GlobalVelocityPitch">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="AHDSR" ID="PitchEnvelope1" Bypassed="0" Monophonic="0"
-                           Retrigger="1" Bipolar="1" Intensity="0" AttackCurve="0.5" DecayCurve="0"
-                           Attack="59" AttackLevel="0" Hold="4" Decay="0" Sustain="-35.5"
-                           Release="418" EcoMode="1">
+                <Processor Type="AHDSR" ID="PitchEnvelope1" Bypassed="1" Monophonic="0"
+                           Retrigger="1" Bipolar="1" Intensity="-1" AttackCurve="0.5" DecayCurve="0"
+                           Attack="147" AttackLevel="0" Hold="20000" Decay="219" Sustain="-100"
+                           Release="1735" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -564,8 +563,8 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="GlobalTimeVariantModulator" ID="PitchLFO1" Bypassed="1"
-                           Intensity="0" Bipolar="1" UseTable="0" Inverted="0" TableData=""
+                <Processor Type="GlobalTimeVariantModulator" ID="PitchLFO1" Bypassed="0"
+                           Intensity="0.641667" Bipolar="1" UseTable="0" Inverted="0" TableData=""
                            Connection="Global Modulator Container1:GlobalLFOPitch">
                   <ChildProcessors/>
                 </Processor>
@@ -586,9 +585,9 @@
                                    Intensity="1" UseTable="0" Inverted="0" TableData="" Connection="Global Modulator Container1:GlobalVelocityFreq">
                           <ChildProcessors/>
                         </Processor>
-                        <Processor Type="AHDSR" ID="FreqEnvelope1" Bypassed="1" Monophonic="1" Retrigger="1"
-                                   Intensity="0.94" AttackCurve="0.5" DecayCurve="0" Attack="1008"
-                                   AttackLevel="0" Hold="1583" Decay="0" Sustain="-100" Release="20"
+                        <Processor Type="AHDSR" ID="FreqEnvelope1" Bypassed="0" Monophonic="1" Retrigger="1"
+                                   Intensity="0.89" AttackCurve="0.5" DecayCurve="0" Attack="7"
+                                   AttackLevel="0" Hold="87" Decay="320" Sustain="-36.2" Release="966"
                                    EcoMode="1">
                           <ChildProcessors>
                             <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
@@ -661,7 +660,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="SimpleGain" ID="Gain1" Bypassed="0" Gain="-10.8" Delay="0"
+                <Processor Type="SimpleGain" ID="Gain1" Bypassed="0" Gain="-1.8" Delay="0"
                            Width="100" Balance="8" InvertPolarity="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
@@ -744,8 +743,8 @@
                   <ChildProcessors/>
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope2" Bypassed="1" Monophonic="1" Retrigger="1"
-                           Intensity="0.49" AttackCurve="0.5" DecayCurve="0" Attack="1"
-                           AttackLevel="0" Hold="5447" Decay="6" Sustain="-100" Release="1"
+                           Intensity="0.89" AttackCurve="0.5" DecayCurve="0" Attack="0"
+                           AttackLevel="0" Hold="14" Decay="6" Sustain="-100" Release="1"
                            EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
@@ -791,10 +790,10 @@
                            Connection="">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="AHDSR" ID="PitchEnvelope2" Bypassed="0" Monophonic="0"
-                           Retrigger="1" Bipolar="1" Intensity="0" AttackCurve="0.5" DecayCurve="0"
-                           Attack="59" AttackLevel="0" Hold="4" Decay="0" Sustain="-35.5"
-                           Release="418" EcoMode="1">
+                <Processor Type="AHDSR" ID="PitchEnvelope2" Bypassed="1" Monophonic="0"
+                           Retrigger="1" Bipolar="1" Intensity="-1" AttackCurve="0.5" DecayCurve="0"
+                           Attack="147" AttackLevel="0" Hold="20000" Decay="219" Sustain="-100"
+                           Release="1735" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -813,8 +812,8 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="GlobalTimeVariantModulator" ID="PitchLFO2" Bypassed="1"
-                           Intensity="0" Bipolar="1" UseTable="0" Inverted="0" TableData=""
+                <Processor Type="GlobalTimeVariantModulator" ID="PitchLFO2" Bypassed="0"
+                           Intensity="0.641667" Bipolar="1" UseTable="0" Inverted="0" TableData=""
                            Connection="Global Modulator Container1:GlobalLFOPitch">
                   <ChildProcessors/>
                 </Processor>
@@ -835,9 +834,9 @@
                                    Intensity="1" UseTable="0" Inverted="0" TableData="" Connection="Global Modulator Container1:GlobalVelocityFreq">
                           <ChildProcessors/>
                         </Processor>
-                        <Processor Type="AHDSR" ID="FreqEnvelope2" Bypassed="1" Monophonic="1" Retrigger="1"
-                                   Intensity="0.94" AttackCurve="0.5" DecayCurve="0" Attack="1008"
-                                   AttackLevel="0" Hold="1583" Decay="0" Sustain="-100" Release="20"
+                        <Processor Type="AHDSR" ID="FreqEnvelope2" Bypassed="0" Monophonic="1" Retrigger="1"
+                                   Intensity="0.89" AttackCurve="0.5" DecayCurve="0" Attack="7"
+                                   AttackLevel="0" Hold="87" Decay="320" Sustain="-36.2" Release="966"
                                    EcoMode="1">
                           <ChildProcessors>
                             <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
@@ -910,8 +909,8 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="SimpleGain" ID="Gain2" Bypassed="0" Gain="-7" Delay="0"
-                           Width="100" Balance="0" InvertPolarity="0">
+                <Processor Type="SimpleGain" ID="Gain2" Bypassed="0" Gain="1.03544e-06"
+                           Delay="0" Width="100" Balance="0" InvertPolarity="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -993,9 +992,8 @@
                   <ChildProcessors/>
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope3" Bypassed="1" Monophonic="1" Retrigger="1"
-                           Intensity="0.49" AttackCurve="0.5" DecayCurve="0" Attack="21"
-                           AttackLevel="0" Hold="5447" Decay="6" Sustain="-100" Release="1"
-                           EcoMode="1">
+                           Intensity="1" AttackCurve="0.5" DecayCurve="0" Attack="0" AttackLevel="0"
+                           Hold="14" Decay="6" Sustain="-100" Release="1" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -1040,10 +1038,10 @@
                            Connection="Global Modulator Container1:GlobalVelocityPitch">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="AHDSR" ID="PitchEnvelope3" Bypassed="0" Monophonic="1"
-                           Retrigger="1" Bipolar="1" Intensity="0" AttackCurve="0.36" DecayCurve="0"
-                           Attack="59" AttackLevel="0" Hold="4" Decay="0" Sustain="-35.5"
-                           Release="418" EcoMode="1">
+                <Processor Type="AHDSR" ID="PitchEnvelope3" Bypassed="1" Monophonic="1"
+                           Retrigger="1" Bipolar="1" Intensity="-1" AttackCurve="0.36" DecayCurve="0"
+                           Attack="147" AttackLevel="0" Hold="20000" Decay="219" Sustain="-100"
+                           Release="1735" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -1062,8 +1060,8 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="GlobalTimeVariantModulator" ID="PitchLFO3" Bypassed="1"
-                           Intensity="0" Bipolar="1" UseTable="0" Inverted="0" TableData=""
+                <Processor Type="GlobalTimeVariantModulator" ID="PitchLFO3" Bypassed="0"
+                           Intensity="0.641667" Bipolar="1" UseTable="0" Inverted="0" TableData=""
                            Connection="Global Modulator Container1:GlobalLFOPitch">
                   <ChildProcessors/>
                 </Processor>
@@ -1075,7 +1073,7 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
                 <Processor Type="PolyphonicFilter" ID="Filter3" Bypassed="0" Gain="0.6"
-                           Frequency="3483" Q="0.8" Mode="6" Quality="0" BipolarIntensity="0.03">
+                           Frequency="3483" Q="0.8" Mode="6" Quality="1.31074e+06" BipolarIntensity="0.03">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                Intensity="1">
@@ -1084,9 +1082,9 @@
                                    Intensity="1" UseTable="0" Inverted="0" TableData="" Connection="Global Modulator Container1:GlobalVelocityFreq">
                           <ChildProcessors/>
                         </Processor>
-                        <Processor Type="AHDSR" ID="FreqEnvelope3" Bypassed="1" Monophonic="1" Retrigger="1"
-                                   Intensity="0.94" AttackCurve="0.5" DecayCurve="0" Attack="1008"
-                                   AttackLevel="0" Hold="1583" Decay="0" Sustain="-100" Release="60"
+                        <Processor Type="AHDSR" ID="FreqEnvelope3" Bypassed="0" Monophonic="1" Retrigger="1"
+                                   Intensity="0.89" AttackCurve="0.5" DecayCurve="0" Attack="7"
+                                   AttackLevel="0" Hold="87" Decay="320" Sustain="-36.2" Release="966"
                                    EcoMode="1">
                           <ChildProcessors>
                             <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
@@ -1159,7 +1157,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="SimpleGain" ID="Gain3" Bypassed="0" Gain="-2.4" Delay="0"
+                <Processor Type="SimpleGain" ID="Gain3" Bypassed="0" Gain="-13" Delay="0"
                            Width="100" Balance="0" InvertPolarity="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">

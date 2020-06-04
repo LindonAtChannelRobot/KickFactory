@@ -30,8 +30,8 @@
   </Component>
   <Component type="ScriptPanel" id="AllVoicesPanel" x="0" y="47" borderSize="0"
              borderRadius="0" itemColour2="0" itemColour="0" textColour="16777215"
-             bgColour="16777215" width="800" height="491" visible="0">
-    <Component type="ScriptPanel" id="VoicePanel1" x="0" y="0" borderSize="0"
+             bgColour="16777215" width="800" height="491">
+    <Component type="ScriptPanel" id="VoicePanel1" x="0" y="4" borderSize="0"
                borderRadius="0" width="800" height="22" parentComponent="AllVoicesPanel">
       <Component type="ScriptImage" id="PanelBackground1" x="0" y="0" parentComponent="VoicePanel1"
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
@@ -83,7 +83,7 @@
       <Component type="ScriptPanel" id="FilterSelectorPanel1" x="398" y="31" parentComponent="VoicePanel1"
                  width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
                  borderSize="0">
-        <Component type="ScriptComboBox" id="FilterSelector1" x="140" y="37" max="10"
+        <Component type="ScriptComboBox" id="FilterSelector1" x="-5" y="-8" max="10"
                    parentComponent="FilterSelectorPanel1" width="199" height="29"
                    items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS&#10;"
                    fontSize="11" bgColour="16777215" itemColour2="1118481" itemColour="3355443"/>
@@ -109,10 +109,10 @@
                  width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
                  numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
                  suffix=" dB" middlePosition="-6" defaultValue="-6"/>
-      <Component type="ScriptPanel" id="TriggerSelectorPanel1" x="702" y="123"
-                 parentComponent="VoicePanel1" width="81" height="18" itemColour="0"
+      <Component type="ScriptPanel" id="TriggerSelectorPanel1" x="718" y="122"
+                 parentComponent="VoicePanel1" width="63" height="21" itemColour="0"
                  itemColour2="0" bgColour="16777215" borderSize="0" textColour="16777215">
-        <Component type="ScriptComboBox" id="TriggerSelector1" x="10" y="-7" max="4"
+        <Component type="ScriptComboBox" id="TriggerSelector1" x="-8" y="-2" max="4"
                    parentComponent="TriggerSelectorPanel1" width="90" height="23"
                    items="ENVELOPE&#10;ONE SHOT&#10;REVERSE&#10;ONE SHOT REV." fontSize="11"
                    bgColour="16777215" itemColour="3355443" textColour="4278190080"/>
@@ -196,7 +196,7 @@
                    middlePosition="150" defaultValue="150"/>
       </Component>
     </Component>
-    <Component type="ScriptPanel" id="VoicePanel2" x="0" y="22" borderSize="0"
+    <Component type="ScriptPanel" id="VoicePanel2" x="0" y="26" borderSize="0"
                borderRadius="0" width="800" height="22" parentComponent="AllVoicesPanel">
       <Component type="ScriptImage" id="PanelBackground2" x="0" y="0" parentComponent="VoicePanel2"
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
@@ -252,7 +252,7 @@
       <Component type="ScriptPanel" id="FilterSelectorPanel2" x="334" y="34" parentComponent="VoicePanel2"
                  width="167" height="20" itemColour="0" itemColour2="0" bgColour="16777215"
                  borderSize="0">
-        <Component type="ScriptComboBox" id="FilterSelector2" x="-6" y="-7" max="10"
+        <Component type="ScriptComboBox" id="FilterSelector2" x="59" y="-8" max="10"
                    parentComponent="FilterSelectorPanel2" width="200" height="26"
                    items="SVF LOPASS&#10;SVF HIPASS&#10;SVF NOTCH&#10;SVF BANDPASS&#10;1 POLE LOPASS&#10;1 POLE HiPASS&#10;BIQUAD LOPASS&#10;BIQUAD LP REZ&#10;BIQUAD HiPASS&#10;LADDER LOPASS&#10;"
                    fontSize="11" bgColour="16777215" itemColour2="1118481" itemColour="3355443"/>
@@ -277,10 +277,10 @@
                  parentComponent="VoicePanel2" width="226" height="122" bgColour="4279836699"
                  itemColour="4294935552" itemColour2="4294935552" sampleIndex="0"
                  processorId="Sampler2"/>
-      <Component type="ScriptPanel" id="TriggerSelectorPanel2" x="626" y="126"
-                 parentComponent="VoicePanel2" width="81" height="18" itemColour="0"
+      <Component type="ScriptPanel" id="TriggerSelectorPanel2" x="715" y="123"
+                 parentComponent="VoicePanel2" width="63" height="18" itemColour="0"
                  itemColour2="0" bgColour="16777215" borderSize="0" textColour="16777215">
-        <Component type="ScriptComboBox" id="TriggerSelector2" x="11" y="-5" max="3"
+        <Component type="ScriptComboBox" id="TriggerSelector2" x="-2" y="-1" max="3"
                    parentComponent="TriggerSelectorPanel2" width="87" height="21"
                    items="ONE SHOT&#10;ENVELOPE&#10;REVERSE" fontSize="11" itemColour="3355443"
                    bgColour="16777215" textColour="4278190080"/>
@@ -364,8 +364,8 @@
                    middlePosition="150" defaultValue="150"/>
       </Component>
     </Component>
-    <Component type="ScriptPanel" id="VoicePanel3" x="0" y="44" borderSize="0"
-               borderRadius="0" width="800" height="421" parentComponent="AllVoicesPanel">
+    <Component type="ScriptPanel" id="VoicePanel3" x="0" y="48" borderSize="0"
+               borderRadius="0" width="800" height="22" parentComponent="AllVoicesPanel">
       <Component type="ScriptImage" id="PanelBackground3" x="0" y="0" parentComponent="VoicePanel3"
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
       <Component type="ScriptButton" id="MuteButton3" x="4" y="3" parentComponent="VoicePanel3"
@@ -532,10 +532,10 @@
                    middlePosition="150" defaultValue="150"/>
       </Component>
     </Component>
-    <Component type="ScriptPanel" id="ModPanel" x="0" y="465" parentComponent="AllVoicesPanel"
-               width="800" height="425">
+    <Component type="ScriptPanel" id="ModPanel" x="0" y="70" parentComponent="AllVoicesPanel"
+               width="800" height="421">
       <Component type="ScriptImage" id="ModPanelBackground" x="0" y="0" width="800"
-                 height="425" parentComponent="ModPanel" fileName="{PROJECT_FOLDER}KickFactory2ModBackground.png"/>
+                 height="421" parentComponent="ModPanel" fileName="{PROJECT_FOLDER}KickFactory2ModBackground.png"/>
       <Component type="ScriptButton" id="OpenCloseButton4" x="780" y="4" parentComponent="ModPanel"
                  width="16" height="17" filmstripImage="{PROJECT_FOLDER}openclose.png"
                  radioGroup="1"/>
@@ -744,7 +744,7 @@
   </Component>
   <Component type="ScriptPanel" id="SequencerPanel" x="0" y="47" width="797"
              height="491" borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
-             bgColour="16777215" saveInPreset="1">
+             bgColour="16777215" saveInPreset="1" visible="0">
     <Component type="ScriptImage" id="SeqPanelBackground" x="0" y="0" parentComponent="SequencerPanel"
                width="798" height="491" fileName="{PROJECT_FOLDER}KickFactory2SequenceBackground.png"/>
     <Component type="ScriptButton" id="SeqStartStop" x="8" y="19" parentComponent="SequencerPanel"
@@ -757,7 +757,7 @@
       <Component type="ScriptComboBox" id="SeqModeSelector" x="-1" y="-5" max="3"
                  parentComponent="SeqModePanel" width="103" height="24" items="TEMPO&#10;NOTE&#10;RAND."/>
     </Component>
-    <Component type="ScriptButton" id="PatternGenerator" x="300" y="2" width="62"
+    <Component type="ScriptButton" id="PatternGenerator" x="336" y="2" width="62"
                height="16" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
                parentComponent="SequencerPanel" saveInPreset="0"/>
     <Component type="ScriptButton" id="PatternSelector1" x="279" y="23" parentComponent="SequencerPanel"
@@ -803,7 +803,7 @@
     <Component type="ScriptPanel" id="SeqVelocityPanel" x="207" y="83" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="VelocityCursor" x="3" y="1" parentComponent="SeqVelocityPanel"
+      <Component type="ScriptImage" id="VelocityCursor" x="309" y="1" parentComponent="SeqVelocityPanel"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
       <Component type="ScriptSlider" id="SeqVelocityStep1" x="3" y="5" parentComponent="SeqVelocityPanel"
@@ -874,81 +874,81 @@
     <Component type="ScriptButton" id="Env1LikelihoodIndicator" x="131" y="171"
                parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
                saveInPreset="0"/>
-    <Component type="ScriptSlider" id="Envelope1Likelihood" x="58" y="168" parentComponent="SequencerPanel"
-               width="70" height="14" middlePosition="100" max="200" stepSize="1"
-               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
-               defaultValue="100"/>
+    <Component type="ScriptSlider" id="Modulator1Likelihood" x="58" y="168"
+               parentComponent="SequencerPanel" width="70" height="14" middlePosition="100"
+               max="200" stepSize="1" filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png"
+               numStrips="201" defaultValue="100"/>
     <Component type="ScriptPanel" id="SeqModulatorPanel1" x="206" y="133" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="Env1Cursor" x="3" y="1" parentComponent="SeqEnvelopePanel1"
+      <Component type="ScriptImage" id="Env1Cursor" x="309" y="1" parentComponent="SeqModulatorPanel1"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step1" x="3" y="5" parentComponent="SeqEnvelopePanel1"
+      <Component type="ScriptSlider" id="SeqModulator1Step1" x="3" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step2" x="37" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step2" x="37" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step3" x="71" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step3" x="71" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step4" x="105" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step4" x="105" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step5" x="139" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step5" x="139" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step6" x="173" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step6" x="173" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step7" x="207" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step7" x="207" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step8" x="241" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step8" x="241" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step9" x="275" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step9" x="275" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step10" x="309" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step10" x="309" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step11" x="343" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step11" x="343" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step12" x="377" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step12" x="377" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step13" x="411" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step13" x="411" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step14" x="445" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step14" x="445" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step15" x="479" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step15" x="479" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptSlider" id="SeqModulator1Step16" x="513" y="5" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptSlider" id="SeqModulator1Step16" x="513" y="5" parentComponent="SeqModulatorPanel1"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 numStrips="101" style="Knob" middlePosition="50" stepSize="1.0"
-                 suffix="" defaultValue="50" max="100"/>
-      <Component type="ScriptPanel" id="Envelope1HidePanel" x="548" y="3" parentComponent="SeqEnvelopePanel1"
+                 numStrips="101" middlePosition="50" stepSize="1" defaultValue="50"
+                 max="100"/>
+      <Component type="ScriptPanel" id="Envelope1HidePanel" x="548" y="3" parentComponent="SeqModulatorPanel1"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
     </Component>
@@ -966,81 +966,81 @@
     <Component type="ScriptButton" id="Env2LikelihoodIndicator" x="131" y="222"
                parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
                saveInPreset="0"/>
-    <Component type="ScriptSlider" id="Envelope2Likelihood" x="58" y="219" parentComponent="SequencerPanel"
-               width="70" height="14" middlePosition="100" max="200" stepSize="1"
-               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
-               defaultValue="100"/>
+    <Component type="ScriptSlider" id="Modulator2Likelihood" x="58" y="219"
+               parentComponent="SequencerPanel" width="70" height="14" middlePosition="100"
+               max="200" stepSize="1" filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png"
+               numStrips="201" defaultValue="100"/>
     <Component type="ScriptPanel" id="SeqModulatorPanel2" x="205" y="184" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="Env2Cursor" x="3" y="1" parentComponent="SeqEnvelopePanel2"
+      <Component type="ScriptImage" id="Env2Cursor" x="309" y="1" parentComponent="SeqModulatorPanel2"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step1" x="4" y="5" parentComponent="SeqEnvelopePanel2"
+      <Component type="ScriptSlider" id="SeqModulator2Step1" x="4" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step2" x="38" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step2" x="38" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step3" x="72" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step3" x="72" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step4" x="106" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step4" x="106" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step5" x="140" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step5" x="140" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step6" x="174" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step6" x="174" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step7" x="208" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step7" x="208" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step8" x="242" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step8" x="242" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step9" x="276" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step9" x="276" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step10" x="310" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step10" x="310" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step11" x="344" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step11" x="344" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step12" x="378" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step12" x="378" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step13" x="412" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step13" x="412" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step14" x="446" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step14" x="446" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step15" x="480" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step15" x="480" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator2Step16" x="514" y="5" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator2Step16" x="514" y="5" parentComponent="SeqModulatorPanel2"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="100"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptPanel" id="Envelope2HidePanel" x="549" y="4" parentComponent="SeqEnvelopePanel2"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptPanel" id="Envelope2HidePanel" x="549" y="4" parentComponent="SeqModulatorPanel2"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
     </Component>
@@ -1058,81 +1058,81 @@
     <Component type="ScriptButton" id="Env3LikelihoodIndicator" x="131" y="271"
                parentComponent="SequencerPanel" width="10" height="10" filmstripImage="{PROJECT_FOLDER}likeInd.png"
                saveInPreset="0"/>
-    <Component type="ScriptSlider" id="Envelope3Likelihood" x="58" y="268" parentComponent="SequencerPanel"
-               width="70" height="14" middlePosition="100" max="200" stepSize="1"
-               filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png" numStrips="201"
-               defaultValue="100"/>
+    <Component type="ScriptSlider" id="Modulator3Likelihood" x="58" y="268"
+               parentComponent="SequencerPanel" width="70" height="14" middlePosition="100"
+               max="200" stepSize="1" filmstripImage="{PROJECT_FOLDER}seqLikelihoodBar.png"
+               numStrips="201" defaultValue="100"/>
     <Component type="ScriptPanel" id="SeqModulatorPanel3" x="206" y="236" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="Env3Cursor" x="3" y="0" parentComponent="SeqEnvelopePanel3"
+      <Component type="ScriptImage" id="Env3Cursor" x="309" y="0" parentComponent="SeqModulatorPanel3"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step1" x="3" y="4" parentComponent="SeqEnvelopePanel3"
+      <Component type="ScriptSlider" id="SeqModulator3Step1" x="3" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step2" x="37" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step2" x="37" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step3" x="71" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step3" x="71" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step4" x="105" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step4" x="105" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step5" x="139" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step5" x="139" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step6" x="173" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step6" x="173" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step7" x="207" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step7" x="207" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step8" x="241" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step8" x="241" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step9" x="275" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step9" x="275" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step10" x="309" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step10" x="309" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step11" x="343" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step11" x="343" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step12" x="377" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step12" x="377" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step13" x="411" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step13" x="411" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step14" x="445" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step14" x="445" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step15" x="479" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step15" x="479" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptSlider" id="SeqModulator3Step16" x="513" y="4" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptSlider" id="SeqModulator3Step16" x="513" y="4" parentComponent="SeqModulatorPanel3"
                  width="33" height="43" filmstripImage="{PROJECT_FOLDER}ModStepSlider.png"
-                 style="Knob" middlePosition="50" stepSize="1.0" suffix="" max="101"
-                 defaultValue="50" numStrips="101"/>
-      <Component type="ScriptPanel" id="Envelope3HidePanel" x="548" y="3" parentComponent="SeqEnvelopePanel3"
+                 middlePosition="50" stepSize="1" max="100" defaultValue="50"
+                 numStrips="101"/>
+      <Component type="ScriptPanel" id="Envelope3HidePanel" x="548" y="3" parentComponent="SeqModulatorPanel3"
                  width="11" height="47" borderSize="0" borderRadius="0" itemColour="4280100123"
                  itemColour2="4280100123"/>
     </Component>
@@ -1157,7 +1157,7 @@
     <Component type="ScriptPanel" id="SeqFXPanel1" x="206" y="288" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX1Cursor" x="3" y="-1" parentComponent="SeqFXPanel1"
+      <Component type="ScriptImage" id="FX1Cursor" x="309" y="-1" parentComponent="SeqFXPanel1"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
       <Component type="ScriptSlider" id="SeqFX1Step1" x="3" y="3" parentComponent="SeqFXPanel1"
@@ -1233,7 +1233,7 @@
     <Component type="ScriptPanel" id="SeqFXPanel2" x="206" y="339" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX2Cursor" x="3" y="-2" parentComponent="SeqFXPanel2"
+      <Component type="ScriptImage" id="FX2Cursor" x="309" y="-2" parentComponent="SeqFXPanel2"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
       <Component type="ScriptSlider" id="SeqFX2Step1" x="3" y="3" parentComponent="SeqFXPanel2"
@@ -1309,7 +1309,7 @@
     <Component type="ScriptPanel" id="SeqFXPanel3" x="206" y="389" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX3Cursor" x="3" y="-1" parentComponent="SeqFXPanel3"
+      <Component type="ScriptImage" id="FX3Cursor" x="309" y="-1" parentComponent="SeqFXPanel3"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
       <Component type="ScriptSlider" id="SeqFX3Step1" x="3" y="3" parentComponent="SeqFXPanel3"
@@ -1385,7 +1385,7 @@
     <Component type="ScriptPanel" id="SeqFXPanel4" x="206" y="440" parentComponent="SequencerPanel"
                borderSize="0" borderRadius="0" itemColour="0" itemColour2="0"
                width="563" height="51">
-      <Component type="ScriptImage" id="FX4Cursor" x="3" y="0" parentComponent="SeqFXPanel4"
+      <Component type="ScriptImage" id="FX4Cursor" x="309" y="0" parentComponent="SeqFXPanel4"
                  width="34" height="51" fileName="{PROJECT_FOLDER}KickFactory2SequencerCursor.png"
                  visible="0"/>
       <Component type="ScriptSlider" id="SeqFX4Step1" x="3" y="3" parentComponent="SeqFXPanel4"
@@ -1475,7 +1475,7 @@
                  filmstripImage="{PROJECT_FOLDER}GrooveAmount.png" numStrips="101"/>
     </Component>
   </Component>
-  <Component type="ScriptPanel" id="MasterPanel" x="1" y="534" borderSize="0"
+  <Component type="ScriptPanel" id="MasterPanel" x="1" y="538" borderSize="0"
              itemColour="0" itemColour2="0" bgColour="16777215" width="800"
              height="83">
     <Component type="ScriptSlider" id="MasterVolumeKnob" x="175" y="30" parentComponent="MasterPanel"

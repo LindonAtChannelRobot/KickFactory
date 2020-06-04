@@ -248,9 +248,9 @@ inline function setIRs(voice,irnum)
 
 // SEQUENCER FUNCTIONS
 const var VelocityLikelihood = Content.getComponent("VelocityLikelihood");
-const var Envelope1Likelihood = Content.getComponent("Envelope1Likelihood");
-const var Envelope2Likelihood = Content.getComponent("Envelope2Likelihood");
-const var Envelope3Likelihood = Content.getComponent("Envelope3Likelihood");
+const var Modulator1Likelihood = Content.getComponent("Modulator1Likelihood");
+const var Modulator2Likelihood = Content.getComponent("Modulator2Likelihood");
+const var Modulator3Likelihood = Content.getComponent("Modulator3Likelihood");
 const var FX1Likelihood = Content.getComponent("FX1Likelihood");
 const var FX2Likelihood = Content.getComponent("FX2Likelihood");
 const var FX3Likelihood = Content.getComponent("FX3Likelihood");
@@ -275,9 +275,9 @@ inline function displayPattern(pidx)
     SeqStepsKnob.changed();
     SeqSwing.setValue(patterns[pidx].swingAmount);
     VelocityLikelihood.setValue(patterns[pidx].velocityRow.likelihood);
-    Envelope1Likelihood.setValue(patterns[pidx].EnvelopeRowSet[0].likelihood);
-    Envelope2Likelihood.setValue(patterns[pidx].EnvelopeRowSet[1].likelihood);
-    Envelope3Likelihood.setValue(patterns[pidx].EnvelopeRowSet[2].likelihood);
+    Modulator1Likelihood.setValue(patterns[pidx].ModRowSet[0].likelihood);
+    Modulator2Likelihood.setValue(patterns[pidx].ModRowSet[1].likelihood);
+    Modulator3Likelihood.setValue(patterns[pidx].ModRowSet[2].likelihood);
     FX1Likelihood.setValue(patterns[pidx].FXRowSet[0].likelihood);
     FX2Likelihood.setValue(patterns[pidx].FXRowSet[1].likelihood);
     FX3Likelihood.setValue(patterns[pidx].FXRowSet[2].likelihood);
@@ -290,9 +290,9 @@ inline function displayPattern(pidx)
     for (iidx= 0; iidx< NUM_STEPS; iidx++)
     {
         VelocitySetters[iidx].setValue(patterns[pidx].velocityRow.velocityValues[iidx]);
-        Mod1Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[0].envelopeValues[iidx].power);
-        Mod2Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[1].envelopeValues[iidx].power);
-        Mod3Setters[iidx].setValue(patterns[pidx].EnvelopeRowSet[2].envelopeValues[iidx].power);
+        Mod1Setters[iidx].setValue(patterns[pidx].ModulatorRowSet[0].envelopeValues[iidx].power);
+        Mod2Setters[iidx].setValue(patterns[pidx].ModulatorRowSet[1].envelopeValues[iidx].power);
+        Mod3Setters[iidx].setValue(patterns[pidx].ModulatorRowSet[2].envelopeValues[iidx].power);
         FX1Setters[iidx].setValue(patterns[pidx].FXRowSet[0].fxValues[iidx]);
         FX2Setters[iidx].setValue(patterns[pidx].FXRowSet[1].fxValues[iidx]);
         FX3Setters[iidx].setValue(patterns[pidx].FXRowSet[2].fxValues[iidx]);
@@ -304,7 +304,7 @@ inline function displayPattern(pidx)
         stepCount: stepCount,
         swingAmount:swingAmt,
         velocityRow:velRow,
-        EnvelopeRowSet:EnvRowSet,
+        ModulatorRowSet:EnvRowSet,
         FXRowSet:FXRowSet
         */
         
@@ -352,6 +352,9 @@ inline function getFXTargetArray(selection)
     return FXTargetArray;
 };
 
+
+
+
 // == the sequencer step variables..
 
 var seqCurrentStep = 0;
@@ -371,14 +374,14 @@ inline function startSequencer()
             seqCurrentStep = 0;   
             thisGrooveStep = 0;
             previousGrooveStep = -1;
-            SequencerPanel.startTimer(mySeqTempo);
+            masterTimer.startTimer(mySeqTempo);
             break;
         case 2:  //note
-            SequencerPanel.stopTimer();
+            masterTimer.stopTimer();
             seqCurrentStep = 0;   
             break;
         case 3:  //random  
-            SequencerPanel.stopTimer();
+            masterTimer.stopTimer();
             seqCurrentStep = Math.floor(Math.random()* SeqStepsKnob.getValue()); 
             break;
     };
@@ -393,7 +396,7 @@ inline function startSequencer()
 inline function stopSequencer()
 {
     local psdx;
-    SequencerPanel.stopTimer();
+    masterTimer.stopTimer();
     // is there a note playing that we need to stop?
     if (seqCurrentNoteID != -1)
     {
@@ -486,7 +489,7 @@ inline function processSeqStep()
                 seqCurrentStep = 0;
             };
             break;
-        case 3: // a rnadom based sequence
+        case 3: // a random based sequence
             seqCurrentStep = Math.floor(Math.random()* SeqStepsKnob.getValue());
     };       
     
@@ -500,9 +503,13 @@ inline function processStepParams(stepNum)
     local localValue;
     local localRatio;
     
-    Console.print("Env 1.");
-    Console.print("Status:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].power);
-    Console.print("Attack:" + playingPattern.EnvelopeRowSet[0].envelopeValues[stepNum].attack);
+    Console.print("MODULATOR DEPTH 1.");
+    Console.print("Mod 1 Value ---------->>>:" + patterns[currentSelectingPattern].ModRowSet[0].modValues[stepNum]);
+    Console.print("MODULATOR DEPTH 2.");
+    Console.print("Mod 2 Value ---------->>>:" + patterns[currentSelectingPattern].ModRowSet[1].modValues[stepNum]);
+    Console.print("MODULATOR DEPTH 3.");
+    Console.print("Mod 3 Value ---------->>>:" + patterns[currentSelectingPattern].ModRowSet[2].modValues[stepNum]);
+
 
     Console.print("FX 1.");
     Console.print("Target:" + playingPattern.FXRowSet[0].fxTarget[0]);
@@ -512,7 +519,7 @@ inline function processStepParams(stepNum)
     localParam = playingPattern.FXRowSet[0].fxTarget[1];
     localRatio = playingPattern.FXRowSet[0].fxTarget[2];
     localValue = playingPattern.FXRowSet[0].fxValues[stepNum];
-    localObj.setAttribute(localObj.localParam, (localValue * localRatio));
+    //localObj.setAttribute(localObj.localParam, (localValue * localRatio));
     
 };
     
@@ -540,7 +547,7 @@ function paintKeys()
 const var NUM_VOICES = 3;
 const var NUM_PATTERNS = 8;
 const var NUM_STEPS = 16;
-const var PANELSTARTY = 0;
+const var PANELSTARTY = 4;
 const var CLOSEDPANELSIZE = 22;
 const var OPENPANELSIZE = 421;
 const var MOD_OFF_COLOUR = 0xFF666666;
@@ -552,15 +559,15 @@ const var patternSwitches = [72,73,74,75,76,77,78,79];
 const var PLAY_STOP_SWITCH = 69;
 // GENERAL VARIABLES
 var targetVelocity;
-var targetEnvelope;
+var targetModulator;
 var targetLFO;
 var targetVoice;
 var targetType;
 var currentSelectingVoice;
 var playingPattern;
 var currentSelectingPattern;
-var currentSelectingEnvelopeVoice;
-var currentSelectingEnvelopeSlot;
+var currentSelectingModulatorVoice;
+var currentSelectingModulatorSlot;
 var list = [];
 var MIDINoteTarget;
 
@@ -577,34 +584,17 @@ function newVelocityRow(likelihood, valueArray)
 };
 
 
-// Envelope
-function newEnvelope(pwr, amt, atk, hold, dec, sust, rel){
-  var myEnv = {
-      power:pwr,
-      amount:amt,
-      attack:atk,
-      hold:hold,
-      decay:dec,
-      sustain:sust,
-      release:rel
-  };
-  return myEnv;
-};
 
-// Envelope Row
-function newEnvelopeRow(likelihood,defaultEnv){
-    var envArray = [];
-    var ii;
-    var myEnvRow = {
+
+
+// Mod Row
+function newModRow(likelihood,mod, valueArray){
+      var myModRow = {
         likelihood:likelihood,
-        defaultEnvelope:defaultEnv,
-        envelopeValues:envArray
-    };
-    for (ii = 0; ii <16; ii++)
-    {
-        myEnvRow.envelopeValues[ii] = defaultEnv;
-    };
-    return myEnvRow;
+        modSelection: mod,
+        modValues: valueArray
+  };
+  return myModRow;
 };
 
 // FX Row
@@ -619,13 +609,13 @@ function newFXRow(likelihood, fx, selection,valueArray){
 };
 
 // Pattern
-function newPattern(stepCount, swingAmt, velRow, EnvRowSet, FXRowSet)
+function newPattern(stepCount, swingAmt, velRow, ModRowSet, FXRowSet)
 {
     var myPattern = {
         stepCount: stepCount,
         swingAmount:swingAmt,
         velocityRow:velRow,
-        EnvelopeRowSet:EnvRowSet,
+        ModRowSet:ModRowSet,
         FXRowSet:FXRowSet
     };
     return myPattern;
@@ -728,11 +718,14 @@ TheCursors[5] = Content.getComponent("FX2Cursor");
 TheCursors[6] = Content.getComponent("FX3Cursor");
 TheCursors[7] = Content.getComponent("FX4Cursor");
 
-var TheEnvLikelihoods = [];
+var TheModLikelihoods = [];
+var TheModSelectors = [];
 for(i = 0; i < 3; i++)
 {
-    TheEnvLikelihoods[i] = Content.getComponent("Envelope" + (i +1) + "Likelihood");
-    TheEnvLikelihoods[i].setControlCallback(onEnvLikelihood);        
+    TheModLikelihoods[i] = Content.getComponent("Modulator" + (i +1) + "Likelihood");
+    TheModLikelihoods[i].setControlCallback(onModLikelihood);    
+    TheModSelectors[i] = Content.getComponent("Mod" + (i +1) + "Selector");
+    TheModSelectors[i].setControlCallback(onModSelectors);              
 };
 
 var TheFXLikelihoods = [];
@@ -740,7 +733,7 @@ var TheFXSelectors = [];
 for(i = 0; i < 4; i++)
 {
     TheFXLikelihoods[i] = Content.getComponent("FX" + (i +1) + "Likelihood");
-    TheFXLikelihoods[i].setControlCallback(onEnvLikelihood);    
+    TheFXLikelihoods[i].setControlCallback(onModLikelihood);    
     TheFXSelectors[i] = Content.getComponent("FX" + (i +1) + "Selector");
     TheFXSelectors[i].setControlCallback(onFXSelector);        
 };
@@ -760,20 +753,21 @@ var TheGainEnvelopes = [];
 var TheGainEnvDefaults = [];
 var TheGainLFOs = [];
 
-var TheSeqDisplayEnvelopes = [];
+
+
 
 var ThePanLFOs = [];
 
 var ThePitchConstants = [];
 var ThePitchVelocities = [];
-var ThePitchEnvelopes = [];
+var ThePitchModulators = [];
 var ThePitchLFOs = [];
 var ThePitchIRREs = [];
 
 
 var TheFilters = [];
 var TheFreqVelocities = [];
-var TheFreqEnvelopes = [];
+var TheFreqModulators = [];
 var TheFreqLFOs = [];
 
 var ThePolyShapes = [];
@@ -977,15 +971,15 @@ for (idx = 0; idx < NUM_VOICES; idx++)
     ThePanLFOs[idx] = Synth.getModulator("PanLFO" + (idx+1));
     
     ThePitchConstants[idx] = Synth.getModulator("PitchConstant" + (idx+1));
-    ThePitchVelocities[idx] = Synth.getModulator("PitchVelocity" + (idx+1));
-    ThePitchEnvelopes[idx] = Synth.getModulator("PitchEnvelope" + (idx+1));
-    ThePitchLFOs[idx] = Synth.getModulator("PitchLFO" + (idx+1));
+    //ThePitchVelocities[idx] = Synth.getModulator("PitchVelocity" + (idx+1));
+    //ThePitchEnvelopes[idx] = Synth.getModulator("PitchEnvelope" + (idx+1));
+    //ThePitchLFOs[idx] = Synth.getModulator("PitchLFO" + (idx+1));
     ThePitchIRREs[idx] = Synth.getModulator("IRREPitch" + (idx+1));
 
     TheFilters[idx] = Synth.getEffect("Filter" + (idx+1));
-    TheFreqVelocities[idx] = Synth.getModulator("FreqVelocity" + (idx+1));
-    TheFreqEnvelopes[idx] = Synth.getModulator("FreqEnvelope" + (idx+1));
-    TheFreqLFOs[idx] = Synth.getModulator("FreqLFO" + (idx+1));
+    //TheFreqVelocities[idx] = Synth.getModulator("FreqVelocity" + (idx+1));
+    //TheFreqEnvelopes[idx] = Synth.getModulator("FreqEnvelope" + (idx+1));
+    //TheFreqLFOs[idx] = Synth.getModulator("FreqLFO" + (idx+1));
 
     ThePolyShapes[idx] = Synth.getEffect("Polyshape" + (idx+1));
     TheReverbs[idx] = Synth.getAudioSampleProcessor("ConvolutionReverb" + (idx+1));
@@ -2203,31 +2197,29 @@ Content.getComponent("EnvelopeOnOffPitch").setControlCallback(onEnvelopeOnOffPit
 
 inline function onEnvelopeAmountKnobPitchControl(component, value)
 {
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        ThePitchEnvelopes[dx].setIntensity(value);
-    };
+
+    PitchEnvelope1.setIntensity(value);
+    PitchEnvelope2.setIntensity(value);
+    PitchEnvelope3.setIntensity(value);
 };
 Content.getComponent("EnvelopeAmountKnobPitch").setControlCallback(onEnvelopeAmountKnobPitchControl);
 
 
 inline function onEnvelopeAttackKnobPitchControl(component, value)
 {
-    for(dx = 0;dx < NUM_VOICES; dx++)
-        {
-            ThePitchEnvelopes[dx].setAttribute(ThePitchEnvelopes[dx].Attack, value);
-        };
+    PitchEnvelope1.setAttribute(PitchEnvelope1.Attack, value);
+    PitchEnvelope2.setAttribute(PitchEnvelope2.Attack, value);
+    PitchEnvelope3.setAttribute(PitchEnvelope3.Attack, value);
 };
 Content.getComponent("EnvelopeAttackKnobPitch").setControlCallback(onEnvelopeAttackKnobPitchControl);
 
 
 inline function onEnvelopeHoldKnobPitchControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        ThePitchEnvelopes[dx].setAttribute(ThePitchEnvelopes[dx].Hold, value);
-    };
+    
+    PitchEnvelope1.setAttribute(PitchEnvelope1.Hold, value);
+    PitchEnvelope2.setAttribute(PitchEnvelope2.Hold, value);
+    PitchEnvelope3.setAttribute(PitchEnvelope3.Hold, value);
 };
 
 Content.getComponent("EnvelopeHoldKnobPitch").setControlCallback(onEnvelopeHoldKnobPitchControl);
@@ -2236,33 +2228,30 @@ Content.getComponent("EnvelopeHoldKnobPitch").setControlCallback(onEnvelopeHoldK
 
 inline function onEnvelopeDecayKnobPitchControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        ThePitchEnvelopes[dx].setAttribute(ThePitchEnvelopes[dx].Decay, value);           
-    };
+    
+    PitchEnvelope1.setAttribute(PitchEnvelope1.Decay, value);
+    PitchEnvelope2.setAttribute(PitchEnvelope2.Decay, value);
+    PitchEnvelope3.setAttribute(PitchEnvelope3.Decay, value);
 };
 Content.getComponent("EnvelopeDecayKnobPitch").setControlCallback(onEnvelopeDecayKnobPitchControl);
 
 
 inline function onEnvelopeSustainKnobPitchControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        ThePitchEnvelopes[dx].setAttribute(ThePitchEnvelopes[dx].Sustain, value);
-    };
+    
+    PitchEnvelope1.setAttribute(PitchEnvelope1.Sustain, value);
+    PitchEnvelope2.setAttribute(PitchEnvelope2.Sustain, value);
+    PitchEnvelope3.setAttribute(PitchEnvelope3.Sustain, value);
 };
 Content.getComponent("EnvelopeSustainKnobPitch").setControlCallback(onEnvelopeSustainKnobPitchControl);
 
 
 inline function onEnvelopeReleaseKnobPitchControl(component, value)
 {
-	local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        ThePitchEnvelopes[dx].setAttribute(ThePitchEnvelopes[dx].Release, value);
-    };
+
+    PitchEnvelope1.setAttribute(PitchEnvelope1.Release, value);
+    PitchEnvelope2.setAttribute(PitchEnvelope2.Release, value);
+    PitchEnvelope3.setAttribute(PitchEnvelope3.Release, value);
 };
 Content.getComponent("EnvelopeReleaseKnobPitch").setControlCallback(onEnvelopeReleaseKnobPitchControl);
 
@@ -2272,9 +2261,7 @@ const var PitchLFO2 = Synth.getModulator("PitchLFO2");
 const var PitchLFO3 = Synth.getModulator("PitchLFO3");
 inline function onLFOOnOffPitchControl(component, value)
 {
-	PitchLFO1.setBypassed(1 - value);
-	PitchLFO2.setBypassed(1 - value);
-	PitchLFO3.setBypassed(1 - value);
+	GlobalLFOPitch.setBypassed(1 - value);
 };
 Content.getComponent("LFOOnOffPitch").setControlCallback(onLFOOnOffPitchControl);
 
@@ -2327,31 +2314,28 @@ Content.getComponent("EnvelopeOnOffFreq").setControlCallback(onEnvelopeOnOffFreq
 
 inline function onEnvelopeAmountKnobFreqControl(component, value)
 {
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        TheFreqEnvelopes[dx].setIntensity(value);
-    };
+    FreqEnvelope1.setIntensity(value);
+    FreqEnvelope2.setIntensity(value);
+    FreqEnvelope3.setIntensity(value);
 };
 Content.getComponent("EnvelopeAmountKnobFreq").setControlCallback(onEnvelopeAmountKnobFreqControl);
 
 
 inline function onEnvelopeAttackKnobFreqControl(component, value)
 {
-    for(dx = 0;dx < NUM_VOICES; dx++)
-        {
-            TheFreqEnvelopes[dx].setAttribute(TheFreqEnvelopes[dx].Attack, value);
-        };
+
+    FreqEnvelope1.setAttribute(FreqEnvelope1.Attack, value);
+    FreqEnvelope2.setAttribute(FreqEnvelope2.Attack, value);
+    FreqEnvelope3.setAttribute(FreqEnvelope3.Attack, value);
 };
 Content.getComponent("EnvelopeAttackKnobFreq").setControlCallback(onEnvelopeAttackKnobFreqControl);
 
 
 inline function onEnvelopeHoldKnobFreqControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        TheFreqEnvelopes[dx].setAttribute(TheFreqEnvelopes[dx].Hold, value);
-    };
+    FreqEnvelope1.setAttribute(FreqEnvelope1.Hold, value);
+    FreqEnvelope2.setAttribute(FreqEnvelope2.Hold, value);
+    FreqEnvelope3.setAttribute(FreqEnvelope3.Hold, value);
 };
 
 Content.getComponent("EnvelopeHoldKnobFreq").setControlCallback(onEnvelopeHoldKnobFreqControl);
@@ -2360,33 +2344,27 @@ Content.getComponent("EnvelopeHoldKnobFreq").setControlCallback(onEnvelopeHoldKn
 
 inline function onEnvelopeDecayKnobFreqControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        TheFreqEnvelopes[dx].setAttribute(TheFreqEnvelopes[dx].Decay, value);           
-    };
+    FreqEnvelope1.setAttribute(FreqEnvelope1.Decay, value);
+    FreqEnvelope2.setAttribute(FreqEnvelope2.Decay, value);
+    FreqEnvelope3.setAttribute(FreqEnvelope3.Decay, value);
 };
 Content.getComponent("EnvelopeDecayKnobFreq").setControlCallback(onEnvelopeDecayKnobFreqControl);
 
 
 inline function onEnvelopeSustainKnobFreqControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        TheFreqEnvelopes[dx].setAttribute(TheFreqEnvelopes[dx].Sustain, value);
-    };
+    FreqEnvelope1.setAttribute(FreqEnvelope1.Sustain, value);
+    FreqEnvelope2.setAttribute(FreqEnvelope2.Sustain, value);
+    FreqEnvelope3.setAttribute(FreqEnvelope3.Sustain, value);
 };
 Content.getComponent("EnvelopeSustainKnobFreq").setControlCallback(onEnvelopeSustainKnobFreqControl);
 
 
 inline function onEnvelopeReleaseKnobFreqControl(component, value)
 {
-    local dx;
-    for(dx = 0;dx < NUM_VOICES; dx++)
-    {
-        TheFreqEnvelopes[dx].setAttribute(TheFreqEnvelopes[dx].Release, value);
-    };
+    FreqEnvelope1.setAttribute(FreqEnvelope1.Release, value);
+    FreqEnvelope2.setAttribute(FreqEnvelope2.Release, value);
+    FreqEnvelope3.setAttribute(FreqEnvelope3.Release, value);
 };
 Content.getComponent("EnvelopeReleaseKnobFreq").setControlCallback(onEnvelopeReleaseKnobFreqControl);
 
@@ -2540,8 +2518,10 @@ inline function onPatternGeneratorControl(component, value)
     local swingAmt = Math.random();
     local velRow;
     local valueSet = [];
-    local EnvRowSet = [];
-    local myEnv;
+    local ModRowSet = [];
+    local myModRow;
+    local myMod;
+    local myModSelection;
     local FXRowSet = [];
     local myFXRow;
     local myFX;
@@ -2560,12 +2540,19 @@ inline function onPatternGeneratorControl(component, value)
         };
         velRow = newVelocityRow(likelihood, valueSet);
         
-        //set up the envelope rows
-        myEnv = newEnvelope(0, 1, 500, 500, 800, -15, 6000);
+        //set up the modulation rows
+
         for (iidx = 0; iidx < 3; iidx++)
         {
             likelihood = Math.floor(Math.random()*201);
-            EnvRowSet[iidx] = newEnvelopeRow(likelihood,myEnv);
+            myModSelection = Math.floor(Math.random()*10);   // 9 mod targets...
+            // create some values
+            valueSet = [];
+            for (jjdx=0; jjdx < 16; jjdx++)
+            {
+                valueSet[jjdx] = Math.floor(Math.random()*101);
+            };
+            ModRowSet[iidx] = newModRow(likelihood, myModSelection, valueSet);
         };
         // set up the fx rows
         for (iidx = 0; iidx < 4; iidx++)
@@ -2581,7 +2568,8 @@ inline function onPatternGeneratorControl(component, value)
             };
             FXRowSet[iidx] = newFXRow(likelihood, myFX, myFXSelection, valueSet);
         };
-        myNewPattern = newPattern(stepCount, swingAmt, velRow, EnvRowSet, FXRowSet);
+        myNewPattern = newPattern(stepCount, swingAmt, velRow, ModRowSet, FXRowSet);
+        Console.print(trace(myNewPattern));
         patterns[currentSelectingPattern] = myNewPattern;
         component.setValue(0);
         displayPattern(currentSelectingPattern);
@@ -2633,11 +2621,11 @@ for (idx=0;idx<NUM_STEPS;idx++)
     VelocitySetters[idx] = Content.getComponent("SeqVelocityStep" + (idx+1));
     VelocitySetters[idx].setControlCallback(onVelocitySetter);
     Mod1Setters[idx] = Content.getComponent("SeqModulator1Step" + (idx+1));
-    Mod1Setters[idx].setControlCallback(onEnv1Setter);
+    Mod1Setters[idx].setControlCallback(onMod1Setter);
     Mod2Setters[idx] = Content.getComponent("SeqModulator2Step" + (idx+1));
-    Mod2Setters[idx].setControlCallback(onEnv2Setter);
+    Mod2Setters[idx].setControlCallback(onMod2Setter);
     Mod3Setters[idx] = Content.getComponent("SeqModulator3Step" + (idx+1));
-    Mod3Setters[idx].setControlCallback(onEnv3Setter);
+    Mod3Setters[idx].setControlCallback(onMod3Setter);
     FX1Setters[idx] = Content.getComponent("SeqFX1Step" + (idx+1));
     FX1Setters[idx].setControlCallback(onFX1Setter);
     FX2Setters[idx] = Content.getComponent("SeqFX2Step" + (idx+1));
@@ -2663,11 +2651,6 @@ inline function onVelocitySetter(component, value)
         };
     };
 };
-
-
-
-
-
 
 
 inline function onFX1Setter(component, value)
@@ -2740,9 +2723,9 @@ const var SeqStartStop = Content.getComponent("SeqStartStop");
 const var SeqModeSelector = Content.getComponent("SeqModeSelector");
 
 
+var masterTimer = Engine.createTimerObject();
 
-
-SequencerPanel.setTimerCallback(function()
+masterTimer.setTimerCallback(function()
 {
 	processSeqStep();
 });
@@ -2800,18 +2783,49 @@ inline function onVelocityLikelihoodControl(component, value)
 
 Content.getComponent("VelocityLikelihood").setControlCallback(onVelocityLikelihoodControl);
 
-inline function onEnvLikelihood(component, value)
+inline function onModLikelihood(component, value)
 {
     
     for(i= 0; i < 3; i++)
     {
-        if(TheEnvLikelihoods[i] == component)
+        if(TheModLikelihoods[i] == component)
         {
-	        patterns[currentSelectingPattern].EnvelopeRowSet[i].likelihood = value;
+	        patterns[currentSelectingPattern].ModRowSet[i].likelihood = value;
             playingPattern = patterns[currentSelectingPattern];
         };
     };
 };
+
+// mod selector call back here..
+inline function onModSelectors(component, value)
+{
+    local pos = TheModSelectors.indexOf(component);
+    Console.print("setting MOD in pattern:" + currentSelectingPattern);
+	patterns[currentSelectingPattern].ModRowSet[pos].modSelection = value -1;     
+    playingPattern = patterns[currentSelectingPattern];
+
+};
+
+
+inline function onMod1Setter(component, value)
+{
+    local pos = Mod1Setters.indexOf(component);
+    patterns[currentSelectingPattern].ModRowSet[0].modValues[pos] = value;
+    Console.print("setting MOD 1 value:" + pos + " to:" + value);
+};
+
+inline function onMod2Setter(component, value)
+{
+    local pos = Mod2Setters.indexOf(component);
+    patterns[currentSelectingPattern].ModRowSet[1].modValues[pos] = value;
+};
+
+inline function onMod3Setter(component, value)
+{
+    local pos = Mod3Setters.indexOf(component);
+    patterns[currentSelectingPattern].ModRowSet[2].modValues[pos] = value;
+};
+
 
 inline function onFXLikelihood(component, value)
 {
@@ -2825,6 +2839,10 @@ inline function onFXLikelihood(component, value)
         };
     };
 };
+
+
+
+
 
 inline function onFXSelector(component, value)
 {

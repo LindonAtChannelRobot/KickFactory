@@ -1,4826 +1,1577 @@
 [
   {
-    "stepCount": 16,
-    "swingAmount": 0.6439361300000001,
+    "stepCount": 16.0,
+    "swingAmount": 0.3350436661858112,
     "velocityRow": {
-      "likelihood": 98,
+      "likelihood": 71.0,
       "velocityValues": [
-        22,
-        113,
-        94,
-        69,
-        68,
-        37,
-        120,
-        12,
-        97,
-        1,
-        23
+        2.0,
+        95.0,
+        9.0,
+        0.0,
+        95.0,
+        45.0,
+        28.0,
+        47.0,
+        110.0,
+        102.0,
+        35.0,
+        24.0,
+        79.0,
+        6.0,
+        124.0,
+        96.0
       ]
     },
-    "EnvelopeRowSet": [
+    "ModRowSet": [
       {
-        "likelihood": 46,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
+        "likelihood": 169.0,
+        "modSelection": 7.0,
+        "modValues": [
+          29.0,
+          11.0,
+          71.0,
+          17.0,
+          88.0,
+          91.0,
+          85.0,
+          64.0,
+          22.0,
+          30.0,
+          30.0,
+          89.0,
+          0.0,
+          86.0,
+          22.0,
+          63.0
         ]
       },
       {
-        "likelihood": 154,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
+        "likelihood": 27.0,
+        "modSelection": 7.0,
+        "modValues": [
+          74.0,
+          89.0,
+          21.0,
+          47.0,
+          33.0,
+          41.0,
+          29.0,
+          57.0,
+          19.0,
+          82.0,
+          2.0,
+          18.0,
+          95.0,
+          60.0,
+          10.0,
+          47.0
         ]
       },
       {
-        "likelihood": 60,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
+        "likelihood": 27.0,
+        "modSelection": 1.0,
+        "modValues": [
+          80.0,
+          47.0,
+          10.0,
+          31.0,
+          48.0,
+          78.0,
+          15.0,
+          22.0,
+          84.0,
+          43.0,
+          2.0,
+          39.0,
+          44.0,
+          94.0,
+          85.0,
+          20.0
         ]
       }
     ],
     "FXRowSet": [
       {
-        "likelihood": 120,
+        "likelihood": 177.0,
         "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
+          -99,
+          -99,
+          -99
         ],
-        "fxSelection": 2,
+        "fxSelection": 1.0,
         "fxValues": [
-          83,
-          69,
-          55,
-          10,
-          83,
-          31,
-          30,
-          93,
-          10,
-          14,
-          13,
-          26,
-          31,
-          49,
-          39,
-          52
+          6.0,
+          100.0,
+          7.0,
+          5.0,
+          11.0,
+          7.0,
+          19.0,
+          42.0,
+          13.0,
+          5.0,
+          88.0,
+          0.0,
+          91.0,
+          45.0,
+          68.0,
+          73.0
         ]
       },
       {
-        "likelihood": 11,
+        "likelihood": 96.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          14.0,
+          35.0,
+          31.0,
+          86.0,
+          84.0,
+          9.0,
+          88.0,
+          12.0,
+          51.0,
+          61.0,
+          77.0,
+          17.0,
+          32.0,
+          86.0,
+          2.0,
+          35.0
+        ]
+      },
+      {
+        "likelihood": 2.0,
+        "fxTarget": [
+          -99,
+          1,
+          -1
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          77.0,
+          25.0,
+          49.0,
+          85.0,
+          38.0,
+          80.0,
+          20.0,
+          42.0,
+          75.0,
+          65.0,
+          11.0,
+          74.0,
+          94.0,
+          40.0,
+          49.0,
+          86.0
+        ]
+      },
+      {
+        "likelihood": 53.0,
+        "fxTarget": [
+          -99,
+          1,
+          -1
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          57.0,
+          85.0,
+          46.0,
+          30.0,
+          50.0,
+          34.0,
+          98.0,
+          88.0,
+          97.0,
+          78.0,
+          86.0,
+          58.0,
+          78.0,
+          100.0,
+          52.0,
+          80.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 12.0,
+    "swingAmount": 0.1116947960108519,
+    "velocityRow": {
+      "likelihood": 23.0,
+      "velocityValues": [
+        96.0,
+        2.0,
+        7.0,
+        97.0,
+        125.0,
+        28.0,
+        31.0,
+        25.0,
+        121.0,
+        54.0,
+        84.0,
+        63.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 138.0,
+        "modSelection": 1.0,
+        "modValues": [
+          39.0,
+          27.0,
+          20.0,
+          85.0,
+          94.0,
+          30.0,
+          75.0,
+          26.0,
+          88.0,
+          15.0,
+          65.0,
+          57.0,
+          53.0,
+          79.0,
+          36.0,
+          94.0
+        ]
+      },
+      {
+        "likelihood": 65.0,
+        "modSelection": 0.0,
+        "modValues": [
+          68.0,
+          30.0,
+          93.0,
+          99.0,
+          89.0,
+          50.0,
+          64.0,
+          46.0,
+          20.0,
+          45.0,
+          15.0,
+          70.0,
+          33.0,
+          43.0,
+          34.0,
+          72.0
+        ]
+      },
+      {
+        "likelihood": 62.0,
+        "modSelection": 2.0,
+        "modValues": [
+          47.0,
+          77.0,
+          9.0,
+          77.0,
+          74.0,
+          75.0,
+          56.0,
+          90.0,
+          86.0,
+          46.0,
+          82.0,
+          94.0,
+          10.0,
+          69.0,
+          100.0,
+          38.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 82.0,
         "fxTarget": [
           "Polyshape1: ",
           0,
           0.6
         ],
-        "fxSelection": 3,
+        "fxSelection": 3.0,
         "fxValues": [
-          35,
-          9,
-          70,
-          48,
-          40,
-          100,
-          38,
-          52,
-          50,
-          74,
-          20,
-          72,
-          78,
-          29,
-          4,
-          32
+          99.0,
+          20.0,
+          35.0,
+          12.0,
+          79.0,
+          30.0,
+          56.0,
+          54.0,
+          90.0,
+          35.0,
+          77.0,
+          49.0,
+          12.0,
+          21.0,
+          36.0,
+          5.0
         ]
       },
       {
-        "likelihood": 193,
-        "fxTarget": [
-          "Polyshape1:",
-          1,
-          -1
-        ],
-        "fxSelection": 3,
-        "fxValues": [
-          36,
-          50,
-          54,
-          0,
-          53,
-          87,
-          86,
-          78,
-          25,
-          39,
-          20,
-          21,
-          82,
-          5,
-          85,
-          82
-        ]
-      },
-      {
-        "likelihood": 170,
-        "fxTarget": [
-          "Polyshape1: ",
-          0,
-          0.6
-        ],
-        "fxSelection": 3,
-        "fxValues": [
-          37,
-          94,
-          40,
-          99,
-          33,
-          35,
-          73,
-          31,
-          45,
-          84,
-          49,
-          1,
-          76,
-          92,
-          36,
-          34
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 16,
-    "swingAmount": 0.27716447,
-    "velocityRow": {
-      "likelihood": 6,
-      "velocityValues": [
-        106,
-        121,
-        102,
-        43
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 193,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 35,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 141,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 36,
-        "fxTarget": [
-          "Delay1: ",
-          1,
-          -1
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          91,
-          84,
-          11,
-          78,
-          36,
-          11,
-          42,
-          5,
-          39,
-          3,
-          23,
-          78,
-          52,
-          11,
-          27,
-          52
-        ]
-      },
-      {
-        "likelihood": 157,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          68,
-          60,
-          41,
-          13,
-          11,
-          43,
-          92,
-          26,
-          64,
-          21,
-          34,
-          86,
-          69,
-          49,
-          89,
-          56
-        ]
-      },
-      {
-        "likelihood": 170,
-        "fxTarget": [
-          "Delay1: ",
-          6,
-          0.01
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          90,
-          58,
-          0,
-          16,
-          39,
-          69,
-          84,
-          30,
-          100,
-          3,
-          40,
-          79,
-          10,
-          52,
-          46,
-          56
-        ]
-      },
-      {
-        "likelihood": 114,
-        "fxTarget": [
-          "Delay1: ",
-          1,
-          -1
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          15,
-          92,
-          71,
-          37,
-          53,
-          3,
-          43,
-          68,
-          47,
-          42,
-          55,
-          26,
-          89,
-          95,
-          83,
-          4
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 8,
-    "swingAmount": 0.8057575,
-    "velocityRow": {
-      "likelihood": 23,
-      "velocityValues": [
-        18,
-        86,
-        73,
-        94,
-        76,
-        126,
-        126,
-        1,
-        46,
-        46,
-        60,
-        46,
-        54,
-        24,
-        67
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 154,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 21,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 119,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 183,
-        "fxTarget": [
-          "Delay1: ",
-          6,
-          0.01
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          98,
-          62,
-          28,
-          31,
-          72,
-          16,
-          27,
-          53,
-          56,
-          62,
-          20,
-          24,
-          5,
-          22,
-          46,
-          63
-        ]
-      },
-      {
-        "likelihood": 174,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          91,
-          33,
-          27,
-          33,
-          75,
-          16,
-          22,
-          99,
-          9,
-          80,
-          27,
-          0,
-          64,
-          83,
-          80,
-          14
-        ]
-      },
-      {
-        "likelihood": 155,
-        "fxTarget": [
-          "Delay1: ",
-          6,
-          0.01
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          73,
-          21,
-          50,
-          40,
-          39,
-          47,
-          80,
-          29,
-          67,
-          84,
-          37,
-          98,
-          32,
-          3,
-          17,
-          49
-        ]
-      },
-      {
-        "likelihood": 60,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          -1
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          68,
-          27,
-          39,
-          81,
-          85,
-          41,
-          83,
-          3,
-          44,
-          80,
-          27,
-          44,
-          81,
-          79,
-          91,
-          19
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 5,
-    "swingAmount": 0.92460953,
-    "velocityRow": {
-      "likelihood": 147,
-      "velocityValues": [
-        5,
-        94,
-        34,
-        20
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 145,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 73,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 162,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 77,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          58,
-          5,
-          88,
-          67,
-          81,
-          35,
-          54,
-          83,
-          100,
-          84,
-          89,
-          18,
-          13,
-          45,
-          19,
-          35
-        ]
-      },
-      {
-        "likelihood": 99,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          23,
-          45,
-          33,
-          16,
-          47,
-          83,
-          17,
-          71,
-          77,
-          91,
-          86,
-          15,
-          44,
-          78,
-          1,
-          66
-        ]
-      },
-      {
-        "likelihood": 138,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          31,
-          14,
-          20,
-          22,
-          55,
-          19,
-          5,
-          100,
-          16,
-          92,
-          34,
-          58,
-          60,
-          9,
-          48,
-          64
-        ]
-      },
-      {
-        "likelihood": 42,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          95,
-          70,
-          28,
-          78,
-          2,
-          39,
-          37,
-          43,
-          22,
-          65,
-          40,
-          67,
-          80,
-          7,
-          16,
-          19
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 10,
-    "swingAmount": 0.15005941,
-    "velocityRow": {
-      "likelihood": 158,
-      "velocityValues": [
-        41,
-        20,
-        84,
-        31,
-        95
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 71,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 112,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 89,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 11,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          4,
-          94,
-          75,
-          5,
-          2,
-          56,
-          61,
-          93,
-          51,
-          17,
-          52,
-          19,
-          32,
-          33,
-          40,
-          49
-        ]
-      },
-      {
-        "likelihood": 162,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          49,
-          28,
-          59,
-          53,
-          14,
-          82,
-          92,
-          78,
-          19,
-          44,
-          44,
-          18,
-          39,
-          81,
-          6,
-          17
-        ]
-      },
-      {
-        "likelihood": 169,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          92,
-          45,
-          26,
-          38,
-          82,
-          82,
-          27,
-          5,
-          43,
-          59,
-          14,
-          45,
-          94,
-          61,
-          57,
-          4
-        ]
-      },
-      {
-        "likelihood": 31,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          62,
-          83,
-          29,
-          12,
-          84,
-          86,
-          87,
-          26,
-          5,
-          39,
-          17,
-          77,
-          77,
-          95,
-          18,
-          9
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 8,
-    "swingAmount": 0.09749620000000001,
-    "velocityRow": {
-      "likelihood": 73,
-      "velocityValues": [
-        31,
-        112,
-        76,
-        28,
-        33,
-        23,
-        107,
-        97
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 144,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 198,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 79,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 79,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          50,
-          25,
-          10,
-          60,
-          79,
-          39,
-          92,
-          94,
-          61,
-          47,
-          97,
-          46,
-          82,
-          73,
-          73,
-          11
-        ]
-      },
-      {
-        "likelihood": 28,
-        "fxTarget": [
-          "Delay1: ",
-          6,
-          0.01
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          79,
-          6,
-          27,
-          18,
-          70,
-          81,
-          32,
-          28,
-          76,
-          5,
-          58,
-          91,
-          85,
-          81,
-          40,
-          57
-        ]
-      },
-      {
-        "likelihood": 81,
-        "fxTarget": [
-          "Delay1: ",
-          1,
-          -1
-        ],
-        "fxSelection": 6,
-        "fxValues": [
-          68,
-          79,
-          74,
-          60,
-          82,
-          47,
-          67,
-          84,
-          80,
-          63,
-          68,
-          78,
-          7,
-          80,
-          85,
-          66
-        ]
-      },
-      {
-        "likelihood": 35,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          1,
-          98,
-          13,
-          51,
-          74,
-          83,
-          60,
-          65,
-          44,
-          15,
-          10,
-          31,
-          100,
-          65,
-          51,
-          48
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 6,
-    "swingAmount": 0.10474761,
-    "velocityRow": {
-      "likelihood": 13,
-      "velocityValues": [
-        32,
-        108,
-        89,
-        42,
-        103,
-        18,
-        26
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 195,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 103,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 187,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 193,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          24,
-          17,
-          88,
-          81,
-          3,
-          52,
-          7,
-          39,
-          10,
-          92,
-          12,
-          7,
-          27,
-          49,
-          53,
-          11
-        ]
-      },
-      {
-        "likelihood": 61,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          60,
-          92,
-          48,
-          1,
-          12,
-          90,
-          27,
-          60,
-          2,
-          40,
-          98,
-          15,
-          75,
-          95,
-          93,
-          30
-        ]
-      },
-      {
-        "likelihood": 6,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          14,
-          61,
-          47,
-          42,
-          92,
-          76,
-          78,
-          69,
-          18,
-          56,
-          22,
-          73,
-          85,
-          89,
-          38,
-          31
-        ]
-      },
-      {
-        "likelihood": 174,
-        "fxTarget": [
-          -99,
-          -99,
-          -99
-        ],
-        "fxSelection": 1,
-        "fxValues": [
-          96,
-          7,
-          43,
-          0,
-          38,
-          61,
-          13,
-          31,
-          0,
-          83,
-          34,
-          61,
-          81,
-          57,
-          30,
-          87
-        ]
-      }
-    ]
-  },
-  {
-    "stepCount": 16,
-    "swingAmount": 0.2243285,
-    "velocityRow": {
-      "likelihood": 194,
-      "velocityValues": [
-        62,
-        82,
-        56,
-        97,
-        4,
-        16,
-        111,
-        17,
-        109,
-        4,
-        7,
-        77,
-        62,
-        31,
-        108,
-        38
-      ]
-    },
-    "EnvelopeRowSet": [
-      {
-        "likelihood": 74,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 162,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      },
-      {
-        "likelihood": 115,
-        "defaultEnvelope": {
-          "power": 0,
-          "amount": 1,
-          "attack": 500,
-          "hold": 500,
-          "decay": 800,
-          "sustain": -15,
-          "release": 6000
-        },
-        "envelopeValues": [
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          },
-          {
-            "power": 0,
-            "amount": 1,
-            "attack": 500,
-            "hold": 500,
-            "decay": 800,
-            "sustain": -15,
-            "release": 6000
-          }
-        ]
-      }
-    ],
-    "FXRowSet": [
-      {
-        "likelihood": 188,
-        "fxTarget": [
-          "Filter1: ",
-          1,
-          199.8
-        ],
-        "fxSelection": 2,
-        "fxValues": [
-          68,
-          69,
-          90,
-          76,
-          65,
-          11,
-          15,
-          85,
-          21,
-          30,
-          63,
-          43,
-          61,
-          62,
-          65,
-          25
-        ]
-      },
-      {
-        "likelihood": 123,
+        "likelihood": 60.0,
         "fxTarget": [],
-        "fxSelection": 0,
+        "fxSelection": 0.0,
         "fxValues": [
-          10,
-          8,
-          11,
-          77,
-          31,
-          2,
-          50,
-          66,
-          74,
-          40,
-          60,
-          100,
-          79,
-          48,
-          22,
-          19
+          87.0,
+          8.0,
+          53.0,
+          22.0,
+          40.0,
+          21.0,
+          74.0,
+          92.0,
+          9.0,
+          81.0,
+          27.0,
+          28.0,
+          27.0,
+          55.0,
+          18.0,
+          92.0
         ]
       },
       {
-        "likelihood": 124,
+        "likelihood": 82.0,
+        "fxTarget": [],
+        "fxSelection": 0.0,
+        "fxValues": [
+          99.0,
+          74.0,
+          59.0,
+          60.0,
+          9.0,
+          90.0,
+          31.0,
+          60.0,
+          99.0,
+          58.0,
+          87.0,
+          28.0,
+          31.0,
+          89.0,
+          13.0,
+          51.0
+        ]
+      },
+      {
+        "likelihood": 165.0,
+        "fxTarget": [],
+        "fxSelection": 0.0,
+        "fxValues": [
+          90.0,
+          10.0,
+          68.0,
+          37.0,
+          35.0,
+          7.0,
+          97.0,
+          69.0,
+          36.0,
+          99.0,
+          21.0,
+          77.0,
+          42.0,
+          20.0,
+          29.0,
+          13.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 10.0,
+    "swingAmount": 0.7861673282459378,
+    "velocityRow": {
+      "likelihood": 35.0,
+      "velocityValues": [
+        39.0,
+        68.0,
+        59.0,
+        42.0,
+        127.0,
+        79.0,
+        58.0,
+        123.0,
+        97.0,
+        1.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 154.0,
+        "modSelection": 6.0,
+        "modValues": [
+          10.0,
+          60.0,
+          6.0,
+          96.0,
+          56.0,
+          25.0,
+          74.0,
+          81.0,
+          89.0,
+          58.0,
+          87.0,
+          25.0,
+          74.0,
+          72.0,
+          82.0,
+          24.0
+        ]
+      },
+      {
+        "likelihood": 23.0,
+        "modSelection": 1.0,
+        "modValues": [
+          99.0,
+          82.0,
+          38.0,
+          91.0,
+          81.0,
+          90.0,
+          32.0,
+          67.0,
+          17.0,
+          44.0,
+          11.0,
+          19.0,
+          35.0,
+          52.0,
+          61.0,
+          52.0
+        ]
+      },
+      {
+        "likelihood": 145.0,
+        "modSelection": 2.0,
+        "modValues": [
+          73.0,
+          25.0,
+          84.0,
+          49.0,
+          37.0,
+          55.0,
+          43.0,
+          1.0,
+          58.0,
+          0.0,
+          100.0,
+          12.0,
+          3.0,
+          85.0,
+          22.0,
+          9.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 97.0,
         "fxTarget": [
           "Delay1: ",
           6,
           0.01
         ],
-        "fxSelection": 6,
+        "fxSelection": 6.0,
         "fxValues": [
-          11,
-          77,
-          83,
-          96,
-          54,
-          33,
-          9,
-          11,
-          89,
-          81,
-          65,
-          73,
-          47,
-          12,
-          83,
-          79
+          58.0,
+          41.0,
+          61.0,
+          43.0,
+          1.0,
+          67.0,
+          95.0,
+          89.0,
+          6.0,
+          5.0,
+          93.0,
+          33.0,
+          5.0,
+          60.0,
+          16.0,
+          6.0
         ]
       },
       {
-        "likelihood": 6,
+        "likelihood": 0.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          42.0,
+          61.0,
+          0.0,
+          91.0,
+          93.0,
+          1.0,
+          81.0,
+          2.0,
+          50.0,
+          1.0,
+          93.0,
+          17.0,
+          91.0,
+          27.0,
+          61.0,
+          19.0
+        ]
+      },
+      {
+        "likelihood": 103.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 1.0,
+        "fxValues": [
+          18.0,
+          85.0,
+          63.0,
+          54.0,
+          43.0,
+          83.0,
+          34.0,
+          35.0,
+          41.0,
+          38.0,
+          83.0,
+          83.0,
+          11.0,
+          93.0,
+          37.0,
+          40.0
+        ]
+      },
+      {
+        "likelihood": 99.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          100.0,
+          84.0,
+          75.0,
+          66.0,
+          74.0,
+          32.0,
+          83.0,
+          7.0,
+          89.0,
+          24.0,
+          45.0,
+          26.0,
+          37.0,
+          79.0,
+          87.0,
+          81.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 10.0,
+    "swingAmount": 0.262919875793159,
+    "velocityRow": {
+      "likelihood": 71.0,
+      "velocityValues": [
+        95.0,
+        115.0,
+        24.0,
+        49.0,
+        68.0,
+        1.0,
+        80.0,
+        44.0,
+        31.0,
+        98.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 170.0,
+        "modSelection": 7.0,
+        "modValues": [
+          100.0,
+          39.0,
+          16.0,
+          86.0,
+          61.0,
+          100.0,
+          17.0,
+          94.0,
+          13.0,
+          99.0,
+          7.0,
+          78.0,
+          36.0,
+          75.0,
+          8.0,
+          82.0
+        ]
+      },
+      {
+        "likelihood": 124.0,
+        "modSelection": 4.0,
+        "modValues": [
+          63.0,
+          57.0,
+          84.0,
+          68.0,
+          46.0,
+          3.0,
+          84.0,
+          46.0,
+          1.0,
+          16.0,
+          25.0,
+          29.0,
+          77.0,
+          49.0,
+          87.0,
+          60.0
+        ]
+      },
+      {
+        "likelihood": 31.0,
+        "modSelection": 6.0,
+        "modValues": [
+          30.0,
+          76.0,
+          44.0,
+          10.0,
+          59.0,
+          9.0,
+          50.0,
+          4.0,
+          48.0,
+          67.0,
+          43.0,
+          62.0,
+          2.0,
+          86.0,
+          20.0,
+          38.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 10.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          12.0,
+          92.0,
+          44.0,
+          51.0,
+          88.0,
+          69.0,
+          96.0,
+          58.0,
+          77.0,
+          8.0,
+          59.0,
+          58.0,
+          35.0,
+          66.0,
+          39.0,
+          9.0
+        ]
+      },
+      {
+        "likelihood": 200.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          81.0,
+          81.0,
+          35.0,
+          77.0,
+          29.0,
+          32.0,
+          87.0,
+          28.0,
+          5.0,
+          3.0,
+          44.0,
+          19.0,
+          82.0,
+          93.0,
+          93.0,
+          51.0
+        ]
+      },
+      {
+        "likelihood": 81.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          28.0,
+          5.0,
+          43.0,
+          72.0,
+          89.0,
+          94.0,
+          65.0,
+          96.0,
+          11.0,
+          24.0,
+          95.0,
+          73.0,
+          71.0,
+          86.0,
+          65.0,
+          48.0
+        ]
+      },
+      {
+        "likelihood": 69.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          6.0,
+          40.0,
+          59.0,
+          42.0,
+          45.0,
+          82.0,
+          35.0,
+          32.0,
+          51.0,
+          20.0,
+          51.0,
+          48.0,
+          57.0,
+          47.0,
+          78.0,
+          3.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 15.0,
+    "swingAmount": 0.7704912007320672,
+    "velocityRow": {
+      "likelihood": 81.0,
+      "velocityValues": [
+        95.0,
+        51.0,
+        48.0,
+        21.0,
+        62.0,
+        126.0,
+        32.0,
+        30.0,
+        115.0,
+        68.0,
+        75.0,
+        58.0,
+        22.0,
+        72.0,
+        112.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 173.0,
+        "modSelection": 7.0,
+        "modValues": [
+          40.0,
+          36.0,
+          45.0,
+          59.0,
+          63.0,
+          89.0,
+          56.0,
+          26.0,
+          34.0,
+          26.0,
+          50.0,
+          72.0,
+          100.0,
+          84.0,
+          53.0,
+          28.0
+        ]
+      },
+      {
+        "likelihood": 73.0,
+        "modSelection": 5.0,
+        "modValues": [
+          61.0,
+          50.0,
+          80.0,
+          9.0,
+          20.0,
+          26.0,
+          53.0,
+          79.0,
+          51.0,
+          92.0,
+          33.0,
+          60.0,
+          96.0,
+          29.0,
+          97.0,
+          57.0
+        ]
+      },
+      {
+        "likelihood": 108.0,
+        "modSelection": 1.0,
+        "modValues": [
+          96.0,
+          56.0,
+          61.0,
+          53.0,
+          84.0,
+          73.0,
+          85.0,
+          54.0,
+          78.0,
+          25.0,
+          15.0,
+          15.0,
+          49.0,
+          22.0,
+          4.0,
+          9.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 133.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          24.0,
+          55.0,
+          23.0,
+          26.0,
+          43.0,
+          40.0,
+          1.0,
+          12.0,
+          52.0,
+          76.0,
+          86.0,
+          98.0,
+          78.0,
+          35.0,
+          41.0,
+          64.0
+        ]
+      },
+      {
+        "likelihood": 194.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          100.0,
+          30.0,
+          99.0,
+          18.0,
+          94.0,
+          28.0,
+          47.0,
+          98.0,
+          100.0,
+          6.0,
+          24.0,
+          55.0,
+          34.0,
+          94.0,
+          41.0,
+          19.0
+        ]
+      },
+      {
+        "likelihood": 137.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 5.0,
+        "fxValues": [
+          71.0,
+          75.0,
+          6.0,
+          41.0,
+          97.0,
+          71.0,
+          90.0,
+          47.0,
+          55.0,
+          33.0,
+          87.0,
+          78.0,
+          19.0,
+          100.0,
+          1.0,
+          97.0
+        ]
+      },
+      {
+        "likelihood": 166.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          65.0,
+          92.0,
+          80.0,
+          59.0,
+          16.0,
+          44.0,
+          85.0,
+          89.0,
+          95.0,
+          100.0,
+          42.0,
+          23.0,
+          98.0,
+          35.0,
+          49.0,
+          63.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 9.0,
+    "swingAmount": 0.8704464538022876,
+    "velocityRow": {
+      "likelihood": 71.0,
+      "velocityValues": [
+        117.0,
+        106.0,
+        58.0,
+        83.0,
+        13.0,
+        76.0,
+        80.0,
+        101.0,
+        76.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 144.0,
+        "modSelection": 3.0,
+        "modValues": [
+          91.0,
+          5.0,
+          79.0,
+          22.0,
+          12.0,
+          69.0,
+          74.0,
+          92.0,
+          61.0,
+          14.0,
+          61.0,
+          16.0,
+          31.0,
+          68.0,
+          0.0,
+          67.0
+        ]
+      },
+      {
+        "likelihood": 171.0,
+        "modSelection": 2.0,
+        "modValues": [
+          93.0,
+          17.0,
+          24.0,
+          44.0,
+          85.0,
+          77.0,
+          23.0,
+          39.0,
+          87.0,
+          59.0,
+          42.0,
+          35.0,
+          32.0,
+          82.0,
+          71.0,
+          21.0
+        ]
+      },
+      {
+        "likelihood": 126.0,
+        "modSelection": 8.0,
+        "modValues": [
+          87.0,
+          51.0,
+          21.0,
+          90.0,
+          75.0,
+          30.0,
+          52.0,
+          21.0,
+          93.0,
+          92.0,
+          86.0,
+          13.0,
+          82.0,
+          98.0,
+          89.0,
+          38.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 9.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          42.0,
+          11.0,
+          10.0,
+          49.0,
+          1.0,
+          100.0,
+          25.0,
+          50.0,
+          3.0,
+          39.0,
+          87.0,
+          30.0,
+          99.0,
+          75.0,
+          48.0,
+          86.0
+        ]
+      },
+      {
+        "likelihood": 162.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          77.0,
+          10.0,
+          73.0,
+          86.0,
+          74.0,
+          80.0,
+          30.0,
+          66.0,
+          42.0,
+          79.0,
+          18.0,
+          92.0,
+          36.0,
+          61.0,
+          85.0,
+          32.0
+        ]
+      },
+      {
+        "likelihood": 159.0,
+        "fxTarget": [
+          "Filter1: ",
+          1,
+          199.8
+        ],
+        "fxSelection": 2.0,
+        "fxValues": [
+          64.0,
+          18.0,
+          100.0,
+          3.0,
+          17.0,
+          17.0,
+          90.0,
+          30.0,
+          89.0,
+          69.0,
+          13.0,
+          25.0,
+          30.0,
+          88.0,
+          38.0,
+          50.0
+        ]
+      },
+      {
+        "likelihood": 74.0,
         "fxTarget": [
           "Polyshape1: ",
           0,
           0.6
         ],
-        "fxSelection": 3,
+        "fxSelection": 3.0,
         "fxValues": [
-          82,
-          0,
-          78,
-          36,
-          29,
-          35,
-          64,
-          53,
-          50,
-          67,
-          40,
-          76,
-          25,
-          95,
-          27,
-          70
+          63.0,
+          79.0,
+          2.0,
+          4.0,
+          61.0,
+          95.0,
+          54.0,
+          86.0,
+          81.0,
+          65.0,
+          16.0,
+          94.0,
+          92.0,
+          35.0,
+          43.0,
+          13.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 15.0,
+    "swingAmount": 0.06190667650662363,
+    "velocityRow": {
+      "likelihood": 3.0,
+      "velocityValues": [
+        81.0,
+        92.0,
+        28.0,
+        64.0,
+        57.0,
+        36.0,
+        55.0,
+        64.0,
+        34.0,
+        1.0,
+        16.0,
+        81.0,
+        114.0,
+        118.0,
+        87.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 189.0,
+        "modSelection": 1.0,
+        "modValues": [
+          14.0,
+          42.0,
+          55.0,
+          99.0,
+          83.0,
+          2.0,
+          71.0,
+          75.0,
+          37.0,
+          74.0,
+          96.0,
+          89.0,
+          57.0,
+          2.0,
+          21.0,
+          81.0
+        ]
+      },
+      {
+        "likelihood": 147.0,
+        "modSelection": 3.0,
+        "modValues": [
+          86.0,
+          70.0,
+          42.0,
+          91.0,
+          68.0,
+          14.0,
+          23.0,
+          26.0,
+          15.0,
+          44.0,
+          35.0,
+          48.0,
+          12.0,
+          29.0,
+          36.0,
+          10.0
+        ]
+      },
+      {
+        "likelihood": 126.0,
+        "modSelection": 2.0,
+        "modValues": [
+          100.0,
+          74.0,
+          4.0,
+          71.0,
+          79.0,
+          25.0,
+          18.0,
+          53.0,
+          66.0,
+          32.0,
+          97.0,
+          93.0,
+          72.0,
+          72.0,
+          64.0,
+          25.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 98.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          50.0,
+          94.0,
+          90.0,
+          86.0,
+          12.0,
+          89.0,
+          34.0,
+          82.0,
+          93.0,
+          26.0,
+          92.0,
+          15.0,
+          41.0,
+          94.0,
+          31.0,
+          77.0
+        ]
+      },
+      {
+        "likelihood": 128.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 4.0,
+        "fxValues": [
+          85.0,
+          55.0,
+          98.0,
+          8.0,
+          40.0,
+          70.0,
+          63.0,
+          17.0,
+          20.0,
+          25.0,
+          78.0,
+          36.0,
+          69.0,
+          44.0,
+          8.0,
+          36.0
+        ]
+      },
+      {
+        "likelihood": 43.0,
+        "fxTarget": [],
+        "fxSelection": 0.0,
+        "fxValues": [
+          85.0,
+          68.0,
+          25.0,
+          48.0,
+          76.0,
+          82.0,
+          39.0,
+          5.0,
+          7.0,
+          27.0,
+          98.0,
+          18.0,
+          75.0,
+          50.0,
+          82.0,
+          15.0
+        ]
+      },
+      {
+        "likelihood": 37.0,
+        "fxTarget": [
+          -99,
+          -99,
+          -99
+        ],
+        "fxSelection": 5.0,
+        "fxValues": [
+          6.0,
+          3.0,
+          28.0,
+          84.0,
+          81.0,
+          80.0,
+          20.0,
+          59.0,
+          89.0,
+          61.0,
+          43.0,
+          97.0,
+          45.0,
+          9.0,
+          8.0,
+          25.0
+        ]
+      }
+    ]
+  },
+  {
+    "stepCount": 14.0,
+    "swingAmount": 0.577156841289252,
+    "velocityRow": {
+      "likelihood": 199.0,
+      "velocityValues": [
+        98.0,
+        119.0,
+        96.0,
+        27.0,
+        94.0,
+        20.0,
+        3.0,
+        19.0,
+        29.0,
+        121.0,
+        98.0,
+        113.0,
+        62.0,
+        24.0
+      ]
+    },
+    "ModRowSet": [
+      {
+        "likelihood": 192.0,
+        "modSelection": 5.0,
+        "modValues": [
+          52.0,
+          91.0,
+          82.0,
+          35.0,
+          80.0,
+          31.0,
+          11.0,
+          98.0,
+          72.0,
+          61.0,
+          80.0,
+          66.0,
+          45.0,
+          62.0,
+          77.0,
+          45.0
+        ]
+      },
+      {
+        "likelihood": 76.0,
+        "modSelection": 6.0,
+        "modValues": [
+          57.0,
+          54.0,
+          76.0,
+          25.0,
+          37.0,
+          11.0,
+          33.0,
+          15.0,
+          39.0,
+          9.0,
+          9.0,
+          81.0,
+          84.0,
+          66.0,
+          87.0,
+          30.0
+        ]
+      },
+      {
+        "likelihood": 63.0,
+        "modSelection": 8.0,
+        "modValues": [
+          65.0,
+          4.0,
+          13.0,
+          65.0,
+          35.0,
+          72.0,
+          39.0,
+          2.0,
+          64.0,
+          81.0,
+          5.0,
+          17.0,
+          51.0,
+          14.0,
+          13.0,
+          16.0
+        ]
+      }
+    ],
+    "FXRowSet": [
+      {
+        "likelihood": 38.0,
+        "fxTarget": [],
+        "fxSelection": 0.0,
+        "fxValues": [
+          16.0,
+          14.0,
+          5.0,
+          50.0,
+          63.0,
+          67.0,
+          50.0,
+          32.0,
+          58.0,
+          14.0,
+          23.0,
+          28.0,
+          10.0,
+          78.0,
+          21.0,
+          64.0
+        ]
+      },
+      {
+        "likelihood": 23.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          75.0,
+          14.0,
+          86.0,
+          9.0,
+          0.0,
+          77.0,
+          79.0,
+          67.0,
+          0.0,
+          73.0,
+          9.0,
+          74.0,
+          13.0,
+          83.0,
+          23.0,
+          95.0
+        ]
+      },
+      {
+        "likelihood": 18.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          91.0,
+          75.0,
+          51.0,
+          51.0,
+          79.0,
+          46.0,
+          92.0,
+          64.0,
+          97.0,
+          55.0,
+          8.0,
+          54.0,
+          20.0,
+          37.0,
+          97.0,
+          48.0
+        ]
+      },
+      {
+        "likelihood": 159.0,
+        "fxTarget": [
+          "Delay1: ",
+          6,
+          0.01
+        ],
+        "fxSelection": 6.0,
+        "fxValues": [
+          55.0,
+          4.0,
+          10.0,
+          45.0,
+          85.0,
+          86.0,
+          92.0,
+          11.0,
+          56.0,
+          33.0,
+          5.0,
+          28.0,
+          12.0,
+          4.0,
+          91.0,
+          22.0
         ]
       }
     ]
