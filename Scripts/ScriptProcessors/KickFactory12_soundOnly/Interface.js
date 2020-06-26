@@ -5,7 +5,151 @@ Content.makeFrontInterface(ContentWidth, ContentHeight);
 Engine.loadAudioFilesIntoPool();
 
 
+//=========OBJETX============
 
+namespace aSnapshot
+{
+    
+    inline function newSnapshotSet(s1,s2,s3)
+    {
+        local obj = {};
+        obj.snap1 = s1;
+        obj.snap2 = s2;
+        obj.snap3 = s3;
+        
+        return obj;
+    }
+    
+    inline function newSnapshot(v1,v2,v3)
+    {
+        local obj = {};
+        obj.voice1 = v1;
+        obj.voice2 = v2;
+        obj.voice3 = v3;
+        
+        return obj;
+    }
+    
+    inline function newVoiceShotObj(s)
+    {
+        local obj = {};
+        obj.mute = MuteButtons[s].getValue();
+        obj.filter = FilterSelectors[s].getValue();
+        obj.trigger = TriggerSelectors[s].getValue();
+        obj.volume = VolumeKnobs[s].getValue();
+        obj.pan = PanKnobs[s].getValue();
+        obj.pitch = PitchKnobs[s].getValue();
+        obj.filterOnOff = FilterOnOffs[s].getValue();
+        obj.filterFreq = FreqKnobs[s].getValue();
+        obj.filterRes = ResKnobs[s].getValue();
+        obj.shapeOnOff = ShapeOnOffs[s].getValue();
+        obj.shapeCurve = ShapeSelectors[s].getValue();
+        obj.shapeDrive = ShapeDrives[s].getValue();
+        obj.shapeBias = ShapeBiass[s].getValue();
+        obj.reverbOnOff = ReverbOnOffs[s].getValue();
+        obj.reverbImpulse = ReverbSelectors[s].getValue();
+        obj.reverbWet = ReverbWets[s].getValue();
+        obj.reverbDry = ReverbDrys[s].getValue();
+        obj.delayOnOff = DelayOnOffs[s].getValue();
+        obj.delayTime = DelayTimes[s].getValue();
+        obj.delayFeedback = DelayFeedbacks[s].getValue();
+        obj.delayMix = DelayMixes[s].getValue();
+        obj.compressorOnOff = CompOnOffs[s].getValue();
+        obj.compressorThreshold = CompThresholds[s].getValue();
+        obj.compressorRatio = CompRatios[s].getValue();
+        obj.compressorAttack = CompAttacks[s].getValue();
+        obj.compressorRelease = CompReleases[s].getValue();
+        
+        return obj;
+    };
+    inline function loadVoiceShot(obj,v)
+    {
+        MuteButtons[v].setValue(obj.mute);
+        FilterSelectors[v].setValue(obj.filter);
+        TriggerSelectors[v].setValue(obj.trigger);
+        VolumeKnobs[v].setValue(obj.volume);
+        PanKnobs[v].setValue(obj.pan);
+        PitchKnobs[v].setValue(obj.pitch);
+        FilterOnOffs[v].setValue(obj.filterOnOff);
+        FreqKnobs[v].setValue(obj.filterFreq);
+        ResKnobs[v].setValue(obj.filterRes);
+        ShapeOnOffs[v].setValue(obj.shapeOnOff);
+        ShapeSelectors[v].setValue(obj.shapeCurve);
+        ShapeDrives[v].setValue(obj.shapeDrive);
+        ShapeBiass[v].setValue(obj.shapeBias);
+        ReverbOnOffs[v].setValue(obj.reverbOnOff);
+        ReverbSelectors[v].setValue(obj.reverbImpulse);
+        ReverbWets[v].setValue(obj.reverbWet);
+        ReverbDrys[v].setValue(obj.reverbDry);
+        DelayOnOffs[v].setValue(obj.delayOnOff);
+        DelayTimes[v].setValue(obj.delayTime);
+        DelayFeedbacks[v].setValue(obj.delayFeedback);
+        DelayMixes[v].setValue(obj.delayMix);
+        CompOnOffs[v].setValue(obj.compressorOnOff);
+        CompThresholds[v].setValue(obj.compressorThreshold);
+        CompRatios[v].setValue(obj.compressorRatio);
+        CompAttacks[v].setValue(obj.compressorAttack);
+        CompReleases[v].setValue(obj.compressorRelease);
+        
+        MuteButtons[v].changed();
+        FilterSelectors[v].changed();
+        TriggerSelectors[v].changed();
+        VolumeKnobs[v].changed();
+        PanKnobs[v].changed();
+        PitchKnobs[v].changed();
+        FilterOnOffs[v].changed();
+        FreqKnobs[v].changed();
+        ResKnobs[v].changed();
+        ShapeOnOffs[v].changed();
+        ShapeSelectors[v].changed();
+        ShapeDrives[v].changed();
+        ShapeBiass[v].changed();
+        ReverbOnOffs[v].changed();
+        ReverbSelectors[v].changed();
+        ReverbWets[v].changed();
+        ReverbDrys[v].changed();
+        DelayOnOffs[v].changed();
+        DelayTimes[v].changed();
+        DelayFeedbacks[v].changed();
+        DelayMixes[v].changed();
+        CompOnOffs[v].changed();
+        CompThresholds[v].changed();
+        CompRatios[v].changed();
+        CompAttacks[v].changed();
+        CompReleases[v].changed();
+        
+    };
+    inline function updateAVoice(v)
+    {
+        local myVoice = aSnapshot.newVoiceShotObj(i);
+        local mySnap;
+        switch (currentSnap){
+            case 1:
+                mySnap = SnapShotSet.snap1;
+                break;
+            case 2:
+                mySnap = SnapShotSet.snap2;
+                break;
+            case 3:
+                mySnap = SnapShotSet.snap3;
+                break;
+                    
+        }
+        switch (i){
+            case 0:
+                mySnap.voice1 = myVoice;
+                break;
+            case 1:
+                mySnap.voice2 = myVoice;
+                break;
+            case 2:
+                mySnap.voice3 = myVoice;
+                break;
+        }
+        SnapshotPanel.setValue(SnapShotSet);
+    };
+    
+}
 
 
 
@@ -250,7 +394,7 @@ PresetFrame.setTimerCallback(function()
 );
 
 
-// OBJECTS
+
 // Velocity Row
 function newVelocityRow(likelihood, valueArray)
 {
@@ -639,7 +783,110 @@ const var GlobalLFOGain = Synth.getModulator("GlobalLFOGain");
 const var GlobalLFOPitch = Synth.getModulator("GlobalLFOPitch");
 const var GlobalLFOFreq = Synth.getModulator("GlobalLFOFreq");
 
-    
+// the snapshots - who are saved as data in the snapshot panel
+var SnapShotSet = {};
+const var SnapshotPanel = Content.getComponent("SnapshotPanel");
+SnapshotPanel.setControlCallback(onSnapshotPanelControl);
+var currentSnap;
+
+
+
+inline function onSnapshotPanelControl(component, value)
+{
+	// load the set from the panel..
+	SnapShotSet = value;
+	Console.print("retrieving:" + trace(SnapShotSet));
+};
+
+
+inline function onSnapshotGeneratorControl(component, value)
+{
+	//
+	local myVoice1 = aSnapshot.newVoiceShotObj(0);
+	Console.print("voice1:" + trace(myVoice1));
+	local myVoice2 = aSnapshot.newVoiceShotObj(1);
+	local myVoice3 = aSnapshot.newVoiceShotObj(2);
+	local SnapOne = aSnapshot.newSnapshot(myVoice1, myVoice2, myVoice3);
+	// Console.print("Snap1:" + trace(SnapOne));
+	local SnapTwo = aSnapshot.newSnapshot(myVoice2, myVoice3, myVoice1);
+	local SnapThree = aSnapshot.newSnapshot(myVoice3, myVoice1, myVoice2);
+	local mySet = aSnapshot.newSnapshotSet(SnapOne, SnapTwo, SnapThree);
+	//Console.print("Set:" + trace(mySet));
+	
+	SnapshotPanel.setValue(mySet);
+	component.setValue(0);
+	//Console.print("Saving:" + trace(mySet));
+	
+};
+Content.getComponent("SnapshotGenerator").setControlCallback(onSnapshotGeneratorControl);
+
+
+inline function onSnapshot1OnOffControl(component, value)
+{
+	//
+	if (value)
+    {
+       if (typeof SnapShotSet == "object")
+        {
+            // load snapshot 1 into the instrument
+            local mySnap = SnapShotSet.snap1;
+            Console.print("xxxxxxxxxx:" + trace(SnapShotSet));
+            aSnapshot.loadVoiceShot(mySnap.voice1,0);
+            aSnapshot.loadVoiceShot(mySnap.voice2,1);
+            aSnapshot.loadVoiceShot(mySnap.voice3,2);
+            currentSnap = 1;
+        }
+        
+    }
+};
+
+Content.getComponent("Snapshot1OnOff").setControlCallback(onSnapshot1OnOffControl);
+
+inline function onSnapshotOnOff2Control(component, value)
+{
+	//
+	if (value)
+    {
+       if (typeof SnapShotSet == "object")
+        {
+            // load snapshot 2 into the instrument
+            local mySnap = SnapShotSet.snap2;
+            aSnapshot.loadVoiceShot(mySnap.voice1,0);
+            aSnapshot.loadVoiceShot(mySnap.voice2,1);
+            aSnapshot.loadVoiceShot(mySnap.voice3,2);
+            currentSnap = 2;
+            
+        }
+        
+    }
+};
+
+Content.getComponent("SnapshotOnOff2").setControlCallback(onSnapshotOnOff2Control);
+
+
+inline function onSnapshotOnOff3Control(component, value)
+{
+	//
+	if (value)
+    {
+       if (typeof SnapShotSet == "object")
+        {
+            // load snapshot 3 into the instrument
+            local mySnap = SnapShotSet.snap3;
+            aSnapshot.loadVoiceShot(mySnap.voice1,0);
+            aSnapshot.loadVoiceShot(mySnap.voice2,1);
+            aSnapshot.loadVoiceShot(mySnap.voice3,2);
+            currentSnap = 3;
+            
+        }
+        
+    }
+};
+
+Content.getComponent("SnapshotOnOff3").setControlCallback(onSnapshotOnOff3Control);
+
+
+
 // -------------- Authorisation & Demo ----------------------------
 
 include("Serials.js");
@@ -830,6 +1077,7 @@ inline function onMuteButton(component, value)
     {
         if (component == MuteButtons[i]){
             TheMidiMuters[i].setAttribute(0, value);
+            aSnapshot.updateAVoice(i);
         };
     };
 }
@@ -848,7 +1096,7 @@ inline function onVoiceBarVolume(component, value)
     };
 };
 
-// ---- the smaple map seleting call backs go here.....
+// ---- the sample map seleting call backs go here.....
 
 
 

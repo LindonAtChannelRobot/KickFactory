@@ -37,7 +37,7 @@
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
       <Component type="ScriptButton" id="MuteButton1" x="4" y="3" parentComponent="VoicePanel1"
                  width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Korg_DanceClub_(01)"
+      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Yamaha_10dance5"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel1"
                  fontSize="11" alignment="left" bgColour="1308622848" editable="0"
                  fontStyle="Regular" textColour="4289111718"/>
@@ -47,7 +47,7 @@
       <Component type="ScriptButton" id="PrevSound1" x="49" y="31" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel1"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="65" y="28" text="Korg_DanceClub_(01)"
+      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="65" y="28" text="Yamaha_10dance5"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel1"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice1" x="59" y="30"
@@ -197,7 +197,7 @@
                  width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
                  numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
                  suffix=" dB" middlePosition="-6" defaultValue="-6"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="Ensoniq_Kick1"
+      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="Akai_MPC507111111"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel2"
                  fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
                  editable="0"/>
@@ -207,7 +207,7 @@
       <Component type="ScriptButton" id="PrevSound2" x="50" y="30" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel2"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="64" y="28" text="Ensoniq_Kick1"
+      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="64" y="28" text="Akai_MPC507111111"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel2"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice2" x="65" y="31"
@@ -358,7 +358,7 @@
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
       <Component type="ScriptButton" id="MuteButton3" x="4" y="3" parentComponent="VoicePanel3"
                  width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="Yamaha_04Rave7"
+      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="Access_B_05"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel3"
                  fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
                  editable="0"/>
@@ -372,7 +372,7 @@
       <Component type="ScriptButton" id="PrevSound3" x="50" y="30" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel3"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="59" y="28" text="Yamaha_04Rave7"
+      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="59" y="28" text="Access_B_05"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel3"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice3" x="64" y="30"
@@ -713,18 +713,34 @@
                  width="144" height="22"/>
     </Component>
   </Component>
-  <Component type="ScriptPanel" id="MasterPanel" x="0" y="536" borderSize="0"
-             itemColour="0" itemColour2="0" bgColour="16777215" width="799"
-             height="83">
-    <Component type="ScriptSlider" id="MasterVolumeKnob" x="175" y="30" parentComponent="MasterPanel"
+  <Component type="ScriptPanel" id="SnapshotPanel" x="1" y="533" width="802"
+             height="30" borderSize="0" borderRadius="0" itemColour2="0" itemColour="0"
+             bgColour="16777215" saveInPreset="1">
+    <Component type="ScriptButton" id="Snapshot1OnOff" x="363" y="8" width="15"
+               height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"
+               parentComponent="SnapshotPanel" radioGroup="3"/>
+    <Component type="ScriptButton" id="SnapshotOnOff2" x="463" y="8" width="15"
+               height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"
+               parentComponent="SnapshotPanel" radioGroup="3"/>
+    <Component type="ScriptButton" id="SnapshotOnOff3" x="565" y="8" width="15"
+               height="15" filmstripImage="{PROJECT_FOLDER}OnOffButton.png"
+               parentComponent="SnapshotPanel" radioGroup="3"/>
+    <Component type="ScriptButton" id="SnapshotGenerator" x="771" y="4" parentComponent="SnapshotPanel"
+               width="22" height="22" filmstripImage="{PROJECT_FOLDER}generate.png"
+               saveInPreset="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="MasterPanel" x="0" y="561" borderSize="0"
+             itemColour="0" itemColour2="0" bgColour="16777215" width="795"
+             height="59">
+    <Component type="ScriptSlider" id="MasterVolumeKnob" x="175" y="17" parentComponent="MasterPanel"
                width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
                showValuePopup="Above" mode="Decibel" min="-100" max="6" stepSize="0.1"
                suffix=" dB" middlePosition="-6"/>
-    <Component type="ScriptSlider" id="MasterIRREKnob" x="353" y="33" parentComponent="MasterPanel"
+    <Component type="ScriptSlider" id="MasterIRREKnob" x="360" y="18" parentComponent="MasterPanel"
                width="34" height="34" numStrips="100" filmstripImage="{PROJECT_FOLDER}VoiceKnob.png"
                showValuePopup="Above" mode="NormalizedPercentage" suffix="%"
                middlePosition="0.5"/>
-    <Component type="ScriptPanel" id="MIDISelectorPanel" x="583" y="36" parentComponent="MasterPanel"
+    <Component type="ScriptPanel" id="MIDISelectorPanel" x="583" y="23" parentComponent="MasterPanel"
                width="84" height="23" itemColour="0" bgColour="16777215" itemColour2="0"
                borderSize="0" textColour="16777215">
       <Component type="ScriptComboBox" id="MIDISelector" x="-1" y="-3" max="2"

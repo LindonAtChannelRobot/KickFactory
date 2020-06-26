@@ -166,6 +166,10 @@
     <Control type="ScriptedViewport" id="VoiceCategories" value="15"/>
     <Control type="ScriptedViewport" id="VoiceSampleMaps" value="19"/>
     <Control type="ScriptButton" id="VoiceFavouritesButton" value="0"/>
+    <Control type="ScriptPanel" id="SnapshotPanel" value="0"/>
+    <Control type="ScriptButton" id="Snapshot1OnOff" value="0"/>
+    <Control type="ScriptButton" id="SnapshotOnOff2" value="0"/>
+    <Control type="ScriptButton" id="SnapshotOnOff3" value="0"/>
     <Control type="ScriptSlider" id="MasterVolumeKnob" value="-7.4"/>
     <Control type="ScriptSlider" id="MasterIRREKnob" value="0"/>
     <Control type="ScriptComboBox" id="MIDISelector" value="1"/>
