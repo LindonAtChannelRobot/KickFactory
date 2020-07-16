@@ -30,12 +30,21 @@ namespace aSnapshot
         return obj;
     }
     
+    inline function loadASnapshot(snap)
+    {
+        aSnapshot.loadVoiceShot(snap.voice1,0);
+        aSnapshot.loadVoiceShot(snap.voice2,1);
+        aSnapshot.loadVoiceShot(snap.voice3,2);
+    }
+    
+    
     inline function newVoiceShotObj(s)
     {
         local obj = {};
         obj.mute = MuteButtons[s].getValue();
         obj.filter = FilterSelectors[s].getValue();
         obj.trigger = TriggerSelectors[s].getValue();
+        //Console.print("Trigger:" + s + " Value:" + obj.trigger);
         obj.volume = VolumeKnobs[s].getValue();
         obj.pan = PanKnobs[s].getValue();
         obj.pitch = PitchKnobs[s].getValue();
@@ -67,6 +76,7 @@ namespace aSnapshot
         MuteButtons[v].setValue(obj.mute);
         FilterSelectors[v].setValue(obj.filter);
         TriggerSelectors[v].setValue(obj.trigger);
+        //Console.print("Loading trigger:" + v + " with value:" + obj.trigger);
         VolumeKnobs[v].setValue(obj.volume);
         PanKnobs[v].setValue(obj.pan);
         PitchKnobs[v].setValue(obj.pitch);
@@ -119,34 +129,59 @@ namespace aSnapshot
         CompReleases[v].changed();
         
     };
+    
+    
+    
     inline function updateAVoice(v)
     {
-        local myVoice = aSnapshot.newVoiceShotObj(i);
-        local mySnap;
-        switch (currentSnap){
-            case 1:
-                mySnap = SnapShotSet.snap1;
-                break;
-            case 2:
-                mySnap = SnapShotSet.snap2;
-                break;
-            case 3:
-                mySnap = SnapShotSet.snap3;
-                break;
+        if (!loadingSnapshot)
+        {
+            local myVoice = aSnapshot.newVoiceShotObj(v);
+            local mySnap;
+            //Console.print("set:" + trace(SnapShotSet));
+            switch (currentSnap){
+                case 1:
+                    if (typeof SnapShotSet.snap1 == "object")
+                        mySnap = SnapShotSet.snap1;
+                    break;
+                case 2:
+                    if (typeof SnapShotSet.snap2 == "object")
+                        mySnap = SnapShotSet.snap2;
+                    break;
+                case 3:
+                    if (typeof SnapShotSet.snap3 == "object")
+                        mySnap = SnapShotSet.snap3;
+                    break;
                     
+            };
+
+            if (typeof mySnap == "object")
+            {
+                switch (v){
+                    case 0:
+                        mySnap.voice1 = myVoice;
+                        break;
+                    case 1:
+                        mySnap.voice2 = myVoice;
+                        break;
+                    case 2:
+                        mySnap.voice3 = myVoice;
+                        break;
+                };
+            };
+        
+            /* Console.print(" ---post update-------------------" + currentSnap);
+            Console.print("Voice 1 trigger is:" + mySnap.voice1.trigger);
+            Console.print("Voice 2 trigger is:" + mySnap.voice2.trigger);
+            Console.print("Voice 3 trigger is:" + mySnap.voice3.trigger);
+            */
+            if (typeof mySnap == "object")
+            {
+                SnapshotPanel.setValue(SnapShotSet);
+            }
+        
+            //Console.print("my set is........"+ trace(SnapShotSet));
         }
-        switch (i){
-            case 0:
-                mySnap.voice1 = myVoice;
-                break;
-            case 1:
-                mySnap.voice2 = myVoice;
-                break;
-            case 2:
-                mySnap.voice3 = myVoice;
-                break;
-        }
-        SnapshotPanel.setValue(SnapShotSet);
     };
     
 }
@@ -198,7 +233,7 @@ function loadVoice(voiceNum,selectedCategory,selectedVoice)
     selectedName = Maps[selectedCategory][selectedVoice];
     
     if (selectedName.substring(0,3) == "(*)"){
-        Console.print("found a favourite");
+        //Console.print("found a favourite");
         VoiceFavouritesButton.setValue(1);
         trimmedName = selectedName.substring(3,selectedName.length);
     }else{
@@ -344,7 +379,27 @@ function paintKeys()
         Engine.setKeyColour(kdx, KEY_DARK);
         if (kdx == MIDINoteTarget)
             Engine.setKeyColour(kdx, KEY_TARGET);
-
+        if (kdx == MIDINoteTarget + 1)
+            if (Snapshot1OnOff.getValue() == 1)
+            {
+                Engine.setKeyColour(kdx, KEY_SNAPON);
+            }else{
+                Engine.setKeyColour(kdx, KEY_SNAPOFF);
+            };
+        if (kdx == MIDINoteTarget + 2)
+            if (SnapshotOnOff2.getValue() == 1)
+            {
+                Engine.setKeyColour(kdx, KEY_SNAPON);
+            }else{
+                Engine.setKeyColour(kdx, KEY_SNAPOFF);
+            };
+        if (kdx == MIDINoteTarget + 3)
+            if (SnapshotOnOff3.getValue() == 1)
+            {
+                Engine.setKeyColour(kdx, KEY_SNAPON);
+            }else{
+                Engine.setKeyColour(kdx, KEY_SNAPOFF);
+            };
     }; 
 };
     
@@ -360,7 +415,9 @@ const var OPENPANELSIZE = 421;
 const var MOD_OFF_COLOUR = 0xFF666666;
 const var MOD_ON_COLOUR = 0xFF4AA025;
 const var KEY_DARK = 0x88112211;
-const var KEY_TARGET = 0xAA44BB44;
+const var KEY_TARGET = 0xFF44BB44;
+const var KEY_SNAPON = 0xFFFF8400;
+const var KEY_SNAPOFF = 0x66FF8400;
 const var KEY_PATTERN = 0x88BBBB44;
 const var patternSwitches = [72,73,74,75,76,77,78,79];
 const var PLAY_STOP_SWITCH = 69;
@@ -446,10 +503,10 @@ function newPattern(stepCount, swingAmt, velRow, ModRowSet, FXRowSet)
 
 
 var myVeloRow = newVelocityRow(99,[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]);
-Console.print(myVeloRow.likelihood);
-Console.print(myVeloRow.velocityValues[15]);
+//Console.print(myVeloRow.likelihood);
+//Console.print(myVeloRow.velocityValues[15]);
 //myRow.velocityValues[0] = 2345;
-Console.print(myVeloRow.velocityValues[0]);
+//Console.print(myVeloRow.velocityValues[0]);
 
 
 // UI widgets 
@@ -795,7 +852,7 @@ inline function onSnapshotPanelControl(component, value)
 {
 	// load the set from the panel..
 	SnapShotSet = value;
-	Console.print("retrieving:" + trace(SnapShotSet));
+	//Console.print("retrieving:" + trace(SnapShotSet));
 };
 
 
@@ -803,7 +860,7 @@ inline function onSnapshotGeneratorControl(component, value)
 {
 	//
 	local myVoice1 = aSnapshot.newVoiceShotObj(0);
-	Console.print("voice1:" + trace(myVoice1));
+	//Console.print("voice1:" + trace(myVoice1));
 	local myVoice2 = aSnapshot.newVoiceShotObj(1);
 	local myVoice3 = aSnapshot.newVoiceShotObj(2);
 	local SnapOne = aSnapshot.newSnapshot(myVoice1, myVoice2, myVoice3);
@@ -820,70 +877,82 @@ inline function onSnapshotGeneratorControl(component, value)
 };
 Content.getComponent("SnapshotGenerator").setControlCallback(onSnapshotGeneratorControl);
 
+var Snapshot1OnOff = Content.getComponent("Snapshot1OnOff");
+Snapshot1OnOff.setControlCallback(onSnapshot1OnOffControl);
+
+var loadingSnapshot = false;
 
 inline function onSnapshot1OnOffControl(component, value)
 {
 	//
 	if (value)
     {
+       //Console.print("xxxxxxxxxx:" + trace(SnapShotSet));
+       loadingSnapshot = true;
        if (typeof SnapShotSet == "object")
         {
             // load snapshot 1 into the instrument
-            local mySnap = SnapShotSet.snap1;
-            Console.print("xxxxxxxxxx:" + trace(SnapShotSet));
-            aSnapshot.loadVoiceShot(mySnap.voice1,0);
-            aSnapshot.loadVoiceShot(mySnap.voice2,1);
-            aSnapshot.loadVoiceShot(mySnap.voice3,2);
             currentSnap = 1;
+            local mySnap = SnapShotSet.snap1;
+            aSnapshot.loadASnapshot(mySnap);
+            paintKeys();
+            
         }
-        
+        loadingSnapshot = false;
+
     }
 };
 
-Content.getComponent("Snapshot1OnOff").setControlCallback(onSnapshot1OnOffControl);
+var SnapshotOnOff2 = Content.getComponent("SnapshotOnOff2");
+SnapshotOnOff2.setControlCallback(onSnapshotOnOff2Control);
 
 inline function onSnapshotOnOff2Control(component, value)
 {
 	//
 	if (value)
     {
+       loadingSnapshot = true;
        if (typeof SnapShotSet == "object")
         {
             // load snapshot 2 into the instrument
-            local mySnap = SnapShotSet.snap2;
-            aSnapshot.loadVoiceShot(mySnap.voice1,0);
-            aSnapshot.loadVoiceShot(mySnap.voice2,1);
-            aSnapshot.loadVoiceShot(mySnap.voice3,2);
             currentSnap = 2;
+            local mySnap = SnapShotSet.snap2;
+            aSnapshot.loadASnapshot(mySnap);
+            paintKeys();
+
             
         }
         
+        loadingSnapshot = false;
     }
 };
 
-Content.getComponent("SnapshotOnOff2").setControlCallback(onSnapshotOnOff2Control);
 
+var SnapshotOnOff3 = Content.getComponent("SnapshotOnOff3");
+SnapshotOnOff3.setControlCallback(onSnapshotOnOff3Control);
 
 inline function onSnapshotOnOff3Control(component, value)
 {
 	//
 	if (value)
     {
+       loadingSnapshot = true;
        if (typeof SnapShotSet == "object")
         {
             // load snapshot 3 into the instrument
-            local mySnap = SnapShotSet.snap3;
-            aSnapshot.loadVoiceShot(mySnap.voice1,0);
-            aSnapshot.loadVoiceShot(mySnap.voice2,1);
-            aSnapshot.loadVoiceShot(mySnap.voice3,2);
             currentSnap = 3;
+            local mySnap = SnapShotSet.snap3;
+            aSnapshot.loadASnapshot(mySnap);
+            paintKeys();
+
             
         }
+       loadingSnapshot = false;
         
     }
 };
 
-Content.getComponent("SnapshotOnOff3").setControlCallback(onSnapshotOnOff3Control);
+
 
 
 
@@ -1029,7 +1098,7 @@ const var orText = Content.getComponent("orText");
 
 AuthorisationDialogue.setTimerCallback(function()
 {
-    Console.print(Engine.getUptime() - engineStartTime );
+    //Console.print(Engine.getUptime() - engineStartTime );
 
       // check is the license valid yet
       if (AuthState == false)
@@ -1072,11 +1141,11 @@ inline function onPanelExpander(component, value)
 
 inline function onMuteButton(component, value)
 {
-
+    local myVoc;
     for (i=0;i < NUM_VOICES;i++)
     {
         if (component == MuteButtons[i]){
-            TheMidiMuters[i].setAttribute(0, value);
+            TheMidiMuters[i].setAttribute(0, value);  
             aSnapshot.updateAVoice(i);
         };
     };
@@ -1137,8 +1206,8 @@ inline function onPrevSound(component, value)
                         };
                     };
                 };
-                Console.print("category is:" + CatNum);
-                Console.print("voice position is:" + SoundNum);
+                //Console.print("category is:" + CatNum);
+                //Console.print("voice position is:" + SoundNum);
                 // OK we should have hte category number and the sound number so calc the previous one...
                 if (SoundNum - 1 < 0)
                 {
@@ -1158,8 +1227,8 @@ inline function onPrevSound(component, value)
                     SoundNum = SoundNum - 1;
                 };
                 // ok go load the sound
-                Console.print("loading a sound - using category:"+ CatNum);
-                Console.print("loading a sound - and sound number:"+ SoundNum);
+                //Console.print("loading a sound - using category:"+ CatNum);
+                //Console.print("loading a sound - and sound number:"+ SoundNum);
                 
                 
                 loadVoice(i,CatNum, SoundNum);
@@ -1249,6 +1318,7 @@ inline function onVolumeKnob(component, value)
         if (component == VolumeKnobs[i]){
             VoiceBarVolumes[i].setValue(value);
             TheGains[i].setAttribute(TheGains[i].Gain, value);
+            aSnapshot.updateAVoice(i);
         };
     };
 };
@@ -1261,6 +1331,7 @@ inline function onPanKnob(component, value)
     {
         if (component == PanKnobs[i]){
             TheGains[i].setAttribute(TheGains[i].Balance, value);
+            aSnapshot.updateAVoice(i);
         };
     };
 };
@@ -1273,6 +1344,7 @@ inline function onPitchKnob(component, value)
     {
         if (component == PitchKnobs[i]){
             ThePitchConstants[i].setIntensity(value);
+            aSnapshot.updateAVoice(i);
         };
     };
 };
@@ -1293,9 +1365,11 @@ inline function onFilterOnOff(component, value)
         {
             TheFilters[i].setBypassed(1 - value);
             FilterOnOffs[i].setValue(value); //show the change we just made
+            aSnapshot.updateAVoice(i);
         }else{           // nope - set just this one
             if (component == FilterOnOffs[i]){
                 TheFilters[i].setBypassed(1 - value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1337,6 +1411,7 @@ inline function onFilterLock(component, value)
                     FreqKnobs[j].changed();
                     ResKnobs[j].setValue(resVal);
                     ResKnobs[j].changed();
+                    aSnapshot.updateAVoice(j);
                   };
             };
         };
@@ -1357,10 +1432,12 @@ inline function onFilterSelector(component, value)
         {
             setFilter(idx,value);  //on so set everyone
             FilterSelectors[idx].setValue(value);
+            aSnapshot.updateAVoice(idx);
         }else{
             if (component == FilterSelectors[idx])  // off so set just this one
             {
                 setFilter(idx,value);
+                aSnapshot.updateAVoice(idx);
             };
         };
     };
@@ -1382,9 +1459,11 @@ inline function onFreqKnob(component, value)
         {
             TheFilters[i].setAttribute(TheFilters[i].Frequency,value);
             FreqKnobs[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{          // nope - just set this one
             if (component == FreqKnobs[i]){
                 TheFilters[i].setAttribute(TheFilters[i].Frequency,value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1403,9 +1482,11 @@ inline function onResKnob(component, value)
         {
             TheFilters[i].setAttribute(TheFilters[i].Q,value);
             ResKnobs[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{          // nope - just set this one
             if (component == ResKnobs[i]){
                 TheFilters[i].setAttribute(TheFilters[i].Q,value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1439,6 +1520,7 @@ inline function onTriggerSelector(component, value)
                 break;
 
             };
+            aSnapshot.updateAVoice(i);
         };
     };
 };
@@ -1457,9 +1539,11 @@ inline function onShapeOnOff(component, value)
         {
             ThePolyShapes[i].setBypassed(1 - value);
             ShapeOnOffs[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{           // nope - set just this one
             if (component == ShapeOnOffs[i]){
                 ThePolyShapes[i].setBypassed(1 - value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1501,7 +1585,9 @@ inline function onShapeLock(component, value)
                     ShapeDrives[j].changed();
                     ShapeBiass[j].setValue(biasVal);
                     ShapeBiass[j].changed();
+                    aSnapshot.updateAVoice(j);
                   };
+                  
             };
         };
     };
@@ -1520,10 +1606,12 @@ inline function onShapeSelector(component, value)
         {
             setShape(i,value);
             ShapeSelectors[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == ShapeSelectors[i])
             {
                 setShape(i,value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1541,9 +1629,11 @@ inline function onShapeDrive(component, value)
         {
             ThePolyShapes[i].setAttribute(ThePolyShapes[i].Drive, value);
             ShapeDrives[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{          // nope - just set this one
             if (component == ShapeDrives[i]){
                 ThePolyShapes[i].setAttribute(ThePolyShapes[i].Drive, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1561,9 +1651,11 @@ inline function onShapeBias(component, value)
         {
             ThePolyShapes[i].setAttribute(ThePolyShapes[i].Bias, value);
             ShapeBiass[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == ShapeBiass[i]){
                 ThePolyShapes[i].setAttribute(ThePolyShapes[i].Bias, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1583,9 +1675,11 @@ inline function onReverbOnOff(component, value)
         {
             TheReverbs[i].setBypassed(1 - value);
             ReverbOnOffs[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{           // nope - set just this one
             if (component == ReverbOnOffs[i]){
                 TheReverbs[i].setBypassed(1 - value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1627,6 +1721,7 @@ inline function onReverbLock(component, value)
                     ReverbWets[j].changed();
                     ReverbDrys[j].setValue(dryVal);
                     ReverbDrys[j].changed();
+                    aSnapshot.updateAVoice(j);
                   };
             };
         };
@@ -1647,10 +1742,12 @@ inline function onReverbSelector(component, value)
         {
             setIRs(i,value);
             ReverbSelectors[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == ReverbSelectors[i])
             {
                 setIRs(i,value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1670,9 +1767,11 @@ inline function onReverbWet(component, value)
         {
             TheReverbs[i].setAttribute(TheReverbs[i].WetGain, value);
             ReverbWets[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == ReverbWets[i]){
                 TheReverbs[i].setAttribute(TheReverbs[i].WetGain, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1690,9 +1789,11 @@ inline function onReverbDry(component, value)
         {
             TheReverbs[i].setAttribute(TheReverbs[i].DryGain, value);
             ReverbDrys[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == ReverbDrys[i]){
                 TheReverbs[i].setAttribute(TheReverbs[i].DryGain, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1712,9 +1813,11 @@ inline function onDelayOnOff(component, value)
         {
             TheDelays[i].setBypassed(1 - value);
             DelayOnOffs[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{           // nope - set just this one
             if (component == DelayOnOffs[i]){
                 TheDelays[i].setBypassed(1 - value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1755,6 +1858,7 @@ inline function onDelayLock(component, value)
                     DelayFeedbacks[j].changed();
                     DelayMixes[j].setValue(mixVal);
                     DelayMixes[j].changed();
+                    aSnapshot.updateAVoice(j);
                   };
             };
         };
@@ -1777,10 +1881,12 @@ inline function onDelayTime(component, value)
             TheDelays[i].setAttribute(TheDelays[i].DelayTimeLeft, value);
             TheDelays[i].setAttribute(TheDelays[i].DelayTimeRight, value);
             DelayTimes[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == DelayTimes[i]){
                 TheDelays[i].setAttribute(TheDelays[i].DelayTimeLeft, value);
                 TheDelays[i].setAttribute(TheDelays[i].DelayTimeRight, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1800,10 +1906,12 @@ inline function onDelayFeedback(component, value)
             TheDelays[i].setAttribute(TheDelays[i].FeedbackLeft, value);
             TheDelays[i].setAttribute(TheDelays[i].FeedbackRight, value);
             DelayFeedbacks[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == DelayFeedbacks[i]){
                 TheDelays[i].setAttribute(TheDelays[i].FeedbackLeft, value);
                 TheDelays[i].setAttribute(TheDelays[i].FeedbackRight, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1820,9 +1928,11 @@ inline function onDelayMix(component, value)
         {
             TheDelays[i].setAttribute(TheDelays[i].Mix, value);
             DelayMixes[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == DelayMixes[i]){
                 TheDelays[i].setAttribute(TheDelays[i].Mix, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1843,9 +1953,11 @@ inline function onCompOnOff(component, value)
         {
             TheComps[i].setBypassed(1 - value);
             CompOnOffs[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{           // nope - set just this one
             if (component == CompOnOffs[i]){
                 TheComps[i].setBypassed(1 - value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1891,6 +2003,7 @@ inline function onCompLock(component, value)
                     CompAttacks[j].changed();
                     CompReleases[j].setValue(releaseVal);
                     CompReleases[j].changed();
+                    aSnapshot.updateAVoice(j);
                   };
             };
         };
@@ -1912,9 +2025,11 @@ inline function onCompThreshold(component, value)
         {
             TheComps[i].setAttribute(TheComps[i].CompressorThreshold, value);
             CompThresholds[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == CompThresholds[i]){
                 TheComps[i].setAttribute(TheComps[i].CompressorThreshold, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1933,9 +2048,11 @@ inline function onCompRatio(component, value)
         {
             TheComps[i].setAttribute(TheComps[i].CompressorRatio, value);
             CompRatios[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == CompRatios[i]){
                 TheComps[i].setAttribute(TheComps[i].CompressorRatio, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1953,9 +2070,11 @@ inline function onCompAttack(component, value)
         {
             TheComps[i].setAttribute(TheComps[i].CompressorAttack, value);
             CompAttacks[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == CompAttacks[i]){
                 TheComps[i].setAttribute(TheComps[i].CompressorAttack, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -1973,9 +2092,11 @@ inline function onCompRelease(component, value)
         {
             TheComps[i].setAttribute(TheComps[i].CompressorRelease, value);
             CompReleases[i].setValue(value);
+            aSnapshot.updateAVoice(i);
         }else{
             if (component == CompReleases[i]){
                 TheComps[i].setAttribute(TheComps[i].CompressorRelease, value);
+                aSnapshot.updateAVoice(i);
             };
         };
     };
@@ -2428,7 +2549,7 @@ inline function onVoiceSampleMapsControl(component, value)
     {
         selectedName = Maps[VoiceCategories.getValue()][value];
         if (selectedName.substring(0,3) == "(*)"){
-            Console.print("found a favourite");
+            //Console.print("found a favourite");
             VoiceFavouritesButton.setValue(1);
             trimmedName = selectedName.substring(3,selectedName.length);
         }else{
@@ -2625,11 +2746,49 @@ paintKeys();
 
 function onNoteOn()
 {   
+    // keyswitching
+    if(Message.getNoteNumber() == MIDINoteTarget + 1)
+    {
+        Snapshot1OnOff.setValue(1);
+        //Console.print("herereeee");
+        Snapshot1OnOff.changed();
+        SnapshotOnOff2.setValue(0);
+        SnapshotOnOff2.changed();
+        SnapshotOnOff3.setValue(0);
+        SnapshotOnOff3.changed();
+        paintKeys();
+    }
+    if(Message.getNoteNumber() == MIDINoteTarget + 2)
+    {
+        SnapshotOnOff2.setValue(1);
+        SnapshotOnOff2.changed();
+        Snapshot1OnOff.setValue(0);
+        Snapshot1OnOff.changed();
+        SnapshotOnOff3.setValue(0);
+        SnapshotOnOff3.changed();
+        paintKeys();
+    }
+    if(Message.getNoteNumber() == MIDINoteTarget + 3)
+    {
+        SnapshotOnOff3.setValue(1);
+        SnapshotOnOff3.changed();
+        SnapshotOnOff2.setValue(0);
+        SnapshotOnOff2.changed();
+        Snapshot1OnOff.setValue(0);
+        Snapshot1OnOff.changed();
+        paintKeys();
+    }
+    
+    
+    // note processing 
     if (Message.getNoteNumber() == 36 && MIDINoteTarget != 36)
         Message.ignoreEvent(true);
         
     if (Message.getNoteNumber() == MIDINoteTarget)
         Message.setNoteNumber(36);
+        
+    
+    
 }
  function onNoteOff()
 {
