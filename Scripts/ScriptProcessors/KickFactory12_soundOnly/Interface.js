@@ -859,21 +859,26 @@ inline function onSnapshotPanelControl(component, value)
 inline function onSnapshotGeneratorControl(component, value)
 {
 	//
-	local myVoice1 = aSnapshot.newVoiceShotObj(0);
-	//Console.print("voice1:" + trace(myVoice1));
-	local myVoice2 = aSnapshot.newVoiceShotObj(1);
-	local myVoice3 = aSnapshot.newVoiceShotObj(2);
-	local SnapOne = aSnapshot.newSnapshot(myVoice1, myVoice2, myVoice3);
-	// Console.print("Snap1:" + trace(SnapOne));
-	local SnapTwo = aSnapshot.newSnapshot(myVoice2, myVoice3, myVoice1);
-	local SnapThree = aSnapshot.newSnapshot(myVoice3, myVoice1, myVoice2);
-	local mySet = aSnapshot.newSnapshotSet(SnapOne, SnapTwo, SnapThree);
-	//Console.print("Set:" + trace(mySet));
+	//Console.print("generator:"); // + trace(SnapShotSet.snap1) );
+	var mySet = SnapShotSet;
+	mySet.snap2.voice1 = SnapShotSet.snap1.voice2;
+	mySet.snap2.voice2 = SnapShotSet.snap1.voice3;
+	mySet.snap2.voice3 = SnapShotSet.snap1.voice1;
 	
-	SnapshotPanel.setValue(mySet);
+	mySet.snap3.voice1 = SnapShotSet.snap1.voice3;
+	mySet.snap3.voice2 = SnapShotSet.snap1.voice1;
+	mySet.snap3.voice3 = SnapShotSet.snap1.voice2;
+	
+	SnapShotSet = mySet;
+	//
+	Snapshot1OnOff.setValue(1);
+	SnapshotOnOff2.setValue(0);
+	SnapshotOnOff3.setValue(0);
+	Snapshot1OnOff.changed();
+	
 	component.setValue(0);
-	//Console.print("Saving:" + trace(mySet));
-	
+	paintKeys();
+
 };
 Content.getComponent("SnapshotGenerator").setControlCallback(onSnapshotGeneratorControl);
 

@@ -21,7 +21,7 @@
       <Component type="ScriptButton" id="PrevUserPreset" x="3" y="6" width="19"
                  height="17" filmstripImage="{PROJECT_FOLDER}Presetsbackwards.png"
                  parentComponent="PresetFrame" saveInPreset="0" isMomentary="1"/>
-      <Component type="ScriptLabel" id="myPresetName" x="17" y="4" text="chunkTest"
+      <Component type="ScriptLabel" id="myPresetName" x="17" y="4" text="Hop_003"
                  editable="0" fontName="bahnschrift" fontSize="18" width="150"
                  height="19" itemColour="16777215" itemColour2="4278190080" parentComponent="PresetFrame"/>
       <Component type="ScriptButton" id="Presets" x="24" y="3" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
@@ -37,7 +37,7 @@
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
       <Component type="ScriptButton" id="MuteButton1" x="4" y="3" parentComponent="VoicePanel1"
                  width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Yamaha_10dance5"
+      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Access_B_22"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel1"
                  fontSize="11" alignment="left" bgColour="1308622848" editable="0"
                  fontStyle="Regular" textColour="4289111718"/>
@@ -47,7 +47,7 @@
       <Component type="ScriptButton" id="PrevSound1" x="49" y="31" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel1"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="65" y="28" text="Yamaha_10dance5"
+      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="65" y="28" text="Access_B_22"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel1"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice1" x="59" y="30"
@@ -197,7 +197,7 @@
                  width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
                  numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
                  suffix=" dB" middlePosition="-6" defaultValue="-6"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="Akai_MPC507111111"
+      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="Access_B_25"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel2"
                  fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
                  editable="0"/>
@@ -207,7 +207,7 @@
       <Component type="ScriptButton" id="PrevSound2" x="50" y="30" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel2"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="64" y="28" text="Akai_MPC507111111"
+      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="64" y="28" text="Access_B_25"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel2"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice2" x="65" y="31"
@@ -358,7 +358,7 @@
                  width="800" height="420" fileName="{PROJECT_FOLDER}KickFactory2VoiceBackground.png"/>
       <Component type="ScriptButton" id="MuteButton3" x="4" y="3" parentComponent="VoicePanel3"
                  width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="Access_B_05"
+      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="Roland_HpHop3"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel3"
                  fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
                  editable="0"/>
@@ -372,7 +372,7 @@
       <Component type="ScriptButton" id="PrevSound3" x="50" y="30" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel3"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="59" y="28" text="Access_B_05"
+      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="59" y="28" text="Roland_HpHop3"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel3"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice3" x="64" y="30"
@@ -707,7 +707,7 @@
       <Component type="ScriptedViewport" id="VoiceSampleMaps" x="210" y="35" width="172"
                  height="346" parentComponent="VoiceSelectorPanel" alignment="left"
                  useList="1" bgColour="2635733530" itemColour="3458683414" itemColour2="4218587762"
-                 textColour="4289111718" scrollBarThickness="12" items="Yamaha_001&#10;Yamaha_002&#10;Yamaha_003&#10;Yamaha_004&#10;Yamaha_005&#10;Yamaha_006&#10;Yamaha_007&#10;Yamaha_008&#10;Yamaha_009&#10;Yamaha_010&#10;Yamaha_011&#10;Yamaha_012&#10;Yamaha_013&#10;Yamaha_014&#10;Yamaha_015&#10;Yamaha_016&#10;Yamaha_017&#10;Yamaha_01AnaQuick&#10;Yamaha_02ELEC2&#10;Yamaha_03Rave6&#10;Yamaha_04Rave7&#10;Yamaha_05Rave8&#10;Yamaha_06Dance1&#10;Yamaha_07Dance2&#10;Yamaha_08Dance3&#10;Yamaha_09Dance4&#10;Yamaha_1&#10;Yamaha_10dance5&#10;Yamaha_11Dance6&#10;Yamaha_12Dance9&#10;Yamaha_13long1&#10;Yamaha_14Rave10&#10;Yamaha_15Rave11&#10;Yamaha_16Sub1&#10;Yamaha_17Sub2&#10;Yamaha_18Sub3&#10;Yamaha_19QuikBuzz&#10;Yamaha_2&#10;Yamaha_20ELEC1&#10;Yamaha_21digiro&#10;Yamaha_22funky1&#10;Yamaha_23indst1&#10;Yamaha_24NIN1&#10;Yamaha_25Revers&#10;Yamaha_26udu1&#10;Yamaha_27urban1&#10;Yamaha_28urban2&#10;Yamaha_29 BigBoy&#10;Yamaha_3&#10;Yamaha_30 MtlPoint&#10;Yamaha_311&#10;Yamaha_32 Walkik&#10;Yamaha_33 fefifofm&#10;Yamaha_4&#10;Yamaha_Analog 1h&#10;Yamaha_Analog 1l&#10;Yamaha_Analog&#10;Yamaha_H&#10;Yamaha_H3&#10;Yamaha_Hard Distortion&#10;Yamaha_Hiphop1&#10;Yamaha_Hiphop2&#10;Yamaha_Jungle 1&#10;Yamaha_Jungle 2&#10;Yamaha_Jungle 4&#10;Yamaha_Jungle 4long&#10;Yamaha_Jungle 5&#10;Yamaha_Jungle 6&#10;Yamaha_K&#10;Yamaha_K01&#10;Yamaha_K02&#10;Yamaha_L&#10;Yamaha_T8 2cont&#10;Yamaha_T8 2long&#10;Yamaha_T8 4&#10;Yamaha_T8 Low Long&#10;Yamaha_T9 4&#10;Yamaha_T9 Distortion"/>
+                 textColour="4289111718" scrollBarThickness="12" items="Roland_Basm&#10;Roland_Br2&#10;Roland_Br7&#10;Roland_Concert BD 1&#10;Roland_Concert BD 2&#10;Roland_Conert&#10;Roland_CR-781&#10;Roland_CR-782&#10;Roland_Dane1&#10;Roland_Dane2&#10;Roland_Dry1&#10;Roland_Dry2&#10;Roland_Fol36&#10;Roland_House&#10;Roland_HpHop1&#10;Roland_HpHop2&#10;Roland_HpHop3&#10;Roland_HpHop4&#10;Roland_HpHop5&#10;Roland_Jazz1&#10;Roland_Jazz2&#10;Roland_Jazz3&#10;Roland_Jazz4&#10;Roland_LD&#10;Roland_MaxLow&#10;Roland_Mex&#10;Roland_Mix1&#10;Roland_Mix2&#10;Roland_Mix3&#10;Roland_Mix4&#10;Roland_Mix5&#10;Roland_Plastic&#10;Roland_Pop22&#10;Roland_Power1&#10;Roland_Power2&#10;Roland_Power3&#10;Roland_Power4&#10;Roland_Room1&#10;Roland_Room2&#10;Roland_Room3&#10;Roland_TY1&#10;Roland_Warm&#10;Roland_WD"/>
       <Component type="ScriptButton" id="VoiceFavouritesButton" x="135" y="392"
                  parentComponent="VoiceSelectorPanel" filmstripImage="{PROJECT_FOLDER}favouritesButton.png"
                  width="144" height="22"/>
