@@ -2747,6 +2747,34 @@ paintKeys();
 
 
 
+inline function onInCatRandomVoice1Control(component, value)
+{
+	//find what cat we are using...put in catPos
+	if(value)
+    {
+        local dispName = SampleMapNames[0].get("text");
+        local foundPos;
+        local catPos;
+        local mySound;
+        Console.print("looking for a sample called:" + dispName);
+        for (cdx = 0; cdx < Maps.length; cdx++ )
+        {
+            foundPos = Maps[cdx].indexOf(dispName);
+            if (foundPos > -1)
+                    catPos = foundPos;
+        }
+        mySound = Maps[catPos][Math.round(Math.random() * Maps[myMap].length)];
+        if (typeof(mySound) == 'undefined' || typeof(mySound) == 'void')
+            mySound = Maps[catPos][0];
+        
+            
+        component.setValue(0);
+    }
+};
+
+Content.getComponent("InCatRandomVoice1").setControlCallback(onInCatRandomVoice1Control);
+
+
 
 
 function onNoteOn()

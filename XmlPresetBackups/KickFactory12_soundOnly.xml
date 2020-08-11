@@ -10,15 +10,15 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="MuteButton1" value="0"/>
-            <Control type="ScriptLabel" id="DisplayNameVoice1" value="Access_B_22"/>
-            <Control type="ScriptButton" id="OpenCloseButton1" value="0"/>
+            <Control type="ScriptLabel" id="DisplayNameVoice1" value="Roland_Jazz2"/>
+            <Control type="ScriptButton" id="OpenCloseButton1" value="1"/>
             <Control type="ScriptButton" id="PrevSound1" value="0"/>
-            <Control type="ScriptLabel" id="SampleMapNameVoice1" value="Access_B_22"/>
+            <Control type="ScriptLabel" id="SampleMapNameVoice1" value="Roland_Jazz2"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice1" value="0"/>
             <Control type="ScriptButton" id="NextSound1" value="0"/>
             <Control type="ScriptSlider" id="VolumeKnob1" value="-1.9"/>
             <Control type="ScriptSlider" id="PanKnob1" value="0"/>
-            <Control type="ScriptSlider" id="PitchKnob1" value="-2.2"/>
+            <Control type="ScriptSlider" id="PitchKnob1" value="-4.9"/>
             <Control type="ScriptButton" id="FilterOnOff1" value="1"/>
             <Control type="ScriptSlider" id="FreqKnob1" value="930"/>
             <Control type="ScriptSlider" id="ResKnob1" value="1.5"/>
@@ -31,7 +31,7 @@
             <Control type="ScriptButton" id="ShapeLock1" value="0"/>
             <Control type="ScriptComboBox" id="CurveSelector1" value="1"/>
             <Control type="ScriptSlider" id="DriveKnob1" value="14.7"/>
-            <Control type="ScriptSlider" id="BiasKnob1" value="0.33"/>
+            <Control type="ScriptSlider" id="BiasKnob1" value="0.1"/>
             <Control type="ScriptButton" id="ReverbOnOff1" value="0"/>
             <Control type="ScriptButton" id="ReverbLock1" value="0"/>
             <Control type="ScriptComboBox" id="ImpulseSelector1" value="3"/>
@@ -50,15 +50,15 @@
             <Control type="ScriptSlider" id="CompReleaseKnob1" value="0"/>
             <Control type="ScriptButton" id="MuteButton2" value="0"/>
             <Control type="ScriptSlider" id="VolumeBarVoice2" value="-7.8"/>
-            <Control type="ScriptLabel" id="DisplayNameVoice2" value="Access_B_25"/>
+            <Control type="ScriptLabel" id="DisplayNameVoice2" value="Roland_MaxLow"/>
             <Control type="ScriptButton" id="OpenCloseButton2" value="0"/>
             <Control type="ScriptButton" id="PrevSound2" value="0"/>
-            <Control type="ScriptLabel" id="SampleMapNameVoice2" value="Access_B_25"/>
+            <Control type="ScriptLabel" id="SampleMapNameVoice2" value="Roland_MaxLow"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice2" value="0"/>
             <Control type="ScriptButton" id="NextSound2" value="0"/>
             <Control type="ScriptSlider" id="VolumeKnob2" value="-7.8"/>
             <Control type="ScriptSlider" id="PanKnob2" value="0"/>
-            <Control type="ScriptSlider" id="PitchKnob2" value="1.78814e-07"/>
+            <Control type="ScriptSlider" id="PitchKnob2" value="-4"/>
             <Control type="ScriptSlider" id="FreqKnob2" value="1055"/>
             <Control type="ScriptSlider" id="ResKnob2" value="0"/>
             <Control type="ScriptButton" id="FilterLock2" value="0"/>
@@ -69,7 +69,7 @@
             <Control type="ScriptButton" id="ShapeOnOff2" value="1"/>
             <Control type="ScriptButton" id="ShapeLock2" value="0"/>
             <Control type="ScriptComboBox" id="CurveSelector2" value="1"/>
-            <Control type="ScriptSlider" id="DriveKnob2" value="25.1"/>
+            <Control type="ScriptSlider" id="DriveKnob2" value="14.5"/>
             <Control type="ScriptSlider" id="BiasKnob2" value="0.2"/>
             <Control type="ScriptButton" id="ReverbOnOff2" value="0"/>
             <Control type="ScriptButton" id="ReverbLock2" value="0"/>
@@ -88,16 +88,16 @@
             <Control type="ScriptSlider" id="CompAttackKnob2" value="0"/>
             <Control type="ScriptSlider" id="CompReleaseKnob2" value="0"/>
             <Control type="ScriptButton" id="MuteButton3" value="0"/>
-            <Control type="ScriptLabel" id="DisplayNameVoice3" value="Roland_HpHop3"/>
+            <Control type="ScriptLabel" id="DisplayNameVoice3" value="Roland_Mix4"/>
             <Control type="ScriptSlider" id="VolumeBarVoice3" value="-0.599999"/>
-            <Control type="ScriptButton" id="OpenCloseButton3" value="1"/>
+            <Control type="ScriptButton" id="OpenCloseButton3" value="0"/>
             <Control type="ScriptButton" id="PrevSound3" value="0"/>
-            <Control type="ScriptLabel" id="SampleMapNameVoice3" value="Roland_HpHop3"/>
+            <Control type="ScriptLabel" id="SampleMapNameVoice3" value="Roland_Mix4"/>
             <Control type="ScriptButton" id="SampleMapSelectorVoice3" value="0"/>
             <Control type="ScriptButton" id="NextSound3" value="0"/>
             <Control type="ScriptSlider" id="VolumeKnob3" value="-0.599999"/>
             <Control type="ScriptSlider" id="PanKnob3" value="0"/>
-            <Control type="ScriptSlider" id="PitchKnob3" value="-1.2"/>
+            <Control type="ScriptSlider" id="PitchKnob3" value="-4.3"/>
             <Control type="ScriptSlider" id="FreqKnob3" value="1151"/>
             <Control type="ScriptSlider" id="ResKnob3" value="0"/>
             <Control type="ScriptButton" id="FilterLock3" value="0"/>
@@ -105,7 +105,7 @@
             <Control type="ScriptComboBox" id="FilterSelector3" value="2"/>
             <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0"/>
             <Control type="ScriptComboBox" id="TriggerSelector3" value="1"/>
-            <Control type="ScriptButton" id="ShapeOnOff3" value="1"/>
+            <Control type="ScriptButton" id="ShapeOnOff3" value="0"/>
             <Control type="ScriptButton" id="ShapeLock3" value="0"/>
             <Control type="ScriptComboBox" id="CurveSelector3" value="3"/>
             <Control type="ScriptSlider" id="DriveKnob3" value="12.7"/>
@@ -133,9 +133,9 @@
             <Control type="ScriptButton" id="EnvelopeOnOffVol" value="1"/>
             <Control type="ScriptSlider" id="EnvelopeAmountKnobVol" value="0.9"/>
             <Control type="ScriptSlider" id="EnvelopeAttackKnobVol" value="6"/>
-            <Control type="ScriptSlider" id="EnvelopeHoldKnobVol" value="0"/>
+            <Control type="ScriptSlider" id="EnvelopeHoldKnobVol" value="13"/>
             <Control type="ScriptSlider" id="EnvelopeDecayKnobVol" value="82"/>
-            <Control type="ScriptSlider" id="EnvelopeSustainKnobVol" value="-6.2"/>
+            <Control type="ScriptSlider" id="EnvelopeSustainKnobVol" value="-100"/>
             <Control type="ScriptSlider" id="EnvelopeReleaseKnobVol" value="64"/>
             <Control type="ScriptButton" id="LFOOnOffVol" value="0"/>
             <Control type="ScriptSlider" id="LFOSpeedKnobVol" value="11"/>
@@ -169,11 +169,11 @@
             <Control type="ScriptSlider" id="LFOSpeedKnobFreq" value="0"/>
             <Control type="ScriptSlider" id="LFODepthKnobFreq" value="0"/>
             <Control type="ScriptTable" id="LFOTableFreq" value="0" data="60...............vOOM4f9....9C...vOrmqB+.........vO1yUQ+fQWT7C...vO...f+.........vO"/>
-            <Control type="ScriptButton" id="DialogDismiss" value="1"/>
+            <Control type="ScriptButton" id="DialogDismiss" value="0"/>
             <Control type="ScriptedViewport" id="VoiceCategories" value="11"/>
-            <Control type="ScriptedViewport" id="VoiceSampleMaps" value="16"/>
+            <Control type="ScriptedViewport" id="VoiceSampleMaps" value="29"/>
             <Control type="ScriptButton" id="VoiceFavouritesButton" value="0"/>
-            <Control type="ScriptPanel" id="SnapshotPanel" value="JSON{&quot;snap1&quot;: {&quot;voice1&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 1.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -1.899998545646667, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -2.199999809265137, &quot;filterOnOff&quot;: 1.0, &quot;filterFreq&quot;: 930.0, &quot;filterRes&quot;: 1.5, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.69999980926514, &quot;shapeBias&quot;: 0.3300000131130219, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 3.0, &quot;reverbWet&quot;: -18.19999885559082, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 1.0, &quot;compressorThreshold&quot;: -18.49999809265137, &quot;compressorRatio&quot;: 2.099999904632568, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice2&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 4.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -7.799998760223389, &quot;pan&quot;: 0.0, &quot;pitch&quot;: 1.788139343261719e-7, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1055, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 25.10000038146973, &quot;shapeBias&quot;: 0.2000000029802322, &quot;reverbOnOff&quot;: 0, &quot;reverbImpulse&quot;: 5.0, &quot;reverbWet&quot;: -17.39999961853027, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice3&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 2.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -0.5999985337257385, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -1.199999809265137, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1151, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 3.0, &quot;shapeDrive&quot;: 12.69999980926514, &quot;shapeBias&quot;: 0.2899999916553497, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 1.0, &quot;reverbWet&quot;: -28.59999847412109, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0.0, &quot;delayTime&quot;: 15.0, &quot;delayFeedback&quot;: 0.5199999809265137, &quot;delayMix&quot;: 0.1099999994039536, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}}, &quot;snap2&quot;: {&quot;voice1&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 4.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -7.799998760223389, &quot;pan&quot;: 0.0, &quot;pitch&quot;: 1.788139343261719e-7, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1055, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 25.10000038146973, &quot;shapeBias&quot;: 0.2000000029802322, &quot;reverbOnOff&quot;: 0, &quot;reverbImpulse&quot;: 5.0, &quot;reverbWet&quot;: -17.39999961853027, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice2&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 2.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -0.5999985337257385, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -1.199999809265137, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1151, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 3.0, &quot;shapeDrive&quot;: 12.69999980926514, &quot;shapeBias&quot;: 0.2899999916553497, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 1.0, &quot;reverbWet&quot;: -28.59999847412109, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0.0, &quot;delayTime&quot;: 15.0, &quot;delayFeedback&quot;: 0.5199999809265137, &quot;delayMix&quot;: 0.1099999994039536, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice3&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 1.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -1.899998545646667, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -2.199999809265137, &quot;filterOnOff&quot;: 1.0, &quot;filterFreq&quot;: 930.0, &quot;filterRes&quot;: 1.5, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.69999980926514, &quot;shapeBias&quot;: 0.3300000131130219, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 3.0, &quot;reverbWet&quot;: -18.19999885559082, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 1.0, &quot;compressorThreshold&quot;: -18.49999809265137, &quot;compressorRatio&quot;: 2.099999904632568, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}}, &quot;snap3&quot;: {&quot;voice1&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 2.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -0.5999985337257385, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -1.199999809265137, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1151, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 3.0, &quot;shapeDrive&quot;: 12.69999980926514, &quot;shapeBias&quot;: 0.2899999916553497, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 1.0, &quot;reverbWet&quot;: -28.59999847412109, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0.0, &quot;delayTime&quot;: 15.0, &quot;delayFeedback&quot;: 0.5199999809265137, &quot;delayMix&quot;: 0.1099999994039536, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice2&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 1.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -1.899998545646667, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -2.199999809265137, &quot;filterOnOff&quot;: 1.0, &quot;filterFreq&quot;: 930.0, &quot;filterRes&quot;: 1.5, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.69999980926514, &quot;shapeBias&quot;: 0.3300000131130219, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 3.0, &quot;reverbWet&quot;: -18.19999885559082, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 1.0, &quot;compressorThreshold&quot;: -18.49999809265137, &quot;compressorRatio&quot;: 2.099999904632568, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice3&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 4.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -7.799998760223389, &quot;pan&quot;: 0.0, &quot;pitch&quot;: 1.788139343261719e-7, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1055, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 25.10000038146973, &quot;shapeBias&quot;: 0.2000000029802322, &quot;reverbOnOff&quot;: 0, &quot;reverbImpulse&quot;: 5.0, &quot;reverbWet&quot;: -17.39999961853027, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}}}"/>
+            <Control type="ScriptPanel" id="SnapshotPanel" value="JSON{&quot;snap1&quot;: {&quot;voice1&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 1.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -1.899998545646667, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -4.900000095367432, &quot;filterOnOff&quot;: 1.0, &quot;filterFreq&quot;: 930.0, &quot;filterRes&quot;: 1.5, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.69999980926514, &quot;shapeBias&quot;: 0.1000000014901161, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 3.0, &quot;reverbWet&quot;: -18.19999885559082, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 1.0, &quot;compressorThreshold&quot;: -18.49999809265137, &quot;compressorRatio&quot;: 2.099999904632568, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice2&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 4.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -7.799998760223389, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -4.0, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1055, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.5, &quot;shapeBias&quot;: 0.2000000029802322, &quot;reverbOnOff&quot;: 0, &quot;reverbImpulse&quot;: 5.0, &quot;reverbWet&quot;: -17.39999961853027, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice3&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 2.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -0.5999985337257385, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -4.299999713897705, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1151, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 0.0, &quot;shapeCurve&quot;: 3.0, &quot;shapeDrive&quot;: 12.69999980926514, &quot;shapeBias&quot;: 0.2899999916553497, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 1.0, &quot;reverbWet&quot;: -28.59999847412109, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0.0, &quot;delayTime&quot;: 15.0, &quot;delayFeedback&quot;: 0.5199999809265137, &quot;delayMix&quot;: 0.1099999994039536, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}}, &quot;snap2&quot;: {&quot;voice1&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 4.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -7.799998760223389, &quot;pan&quot;: 0.0, &quot;pitch&quot;: 1.788139343261719e-7, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1055, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.5, &quot;shapeBias&quot;: 0.2000000029802322, &quot;reverbOnOff&quot;: 0, &quot;reverbImpulse&quot;: 5.0, &quot;reverbWet&quot;: -17.39999961853027, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice2&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 2.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -0.5999985337257385, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -1.199999809265137, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1151, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 0.0, &quot;shapeCurve&quot;: 3.0, &quot;shapeDrive&quot;: 12.69999980926514, &quot;shapeBias&quot;: 0.2899999916553497, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 1.0, &quot;reverbWet&quot;: -28.59999847412109, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0.0, &quot;delayTime&quot;: 15.0, &quot;delayFeedback&quot;: 0.5199999809265137, &quot;delayMix&quot;: 0.1099999994039536, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice3&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 1.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -1.899998545646667, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -0.9999998211860657, &quot;filterOnOff&quot;: 1.0, &quot;filterFreq&quot;: 930.0, &quot;filterRes&quot;: 1.5, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.69999980926514, &quot;shapeBias&quot;: 0.1000000014901161, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 3.0, &quot;reverbWet&quot;: -18.19999885559082, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 1.0, &quot;compressorThreshold&quot;: -18.49999809265137, &quot;compressorRatio&quot;: 2.099999904632568, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}}, &quot;snap3&quot;: {&quot;voice1&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 2.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -0.5999985337257385, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -1.199999809265137, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1151, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 0.0, &quot;shapeCurve&quot;: 3.0, &quot;shapeDrive&quot;: 12.69999980926514, &quot;shapeBias&quot;: 0.2899999916553497, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 1.0, &quot;reverbWet&quot;: -28.59999847412109, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0.0, &quot;delayTime&quot;: 15.0, &quot;delayFeedback&quot;: 0.5199999809265137, &quot;delayMix&quot;: 0.1099999994039536, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice2&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 1.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -1.899998545646667, &quot;pan&quot;: 0.0, &quot;pitch&quot;: -0.9999998211860657, &quot;filterOnOff&quot;: 1.0, &quot;filterFreq&quot;: 930.0, &quot;filterRes&quot;: 1.5, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.69999980926514, &quot;shapeBias&quot;: 0.1000000014901161, &quot;reverbOnOff&quot;: 0.0, &quot;reverbImpulse&quot;: 3.0, &quot;reverbWet&quot;: -18.19999885559082, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 1.0, &quot;compressorThreshold&quot;: -18.49999809265137, &quot;compressorRatio&quot;: 2.099999904632568, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}, &quot;voice3&quot;: {&quot;mute&quot;: 0.0, &quot;filter&quot;: 4.0, &quot;trigger&quot;: 1.0, &quot;volume&quot;: -7.799998760223389, &quot;pan&quot;: 0.0, &quot;pitch&quot;: 1.788139343261719e-7, &quot;filterOnOff&quot;: 0, &quot;filterFreq&quot;: 1055, &quot;filterRes&quot;: 0.0, &quot;shapeOnOff&quot;: 1.0, &quot;shapeCurve&quot;: 1.0, &quot;shapeDrive&quot;: 14.5, &quot;shapeBias&quot;: 0.2000000029802322, &quot;reverbOnOff&quot;: 0, &quot;reverbImpulse&quot;: 5.0, &quot;reverbWet&quot;: -17.39999961853027, &quot;reverbDry&quot;: 0.0, &quot;delayOnOff&quot;: 0, &quot;delayTime&quot;: 0.0, &quot;delayFeedback&quot;: 0.0, &quot;delayMix&quot;: 0.0, &quot;compressorOnOff&quot;: 0.0, &quot;compressorThreshold&quot;: -12.59999847412109, &quot;compressorRatio&quot;: 1.600000023841858, &quot;compressorAttack&quot;: 0.0, &quot;compressorRelease&quot;: 0.0}}}"/>
             <Control type="ScriptButton" id="Snapshot1OnOff" value="1"/>
             <Control type="ScriptButton" id="SnapshotOnOff2" value="0"/>
             <Control type="ScriptButton" id="SnapshotOnOff3" value="0"/>
@@ -332,7 +332,7 @@
                    PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
                    Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                    Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                   Group6Table="" Group7Table="" SampleMapID="Access_B_22">
+                   Group6Table="" Group7Table="" SampleMapID="Roland_Jazz2">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -364,7 +364,7 @@
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope1" Bypassed="0" Monophonic="1" Retrigger="1"
                            Intensity="0.9" AttackCurve="0.5" DecayCurve="0" Attack="6" AttackLevel="0"
-                           Hold="0" Decay="82" Sustain="-6.2" Release="64" EcoMode="1">
+                           Hold="13" Decay="82" Sustain="-100" Release="64" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -400,7 +400,7 @@
             </Processor>
             <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
               <ChildProcessors>
-                <Processor Type="Constant" ID="PitchConstant1" Bypassed="0" Intensity="-0.183333"
+                <Processor Type="Constant" ID="PitchConstant1" Bypassed="0" Intensity="-0.408333"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -436,7 +436,7 @@
                            Connection="Global Modulator Container1:GlobalLFOPitch">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="-0.0152205"
+                <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="-0.00993858"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -523,7 +523,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-0.511989"
+                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="0.0949128"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -580,7 +580,7 @@
                    PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
                    Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                    Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                   Group6Table="" Group7Table="" SampleMapID="Access_B_25">
+                   Group6Table="" Group7Table="" SampleMapID="Roland_MaxLow">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -612,7 +612,7 @@
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope2" Bypassed="0" Monophonic="1" Retrigger="1"
                            Intensity="0.9" AttackCurve="0.5" DecayCurve="0" Attack="6" AttackLevel="0"
-                           Hold="0" Decay="82" Sustain="-6.2" Release="64" EcoMode="1">
+                           Hold="13" Decay="82" Sustain="-100" Release="64" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -648,7 +648,7 @@
             </Processor>
             <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
               <ChildProcessors>
-                <Processor Type="Constant" ID="PitchConstant2" Bypassed="0" Intensity="1.49012e-08"
+                <Processor Type="Constant" ID="PitchConstant2" Bypassed="0" Intensity="-0.333333"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -684,7 +684,7 @@
                            Connection="Global Modulator Container1:GlobalLFOPitch">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="0.00595991"
+                <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="0.00664818"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -742,7 +742,7 @@
                   </ChildProcessors>
                 </Processor>
                 <Processor Type="PolyshapeFX" ID="Polyshape2" Bypassed="0" Curve="" AsymetricalCurve=""
-                           Drive="25.1" Mode="1" Oversampling="1">
+                           Drive="14.5" Mode="1" Oversampling="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Drive Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -771,7 +771,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="-0.184404"
+                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="0.390647"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -828,7 +828,7 @@
                    PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
                    Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                    Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                   Group6Table="" Group7Table="" SampleMapID="Roland_HpHop3">
+                   Group6Table="" Group7Table="" SampleMapID="Roland_Mix4">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -860,7 +860,7 @@
                 </Processor>
                 <Processor Type="AHDSR" ID="GainEnvelope3" Bypassed="0" Monophonic="1" Retrigger="1"
                            Intensity="0.9" AttackCurve="0.5" DecayCurve="0" Attack="6" AttackLevel="0"
-                           Hold="0" Decay="82" Sustain="-6.2" Release="64" EcoMode="1">
+                           Hold="13" Decay="82" Sustain="-100" Release="64" EcoMode="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Attack Time" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -896,7 +896,7 @@
             </Processor>
             <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
               <ChildProcessors>
-                <Processor Type="Constant" ID="PitchConstant3" Bypassed="0" Intensity="-0.1"
+                <Processor Type="Constant" ID="PitchConstant3" Bypassed="0" Intensity="-0.358333"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -932,7 +932,7 @@
                            Connection="Global Modulator Container1:GlobalLFOPitch">
                   <ChildProcessors/>
                 </Processor>
-                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.00657284"
+                <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.026566"
                            Bipolar="1">
                   <ChildProcessors/>
                 </Processor>
@@ -989,7 +989,7 @@
                     </Processor>
                   </ChildProcessors>
                 </Processor>
-                <Processor Type="PolyshapeFX" ID="Polyshape3" Bypassed="0" Curve="" AsymetricalCurve=""
+                <Processor Type="PolyshapeFX" ID="Polyshape3" Bypassed="1" Curve="" AsymetricalCurve=""
                            Drive="12.7" Mode="4" Oversampling="1">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Drive Modulation" Bypassed="0" Intensity="1">
@@ -1019,7 +1019,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="-0.153025"
+                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="-0.781105"
                            Band1="192.654" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
