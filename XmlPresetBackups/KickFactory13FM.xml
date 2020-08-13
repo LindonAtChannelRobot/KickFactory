@@ -184,7 +184,7 @@
             <Control type="ScriptButton" id="SnapshotOnOff2" value="0"/>
             <Control type="ScriptButton" id="SnapshotOnOff3" value="0"/>
             <Control type="ScriptSlider" id="MasterVolumeKnob" value="-7.4"/>
-            <Control type="ScriptSlider" id="MasterIRREKnob" value="0.17"/>
+            <Control type="ScriptSlider" id="MasterIRREKnob" value="0.75"/>
             <Control type="ScriptComboBox" id="MIDISelector" value="1"/>
           </Content>
           <UIData Source="KickFactory13FMUIData"/>
@@ -349,7 +349,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript1" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent1" value="0.17"/>
+                    <Control type="ScriptSlider" id="IRREPercent1" value="0.75"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -438,7 +438,7 @@
                            WetGain="-19.1" Latency="0" ImpulseLength="1" ProcessInput="1"
                            UseBackgroundThread="0" Predelay="0" HiCut="20000" Damping="-5.1"
                            FFTType="0" FileName="{PROJECT_FOLDER}BathRoom 3_5 Seconds.wav"
-                           min="0" max="128512" loopStart="0" loopEnd="0">
+                           min="0" max="128512" loopStart="0" loopEnd="128512">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
@@ -456,7 +456,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="-0.792196"
+                <Processor Type="CurveEq" ID="IRREEQ1" Bypassed="0" NumFilters="1" Band0="4.73868"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -507,7 +507,7 @@
                        PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
                        Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table=""
                        Group1Table="" Group2Table="" Group3Table="" Group4Table="" Group5Table=""
-                       Group6Table="" Group7Table="" SampleMapID="Acc_aftty1">
+                       Group6Table="" Group7Table="" SampleMapID="Acc_GMM">
               <ChildProcessors>
                 <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
                   <ChildProcessors>
@@ -611,7 +611,7 @@
                                Connection="Global Modulator Container1:GlobalLFOPitch">
                       <ChildProcessors/>
                     </Processor>
-                    <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="0.0196831"
+                    <Processor Type="Constant" ID="IRREPitch1" Bypassed="0" Intensity="0.116718"
                                Bipolar="1">
                       <ChildProcessors/>
                     </Processor>
@@ -676,7 +676,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript2" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent2" value="0.17"/>
+                    <Control type="ScriptSlider" id="IRREPercent2" value="0.75"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -765,7 +765,7 @@
                            WetGain="-25.4" Latency="0" ImpulseLength="1" ProcessInput="1"
                            UseBackgroundThread="0" Predelay="0" HiCut="20000" Damping="-5.1"
                            FFTType="0" FileName="{PROJECT_FOLDER}BathRoom 1_5 Seconds.wav"
-                           min="0" max="66304" loopStart="0" loopEnd="0">
+                           min="0" max="66304" loopStart="0" loopEnd="66304">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
@@ -783,7 +783,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="0.326918"
+                <Processor Type="CurveEq" ID="IRREEQ2" Bypassed="0" NumFilters="1" Band0="-2.23179"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -938,7 +938,7 @@
                                Connection="Global Modulator Container1:GlobalLFOPitch">
                       <ChildProcessors/>
                     </Processor>
-                    <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="0.0152207"
+                    <Processor Type="Constant" ID="IRREPitch2" Bypassed="0" Intensity="-0.100496"
                                Bipolar="1">
                       <ChildProcessors/>
                     </Processor>
@@ -1003,7 +1003,7 @@
                 <Processor Type="ScriptProcessor" ID="IRREScript3" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptSlider" id="IRREPercent3" value="0.17"/>
+                    <Control type="ScriptSlider" id="IRREPercent3" value="0.75"/>
                   </Content>
                   <UIData>
                     <ContentProperties DeviceType="Desktop">
@@ -1092,7 +1092,7 @@
                            WetGain="-20.4" Latency="0" ImpulseLength="1" ProcessInput="1"
                            UseBackgroundThread="0" Predelay="0" HiCut="20000" Damping="-5.1"
                            FFTType="0" FileName="{PROJECT_FOLDER}BathRoom 1_5 Seconds.wav"
-                           min="0" max="66304" loopStart="0" loopEnd="0">
+                           min="0" max="66304" loopStart="0" loopEnd="66304">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
@@ -1110,7 +1110,7 @@
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
                 </Processor>
-                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="0.0794595"
+                <Processor Type="CurveEq" ID="IRREEQ3" Bypassed="0" NumFilters="1" Band0="2.76393"
                            Band1="203.106" Band2="0.3" Band3="1" Band4="4" FFTEnabled="0">
                   <ChildProcessors/>
                   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -1265,7 +1265,7 @@
                                Connection="Global Modulator Container1:GlobalLFOPitch">
                       <ChildProcessors/>
                     </Processor>
-                    <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="-0.0190989"
+                    <Processor Type="Constant" ID="IRREPitch3" Bypassed="0" Intensity="0.0387269"
                                Bipolar="1">
                       <ChildProcessors/>
                     </Processor>
