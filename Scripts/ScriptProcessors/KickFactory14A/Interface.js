@@ -1114,8 +1114,9 @@ inline function onSubmitButtonControl(component, value)
         return;
     
     local v = SerialInput.getValue();
-    //Console.print(v);
     
+    //Console.print(v);
+    v = v.trim();
     // Checks if it's in the input
     if(serials.Data.contains(v))
     {

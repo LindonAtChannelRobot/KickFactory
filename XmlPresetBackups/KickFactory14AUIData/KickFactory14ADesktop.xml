@@ -43,7 +43,7 @@
                  height="20" scaleFactor="0.5" isMomentary="1" saveInPreset="0"/>
       <Component type="ScriptButton" id="MuteButton1" x="4" y="3" parentComponent="VoicePanel1"
                  width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Var_Cwejman_11"
+      <Component type="ScriptLabel" id="DisplayNameVoice1" x="28" y="-1" text="Acc_ROOM3"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel1"
                  fontSize="11" alignment="left" bgColour="1308622848" editable="0"
                  fontStyle="Regular" textColour="4289111718"/>
@@ -53,7 +53,7 @@
       <Component type="ScriptButton" id="PrevSound1" x="49" y="31" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel1"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="65" y="28" text="Var_Cwejman_11"
+      <Component type="ScriptLabel" id="SampleMapNameVoice1" x="65" y="28" text="Acc_ROOM3"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel1"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice1" x="59" y="30"
@@ -216,7 +216,7 @@
                  width="70" height="14" filmstripImage="{PROJECT_FOLDER}VolumeBarV2.png"
                  numStrips="100" mode="Decibel" min="-100" max="6" stepSize="0.1"
                  suffix=" dB" middlePosition="-6" defaultValue="-6"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="909_Bd30"
+      <Component type="ScriptLabel" id="DisplayNameVoice2" x="28" y="-1" text="Acc_bonzo2"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel2"
                  fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
                  editable="0"/>
@@ -226,7 +226,7 @@
       <Component type="ScriptButton" id="PrevSound2" x="50" y="30" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel2"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="64" y="28" text="909_Bd30"
+      <Component type="ScriptLabel" id="SampleMapNameVoice2" x="64" y="28" text="Acc_bonzo2"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel2"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice2" x="65" y="31"
@@ -390,7 +390,7 @@
                  height="20" scaleFactor="0.5" isMomentary="1" saveInPreset="0"/>
       <Component type="ScriptButton" id="MuteButton3" x="4" y="3" parentComponent="VoicePanel3"
                  width="15" height="15" filmstripImage="{PROJECT_FOLDER}m_btn.png"/>
-      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="909_BDRUM16"
+      <Component type="ScriptLabel" id="DisplayNameVoice3" x="28" y="-1" text="Acc_2HeadHi"
                  saveInPreset="1" width="132" height="22" parentComponent="VoicePanel3"
                  fontSize="11" alignment="left" textColour="4289111718" bgColour="1308622848"
                  editable="0"/>
@@ -404,7 +404,7 @@
       <Component type="ScriptButton" id="PrevSound3" x="50" y="30" width="18"
                  height="18" filmstripImage="{PROJECT_FOLDER}voiceBkwds.png" isMomentary="1"
                  parentComponent="VoicePanel3"/>
-      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="59" y="28" text="909_BDRUM16"
+      <Component type="ScriptLabel" id="SampleMapNameVoice3" x="59" y="28" text="Acc_2HeadHi"
                  saveInPreset="1" width="147" height="23" parentComponent="VoicePanel3"
                  fontSize="11"/>
       <Component type="ScriptButton" id="SampleMapSelectorVoice3" x="64" y="30"
@@ -732,7 +732,7 @@
                height="420" borderRadius="0" bgColour="4279191583" itemColour="4280100123"
                itemColour2="4280100123" parentComponent="AllVoicesPanel" visible="0">
       <Component type="ScriptLabel" id="DialogName" x="9" y="4" width="193" height="21"
-                 parentComponent="VoiceSelectorPanel" text="VOICE 1 DRUM SOUNDS"
+                 parentComponent="VoiceSelectorPanel" text="VOICE 3 DRUM SOUNDS"
                  alignment="left" fontName="Default" fontStyle="Regular" fontSize="14"
                  editable="0"/>
       <Component type="ScriptButton" id="DialogDismiss" x="372" y="4" width="20"
@@ -745,7 +745,7 @@
       <Component type="ScriptedViewport" id="VoiceSampleMaps" x="210" y="35" width="172"
                  height="346" parentComponent="VoiceSelectorPanel" alignment="left"
                  useList="1" bgColour="2635733530" itemColour="3458683414" itemColour2="4218587762"
-                 textColour="4289111718" scrollBarThickness="12" items="Var_Acetone_K&#10;Var_Acetone_K1&#10;Var_Coron_01&#10;Var_Cwejman_07&#10;Var_Cwejman_11&#10;Var_Cwejman_13&#10;Var_Cwejman_14&#10;Var_Cwejman_15&#10;Var_Cwejman_16&#10;Var_Cwejman_17&#10;Var_Cwejman_22&#10;Var_Cwejman_23&#10;Var_CWejman_Dred &#10;Var_Doepher_drum&#10;Var_Farfisa_&#10;Var_Fricke__1&#10;Var_GameBoy_1&#10;Var_GameBoy_2&#10;Var_GameBoy_3&#10;Var_GameBoy_4&#10;Var_Kay_1&#10;Var_Kay_2&#10;Var_Kay_3&#10;Var_Kay_4&#10;Var_Kay_5&#10;Var_Kay_6&#10;Var_Kay_7&#10;Var_Kay_8&#10;Var_Pearl_ 1&#10;Var_Pearl_ 10&#10;Var_Pearl_ 2&#10;Var_Pearl_ 3&#10;Var_Pearl_ 4&#10;Var_Pearl_ 5&#10;Var_Pearl_ 6&#10;Var_Pearl_ 7&#10;Var_Pearl_ 8&#10;Var_Pearl_ 9"/>
+                 textColour="4289111718" scrollBarThickness="12" items="Acc_24Dry&#10;Acc_2HeadHi&#10;Acc_2HeadLo&#10;Acc_2HedMed1&#10;Acc_2HedMed2&#10;Acc_aftty1&#10;Acc_aftty2&#10;Acc_basc1&#10;Acc_basc2&#10;Acc_Basic&#10;Acc_BigSofty&#10;Acc_bonzo2&#10;Acc_Bottom&#10;Acc_Bushy&#10;Acc_DRY 1&#10;Acc_DRY 2&#10;Acc_DRY 3&#10;Acc_DRY 4&#10;Acc_DRYB1&#10;Acc_ersko1&#10;Acc_evolvr&#10;Acc_GATE1&#10;Acc_GATE2&#10;Acc_GateM&#10;Acc_GMH&#10;Acc_GMJ&#10;Acc_GML&#10;Acc_GMM&#10;Acc_GMM2&#10;Acc_GrCMute&#10;Acc_GrnCassa&#10;Acc_KONG1&#10;Acc_MapleA20&#10;Acc_MapleAmb&#10;Acc_MapleV20&#10;Acc_Metal&#10;Acc_MONDO&#10;Acc_NN04C&#10;Acc_palmer&#10;Acc_Pointy&#10;Acc_Rock1&#10;Acc_Rock2&#10;Acc_ROOM2&#10;Acc_ROOM3&#10;Acc_ROOM4&#10;Acc_ROOM5&#10;Acc_Roomy&#10;Acc_Soft&#10;Acc_SoTight&#10;Acc_stomp1&#10;Acc_VeloRoom&#10;Acc_vman&#10;Acc_WudPoint"/>
       <Component type="ScriptButton" id="VoiceFavouritesButton" x="135" y="392"
                  parentComponent="VoiceSelectorPanel" filmstripImage="{PROJECT_FOLDER}favouritesButton.png"
                  width="144" height="22"/>
