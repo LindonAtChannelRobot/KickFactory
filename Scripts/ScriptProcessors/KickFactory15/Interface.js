@@ -404,11 +404,14 @@ inline function randVoiceParams(voc){
 function paintKeys()
 {
     var kdx;
+    var ck = parseInt(MIDINoteTarget1) + 1;
     for (kdx = 0;kdx <128; kdx++)
     {
         Engine.setKeyColour(kdx, KEY_DARK);
         if (kdx == MIDINoteTarget1 || kdx == MIDINoteTarget2 || kdx == MIDINoteTarget3 )
             Engine.setKeyColour(kdx, KEY_TARGET);
+        if (kdx == ck)
+            Engine.setKeyColour(kdx, KEY_SNAPON);
     }; 
 };
     
@@ -425,7 +428,7 @@ const var MOD_OFF_COLOUR = 0xFF666666;
 const var MOD_ON_COLOUR = 0xFF4AA025;
 const var KEY_DARK = 0x88112211;
 const var KEY_TARGET = 0xFF44BB44;
-const var KEY_SNAPON = 0xFFFF8400;
+const var KEY_SNAPON = 0x9944BB44;
 const var KEY_SNAPOFF = 0x66FF8400;
 const var KEY_PATTERN = 0x88BBBB44;
 const var patternSwitches = [72,73,74,75,76,77,78,79];
@@ -2975,6 +2978,40 @@ inline function onSampleMapName(component, value)
 	loadVoiceByName(pos, SampleMapNames[pos].get("text"));
 };
 
+const var ZoomPanel = Content.getComponent("ZoomPanel");
+inline function onZoomButtonControl(component, value)
+{
+	//show/hide the zoom panel
+	ZoomPanel.showControl(value);
+	
+};
+
+Content.getComponent("ZoomButton").setControlCallback(onZoomButtonControl);
+
+
+
+const var AboutPanel = Content.getComponent("AboutPanel");
+
+inline function onAboutButtonControl(component, value)
+{
+	//
+	AboutPanel.showControl(value);
+};
+
+Content.getComponent("AboutButton").setControlCallback(onAboutButtonControl);
+
+
+
+
+inline function onCRButtonControl(component, value)
+{
+	//
+	Engine.openWebsite("www.channelrobot.com");
+};
+
+Content.getComponent("CRButton").setControlCallback(onCRButtonControl);
+
+
 
 // --- on init read the snapshot buttons to see who is current
 currentSnap = 1;
@@ -2986,6 +3023,16 @@ if (SnapshotOnOff3.getValue() == 1 )
 function onNoteOn()
 {   
     // note processing 
+    local chk = parseInt(MIDINoteTarget1) + 1;
+    if (Message.getNoteNumber() == chk)
+    {
+        if (currentSnap == 1)
+            Message.setNoteNumber(MIDINoteTarget1);
+        if (currentSnap == 2)
+            Message.setNoteNumber(MIDINoteTarget2);
+        if (currentSnap == 3)
+            Message.setNoteNumber(MIDINoteTarget3);
+    }
     
     if (Message.getNoteNumber() != MIDINoteTarget1 && Message.getNoteNumber() != MIDINoteTarget2 && Message.getNoteNumber() != MIDINoteTarget3)
     {

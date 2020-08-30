@@ -12,6 +12,9 @@
     <Component type="ScriptButton" id="Randomise" x="759" y="9" parentComponent="HeaderPanel"
                filmstripImage="{PROJECT_FOLDER}RandomiseButton.png" width="31"
                height="31" scaleFactor="0.8" isMomentary="1" saveInPreset="0"/>
+    <Component type="ScriptButton" id="ZoomButton" x="620" y="19" parentComponent="HeaderPanel"
+               filmstripImage="{PROJECT_FOLDER}zoombutton.png" scaleFactor="0.60"
+               width="78" height="18" saveInPreset="0"/>
     <Component type="ScriptPanel" id="PresetFrame" x="281" y="15" parentComponent="HeaderPanel"
                borderSize="0" borderRadius="0" itemColour2="0" itemColour="0"
                width="190" height="26">
@@ -27,13 +30,9 @@
       <Component type="ScriptButton" id="Presets" x="24" y="3" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
                  width="142" height="21" saveInPreset="0" parentComponent="PresetFrame"/>
     </Component>
-    <Component type="ScriptPanel" id="Panel1" x="494" y="6" parentComponent="HeaderPanel"
-               width="223" height="40" borderRadius="0" borderSize="0">
-      <Component type="ScriptFloatingTile" id="FloatingTile1" x="-12" y="-8" parentComponent="Panel1"
-                 ContentType="CustomSettings" bgColour="4278190080" itemColour="4294951115"
-                 itemColour2="4294951115" Data="{&#13;&#10;  &quot;Driver&quot;: false,&#13;&#10;  &quot;Device&quot;: false,&#13;&#10;  &quot;Output&quot;: false,&#13;&#10;  &quot;BufferSize&quot;: false,&#13;&#10;  &quot;SampleRate&quot;: false,&#13;&#10;  &quot;GlobalBPM&quot;: false,&#13;&#10;  &quot;StreamingMode&quot;: false,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: false,&#13;&#10;  &quot;ClearMidiCC&quot;: false,&#13;&#10;  &quot;SampleLocation&quot;: false,&#13;&#10;  &quot;DebugMode&quot;: false,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    0.5,&#13;&#10;    0.75,&#13;&#10;    1.0,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2.0&#13;&#10;  ]&#13;&#10;}"
-                 Font="Arial" width="270" height="55" textColour="4294290441"/>
-    </Component>
+    <Component type="ScriptButton" id="AboutButton" x="11" y="8" parentComponent="HeaderPanel"
+               width="249" height="33" filmstripImage="{PROJECT_FOLDER}blank10Square.png"
+               saveInPreset="0"/>
   </Component>
   <Component type="ScriptPanel" id="AllVoicesPanel" x="0" y="43" borderSize="0"
              borderRadius="0" itemColour2="0" itemColour="0" textColour="16777215"
@@ -804,6 +803,21 @@
     <Component type="ScriptButton" id="DismissPresets" x="777" y="3" parentComponent="PresetHolderPanel"
                filmstripImage="{PROJECT_FOLDER}dialogDismiss.png" width="22"
                height="22" isMomentary="1" saveInPreset="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="ZoomPanel" x="600" y="36" width="132"
+             height="43" borderRadius="0" borderSize="0" visible="0">
+    <Component type="ScriptFloatingTile" id="ZoomTile" x="-104" y="-9" parentComponent="ZoomPanel"
+               ContentType="CustomSettings" bgColour="4278190080" itemColour="4294951115"
+               itemColour2="4294951115" Data="{&#13;&#10;  &quot;Driver&quot;: false,&#13;&#10;  &quot;Device&quot;: false,&#13;&#10;  &quot;Output&quot;: false,&#13;&#10;  &quot;BufferSize&quot;: false,&#13;&#10;  &quot;SampleRate&quot;: false,&#13;&#10;  &quot;GlobalBPM&quot;: false,&#13;&#10;  &quot;StreamingMode&quot;: false,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: false,&#13;&#10;  &quot;ClearMidiCC&quot;: false,&#13;&#10;  &quot;SampleLocation&quot;: false,&#13;&#10;  &quot;DebugMode&quot;: false,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    0.5,&#13;&#10;    0.75,&#13;&#10;    1.0,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2.0&#13;&#10;  ]&#13;&#10;}"
+               Font="Arial" width="270" height="55" textColour="4294290441"/>
+  </Component>
+  <Component type="ScriptPanel" id="AboutPanel" x="218" y="81" width="360"
+             height="460" borderRadius="0" borderSize="0" visible="0">
+    <Component type="ScriptImage" id="AboutImage" x="0" y="0" parentComponent="AboutPanel"
+               width="360" height="460" fileName="{PROJECT_FOLDER}AboutBack.png"/>
+    <Component type="ScriptButton" id="CRButton" x="79" y="311" parentComponent="AboutPanel"
+               filmstripImage="{PROJECT_FOLDER}CRFullNameLogo400.png" width="203"
+               height="26" saveInPreset="0"/>
   </Component>
   <Component type="ScriptPanel" id="AuthorisationDialog" x="0" y="1" bgColour="4278190080"
              itemColour="4278190080" textColour="4278190080" width="803" height="691"
