@@ -23,4 +23,7 @@
   <VST3Support value="0"/>
   <UseRawFrontend value="No"/>
   <EnableMidiInputFX value="No"/>
+  <ExpansionType value="Disabled"/>
+  <EncryptionKey value=""/>
+  <LinkExpansionsToProject value="No"/>
 </ProjectSettings>

@@ -176,8 +176,8 @@
     <Control type="ScriptButton" id="Snapshot1OnOff" value="1"/>
     <Control type="ScriptButton" id="SnapshotOnOff2" value="0"/>
     <Control type="ScriptButton" id="SnapshotOnOff3" value="0"/>
-    <Control type="ScriptSlider" id="MasterVolumeKnob" value="-10.4"/>
-    <Control type="ScriptSlider" id="MasterIRREKnob" value="0.38"/>
+    <Control type="ScriptSlider" id="MasterVolumeKnob" value="-3.7"/>
+    <Control type="ScriptSlider" id="MasterIRREKnob" value="0.26"/>
     <Control type="ScriptComboBox" id="MIDISelector" value="3"/>
   </Content>
   <MidiAutomation/>
